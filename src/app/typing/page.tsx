@@ -20,12 +20,18 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { typingLessons, type TypingSentence, type TypingWord, fingerColors, type FingerType } from '@/lib/data';
+import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
 import { VirtualKeyboard } from '@/components/typing/virtual-keyboard';
+import { ParticleBurst } from '@/components/typing/particle-burst';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
 type PracticeMode = 'whole' | 'split';
+
+// 无需手动输入的字符：空格与常用英文标点，打字时自动补全
+const PUNCTUATION = new Set(['.', ',', '!', '?', ';', ':', "'", '"', '-', '(', ')']);
+const isSkippable = (ch: string | undefined) => ch !== undefined && (ch === ' ' || PUNCTUATION.has(ch));
 
 export default function TypingPage() {
   const [lessonIndex, setLessonIndex] = useState(0);
@@ -43,8 +49,12 @@ export default function TypingPage() {
   const [wpm, setWpm] = useState(0);
   const [accuracy, setAccuracy] = useState(100);
   const [splitIndex, setSplitIndex] = useState(0);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const [burstKey, setBurstKey] = useState(0);
+  const [burstCenter, setBurstCenter] = useState<{ x: number; y: number } | null>(null);
+  // 输入错误时短暂显示的错误字符（自动消失，无需 Backspace）
+  const [errorFlash, setErrorFlash] = useState<{ char: string; id: number } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const sentenceAreaRef = useRef<HTMLDivElement>(null);
 
   const lesson = typingLessons[lessonIndex];
   const sentence = lesson?.sentences[sentenceIndex];
@@ -68,11 +78,13 @@ export default function TypingPage() {
     }
   }, [timer, typedText]);
 
-  // Get next expected character
+  // 下一个需要输入的字符（跳过自动补全的空格与标点）
   const getNextChar = useCallback(() => {
     if (!sentence) return '';
     const target = showAnswer ? sentence.sentence : '';
-    return target[typedText.length] || '';
+    let i = typedText.length;
+    while (i < target.length && isSkippable(target[i])) i++;
+    return target[i] || '';
   }, [sentence, typedText, showAnswer]);
 
   // Get current word info
@@ -102,6 +114,7 @@ export default function TypingPage() {
 
       if (key === 'Backspace') {
         setTypedText((prev) => prev.slice(0, -1));
+        playKeyClick();
         return;
       }
 
@@ -115,34 +128,48 @@ export default function TypingPage() {
       }
 
       if (key.length === 1) {
-        const expected = target[typedText.length];
-
-        // Auto-skip spaces: if current position is a space, auto-fill it
+        // 自动补全当前位置的空格与标点（如句尾的 . 无需手动输入）
         let newTyped = typedText;
-        while (newTyped.length < target.length && target[newTyped.length] === ' ') {
-          newTyped += ' ';
+        while (isSkippable(target[newTyped.length])) {
+          newTyped += target[newTyped.length];
         }
 
-        if (key === expected || (expected === ' ' && newTyped.length > typedText.length)) {
-          newTyped = newTyped + key;
+        const expected = target[newTyped.length];
 
-          // Auto-skip spaces after the typed character
-          while (newTyped.length < target.length && target[newTyped.length] === ' ') {
-            newTyped += ' ';
+        if (key === expected) {
+          newTyped += key;
+
+          // 输入后继续补全空格与标点（可能直接补完整句）
+          while (isSkippable(target[newTyped.length])) {
+            newTyped += target[newTyped.length];
           }
 
           setTypedText(newTyped);
+          playKeyClick();
 
           if (newTyped === target) {
             setCompleted(true);
-            setShowCompletionCard(true);
+            // 从句子中心位置触发粒子消散，粒子完全消散后再弹出完成卡片
+            const rect = sentenceAreaRef.current?.getBoundingClientRect();
+            if (rect) {
+              setBurstCenter({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 });
+              setBurstKey((k) => k + 1);
+            } else {
+              setShowCompletionCard(true);
+            }
             const totalChars = target.length;
             const correctChars = newTyped.split('').filter((c, i) => c === target[i]).length;
             setAccuracy(Math.round((correctChars / totalChars) * 100));
           }
         } else {
+          // 错误输入不写入进度：播放警告音并短暂显示错误字符后自动消失
           setErrors((prev) => prev + 1);
-          setTypedText((prev) => prev + key);
+          playErrorBuzz();
+          const id = Date.now();
+          setErrorFlash({ char: key, id });
+          window.setTimeout(() => {
+            setErrorFlash((prev) => (prev?.id === id ? null : prev));
+          }, 350);
         }
       }
     },
@@ -191,6 +218,24 @@ export default function TypingPage() {
       speechSynthesis.speak(utterance);
     }
   }, [sentence]);
+
+  // 打字成功后自动朗读该句子（稍等完成卡片弹出）
+  useEffect(() => {
+    if (!completed) return;
+    const t = setTimeout(() => {
+      handleReadAloud();
+    }, 400);
+    return () => clearTimeout(t);
+  }, [completed, handleReadAloud]);
+
+  // 兜底：即使粒子特效回调失效，也保证完成卡片最终弹出
+  useEffect(() => {
+    if (!completed) return;
+    const t = setTimeout(() => {
+      setShowCompletionCard(true);
+    }, 1500);
+    return () => clearTimeout(t);
+  }, [completed]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -261,11 +306,18 @@ export default function TypingPage() {
       <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1">
         {target.split('').map((char, index) => {
           let charClass = 'text-slate-300';
+          // 当前位置短暂显示错误字符（红色），随后自动回退为目标字符
+          const isErrorFlash = index === typedText.length && !!errorFlash;
           if (index < typedText.length) {
             charClass = typedText[index] === char ? 'text-foreground' : 'text-red-500';
           } else if (index === typedText.length) {
-            charClass = 'text-foreground';
+            charClass = errorFlash ? 'text-red-500' : 'text-foreground';
           }
+          const displayChar = isErrorFlash
+            ? errorFlash.char
+            : char === ' '
+              ? '\u00A0'
+              : char;
 
           return (
             <span
@@ -278,7 +330,7 @@ export default function TypingPage() {
               {index === typedText.length && !completed && (
                 <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-sky-500 animate-pulse" />
               )}
-              {char === ' ' ? '\u00A0' : char}
+              {displayChar}
             </span>
           );
         })}
@@ -475,7 +527,7 @@ export default function TypingPage() {
         ) : (
           <>
             {/* Sentence Display */}
-            <div className="text-center space-y-3 w-full max-w-3xl">
+            <div ref={sentenceAreaRef} className="text-center space-y-3 w-full max-w-3xl">
               {mode === 'whole' ? renderSentence() : renderSplitSentence()}
 
               {/* Grammar annotation */}
@@ -609,6 +661,13 @@ export default function TypingPage() {
           </>
         )}
       </div>
+
+      {/* 粒子消散特效层 */}
+      <ParticleBurst
+        burstKey={burstKey}
+        center={burstCenter}
+        onFinish={() => setShowCompletionCard(true)}
+      />
 
     </div>
   );
