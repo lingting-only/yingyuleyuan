@@ -1,18 +1,3 @@
-{
-  "name": "projects",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build": "bash ./scripts/build.sh",
-    "dev": "bash ./scripts/dev.sh",
-    "preinstall": "npx only-allow pnpm",
-    "lint": "eslint",
-    "lint:build": "eslint . --quiet",
-    "lint:style": "stylelint \"src/**/*.css\"",
-    "start": "bash ./scripts/start.sh",
-    "ts-check": "tsc -p tsconfig.json",
-    "validate": "pnpm dlx concurrently --group --names lint-tsc,lint-build,lint-style \"pnpm ts-check\" \"pnpm lint:build\" \"pnpm lint:style\""
-  },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.958.0",
     "@aws-sdk/lib-storage": "^3.958.0",
@@ -44,6 +29,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@supabase/supabase-js": "2.95.3",
+    "@tailwindcss/postcss": "^4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -75,7 +61,6 @@
   "devDependencies": {
     "@react-dev-inspector/babel-plugin": "^2.0.1",
     "@react-dev-inspector/middleware": "^2.0.1",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/pg": "^8.16.0",
     "@types/react": "^19",
@@ -90,9 +75,4 @@
     "tailwindcss": "^4",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "pnpm": ">=9.0.0"
   }
-}
