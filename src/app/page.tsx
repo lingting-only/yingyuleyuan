@@ -21,7 +21,6 @@ import {
   bankToPracticeQueue,
   findPracticeById,
   findBankIdByItem,
-  isWordItemId,
 } from '@/lib/wordbank';
 import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
 import {
@@ -50,7 +49,7 @@ const isSkippable = (ch: string | undefined) => ch !== undefined && (ch === ' ' 
 export default function HomePage() {
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [typedText, setTypedText] = useState('');
-  const [mode, setMode] = useState<PracticeMode>('whole');
+  const [mode] = useState<PracticeMode>('whole'); // 默认整句练习
   const [showImage, setShowImage] = useState(true);
   const [dictationMode, setDictationMode] = useState(false); // 默写模式：隐藏英文，打对一个词展示一个词
   const [showFingerGuide, setShowFingerGuide] = useState(true); // 空格键：切换手势图（默写模式下不隐藏）
@@ -69,13 +68,13 @@ export default function HomePage() {
   const [practiceQueue, setPracticeQueue] = useState<TypingSentence[]>([]);
   const [queueLabel, setQueueLabel] = useState('');
   const [isErrorMode, setIsErrorMode] = useState(false);
-  // 单词词库练习时为 true（隐藏拆句/整句切换）
-  const [isWordBank, setIsWordBank] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   // 单词完成后的粒子消散特效：爆发序号与爆发中心（取自单词区）
   const [burstKey, setBurstKey] = useState(0);
   const [burstCenter, setBurstCenter] = useState<{ x: number; y: number } | null>(null);
   const burstRef = useRef<HTMLDivElement>(null);
+  // 朗读并发控制：正在播放时忽略重复触发，播放完毕后才允许再次播放
+  const speakingRef = useRef(false);
 
   const sentence = practiceQueue[sentenceIndex];
   const totalSentences = practiceQueue.length;
@@ -91,7 +90,6 @@ export default function HomePage() {
       setPracticeQueue(sentences);
       setQueueLabel('错题练习');
       setIsErrorMode(true);
-      setIsWordBank(ids.length > 0 && ids.every((id) => isWordItemId(id)));
       // 消费错题练习态
       clearErrorPractice();
     } else {
@@ -101,7 +99,6 @@ export default function HomePage() {
       setPracticeQueue(queue);
       setQueueLabel(bank?.titleCn ?? '');
       setIsErrorMode(false);
-      setIsWordBank(Boolean(bank && bank.type === 'word'));
       // 从上次学习进度继续（未练过则从 0 开始）
       const saved = bank ? getBankProgress()[bank.id] : 0;
       startIndex = Math.min(Math.max(saved ?? 0, 0), Math.max(queue.length - 1, 0));
@@ -216,12 +213,19 @@ export default function HomePage() {
   const keyHint = showFingerGuide ? nextChar : '';
 
   const handleReadAloud = useCallback(() => {
-    if (sentence && 'speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(sentence.sentence);
-      utterance.lang = 'en-US';
-      utterance.rate = 0.8;
-      speechSynthesis.speak(utterance);
-    }
+    if (!sentence || !('speechSynthesis' in window)) return;
+    // 正在播放时忽略本次触发（防并发），只有当上一段播放完毕后才允许再次播放
+    if (speakingRef.current) return;
+    const utterance = new SpeechSynthesisUtterance(sentence.sentence);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.8;
+    speakingRef.current = true;
+    const reset = () => {
+      speakingRef.current = false;
+    };
+    utterance.onend = reset;
+    utterance.onerror = reset;
+    speechSynthesis.speak(utterance);
   }, [sentence]);
 
   // Handle key press
@@ -603,14 +607,29 @@ export default function HomePage() {
               <span className="hidden md:inline">退出错题</span>
             </Button>
           )}
-          <Button
-            variant={dictationMode ? 'default' : 'ghost'}
-            size="sm"
-            className={cn('text-xs md:text-sm', dictationMode && 'bg-sky-500 text-white')}
-            onClick={() => setDictationMode((prev) => !prev)}
+          <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+            <Play className="w-3.5 h-3.5" />
+            {formatTime(timer)}
+          </div>
+          <button
+            onClick={() => setShowImage(!showImage)}
+            className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-muted-foreground hover:bg-slate-200 transition-colors"
           >
+            {showImage ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+            显示图片
+          </button>
+          <button
+            onClick={() => setDictationMode((prev) => !prev)}
+            className={cn(
+              'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium transition-colors',
+              dictationMode
+                ? 'bg-sky-100 text-sky-600'
+                : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
+            )}
+          >
+            {dictationMode ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
             {dictationMode ? '关闭默写模式' : '开启默写模式'}
-          </Button>
+          </button>
           <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleReset}>
             <RefreshCw className="w-3.5 h-3.5 mr-1" />
             <span className="hidden md:inline">重置进度</span>
@@ -626,46 +645,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Secondary Bar */}
-      <div className="flex items-center gap-3 px-3 md:px-4 py-2 bg-white/80 border-b border-border">
-        <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-          <Play className="w-3.5 h-3.5" />
-          {formatTime(timer)}
-        </div>
-        {!isWordBank && (
-          <div className="flex gap-1">
-            <button
-              onClick={() => setMode('split')}
-              className={cn(
-                'px-3 py-1 rounded-lg text-xs font-medium transition-colors',
-                mode === 'split'
-                  ? 'bg-sky-500 text-white'
-                  : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
-              )}
-            >
-              拆句练习
-            </button>
-            <button
-              onClick={() => setMode('whole')}
-              className={cn(
-                'px-3 py-1 rounded-lg text-xs font-medium transition-colors',
-                mode === 'whole'
-                  ? 'bg-sky-500 text-white'
-                  : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
-              )}
-            >
-              整句练习
-            </button>
-          </div>
-        )}
-        <button
-          onClick={() => setShowImage(!showImage)}
-          className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-muted-foreground hover:bg-slate-200 transition-colors"
-        >
-          {showImage ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-          显示图片
-        </button>
-      </div>
+      {/* Secondary Bar（已删除拆句/整句切换，默认整句练习） */}
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-6 md:gap-8">
