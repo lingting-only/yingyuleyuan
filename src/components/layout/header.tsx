@@ -26,7 +26,7 @@ export function Header() {
           </div>
           <div className="text-sm">
             <p className="font-medium text-foreground leading-tight">学习者</p>
-            <p className="text-[10px] text-muted-foreground">Lv.5 探索者</p>
+            <p className="text-[10px] text-muted-foreground">Lv.666 探索者</p>
           </div>
         </div>
       </div>

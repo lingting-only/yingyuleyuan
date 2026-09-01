@@ -1,352 +1,787 @@
 'use client';
 
+import { useState, useEffect, useCallback, useRef } from 'react';
 import {
-  BookOpen,
-  Flame,
-  Trophy,
-  Clock,
-  TrendingUp,
-  Star,
-  ArrowRight,
-  Zap,
-  Target,
+  RefreshCw,
+  Maximize2,
+  Minimize2,
+  Volume2,
+  Eye,
+  EyeOff,
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  Library,
+  LogOut,
 } from 'lucide-react';
 import Link from 'next/link';
-import { courses, learningStats, recommendedCourses, levelLabels, levelColors } from '@/lib/data';
-import { Progress } from '@/components/ui/progress';
+import { type TypingSentence, fingerColors } from '@/lib/data';
+import {
+  wordBankIndex,
+  bankToPracticeQueue,
+  findPracticeById,
+  findBankIdByItem,
+  isWordItemId,
+} from '@/lib/wordbanks';
+import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
+import {
+  getSelectedLessonId,
+  getErrorPracticeIds,
+  clearErrorPractice,
+  getErrorBook,
+  addError,
+  removeError,
+  recordSentenceCompletion,
+  getBankProgress,
+  setBankProgress,
+} from '@/lib/storage';
+import { VirtualKeyboard } from '@/components/typing/virtual-keyboard';
+import { ParticleBurst } from '@/components/typing/particle-burst';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
+
+type PracticeMode = 'whole' | 'split';
+
+// 无需手动输入的字符：空格与常用英文标点，打字时自动补全
+const PUNCTUATION = new Set(['.', ',', '!', '?', ';', ':', "'", '"', '-', '(', ')']);
+const isSkippable = (ch: string | undefined) => ch !== undefined && (ch === ' ' || PUNCTUATION.has(ch));
 
 export default function HomePage() {
-  const stats = learningStats;
-  const recommended = recommendedCourses
-    .map((id) => courses.find((c) => c.id === id))
-    .filter(Boolean);
+  const [sentenceIndex, setSentenceIndex] = useState(0);
+  const [typedText, setTypedText] = useState('');
+  const [mode, setMode] = useState<PracticeMode>('whole');
+  const [showImage, setShowImage] = useState(true);
+  const [dictationMode, setDictationMode] = useState(false); // 默写模式：隐藏英文，打对一个词展示一个词
+  const [showFingerGuide, setShowFingerGuide] = useState(true); // 空格键：切换手势图（默写模式下不隐藏）
+  const [hoveredWord, setHoveredWord] = useState<number | null>(null); // 鼠标悬停临时展示的单词的下标
+  const [isPaused, setIsPaused] = useState(false);
+  const [timer, setTimer] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [completed, setCompleted] = useState(false);
+  const [errors, setErrors] = useState(0);
+  const [wpm, setWpm] = useState(0);
+  const [accuracy, setAccuracy] = useState(100);
+  const [splitIndex, setSplitIndex] = useState(0);
+  // 输入错误时短暂显示的错误字符（自动消失，无需 Backspace）
+  const [errorFlash, setErrorFlash] = useState<{ char: string; id: number } | null>(null);
+  // 队列化练习源：挂载后按选课/错题模式重载
+  const [practiceQueue, setPracticeQueue] = useState<TypingSentence[]>([]);
+  const [queueLabel, setQueueLabel] = useState('');
+  const [isErrorMode, setIsErrorMode] = useState(false);
+  // 单词词库练习时为 true（隐藏拆句/整句切换）
+  const [isWordBank, setIsWordBank] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  // 单词完成后的粒子消散特效：爆发序号与爆发中心（取自单词区）
+  const [burstKey, setBurstKey] = useState(0);
+  const [burstCenter, setBurstCenter] = useState<{ x: number; y: number } | null>(null);
+  const burstRef = useRef<HTMLDivElement>(null);
 
-  return (
-    <div className="p-4 md:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 md:space-y-8">
-      {/* Welcome Hero */}
-      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-50 via-white to-emerald-50 p-6 md:p-8 border border-sky-100">
-        <div className="relative z-10">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-foreground">
-                Good morning, Explorer! 👋
-              </h1>
-              <p className="text-muted-foreground mt-2 text-sm md:text-base">
-                今天又是进步的一天，继续你的英语探索之旅吧！
-              </p>
-              <div className="flex items-center gap-4 mt-4">
-                <div className="flex items-center gap-1.5 text-sm">
-                  <Flame className="w-4 h-4 text-orange-500" />
-                  <span className="font-semibold text-foreground">{stats.streakDays}</span>
-                  <span className="text-muted-foreground">天连续学习</span>
-                </div>
-                <div className="flex items-center gap-1.5 text-sm">
-                  <Zap className="w-4 h-4 text-sky-500" />
-                  <span className="font-semibold text-foreground">{stats.wordsLearned}</span>
-                  <span className="text-muted-foreground">词汇已掌握</span>
-                </div>
-              </div>
-            </div>
-            <Link
-              href="/courses"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white rounded-xl font-medium text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sky-500/20 shrink-0"
-            >
-              <BookOpen className="w-4 h-4" />
-              继续学习
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-        {/* Decorative elements */}
-        <div className="absolute top-4 right-4 text-6xl opacity-10 select-none">🏝️</div>
-        <div className="absolute bottom-4 right-20 text-4xl opacity-10 select-none">🌊</div>
-      </section>
+  const sentence = practiceQueue[sentenceIndex];
+  const totalSentences = practiceQueue.length;
 
-      {/* Stats Cards */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-        <StatCard
-          icon={<Clock className="w-5 h-5 text-sky-500" />}
-          label="今日学习"
-          value={`${stats.todayStudyTime}分钟`}
-          trend="+15%"
-          bgColor="bg-sky-50"
-        />
-        <StatCard
-          icon={<BookOpen className="w-5 h-5 text-emerald-500" />}
-          label="已完成课程"
-          value={`${stats.coursesCompleted}门`}
-          trend="+1"
-          bgColor="bg-emerald-50"
-        />
-        <StatCard
-          icon={<Target className="w-5 h-5 text-orange-500" />}
-          label="掌握词汇"
-          value={`${stats.wordsLearned}个`}
-          trend="+28"
-          bgColor="bg-orange-50"
-        />
-        <StatCard
-          icon={<Trophy className="w-5 h-5 text-purple-500" />}
-          label="测试均分"
-          value={`${Math.round(stats.testScores.reduce((a, b) => a + b.score, 0) / stats.testScores.length)}分`}
-          trend="+5"
-          bgColor="bg-purple-50"
-        />
-      </section>
+  // 构建练习队列（挂载时与退出错题时调用）
+  const loadQueue = useCallback(() => {
+    const ids = getErrorPracticeIds();
+    let startIndex = 0;
+    if (ids.length > 0) {
+      const sentences = ids
+        .map((id) => findPracticeById(id))
+        .filter((s): s is TypingSentence => Boolean(s));
+      setPracticeQueue(sentences);
+      setQueueLabel('错题练习');
+      setIsErrorMode(true);
+      setIsWordBank(ids.length > 0 && ids.every((id) => isWordItemId(id)));
+      // 消费错题练习态
+      clearErrorPractice();
+    } else {
+      const sel = getSelectedLessonId();
+      const bank = wordBankIndex.find((b) => b.id === sel) ?? wordBankIndex[0];
+      const queue = bank ? bankToPracticeQueue(bank.id) ?? [] : [];
+      setPracticeQueue(queue);
+      setQueueLabel(bank?.titleCn ?? '');
+      setIsErrorMode(false);
+      setIsWordBank(Boolean(bank && bank.type === 'word'));
+      // 从上次学习进度继续（未练过则从 0 开始）
+      const saved = bank ? getBankProgress()[bank.id] : 0;
+      startIndex = Math.min(Math.max(saved ?? 0, 0), Math.max(queue.length - 1, 0));
+    }
+    setSentenceIndex(startIndex);
+    setTypedText('');
+    setCompleted(false);
+    setErrors(0);
+    setTimer(0);
+    setWpm(0);
+    setAccuracy(100);
+    setSplitIndex(0);
+  }, []);
 
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Weekly Study Chart */}
-        <section className="lg:col-span-2 bg-white rounded-2xl border border-border p-5 md:p-6">
-          <div className="flex items-center justify-between mb-5">
-            <div>
-              <h2 className="text-lg font-bold text-foreground">本周学习时长</h2>
-              <p className="text-sm text-muted-foreground mt-0.5">每日学习时间统计</p>
-            </div>
-            <div className="flex items-center gap-1 text-sm text-emerald-600 font-medium">
-              <TrendingUp className="w-4 h-4" />
-              <span>+12%</span>
-            </div>
-          </div>
-          <WeeklyChart data={stats.weeklyData} />
-        </section>
+  // 挂载时载入选课/错题模式
+  useEffect(() => {
+    loadQueue();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-        {/* Quick Actions */}
-        <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
-          <h2 className="text-lg font-bold text-foreground mb-4">快速开始</h2>
-          <div className="space-y-3">
-            <QuickAction
-              icon="📝"
-              title="每日单词"
-              desc="复习20个核心词汇"
-              href="/practice"
-              color="bg-sky-50 hover:bg-sky-100"
-            />
-            <QuickAction
-              icon="🎧"
-              title="听力训练"
-              desc="15分钟精听练习"
-              href="/practice"
-              color="bg-emerald-50 hover:bg-emerald-100"
-            />
-            <QuickAction
-              icon="💬"
-              title="口语打卡"
-              desc="完成今日口语任务"
-              href="/practice"
-              color="bg-orange-50 hover:bg-orange-100"
-            />
-            <QuickAction
-              icon="🏆"
-              title="挑战活动"
-              desc="7天词汇打卡进行中"
-              href="/community"
-              color="bg-purple-50 hover:bg-purple-100"
-            />
-            <QuickAction
-              icon="⌨️"
-              title="打字练习"
-              desc="探趣岛风格指法训练"
-              href="/typing"
-              color="bg-indigo-50 hover:bg-indigo-100"
-            />
-          </div>
-        </section>
-      </div>
+  // Timer
+  useEffect(() => {
+    if (isPaused || completed) return;
+    const interval = setInterval(() => {
+      setTimer((prev) => prev + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [isPaused, completed]);
 
-      {/* Recommended Courses */}
-      <section>
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-lg font-bold text-foreground">为你推荐</h2>
-            <p className="text-sm text-muted-foreground mt-0.5">根据你的学习历史精心推荐</p>
-          </div>
-          <Link
-            href="/courses"
-            className="text-sm text-sky-600 hover:text-sky-700 font-medium flex items-center gap-1"
-          >
-            查看全部 <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {recommended.map((course) => course && (
-            <CourseCard key={course.id} course={course} />
-          ))}
-        </div>
-      </section>
+  // 页面切走/失去焦点时暂停，返回后需按任意键继续（不做自动恢复）
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden && !isPaused) setIsPaused(true);
+    };
+    const handleBlur = () => {
+      if (!isPaused) setIsPaused(true);
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('blur', handleBlur);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('blur', handleBlur);
+    };
+  }, [isPaused]);
 
-      {/* Recent Activity */}
-      <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
-        <h2 className="text-lg font-bold text-foreground mb-4">最近学习</h2>
-        <div className="space-y-3">
-          {courses
-            .filter((c) => c.completedLessons > 0)
-            .slice(0, 3)
-            .map((course) => (
-              <div
-                key={course.id}
-                className="flex items-center gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors"
+  // WPM calculation
+  useEffect(() => {
+    if (timer > 0 && typedText.length > 0) {
+      const words = typedText.trim().split(/\s+/).length;
+      const minutes = timer / 60;
+      setWpm(Math.round(words / minutes));
+    }
+  }, [timer, typedText]);
+
+  // 错题自动记录 + 用户学习统计：完成一句时，出错则入错题本（零错且已在库则移除），
+  // 同时把本次练习的统计（用时/WPM/准确率/错误）持久化到 localStorage
+  useEffect(() => {
+    if (!completed || !sentence) return;
+    if (errors > 0) {
+      addError(sentence.id);
+    } else {
+      const inBook = getErrorBook().some((r) => r.id === sentence.id);
+      if (inBook) removeError(sentence.id);
+    }
+    const lessonId = findBankIdByItem(sentence.id);
+    recordSentenceCompletion({
+      sentenceId: sentence.id,
+      lessonId,
+      wpm,
+      accuracy,
+      errors,
+      duration: timer,
+    });
+    // 记录学习进度：非错题模式下，完成一句后从下一题继续（学完则回到开头）
+    if (!isErrorMode && lessonId) {
+      const next = sentenceIndex + 1;
+      setBankProgress(lessonId, next >= totalSentences ? 0 : next);
+    }
+    // 不弹出确认页：完成一句后触发粒子消散特效，短暂停顿后直接切换下一个单词（最后一题回到开头）
+    const el = burstRef.current;
+    if (el) {
+      const r = el.getBoundingClientRect();
+      setBurstCenter({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
+    }
+    setBurstKey((k) => k + 1);
+    const nextIdx = sentenceIndex < totalSentences - 1 ? sentenceIndex + 1 : 0;
+    const t = setTimeout(() => {
+      setSentenceIndex(nextIdx);
+      setTypedText('');
+      setCompleted(false);
+      setErrors(0);
+      setSplitIndex(0);
+      setTimer(0);
+      setWpm(0);
+      setAccuracy(100);
+    }, 500);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [completed]);
+
+  // 下一个需要输入的字符（跳过自动补全的空格与标点）
+  const getNextChar = useCallback(() => {
+    if (!sentence) return '';
+    const target = sentence.sentence;
+    let i = typedText.length;
+    while (i < target.length && isSkippable(target[i])) i++;
+    return target[i] || '';
+  }, [sentence, typedText]);
+
+  const nextChar = getNextChar();
+  // 键盘提示位（下一字符高亮）跟随手势图开关；默写模式不隐藏手势图
+  const keyHint = showFingerGuide ? nextChar : '';
+
+  const handleReadAloud = useCallback(() => {
+    if (sentence && 'speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(sentence.sentence);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.8;
+      speechSynthesis.speak(utterance);
+    }
+  }, [sentence]);
+
+  // Handle key press
+  const handleKeyPress = useCallback(
+    (key: string) => {
+      if (completed || isPaused) return;
+      if (!sentence) return;
+
+      const target = sentence.sentence;
+
+      if (key === 'Backspace') {
+        setTypedText((prev) => prev.slice(0, -1));
+        playKeyClick();
+        return;
+      }
+
+      if (key === 'Space' || key === ' ') {
+        // 空格自动跳过，忽略显式空格输入
+        return;
+      }
+
+      if (key === 'Enter') {
+        key = '\n';
+      }
+
+      if (key.length === 1) {
+        // 自动补全当前位置的空格与标点（如句尾的 . 无需手动输入）
+        let newTyped = typedText;
+        while (isSkippable(target[newTyped.length])) {
+          newTyped += target[newTyped.length];
+        }
+
+        const expected = target[newTyped.length];
+
+        if (key === expected) {
+          newTyped += key;
+
+          // 输入后继续补全空格与标点（可能直接补完整句）
+          while (isSkippable(target[newTyped.length])) {
+            newTyped += target[newTyped.length];
+          }
+
+          setTypedText(newTyped);
+          playKeyClick();
+
+          if (newTyped === target) {
+            setCompleted(true);
+            const totalChars = target.length;
+            const correctChars = newTyped.split('').filter((c, i) => c === target[i]).length;
+            setAccuracy(Math.round((correctChars / totalChars) * 100));
+          }
+        } else {
+          // 错误输入不写入进度：播放警告音并重新朗读单词，短暂显示错误字符后自动消失
+          setErrors((prev) => prev + 1);
+          playErrorBuzz();
+          handleReadAloud();
+          const id = Date.now();
+          setErrorFlash({ char: key, id });
+          window.setTimeout(() => {
+            setErrorFlash((prev) => (prev?.id === id ? null : prev));
+          }, 350);
+        }
+      }
+    },
+    [completed, isPaused, sentence, typedText, handleReadAloud]
+  );
+
+  const handleNextSentence = useCallback(() => {
+    if (sentenceIndex < totalSentences - 1) {
+      setSentenceIndex((prev) => prev + 1);
+      setTypedText('');
+      setCompleted(false);
+      setErrors(0);
+      setSplitIndex(0);
+    }
+  }, [sentenceIndex, totalSentences]);
+
+  const handlePrevSentence = useCallback(() => {
+    if (sentenceIndex > 0) {
+      setSentenceIndex((prev) => prev - 1);
+      setTypedText('');
+      setCompleted(false);
+      setErrors(0);
+      setSplitIndex(0);
+    }
+  }, [sentenceIndex]);
+
+  const handleReset = useCallback(() => {
+    setTypedText('');
+    setCompleted(false);
+    setErrors(0);
+    setTimer(0);
+    setWpm(0);
+    setAccuracy(100);
+    setSplitIndex(0);
+  }, []);
+
+  const handleExitErrorMode = useCallback(() => {
+    clearErrorPractice();
+    setIsErrorMode(false);
+    loadQueue();
+  }, [loadQueue]);
+
+  // 单词/句子出现（刚切换/打开）时自动朗读
+  useEffect(() => {
+    if (!sentence) return;
+    const t = setTimeout(() => {
+      handleReadAloud();
+    }, 50);
+    return () => clearTimeout(t);
+  }, [sentence, sentenceIndex, handleReadAloud]);
+
+  // 切换句子时重置悬停展示
+  useEffect(() => {
+    setHoveredWord(null);
+  }, [sentenceIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+
+      // 暂停状态下按任意键恢复练习（该键仅用于恢复，不作为输入）
+      if (isPaused) {
+        e.preventDefault();
+        setIsPaused(false);
+        return;
+      }
+
+      if (e.key === 'ArrowLeft' && e.shiftKey) {
+        handlePrevSentence();
+        return;
+      }
+      if (e.key === 'ArrowRight' && e.shiftKey) {
+        handleNextSentence();
+        return;
+      }
+      if (e.key === ' ') {
+        // 空格：切换手势图（含下一字符高亮），不影响英文单词与默写模式
+        e.preventDefault();
+        setShowFingerGuide((prev) => !prev);
+        return;
+      }
+      if (e.key === 'a' && e.ctrlKey) {
+        e.preventDefault();
+        handleReadAloud();
+        return;
+      }
+      if (e.key === ';' && e.ctrlKey) {
+        e.preventDefault();
+        handleReset();
+        return;
+      }
+
+      handleKeyPress(e.key);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleKeyPress, handleNextSentence, handlePrevSentence, handleReset, handleReadAloud, isPaused, completed, sentenceIndex, totalSentences]);
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      containerRef.current?.requestFullscreen();
+      setIsFullscreen(true);
+    } else {
+      document.exitFullscreen();
+      setIsFullscreen(false);
+    }
+  };
+
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
+  // Render sentence with typing progress
+  const renderSentence = () => {
+    if (!sentence) return null;
+    const target = sentence.sentence;
+
+    // 默写模式：按空格拆词，每个已输入正确的字母逐个显示，未输入字母用等宽占位符隐藏；悬停临时展示整词
+    if (dictationMode) {
+      let cursor = 0;
+      const words = target.split(' ').map((text) => {
+        const wStart = cursor;
+        cursor += text.length;
+        const end = cursor;
+        cursor += 1; // 跳过空格
+        return { text, wStart, end };
+      });
+      return (
+        <div className="flex flex-wrap items-baseline justify-center gap-x-1 gap-y-1">
+          {words.map((w, idx) => {
+            const isHover = hoveredWord === idx;
+            return (
+              <span
+                key={idx}
+                className="text-3xl md:text-5xl font-mono font-bold"
+                onMouseEnter={() => setHoveredWord(idx)}
+                onMouseLeave={() => setHoveredWord((cur) => (cur === idx ? null : cur))}
+                style={{ cursor: 'pointer' }}
               >
-                <div className="text-2xl">{course.icon}</div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-sm font-semibold text-foreground truncate">
-                    {course.title}
-                  </h3>
-                  <p className="text-xs text-muted-foreground mt-0.5">
-                    已完成 {course.completedLessons}/{course.lessons} 课时
-                  </p>
-                  <Progress
-                    value={(course.completedLessons / course.lessons) * 100}
-                    className="h-1.5 mt-2"
-                  />
-                </div>
-                <Badge className={levelColors[course.level]} variant="secondary">
-                  {levelLabels[course.level]}
-                </Badge>
-              </div>
-            ))}
+                {w.text.split('').map((ch, ci) => {
+                  const gi = w.wStart + ci; // 该字母在整句中的下标
+                  // 悬停展示整词
+                  if (isHover) {
+                    return (
+                      <span key={ci} className="text-foreground">
+                        {ch}
+                      </span>
+                    );
+                  }
+                  // 已输入：正确绿/错误红
+                  if (gi < typedText.length) {
+                    const correct = typedText[gi] === ch;
+                    return (
+                      <span key={ci} className={correct ? 'text-foreground' : 'text-red-500'}>
+                        {ch}
+                      </span>
+                    );
+                  }
+                  // 未输入：隐藏占位符
+                  return (
+                    <span key={ci} className="text-slate-400">
+                      {'\u2581'}
+                    </span>
+                  );
+                })}
+              </span>
+            );
+          })}
         </div>
-      </section>
-    </div>
-  );
-}
+      );
+    }
 
-function StatCard({
-  icon,
-  label,
-  value,
-  trend,
-  bgColor,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-  trend: string;
-  bgColor: string;
-}) {
-  return (
-    <div className="bg-white rounded-2xl border border-border p-4 hover:shadow-sm transition-shadow">
-      <div className={`inline-flex p-2 rounded-xl ${bgColor} mb-3`}>{icon}</div>
-      <p className="text-xs text-muted-foreground">{label}</p>
-      <div className="flex items-end justify-between mt-1">
-        <p className="text-lg md:text-xl font-bold text-foreground">{value}</p>
-        <span className="text-[10px] text-emerald-600 font-medium">{trend}</span>
-      </div>
-    </div>
-  );
-}
+    // 正常模式：逐字符展示输入进度
+    return (
+      <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1">
+        {target.split('').map((char, index) => {
+          const isSpace = char === ' ';
+          const isErrorFlash = index === typedText.length && !!errorFlash;
+          let charClass = 'text-slate-300';
+          if (index < typedText.length) {
+            charClass = typedText[index] === char ? 'text-foreground' : 'text-red-500';
+          } else if (index === typedText.length) {
+            charClass = errorFlash ? 'text-red-500' : 'text-foreground';
+          }
+          const displayChar = isErrorFlash
+            ? errorFlash.char
+            : isSpace
+              ? '\u00A0'
+              : char;
 
-function WeeklyChart({ data }: { data: { day: string; minutes: number }[] }) {
-  const maxMinutes = Math.max(...data.map((d) => d.minutes));
-
-  return (
-    <div className="flex items-end gap-2 md:gap-3 h-40">
-      {data.map((item, index) => {
-        const height = (item.minutes / maxMinutes) * 100;
-        const isToday = index === data.length - 1;
-        return (
-          <div key={item.day} className="flex-1 flex flex-col items-center gap-2">
-            <span className="text-[10px] text-muted-foreground font-medium">
-              {item.minutes}m
+          return (
+            <span
+              key={index}
+              className={cn(
+                'text-3xl md:text-5xl font-mono font-bold transition-colors duration-100 relative',
+                charClass
+              )}
+            >
+              {index === typedText.length && !completed && (
+                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-sky-500 animate-pulse" />
+              )}
+              {displayChar}
             </span>
-            <div className="w-full relative rounded-t-lg overflow-hidden bg-slate-100" style={{ height: '120px' }}>
+          );
+        })}
+      </div>
+    );
+  };
+
+  // Render split mode sentence
+  const renderSplitSentence = () => {
+    if (!sentence) return null;
+
+    // 按输入进度计算每个单词的起始下标（空格也计入 typedText）
+    let cursor = 0;
+    const tokenStarts = sentence.words.map((w) => {
+      const s = cursor;
+      cursor += w.text.length;
+      cursor += 1; // 跳过单词之间的空格
+      return s;
+    });
+    return (
+      <div className="flex flex-wrap items-baseline justify-center gap-x-3 gap-y-2">
+        {sentence.words.map((word, index) => {
+          const wordText = word.text;
+          const isCurrentWord = index === splitIndex;
+          const color = fingerColors[word.finger];
+          const isHover = hoveredWord === index;
+          return (
+            <div key={index} className="flex flex-col items-center">
+              <span
+                className={cn(
+                  'text-2xl md:text-4xl font-mono font-bold transition-all duration-200',
+                  isCurrentWord && !dictationMode ? 'text-foreground scale-110' : 'text-slate-300'
+                )}
+                style={
+                  dictationMode
+                    ? { cursor: 'pointer' }
+                    : isCurrentWord
+                      ? { textShadow: `0 0 20px ${color}40` }
+                      : {}
+                }
+                onMouseEnter={() => setHoveredWord(index)}
+                onMouseLeave={() => setHoveredWord((cur) => (cur === index ? null : cur))}
+              >
+                {dictationMode
+                  ? wordText.split('').map((ch, ci) => {
+                      const gi = tokenStarts[index] + ci; // 该字母在整句中的下标
+                      // 悬停展示整词
+                      if (isHover) {
+                        return (
+                          <span key={ci} className="text-foreground">
+                            {ch}
+                          </span>
+                        );
+                      }
+                      // 已输入：正确/错误着色；未输入：隐藏占位符
+                      if (gi < typedText.length) {
+                        const correct = typedText[gi] === ch;
+                        return (
+                          <span key={ci} className={correct ? 'text-foreground' : 'text-red-500'}>
+                            {ch}
+                          </span>
+                        );
+                      }
+                      return (
+                        <span key={ci} className="text-slate-400">
+                          {'\u2581'}
+                        </span>
+                      );
+                    })
+                  : wordText}
+              </span>
               <div
-                className={`absolute bottom-0 w-full rounded-t-lg transition-all duration-700 ${
-                  isToday
-                    ? 'bg-gradient-to-t from-sky-500 to-sky-400'
-                    : 'bg-gradient-to-t from-sky-200 to-sky-100'
-                }`}
-                style={{ height: `${height}%` }}
+                className="w-6 h-0.5 rounded-full mt-1"
+                style={{ backgroundColor: isCurrentWord && !dictationMode ? color : 'transparent' }}
               />
             </div>
-            <span className={`text-[11px] font-medium ${isToday ? 'text-sky-600' : 'text-muted-foreground'}`}>
-              {item.day}
+          );
+        })}
+      </div>
+    );
+  };
+
+  return (
+    <div ref={containerRef} className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 flex flex-col">
+      {/* Top Bar */}
+      <div className="flex items-center justify-between px-3 md:px-4 py-2 bg-white border-b border-border">
+        <div className="flex items-center gap-3">
+          <Link
+            href="/gallery"
+            className="flex items-center gap-1.5 text-sm text-sky-600 hover:text-sky-700 font-medium transition-colors"
+          >
+            <Library className="w-4 h-4" />
+            词库
+          </Link>
+          <div className="hidden sm:block h-4 w-px bg-border" />
+          <div className="hidden sm:flex items-center gap-2 text-sm">
+            <span className="font-medium text-foreground">{queueLabel}</span>
+            <span className="text-muted-foreground">
+              ({sentenceIndex + 1}/{totalSentences})
             </span>
           </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function QuickAction({
-  icon,
-  title,
-  desc,
-  href,
-  color,
-}: {
-  icon: string;
-  title: string;
-  desc: string;
-  href: string;
-  color: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className={`flex items-center gap-3 p-3 rounded-xl ${color} transition-all hover:-translate-y-0.5`}
-    >
-      <span className="text-xl">{icon}</span>
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-foreground">{title}</p>
-        <p className="text-xs text-muted-foreground truncate">{desc}</p>
-      </div>
-      <ArrowRight className="w-4 h-4 text-muted-foreground shrink-0" />
-    </Link>
-  );
-}
-
-function CourseCard({
-  course,
-}: {
-  course: (typeof courses)[0];
-}) {
-  const progress = (course.completedLessons / course.lessons) * 100;
-
-  return (
-    <Link
-      href={`/courses/${course.id}`}
-      className="group bg-white rounded-2xl border border-border overflow-hidden hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-    >
-      <div className="h-32 bg-gradient-to-br from-sky-50 to-emerald-50 flex items-center justify-center relative">
-        <span className="text-5xl group-hover:scale-110 transition-transform duration-300">
-          {course.icon}
-        </span>
-        <Badge
-          className={`absolute top-3 right-3 ${levelColors[course.level]}`}
-          variant="secondary"
-        >
-          {levelLabels[course.level]}
-        </Badge>
-      </div>
-      <div className="p-4">
-        <h3 className="font-bold text-foreground text-sm group-hover:text-sky-600 transition-colors">
-          {course.title}
-        </h3>
-        <p className="text-xs text-muted-foreground mt-0.5">{course.titleEn}</p>
-        <p className="text-xs text-muted-foreground mt-2 line-clamp-2">
-          {course.description}
-        </p>
-        <div className="flex items-center gap-3 mt-3 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1">
-            <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-            {course.rating}
-          </span>
-          <span>{course.lessons}课时</span>
-          <span>{course.students}人在学</span>
+          <div className="sm:hidden text-sm font-medium text-foreground">
+            {sentenceIndex + 1}/{totalSentences}
+          </div>
+          {isErrorMode && (
+            <Badge className="bg-rose-100 text-rose-700 ml-1">错题练习</Badge>
+          )}
         </div>
-        {progress > 0 && (
-          <div className="mt-3">
-            <div className="flex items-center justify-between text-[10px] text-muted-foreground mb-1">
-              <span>学习进度</span>
-              <span>{Math.round(progress)}%</span>
-            </div>
-            <Progress value={progress} className="h-1.5" />
+        <div className="flex items-center gap-1 md:gap-2">
+          {isErrorMode && (
+            <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleExitErrorMode}>
+              <LogOut className="w-3.5 h-3.5 mr-1" />
+              <span className="hidden md:inline">退出错题</span>
+            </Button>
+          )}
+          <Button
+            variant={dictationMode ? 'default' : 'ghost'}
+            size="sm"
+            className={cn('text-xs md:text-sm', dictationMode && 'bg-sky-500 text-white')}
+            onClick={() => setDictationMode((prev) => !prev)}
+          >
+            {dictationMode ? '关闭默写模式' : '开启默写模式'}
+          </Button>
+          <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleReset}>
+            <RefreshCw className="w-3.5 h-3.5 mr-1" />
+            <span className="hidden md:inline">重置进度</span>
+          </Button>
+          <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={toggleFullscreen}>
+            {isFullscreen ? (
+              <Minimize2 className="w-3.5 h-3.5 mr-1" />
+            ) : (
+              <Maximize2 className="w-3.5 h-3.5 mr-1" />
+            )}
+            <span className="hidden md:inline">全屏</span>
+          </Button>
+        </div>
+      </div>
+
+      {/* Secondary Bar */}
+      <div className="flex items-center gap-3 px-3 md:px-4 py-2 bg-white/80 border-b border-border">
+        <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+          <Play className="w-3.5 h-3.5" />
+          {formatTime(timer)}
+        </div>
+        {!isWordBank && (
+          <div className="flex gap-1">
+            <button
+              onClick={() => setMode('split')}
+              className={cn(
+                'px-3 py-1 rounded-lg text-xs font-medium transition-colors',
+                mode === 'split'
+                  ? 'bg-sky-500 text-white'
+                  : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
+              )}
+            >
+              拆句练习
+            </button>
+            <button
+              onClick={() => setMode('whole')}
+              className={cn(
+                'px-3 py-1 rounded-lg text-xs font-medium transition-colors',
+                mode === 'whole'
+                  ? 'bg-sky-500 text-white'
+                  : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
+              )}
+            >
+              整句练习
+            </button>
           </div>
         )}
+        <button
+          onClick={() => setShowImage(!showImage)}
+          className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-muted-foreground hover:bg-slate-200 transition-colors"
+        >
+          {showImage ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
+          显示图片
+        </button>
       </div>
-    </Link>
+
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-6 md:gap-8">
+        {/* 单词区（音标/词性 + 单词展示）：暂停时整块遮挡，尺寸与内容一致避免页面跳动 */}
+        <div ref={burstRef} className="relative w-full max-w-3xl flex flex-col items-center gap-3">
+          {/* 单词信息：音标与词性 */}
+          {sentence?.phonetics && sentence.phonetics.length > 0 && (
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              {sentence.phonetics.map((p, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-2 bg-white/80 border border-border rounded-full px-3 py-1 shadow-sm"
+                >
+                  <span className="font-mono text-sm text-slate-700">{p.phonetic}</span>
+                  <span className="text-xs font-medium text-sky-600">{p.pos}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Sentence Display */}
+          <div className="text-center space-y-3 w-full">
+            {mode === 'whole' ? renderSentence() : renderSplitSentence()}
+
+            {/* Grammar annotation */}
+            {sentence && (
+              <p className="text-sm text-muted-foreground">{sentence.grammar}</p>
+            )}
+
+            {/* Translation */}
+            {sentence && (
+              <p className="text-base md:text-lg text-foreground font-medium">{sentence.translation}</p>
+            )}
+          </div>
+
+          {/* 暂停时遮挡整个单词区（含音标/词性），提示按任意键继续 */}
+          {isPaused && (
+            <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-2 backdrop-blur-md bg-white/50 rounded-xl">
+              <p className="text-lg md:text-xl font-semibold text-slate-700">按任意键继续</p>
+              <p className="text-xs text-slate-500">页面已暂停</p>
+            </div>
+          )}
+        </div>
+
+        {/* Virtual Keyboard */}
+        <div className="w-full max-w-3xl">
+          <VirtualKeyboard
+            nextKey={keyHint}
+            typedText={typedText}
+            targetText={sentence?.sentence || ''}
+            onKeyPress={handleKeyPress}
+            showFingerGuide={showFingerGuide}
+          />
+        </div>
+
+        {/* Progress Bar */}
+        <div className="w-full max-w-3xl">
+          <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-sky-400 to-sky-500 rounded-full transition-all duration-300"
+              style={{
+                width: sentence
+                  ? `${(typedText.length / sentence.sentence.length) * 100}%`
+                  : '0%',
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Bottom Controls */}
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handlePrevSentence}
+            disabled={sentenceIndex === 0}
+            className="text-xs"
+          >
+            <ChevronLeft className="w-3.5 h-3.5 mr-1" />
+            上一题
+          </Button>
+          <Button variant="outline" size="sm" onClick={handleReadAloud} className="text-xs">
+            <Volume2 className="w-3.5 h-3.5 mr-1" />
+            Ctrl A 朗读
+          </Button>
+          <Badge variant="secondary" className="text-xs">
+            Shift ←→ 切题
+          </Badge>
+          <Badge variant="secondary" className="text-xs">
+            空格 {showFingerGuide ? '隐藏手势' : '显示手势'}
+          </Badge>
+          <Badge variant="secondary" className="text-xs">
+            Ctrl ; 再来一次
+          </Badge>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleNextSentence}
+            disabled={sentenceIndex >= totalSentences - 1}
+            className="text-xs"
+          >
+            下一题
+            <ChevronRight className="w-3.5 h-3.5 ml-1" />
+          </Button>
+        </div>
+
+        {/* Stats */}
+        <div className="flex items-center gap-4 text-xs text-muted-foreground">
+          <span>速度: <strong className="text-foreground">{wpm}</strong> WPM</span>
+          <span>准确率: <strong className="text-foreground">{accuracy}%</strong></span>
+          <span>错误: <strong className="text-red-500">{errors}</strong></span>
+        </div>
+      </div>
+
+      {/* 单词完成后的粒子消散特效（覆盖全屏、不拦截交互） */}
+      <ParticleBurst burstKey={burstKey} center={burstCenter} />
+    </div>
   );
 }

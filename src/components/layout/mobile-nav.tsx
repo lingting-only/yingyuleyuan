@@ -3,13 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  BookOpen,
   GraduationCap,
   BarChart3,
-  Users,
-  Home,
-  Dumbbell,
   Keyboard,
+  Library,
+  BookX,
   Menu,
   X,
   Bell,
@@ -18,13 +16,12 @@ import {
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
+// 4 项导航（与 sidebar 一致，label 简短以适配底部 Tab）
 const navItems = [
-  { href: '/', label: '首页', icon: Home },
-  { href: '/courses', label: '课程', icon: BookOpen },
-  { href: '/practice', label: '练习', icon: Dumbbell },
-  { href: '/typing', label: '打字', icon: Keyboard },
+  { href: '/', label: '打字', icon: Keyboard },
+  { href: '/gallery', label: '词库', icon: Library },
+  { href: '/error-book', label: '错题', icon: BookX },
   { href: '/progress', label: '进度', icon: BarChart3 },
-  { href: '/community', label: '社区', icon: Users },
 ];
 
 export function MobileNav() {

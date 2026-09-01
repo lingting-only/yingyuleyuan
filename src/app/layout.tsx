@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import { Sidebar } from '@/components/layout/sidebar';
 import { MobileNav } from '@/components/layout/mobile-nav';
-import { Header } from '@/components/layout/header';
+// import { Header } from '@/components/layout/header';
 import './globals.css';
 
 const nunito = Nunito({
@@ -31,7 +31,7 @@ export default function RootLayout({
         <div className="flex h-screen overflow-hidden">
           <Sidebar />
           <div className="flex-1 flex flex-col overflow-hidden">
-            <Header />
+            {/* <Header /> */}
             <MobileNav />
             <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
               {children}

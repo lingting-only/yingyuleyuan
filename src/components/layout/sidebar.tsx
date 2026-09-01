@@ -3,26 +3,23 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
-  BookOpen,
   GraduationCap,
   BarChart3,
-  Users,
-  Home,
-  Dumbbell,
   Keyboard,
+  Library,
+  BookX,
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
+// 4 项导航：打字练习 / 词库 / 错题本 / 学习进度
 const navItems = [
-  { href: '/', label: '学习首页', labelEn: 'Home', icon: Home },
-  { href: '/courses', label: '课程中心', labelEn: 'Courses', icon: BookOpen },
-  { href: '/practice', label: '互动练习', labelEn: 'Practice', icon: Dumbbell },
-  { href: '/typing', label: '打字练习', labelEn: 'Typing', icon: Keyboard },
+  { href: '/', label: '打字练习', labelEn: 'Typing', icon: Keyboard },
+  { href: '/gallery', label: '词库', labelEn: 'Gallery', icon: Library },
+  { href: '/error-book', label: '错题本', labelEn: 'Error Book', icon: BookX },
   { href: '/progress', label: '学习进度', labelEn: 'Progress', icon: BarChart3 },
-  { href: '/community', label: '学习社区', labelEn: 'Community', icon: Users },
 ];
 
 export function Sidebar() {
