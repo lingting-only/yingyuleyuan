@@ -1,0 +1,64 @@
+{
+  "id": "t2",
+  "sentences": [
+    {
+      "id": "t2-1",
+      "sentence": "I read a book.",
+      "translation": "我读一本书。",
+      "grammar": "/主语/+/谓语/+/宾语/",
+      "grammarRole": "谓语（及物动词）",
+      "phonetics": [
+        { "text": "I", "phonetic": "/aɪ/", "pos": "代词" },
+        { "text": "read", "phonetic": "/riːd/", "pos": "动词" },
+        { "text": "a", "phonetic": "/ə/", "pos": "冠词" },
+        { "text": "book", "phonetic": "/bʊk/", "pos": "名词" }
+      ],
+      "words": [
+        { "text": "I", "finger": "left-pinky", "grammar": "主语" },
+        { "text": "read", "finger": "left-index", "grammar": "谓语" },
+        { "text": "a", "finger": "left-pinky", "grammar": "冠词" },
+        { "text": "book.", "finger": "left-index", "grammar": "宾语" }
+      ]
+    },
+    {
+      "id": "t2-2",
+      "sentence": "I write my name.",
+      "translation": "我写我的名字。",
+      "grammar": "/主语/+/谓语/+/宾语/",
+      "grammarRole": "谓语（及物动词）",
+      "phonetics": [
+        { "text": "I", "phonetic": "/aɪ/", "pos": "代词" },
+        { "text": "write", "phonetic": "/raɪt/", "pos": "动词" },
+        { "text": "my", "phonetic": "/maɪ/", "pos": "代词" },
+        { "text": "name", "phonetic": "/neɪm/", "pos": "名词" }
+      ],
+      "words": [
+        { "text": "I", "finger": "left-pinky", "grammar": "主语" },
+        { "text": "write", "finger": "right-index", "grammar": "谓语" },
+        { "text": "my", "finger": "right-middle", "grammar": "定语" },
+        { "text": "name.", "finger": "left-middle", "grammar": "宾语" }
+      ]
+    },
+    {
+      "id": "t2-3",
+      "sentence": "I listen to the teacher.",
+      "translation": "我听老师讲课。",
+      "grammar": "/主语/+/谓语/+/介词短语/",
+      "grammarRole": "谓语（不及物动词）",
+      "phonetics": [
+        { "text": "I", "phonetic": "/aɪ/", "pos": "代词" },
+        { "text": "listen", "phonetic": "/ˈlɪsn/", "pos": "动词" },
+        { "text": "to", "phonetic": "/tuː/", "pos": "介词" },
+        { "text": "the", "phonetic": "/ðə/", "pos": "冠词" },
+        { "text": "teacher", "phonetic": "/ˈtiːtʃər/", "pos": "名词" }
+      ],
+      "words": [
+        { "text": "I", "finger": "left-pinky", "grammar": "主语" },
+        { "text": "listen", "finger": "left-index", "grammar": "谓语" },
+        { "text": "to", "finger": "right-index", "grammar": "介词" },
+        { "text": "the", "finger": "left-middle", "grammar": "冠词" },
+        { "text": "teacher.", "finger": "right-ring", "grammar": "宾语" }
+      ]
+    }
+  ]
+}

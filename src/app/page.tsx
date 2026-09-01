@@ -22,7 +22,7 @@ import {
   findPracticeById,
   findBankIdByItem,
   isWordItemId,
-} from '@/lib/wordbanks';
+} from '@/lib/wordbank';
 import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
 import {
   getSelectedLessonId,

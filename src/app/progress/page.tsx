@@ -16,7 +16,7 @@ import {
   BarChart3,
   Play,
 } from 'lucide-react';
-import { wordBankIndex } from '@/lib/wordbanks';
+import { wordBankIndex } from '@/lib/wordbank';
 import { getUserStats, formatWeekday, type UserStats } from '@/lib/storage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
