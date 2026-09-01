@@ -95,12 +95,12 @@ const keyToHandSvg: Record<string, { left: string; right: string }> = {
   'x': { left: '/typing-hands/KeyX.svg', right: '/typing-hands/Right.svg' },
   'c': { left: '/typing-hands/KeyC.svg', right: '/typing-hands/Right.svg' },
   'v': { left: '/typing-hands/KeyV.svg', right: '/typing-hands/Right.svg' },
-  'b': { left: '/typing-hands/keyB.svg', right: '/typing-hands/Right.svg' },
+  'b': { left: '/typing-hands/KeyB.svg', right: '/typing-hands/Right.svg' },
 
   // ========== 右手按键 ==========
   'h': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyH.svg' },
   'j': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyJ.svg' },
-  'k': { left: '/typing-hands/Left.svg', right: '/typing-hands/keyK.svg' },
+  'k': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyK.svg' },
   'l': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyL.svg' },
   'y': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyY.svg' },
   'u': { left: '/typing-hands/Left.svg', right: '/typing-hands/KeyU.svg' },
