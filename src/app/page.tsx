@@ -21,6 +21,7 @@ import {
   bankToPracticeQueue,
   findPracticeById,
   findBankIdByItem,
+  initWordBanks,
 } from '@/lib/wordbank';
 import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
 import {
@@ -113,9 +114,9 @@ export default function HomePage() {
     setSplitIndex(0);
   }, []);
 
-  // 挂载时载入选课/错题模式
+  // 挂载时先加载词库内容（public/wordbanks/ 静态资源），再载入选课/错题模式
   useEffect(() => {
-    loadQueue();
+    initWordBanks().then(() => loadQueue());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -16,7 +16,7 @@ import {
   BarChart3,
   Play,
 } from 'lucide-react';
-import { wordBankIndex } from '@/lib/wordbank';
+import { initWordBanks, wordBankIndex } from '@/lib/wordbank';
 import { getUserStats, formatWeekday, type UserStats } from '@/lib/storage';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -35,10 +35,13 @@ const ZERO_STATS: UserStats = {
 
 export default function ProgressPage() {
   const [statsState, setStatsState] = useState<UserStats | null>(null);
+  // 词库索引：挂载后异步加载（成就解锁与课程完成度依赖 count）
+  const [banks, setBanks] = useState(wordBankIndex);
 
-  // 挂载后读取 localStorage 真实数据
+  // 挂载后读取 localStorage 真实数据 + 加载词库索引
   useEffect(() => {
     setStatsState(getUserStats());
+    initWordBanks().then(() => setBanks([...wordBankIndex]));
   }, []);
 
   const stats = statsState ?? ZERO_STATS;
@@ -262,7 +265,7 @@ export default function ProgressPage() {
       <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
         <h2 className="text-base font-bold text-foreground mb-4">打字课程</h2>
         <div className="space-y-2">
-          {wordBankIndex.map((bank) => {
+          {banks.map((bank) => {
             const done = stats.completedByLesson[bank.id]?.length ?? 0;
             const unit = bank.type === 'word' ? '词' : '句';
             return (

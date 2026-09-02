@@ -19,7 +19,7 @@ import {
   AlertTriangle,
   CheckCircle2,
 } from 'lucide-react';
-import { findPracticeById } from '@/lib/wordbank';
+import { findPracticeById, initWordBanks } from '@/lib/wordbank';
 import {
   getErrorBook,
   removeError,
@@ -49,8 +49,11 @@ export default function ErrorBookPage() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    setRecords(getErrorBook());
-    setLoaded(true);
+    // 词库内容改为运行时 fetch，需先加载完成才能反查错题详情
+    initWordBanks().finally(() => {
+      setRecords(getErrorBook());
+      setLoaded(true);
+    });
   }, []);
 
   // 按 lastWrongAt 倒序，并合并句子详情
@@ -59,7 +62,7 @@ export default function ErrorBookPage() {
       .sort((a, b) => b.lastWrongAt - a.lastWrongAt)
       .map((r) => ({ record: r, sentence: findPracticeById(r.id) }))
       .filter((x) => x.sentence); // 仅展示仍可找到详情的句子
-  }, [records]);
+  }, [records, loaded]);
 
   // 本地刷新
   const refresh = useCallback(() => setRecords(getErrorBook()), []);

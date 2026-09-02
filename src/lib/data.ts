@@ -1,5 +1,5 @@
 // 英语学习应用的数据与类型定义
-// 仅保留打字练习的类型定义与手指映射（词库/课程内容已迁入 src/lib/wordbanks/*.json）
+// 仅保留打字练习的类型定义与手指映射（词库清单在 src/lib/wordbanks/index.json，内容在 public/wordbanks/*.json）
 
 // ========== 打字练习类型 ==========
 

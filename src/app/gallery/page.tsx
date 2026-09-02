@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, BookOpen, Play, CheckCircle2, MessageSquare, Library } from 'lucide-react';
-import { wordBankIndex, type WordBankMeta } from '@/lib/wordbank';
+import { initWordBanks, wordBankIndex, type WordBankMeta } from '@/lib/wordbank';
 import { getSelectedLessonId, setSelectedLessonId } from '@/lib/storage';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -43,9 +43,12 @@ export default function GalleryPage() {
   const router = useRouter();
   // 当前选中课程 id（SSR 安全：挂载后读取）
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  // 词库索引：挂载后异步加载（内容来自 public/wordbanks/ 静态资源）
+  const [banks, setBanks] = useState<WordBankMeta[]>([]);
 
   useEffect(() => {
     setSelectedId(getSelectedLessonId());
+    initWordBanks().then(() => setBanks([...wordBankIndex]));
   }, []);
 
   // 选课并回到首页练习
@@ -54,8 +57,8 @@ export default function GalleryPage() {
     router.push('/');
   };
 
-  const wordBanks = wordBankIndex.filter((b) => b.type === 'word');
-  const sentenceBanks = wordBankIndex.filter((b) => b.type === 'sentence');
+  const wordBanks = banks.filter((b) => b.type === 'word');
+  const sentenceBanks = banks.filter((b) => b.type === 'sentence');
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-12">
@@ -117,7 +120,7 @@ export default function GalleryPage() {
       </div>
 
       {/* 空数据兜底 */}
-      {wordBankIndex.length === 0 && (
+      {banks.length === 0 && (
         <div className="rounded-2xl border border-dashed bg-slate-50 p-12 text-center">
           <p className="text-muted-foreground">暂无课程，请稍后再来</p>
         </div>

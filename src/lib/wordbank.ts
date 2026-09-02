@@ -1,15 +1,9 @@
 // 词库加载器：统一入口，供 gallery / 首页 / 错题本 / 进度页共享
-// index.json 为词库/课程列表索引，各词库内容独立 JSON 保存
-// 注意：文件名用单数 wordbank，避免与同名的 wordbanks/ XML数据目录发生解析歧义（Vercel/webpack 报 Module not found）
+// index.json 为词库清单（打包内置），各词库内容 JSON 位于 public/wordbanks/ 下，运行时按需 fetch
+// 新增词库：在 public/wordbanks/ 放 <id>.json（含 words[] 或 sentences[]）+ 在 index.json 登记一条即可
+// 注意：文件名用单数 wordbank，避免与同名的 wordbanks/ 数据目录发生解析歧义
 
 import indexJson from './wordbanks/index.json';
-import pep3 from './wordbanks/pep-3.json';
-import pep4 from './wordbanks/pep-4.json';
-import pep5 from './wordbanks/pep-5.json';
-import pep6 from './wordbanks/pep-6.json';
-import t1 from './wordbanks/t1.json';
-import t2 from './wordbanks/t2.json';
-import t3 from './wordbanks/t3.json';
 import type { FingerType, TypingSentence } from './data';
 
 // 单词条目（PEP 单词词库）
@@ -37,32 +31,57 @@ type BankContent =
   | { type: 'word'; words: WordBankItem[] }
   | { type: 'sentence'; sentences: TypingSentence[] };
 
-// 各内容文件映射
-const contentMap: Record<string, BankContent> = {
-  'pep-3': { type: 'word', words: pep3.words },
-  'pep-4': { type: 'word', words: pep4.words },
-  'pep-5': { type: 'word', words: pep5.words },
-  'pep-6': { type: 'word', words: pep6.words },
-  t1: { type: 'sentence', sentences: t1.sentences as TypingSentence[] },
-  t2: { type: 'sentence', sentences: t2.sentences as TypingSentence[] },
-  t3: { type: 'sentence', sentences: t3.sentences as TypingSentence[] },
-};
+type RawBank = Partial<{ words: WordBankItem[]; sentences: TypingSentence[] }>;
 
-// 词库索引：由 index.json 派生，count/preview 实时计算避免漂移
-export const wordBankIndex: WordBankMeta[] = indexJson.map((meta) => {
-  const content = contentMap[meta.id];
-  const type = meta.type as 'word' | 'sentence';
-  const count = content.type === 'word' ? content.words.length : content.sentences.length;
-  let preview = '';
-  if (content.type === 'word') {
-    preview = content.words.slice(0, 3).map((w) => w.word).join('、');
-  } else {
-    preview = content.sentences[0]?.sentence ?? '';
+// 运行时内容缓存（initWordBanks 填充后才有数据）
+const contentMap: Record<string, BankContent> = {};
+
+// 词库索引：initWordBanks 完成后填充；count/preview 由内容实时计算避免漂移
+export let wordBankIndex: WordBankMeta[] = [];
+
+let initPromise: Promise<void> | null = null;
+
+// 初始化：拉取 index.json 登记的所有词库内容（幂等，多页面共享一次加载）
+export function initWordBanks(): Promise<void> {
+  if (!initPromise) initPromise = doInit();
+  return initPromise;
+}
+
+async function doInit(): Promise<void> {
+  const results = await Promise.all(
+    indexJson.map(async (meta): Promise<[string, RawBank | null]> => {
+      try {
+        const res = await fetch(`/wordbanks/${meta.id}.json`);
+        if (!res.ok) return [meta.id, null];
+        return [meta.id, (await res.json()) as RawBank];
+      } catch {
+        return [meta.id, null];
+      }
+    })
+  );
+  for (const [id, r] of results) {
+    if (!r) continue;
+    if (Array.isArray(r.words)) contentMap[id] = { type: 'word', words: r.words };
+    else if (Array.isArray(r.sentences))
+      contentMap[id] = { type: 'sentence', sentences: r.sentences };
   }
-  return { ...meta, type, count, preview };
-});
+  wordBankIndex = indexJson
+    .filter((meta) => Boolean(contentMap[meta.id]))
+    .map((meta) => {
+      const content = contentMap[meta.id];
+      const type = meta.type as 'word' | 'sentence';
+      const count = content.type === 'word' ? content.words.length : content.sentences.length;
+      let preview = '';
+      if (content.type === 'word') {
+        preview = content.words.slice(0, 3).map((w) => w.word).join('、');
+      } else {
+        preview = content.sentences[0]?.sentence ?? '';
+      }
+      return { ...meta, type, count, preview };
+    });
+}
 
-// 获取词库/课程内容
+// 获取词库/课程内容（需先 initWordBanks）
 export function getBankContent(id: string): BankContent | undefined {
   return contentMap[id];
 }
@@ -76,7 +95,7 @@ export function isWordBankId(id: string): boolean {
 export function isWordItemId(id: string): boolean {
   for (const meta of indexJson) {
     const content = contentMap[meta.id];
-    if (content.type === 'word' && content.words.some((w) => w.id === id)) return true;
+    if (content && content.type === 'word' && content.words.some((w) => w.id === id)) return true;
   }
   return false;
 }
@@ -112,7 +131,7 @@ export function wordToSentence(item: WordBankItem): TypingSentence {
   };
 }
 
-// 获取某词库/课程的练习队列（word 词库逐词转单字句）
+// 获取某词库/课程的练习队列（word 词库逐词转单字句；需先 initWordBanks）
 export function bankToPracticeQueue(id: string): TypingSentence[] | undefined {
   const content = contentMap[id];
   if (!content) return undefined;
@@ -120,18 +139,18 @@ export function bankToPracticeQueue(id: string): TypingSentence[] | undefined {
   return content.words.map(wordToSentence);
 }
 
-// 按 id 查找练习项：句子课程查句、单词词库查词并转单字句（错题本/统计反查用）
+// 按 id 查找练习项：句子课程查句、单词词库查词并转单字句（错题本/统计反查用；需先 initWordBanks）
 export function findPracticeById(id: string): TypingSentence | undefined {
   for (const meta of indexJson) {
     const content = contentMap[meta.id];
-    if (content.type === 'sentence') {
+    if (content && content.type === 'sentence') {
       const s = content.sentences.find((x) => x.id === id);
       if (s) return s;
     }
   }
   for (const meta of indexJson) {
     const content = contentMap[meta.id];
-    if (content.type === 'word') {
+    if (content && content.type === 'word') {
       const w = content.words.find((x) => x.id === id);
       if (w) return wordToSentence(w);
     }
@@ -139,10 +158,11 @@ export function findPracticeById(id: string): TypingSentence | undefined {
   return undefined;
 }
 
-// 按练习项 id 反查所属词库/课程 id（写入用户统计时用）
+// 按练习项 id 反查所属词库/课程 id（写入用户统计时用；需先 initWordBanks）
 export function findBankIdByItem(id: string): string {
   for (const meta of indexJson) {
     const content = contentMap[meta.id];
+    if (!content) continue;
     if (content.type === 'sentence') {
       if (content.sentences.some((x) => x.id === id)) return meta.id;
     } else if (content.words.some((x) => x.id === id)) {
