@@ -152,6 +152,23 @@ body {
     background-color: oklch(0.8 0.01 240);
     border-radius: 3px;
   }
+  /* 暗黑模式下滚动条颜色 */
+  .dark .scrollbar-thin {
+    scrollbar-color: oklch(0.35 0.02 260) transparent;
+  }
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: oklch(0.35 0.02 260);
+  }
+  /* 隐藏滚动条（保留滚动能力） */
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
 }
 
 /* Animations */

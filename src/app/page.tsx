@@ -11,10 +11,13 @@ import {
   ChevronLeft,
   ChevronRight,
   Play,
-  Library,
   LogOut,
+  Sun,
+  Moon,
+  Image as ImageIcon,
+  ImageOff,
 } from 'lucide-react';
-import Link from 'next/link';
+import { useTheme } from 'next-themes';
 import { type TypingSentence, fingerColors } from '@/lib/data';
 import {
   wordBankIndex,
@@ -37,8 +40,15 @@ import {
 } from '@/lib/storage';
 import { VirtualKeyboard } from '@/components/typing/virtual-keyboard';
 import { ParticleBurst } from '@/components/typing/particle-burst';
+import { TopBar } from '@/components/layout/header';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+  TooltipProvider,
+} from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 
 type PracticeMode = 'whole' | 'split';
@@ -58,6 +68,11 @@ export default function HomePage() {
   const [isPaused, setIsPaused] = useState(false);
   const [timer, setTimer] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  // 暗黑模式切换：mounted 前不渲染图标，避免 SSR 水合不一致
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const isDark = mounted && resolvedTheme === 'dark';
   const [completed, setCompleted] = useState(false);
   const [errors, setErrors] = useState(0);
   const [wpm, setWpm] = useState(0);
@@ -69,7 +84,6 @@ export default function HomePage() {
   const [practiceQueue, setPracticeQueue] = useState<TypingSentence[]>([]);
   const [queueLabel, setQueueLabel] = useState('');
   const [isErrorMode, setIsErrorMode] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   // 单词完成后的粒子消散特效：爆发序号与爆发中心（取自单词区）
   const [burstKey, setBurstKey] = useState(0);
   const [burstCenter, setBurstCenter] = useState<{ x: number; y: number } | null>(null);
@@ -388,8 +402,9 @@ export default function HomePage() {
   }, [handleKeyPress, handleNextSentence, handlePrevSentence, handleReset, handleReadAloud, isPaused, completed, sentenceIndex, totalSentences]);
 
   const toggleFullscreen = () => {
+    // 与 TopBar 一致：对整个文档全屏，保证任何页面行为统一
     if (!document.fullscreenElement) {
-      containerRef.current?.requestFullscreen();
+      document.documentElement.requestFullscreen();
       setIsFullscreen(true);
     } else {
       document.exitFullscreen();
@@ -419,7 +434,7 @@ export default function HomePage() {
         return { text, wStart, end };
       });
       return (
-        <div className="flex flex-wrap items-baseline justify-center gap-x-1 gap-y-1">
+        <div className="flex flex-wrap items-baseline justify-center gap-x-1 gap-y-3 leading-[1.4]">
           {words.map((w, idx) => {
             const isHover = hoveredWord === idx;
             return (
@@ -451,7 +466,7 @@ export default function HomePage() {
                   }
                   // 未输入：隐藏占位符
                   return (
-                    <span key={ci} className="text-slate-400">
+                    <span key={ci} className="text-muted-foreground/60">
                       {'\u2581'}
                     </span>
                   );
@@ -469,7 +484,7 @@ export default function HomePage() {
         {target.split('').map((char, index) => {
           const isSpace = char === ' ';
           const isErrorFlash = index === typedText.length && !!errorFlash;
-          let charClass = 'text-slate-300';
+          let charClass = 'text-muted-foreground/40';
           if (index < typedText.length) {
             charClass = typedText[index] === char ? 'text-foreground' : 'text-red-500';
           } else if (index === typedText.length) {
@@ -513,7 +528,7 @@ export default function HomePage() {
       return s;
     });
     return (
-      <div className="flex flex-wrap items-baseline justify-center gap-x-3 gap-y-2">
+      <div className="flex flex-wrap items-baseline justify-center gap-x-3 gap-y-4 leading-[1.4]">
         {sentence.words.map((word, index) => {
           const wordText = word.text;
           const isCurrentWord = index === splitIndex;
@@ -524,7 +539,7 @@ export default function HomePage() {
               <span
                 className={cn(
                   'text-2xl md:text-4xl font-mono font-bold transition-all duration-200',
-                  isCurrentWord && !dictationMode ? 'text-foreground scale-110' : 'text-slate-300'
+                  isCurrentWord && !dictationMode ? 'text-foreground scale-110' : 'text-muted-foreground/40'
                 )}
                 style={
                   dictationMode
@@ -557,7 +572,7 @@ export default function HomePage() {
                         );
                       }
                       return (
-                        <span key={ci} className="text-slate-400">
+                        <span key={ci} className="text-muted-foreground/60">
                           {'\u2581'}
                         </span>
                       );
@@ -575,92 +590,113 @@ export default function HomePage() {
     );
   };
 
-  return (
-    <div ref={containerRef} className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 flex flex-col">
-      {/* Top Bar */}
-      <div className="flex items-center justify-between px-3 md:px-4 py-2 bg-white border-b border-border">
-        <div className="flex items-center gap-3">
-          <Link
-            href="/gallery"
-            className="flex items-center gap-1.5 text-sm text-sky-600 hover:text-sky-700 font-medium transition-colors"
-          >
-            <Library className="w-4 h-4" />
-            词库
-          </Link>
-          <div className="hidden sm:block h-4 w-px bg-border" />
-          <div className="hidden sm:flex items-center gap-2 text-sm">
-            <span className="font-medium text-foreground">{queueLabel}</span>
-            <span className="text-muted-foreground">
-              ({sentenceIndex + 1}/{totalSentences})
-            </span>
-          </div>
-          <div className="sm:hidden text-sm font-medium text-foreground">
-            {sentenceIndex + 1}/{totalSentences}
-          </div>
-          {isErrorMode && (
-            <Badge className="bg-rose-100 text-rose-700 ml-1">错题练习</Badge>
-          )}
-        </div>
-        <div className="flex items-center gap-1 md:gap-2">
-          {isErrorMode && (
-            <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleExitErrorMode}>
-              <LogOut className="w-3.5 h-3.5 mr-1" />
-              <span className="hidden md:inline">退出错题</span>
-            </Button>
-          )}
-          <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-            <Play className="w-3.5 h-3.5" />
-            {formatTime(timer)}
-          </div>
-          <button
-            onClick={() => setShowImage(!showImage)}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 text-muted-foreground hover:bg-slate-200 transition-colors"
-          >
-            {showImage ? <Eye className="w-3.5 h-3.5" /> : <EyeOff className="w-3.5 h-3.5" />}
-            显示图片
-          </button>
-          <button
-            onClick={() => setDictationMode((prev) => !prev)}
+  // 练习工具栏：课程信息 + 计时 + 图片/默写/重置 放在一块
+  // 桌面端注入全局 TopBar 插槽；全屏与主题按钮由 TopBar 统一提供
+  // 移动端：全屏与主题按钮在此行内补充（md:hidden）
+  const practiceBar = (
+    <>
+      <div className="flex items-center gap-2 text-sm min-w-0">
+        <span className="font-medium text-foreground truncate">{queueLabel}</span>
+        <span className="text-muted-foreground shrink-0">
+          ({sentenceIndex + 1}/{totalSentences})
+        </span>
+      </div>
+      {isErrorMode && (
+        <Badge className="bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-400">错题练习</Badge>
+      )}
+      {isErrorMode && (
+        <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleExitErrorMode}>
+          <LogOut className="w-3.5 h-3.5 mr-1" />
+          <span className="hidden md:inline">退出错题</span>
+        </Button>
+      )}
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button variant="ghost" size="icon-sm" onClick={() => setShowImage(!showImage)}>
+            {showImage ? <ImageIcon className="w-4 h-4" /> : <ImageOff className="w-4 h-4" />}
+            <span className="sr-only">显示图片</span>
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent side="bottom">{showImage ? '隐藏图片' : '显示图片'}</TooltipContent>
+      </Tooltip>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button
+            variant="ghost"
+            size="icon-sm"
             className={cn(
-              'flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium transition-colors',
-              dictationMode
-                ? 'bg-sky-100 text-sky-600'
-                : 'bg-slate-100 text-muted-foreground hover:bg-slate-200'
+              dictationMode && 'bg-sky-100 text-sky-600 hover:bg-sky-100 dark:bg-sky-950 dark:text-sky-400'
             )}
+            onClick={() => setDictationMode((prev) => !prev)}
           >
-            {dictationMode ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
-            {dictationMode ? '关闭默写模式' : '开启默写模式'}
-          </button>
-          <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={handleReset}>
-            <RefreshCw className="w-3.5 h-3.5 mr-1" />
-            <span className="hidden md:inline">重置进度</span>
+            {dictationMode ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+            <span className="sr-only">默写模式</span>
           </Button>
-          <Button variant="ghost" size="sm" className="text-xs md:text-sm" onClick={toggleFullscreen}>
-            {isFullscreen ? (
-              <Minimize2 className="w-3.5 h-3.5 mr-1" />
-            ) : (
-              <Maximize2 className="w-3.5 h-3.5 mr-1" />
-            )}
-            <span className="hidden md:inline">全屏</span>
+        </TooltipTrigger>
+        <TooltipContent side="bottom">{dictationMode ? '关闭默写模式' : '开启默写模式'}</TooltipContent>
+      </Tooltip>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button variant="ghost" size="icon-sm" onClick={handleReset}>
+            <RefreshCw className="w-4 h-4" />
+            <span className="sr-only">重置进度</span>
           </Button>
-        </div>
+        </TooltipTrigger>
+        <TooltipContent side="bottom">重置进度</TooltipContent>
+      </Tooltip>
+      <div className="flex items-center gap-1.5 text-sm text-muted-foreground shrink-0">
+        <Play className="w-3.5 h-3.5" />
+        {formatTime(timer)}
+      </div>
+      {/* 移动端补充：全屏与主题切换（桌面端由 TopBar 固定提供） */}
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button variant="ghost" size="icon-sm" className="md:hidden" onClick={toggleFullscreen}>
+            {isFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+            <span className="sr-only">全屏</span>
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent side="bottom">{isFullscreen ? '退出全屏' : '全屏'}</TooltipContent>
+      </Tooltip>
+      <Button
+        variant="ghost"
+        size="icon-sm"
+        className="md:hidden"
+        onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      >
+        {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+        <span className="sr-only">切换主题</span>
+      </Button>
+    </>
+  );
+
+  return (
+    <div className="h-full bg-gradient-to-b from-background to-muted flex flex-col">
+      {/* 全局单行顶栏：Logo + 导航 + 练习工具栏（课程信息/计时/图片/默写/重置）+ 全屏 + 主题 */}
+      <TopBar>{practiceBar}</TopBar>
+
+      {/* 移动端：练习工具栏单独一行（顶栏由 MobileNav 提供） */}
+      <div className="md:hidden flex items-center justify-between gap-1 px-3 py-2 bg-background border-b border-border">
+        <TooltipProvider delayDuration={200}>
+          <div className="flex items-center gap-1 min-w-0">{practiceBar}</div>
+        </TooltipProvider>
       </div>
 
       {/* Secondary Bar（已删除拆句/整句切换，默认整句练习） */}
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-6 md:gap-8">
+      {/* Main Content：独立滚动区（隐藏滚动条），滚动条不影响顶栏 */}
+      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-6 md:gap-8">
         {/* 单词区（音标/词性 + 单词展示）：暂停时整块遮挡，尺寸与内容一致避免页面跳动 */}
-        <div ref={burstRef} className="relative w-full max-w-3xl flex flex-col items-center gap-3">
+        <div ref={burstRef} className="relative w-full max-w-4xl flex flex-col items-center gap-3">
           {/* 单词信息：音标与词性 */}
           {sentence?.phonetics && sentence.phonetics.length > 0 && (
             <div className="flex flex-wrap items-center justify-center gap-2">
               {sentence.phonetics.map((p, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2 bg-white/80 border border-border rounded-full px-3 py-1 shadow-sm"
+                  className="flex items-center gap-2 bg-card/80 border border-border rounded-full px-3 py-1 shadow-sm"
                 >
-                  <span className="font-mono text-sm text-slate-700">{p.phonetic}</span>
+                  <span className="font-mono text-sm text-foreground">{p.phonetic}</span>
                   <span className="text-xs font-medium text-sky-600">{p.pos}</span>
                 </div>
               ))}
@@ -684,9 +720,9 @@ export default function HomePage() {
 
           {/* 暂停时遮挡整个单词区（含音标/词性），提示按任意键继续 */}
           {isPaused && (
-            <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-2 backdrop-blur-md bg-white/50 rounded-xl">
-              <p className="text-lg md:text-xl font-semibold text-slate-700">按任意键继续</p>
-              <p className="text-xs text-slate-500">页面已暂停</p>
+            <div className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-2 backdrop-blur-md bg-background/50 rounded-xl">
+              <p className="text-lg md:text-xl font-semibold text-foreground">按任意键继续</p>
+              <p className="text-xs text-muted-foreground">页面已暂停</p>
             </div>
           )}
         </div>
@@ -704,7 +740,7 @@ export default function HomePage() {
 
         {/* Progress Bar */}
         <div className="w-full max-w-3xl">
-          <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
+          <div className="h-2 bg-muted rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-sky-400 to-sky-500 rounded-full transition-all duration-300"
               style={{

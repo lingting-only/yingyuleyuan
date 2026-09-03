@@ -180,7 +180,7 @@ export function VirtualKeyboard({
 
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <div className="bg-gradient-to-b from-slate-100 to-slate-200 rounded-2xl p-3 md:p-4 shadow-lg border border-slate-200 relative overflow-hidden">
+      <div className="bg-gradient-to-b from-muted to-secondary rounded-2xl p-3 md:p-4 shadow-lg border border-border relative overflow-hidden">
         {/* Hand SVG Overlay - show both hands with fingertips at ASDF row */}
         {showFingerGuide && (leftHandSvg || rightHandSvg) && (
           <div
@@ -247,12 +247,16 @@ export function VirtualKeyboard({
                     'relative flex items-center justify-center rounded-lg font-semibold text-xs md:text-sm transition-all duration-150 select-none',
                     'h-9 md:h-11 border-b-2 active:border-b-0 active:translate-y-0.5',
                     isActive
-                      ? 'bg-white border-white shadow-md scale-105 z-10'
-                      : 'bg-slate-300 border-slate-400 hover:bg-slate-250 text-slate-700'
+                      ? 'shadow-md scale-105 z-10'
+                      : 'bg-card border-border text-foreground shadow-sm hover:bg-secondary'
                   )}
                   style={{
                     width: `${width * 42}px`,
                     minWidth: `${width * 36}px`,
+                    // 高亮键直接使用所属手指的提示色（浅色系配深色文字保证可读）
+                    ...(isActive
+                      ? { backgroundColor: color, borderColor: color, color: '#1e293b' }
+                      : {}),
                   }}
                 >
                   {keyDef.label}

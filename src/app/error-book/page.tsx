@@ -10,7 +10,6 @@ import { useRouter } from 'next/navigation';
 import { formatDistanceToNow } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
 import {
-  ArrowLeft,
   BookX,
   Play,
   Trash2,
@@ -20,6 +19,7 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 import { findPracticeById, initWordBanks } from '@/lib/wordbank';
+import { TopBar } from '@/components/layout/header';
 import {
   getErrorBook,
   removeError,
@@ -100,25 +100,19 @@ export default function ErrorBookPage() {
   const empty = loaded && mergedList.length === 0;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 md:px-6 md:py-12">
-      {/* 顶部返回首页 */}
-      <div className="mb-6">
-        <Button asChild variant="ghost" size="sm" className="text-muted-foreground">
-          <Link href="/">
-            <ArrowLeft className="size-4" />
-            返回练习
-          </Link>
-        </Button>
-      </div>
-
+    <>
+      {/* 全局单行顶栏：与其他页面保持一致，仅内容区切换 */}
+      <TopBar />
+      {/* 内容区：全宽平铺，独立滚动且隐藏滚动条 */}
+      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden w-full px-4 py-6 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
       {/* 标题 + 操作 */}
       <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-3">
-          <div className="rounded-2xl bg-red-100 p-3 text-red-600">
+          <div className="rounded-2xl bg-red-100 p-3 text-red-600 dark:bg-red-950 dark:text-red-400">
             <BookX className="size-6" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-slate-800 md:text-3xl">错题本</h1>
+            <h1 className="text-2xl font-bold text-foreground md:text-3xl">错题本</h1>
             <p className="mt-1 text-sm text-muted-foreground">
               {mergedList.length > 0
                 ? `共 ${mergedList.length} 道错题，零错完成会自动移除`
@@ -165,11 +159,11 @@ export default function ErrorBookPage() {
 
       {/* 空状态 */}
       {empty && (
-        <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed bg-slate-50 py-16 text-center">
-          <div className="mb-3 rounded-full bg-emerald-100 p-4 text-emerald-600">
+        <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed bg-muted py-16 text-center">
+          <div className="mb-3 rounded-full bg-emerald-100 p-4 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
             <CheckCircle2 className="size-8" />
           </div>
-          <p className="text-lg font-semibold text-slate-700">还没有错题</p>
+          <p className="text-lg font-semibold text-foreground">还没有错题</p>
           <p className="mt-1 text-sm text-muted-foreground">去练习吧，出错会自动记录到这里</p>
           <Button asChild className="mt-5 gap-2 bg-sky-500 hover:bg-sky-600">
             <Link href="/">
@@ -180,8 +174,8 @@ export default function ErrorBookPage() {
         </div>
       )}
 
-      {/* 错题列表 */}
-      <ul className="space-y-3">
+      {/* 错题列表：自适应平铺 */}
+      <ul className="grid grid-cols-[repeat(auto-fill,minmax(min(420px,100%),1fr))] gap-3">
         {mergedList.map(({ record, sentence }) => {
           if (!sentence) return null;
           const phoneticText = sentence.phonetics
@@ -191,16 +185,16 @@ export default function ErrorBookPage() {
           return (
             <li
               key={record.id}
-              className="group rounded-2xl border bg-white p-4 shadow-sm transition-all duration-200 hover:shadow-md"
+              className="group rounded-2xl border bg-card p-4 shadow-sm transition-all duration-200 hover:shadow-md"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0 flex-1">
                   {/* 英文句 */}
-                  <p className="font-mono text-lg font-semibold text-slate-800">
+                  <p className="font-mono text-lg font-semibold text-foreground">
                     {sentence.sentence}
                   </p>
                   {/* 翻译 */}
-                  <p className="mt-1 text-sm text-slate-600">{sentence.translation}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{sentence.translation}</p>
                   {/* 音标 */}
                   {phoneticText && (
                     <p className="mt-2 font-mono text-xs text-muted-foreground">{phoneticText}</p>
@@ -209,7 +203,7 @@ export default function ErrorBookPage() {
 
                 {/* 右侧：徽章 + 操作 */}
                 <div className="flex flex-shrink-0 flex-col items-end gap-2">
-                  <Badge variant="secondary" className="gap-1 bg-red-100 text-red-700">
+                  <Badge variant="secondary" className="gap-1 bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-400">
                     <AlertTriangle className="size-3" />
                     错 {record.errorCount} 次
                   </Badge>
@@ -242,6 +236,7 @@ export default function ErrorBookPage() {
           );
         })}
       </ul>
-    </div>
+      </div>
+    </>
   );
 }

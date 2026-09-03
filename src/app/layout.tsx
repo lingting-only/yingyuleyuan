@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
-import { Sidebar } from '@/components/layout/sidebar';
+import { ThemeProvider } from 'next-themes';
 import { MobileNav } from '@/components/layout/mobile-nav';
-// import { Header } from '@/components/layout/header';
 import './globals.css';
 
 const nunito = Nunito({
@@ -26,18 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={nunito.variable}>
+    <html lang="zh-CN" className={nunito.variable} suppressHydrationWarning>
       <body className={`${nunito.className} antialiased`}>
-        <div className="flex h-screen overflow-hidden">
-          <Sidebar />
-          <div className="flex-1 flex flex-col overflow-hidden">
-            {/* <Header /> */}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <div className="flex flex-col h-screen overflow-hidden">
             <MobileNav />
-            <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
+            <main className="flex-1 flex flex-col overflow-hidden pb-16 md:pb-0">
               {children}
             </main>
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

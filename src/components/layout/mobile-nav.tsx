@@ -31,7 +31,7 @@ export function MobileNav() {
   return (
     <>
       {/* Mobile top bar */}
-      <div className="md:hidden flex items-center justify-between h-14 px-4 bg-white border-b border-border sticky top-0 z-50">
+      <div className="md:hidden flex items-center justify-between h-14 px-4 bg-background border-b border-border sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-sky-400 to-sky-600 text-white">
             <GraduationCap className="w-4 h-4" />
@@ -39,15 +39,15 @@ export function MobileNav() {
           <span className="font-bold text-sm text-foreground">EngExplorer</span>
         </div>
         <div className="flex items-center gap-2">
-          <button className="p-2 rounded-lg hover:bg-slate-50 text-muted-foreground">
+          <button className="p-2 rounded-lg hover:bg-muted text-muted-foreground">
             <Search className="w-5 h-5" />
           </button>
-          <button className="p-2 rounded-lg hover:bg-slate-50 text-muted-foreground">
+          <button className="p-2 rounded-lg hover:bg-muted text-muted-foreground">
             <Bell className="w-5 h-5" />
           </button>
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 rounded-lg hover:bg-slate-50 text-muted-foreground"
+            className="p-2 rounded-lg hover:bg-muted text-muted-foreground"
           >
             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -61,7 +61,7 @@ export function MobileNav() {
             className="absolute inset-0 bg-black/20 backdrop-blur-sm"
             onClick={() => setOpen(false)}
           />
-          <div className="absolute top-14 left-0 right-0 bg-white border-b border-border shadow-lg animate-fade-in-up">
+          <div className="absolute top-14 left-0 right-0 bg-background border-b border-border shadow-lg animate-fade-in-up">
             <nav className="p-3 space-y-1">
               {navItems.map((item) => {
                 const isActive = pathname === item.href ||
@@ -75,8 +75,8 @@ export function MobileNav() {
                     className={cn(
                       'flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors',
                       isActive
-                        ? 'bg-sky-50 text-sky-700'
-                        : 'text-muted-foreground hover:bg-slate-50'
+                        ? 'bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-400'
+                        : 'text-muted-foreground hover:bg-muted'
                     )}
                   >
                     <Icon className="w-5 h-5" />
@@ -90,7 +90,7 @@ export function MobileNav() {
       )}
 
       {/* Mobile bottom tab bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border z-40 px-2 pb-safe">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-40 px-2 pb-safe">
         <div className="flex items-center justify-around h-14">
           {navItems.map((item) => {
             const isActive = pathname === item.href ||

@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { initWordBanks, wordBankIndex } from '@/lib/wordbank';
 import { getUserStats, formatWeekday, type UserStats } from '@/lib/storage';
+import { TopBar } from '@/components/layout/header';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
@@ -126,7 +127,11 @@ export default function ProgressPage() {
   const recentTop = recent.slice(0, 10);
 
   return (
-    <div className="p-4 md:p-6 lg:p-8 max-w-6xl mx-auto space-y-6">
+    <>
+      {/* 全局单行顶栏：与其他页面保持一致，仅内容区切换 */}
+      <TopBar />
+      {/* 内容区：全宽平铺，独立滚动且隐藏滚动条 */}
+      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden w-full p-4 md:p-6 lg:p-8 space-y-6 bg-gradient-to-b from-background to-muted">
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold text-foreground">学习进度</h1>
@@ -135,37 +140,37 @@ export default function ProgressPage() {
         </p>
       </div>
 
-      {/* Overview Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+      {/* Overview Stats：自适应平铺 */}
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 md:gap-4">
         <OverviewCard
           icon={<Clock className="w-5 h-5 text-sky-500" />}
           label="总学习时长"
           value={studyTimeLabel}
-          bgColor="bg-sky-50"
+          bgColor="bg-sky-50 dark:bg-sky-950"
         />
         <OverviewCard
           icon={<Flame className="w-5 h-5 text-orange-500" />}
           label="连续学习"
           value={`${stats.streakDays} 天`}
-          bgColor="bg-orange-50"
+          bgColor="bg-orange-50 dark:bg-orange-950"
         />
         <OverviewCard
           icon={<Target className="w-5 h-5 text-emerald-500" />}
           label="完成句子"
           value={`${stats.completedSentences.length} 句`}
-          bgColor="bg-emerald-50"
+          bgColor="bg-emerald-50 dark:bg-emerald-950"
         />
         <OverviewCard
           icon={<Trophy className="w-5 h-5 text-purple-500" />}
           label="练习均分"
           value={`${avgScore} 分`}
-          bgColor="bg-purple-50"
+          bgColor="bg-purple-50 dark:bg-purple-950"
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
         {/* Weekly Study Time */}
-        <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
+        <section className="bg-card rounded-2xl border border-border p-5 md:p-6">
           <div className="flex items-center justify-between mb-5">
             <div>
               <h2 className="text-base font-bold text-foreground">本周学习时长</h2>
@@ -189,12 +194,12 @@ export default function ProgressPage() {
                     <span className="text-[10px] text-muted-foreground font-medium">
                       {Math.round(item.minutes)}m
                     </span>
-                    <div className="w-full relative rounded-t-lg overflow-hidden bg-slate-100" style={{ height: '130px' }}>
+                    <div className="w-full relative rounded-t-lg overflow-hidden bg-muted" style={{ height: '130px' }}>
                       <div
                         className={`absolute bottom-0 w-full rounded-t-lg transition-all duration-700 ${
                           isToday
                             ? 'bg-gradient-to-t from-sky-500 to-sky-400'
-                            : 'bg-gradient-to-t from-sky-200 to-sky-100'
+                            : 'bg-gradient-to-t from-sky-200 to-sky-100 dark:from-sky-800 dark:to-sky-700'
                         }`}
                         style={{ height: `${height}%` }}
                       />
@@ -210,7 +215,7 @@ export default function ProgressPage() {
         </section>
 
         {/* Practice Scores Trend */}
-        <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
+        <section className="bg-card rounded-2xl border border-border p-5 md:p-6">
           <div className="flex items-center justify-between mb-5">
             <div>
               <h2 className="text-base font-bold text-foreground">练习成绩趋势</h2>
@@ -237,7 +242,7 @@ export default function ProgressPage() {
                   <span className="text-xs text-muted-foreground w-12 shrink-0">
                     {format(r.timestamp, 'MM/dd')}
                   </span>
-                  <div className="flex-1 h-6 bg-slate-100 rounded-full overflow-hidden relative">
+                  <div className="flex-1 h-6 bg-muted rounded-full overflow-hidden relative">
                     <div
                       className={`h-full rounded-full transition-all duration-700 flex items-center justify-end pr-2 ${
                         r.accuracy >= 85
@@ -262,16 +267,16 @@ export default function ProgressPage() {
       </div>
 
       {/* Typing Lessons */}
-      <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
+      <section className="bg-card rounded-2xl border border-border p-5 md:p-6">
         <h2 className="text-base font-bold text-foreground mb-4">打字课程</h2>
-        <div className="space-y-2">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-2">
           {banks.map((bank) => {
             const done = stats.completedByLesson[bank.id]?.length ?? 0;
             const unit = bank.type === 'word' ? '词' : '句';
             return (
               <div
                 key={bank.id}
-                className="flex items-center justify-between gap-3 rounded-xl border border-border bg-white px-4 py-3"
+                className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3"
               >
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-foreground truncate">
@@ -289,15 +294,15 @@ export default function ProgressPage() {
       </section>
 
       {/* Achievements */}
-      <section className="bg-white rounded-2xl border border-border p-5 md:p-6">
+      <section className="bg-card rounded-2xl border border-border p-5 md:p-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-base font-bold text-foreground">学习成就</h2>
-          <Badge variant="secondary" className="bg-amber-50 text-amber-700">
+          <Badge variant="secondary" className="bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400">
             <Award className="w-3 h-3 mr-1" />
             {unlockedCount}/{achievements.length} 已解锁
           </Badge>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-3">
           {achievements.map((a) => (
             <AchievementCard
               key={a.title}
@@ -309,7 +314,8 @@ export default function ProgressPage() {
           ))}
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
 
@@ -325,7 +331,7 @@ function OverviewCard({
   bgColor: string;
 }) {
   return (
-    <div className="bg-white rounded-2xl border border-border p-4">
+    <div className="bg-card rounded-2xl border border-border p-4">
       <div className={`inline-flex p-2 rounded-xl ${bgColor} mb-3`}>{icon}</div>
       <p className="text-xs text-muted-foreground">{label}</p>
       <p className="text-lg font-bold text-foreground mt-1">{value}</p>
@@ -348,15 +354,15 @@ function AchievementCard({
     <div
       className={`p-3 rounded-xl border text-center transition-all ${
         unlocked
-          ? 'bg-white border-border hover:shadow-sm'
-          : 'bg-slate-50 border-transparent opacity-50'
+          ? 'bg-card border-border hover:shadow-sm'
+          : 'bg-muted border-transparent opacity-50'
       }`}
     >
       <span className={`text-2xl ${unlocked ? '' : 'grayscale'}`}>{icon}</span>
       <p className="text-xs font-semibold text-foreground mt-1.5">{title}</p>
       <p className="text-[10px] text-muted-foreground mt-0.5">{desc}</p>
       {unlocked && (
-        <Badge variant="secondary" className="mt-1.5 text-[9px] bg-emerald-50 text-emerald-600">
+        <Badge variant="secondary" className="mt-1.5 text-[9px] bg-emerald-50 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-400">
           已解锁
         </Badge>
       )}
