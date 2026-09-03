@@ -1,0 +1,838 @@
+{
+  "id": "pep5a-all",
+  "words": [
+    {
+      "id": "g5u1-0001",
+      "word": "team",
+      "phonetic": "/tiːm/",
+      "pos": "名词",
+      "meaning": "（游戏或运动的）队；（一起工作的）组，班"
+    },
+    {
+      "id": "g5u1-0002",
+      "word": "player",
+      "phonetic": "/ˈpleɪə(r)/",
+      "pos": "名词",
+      "meaning": "运动员；参赛选手"
+    },
+    {
+      "id": "g5u1-0003",
+      "word": "him",
+      "phonetic": "/hɪm/",
+      "pos": "代词",
+      "meaning": "他"
+    },
+    {
+      "id": "g5u1-0004",
+      "word": "lovely",
+      "phonetic": "/ˈlʌvli/",
+      "pos": "形容词",
+      "meaning": "美丽的；优美的"
+    },
+    {
+      "id": "g5u1-0005",
+      "word": "clever",
+      "phonetic": "/ˈklevə(r)/",
+      "pos": "形容词",
+      "meaning": "聪明的；聪颖的"
+    },
+    {
+      "id": "g5u1-0006",
+      "word": "young",
+      "phonetic": "/jʌŋ/",
+      "pos": "形容词",
+      "meaning": "幼小的；年轻的"
+    },
+    {
+      "id": "g5u1-0007",
+      "word": "hard-working",
+      "phonetic": "/ˌhɑːd ˈwɜːkɪŋ/",
+      "pos": "形容词",
+      "meaning": "工作努力的；辛勤的"
+    },
+    {
+      "id": "g5u1-0008",
+      "word": "science",
+      "phonetic": "/ˈsaɪəns/",
+      "pos": "名词",
+      "meaning": "科学；自然科学"
+    },
+    {
+      "id": "g5u1-0009",
+      "word": "robot",
+      "phonetic": "/ˈrəʊbɒt/",
+      "pos": "名词",
+      "meaning": "机器人"
+    },
+    {
+      "id": "g5u1-0010",
+      "word": "jump",
+      "phonetic": "/dʒʌmp/",
+      "pos": "动词",
+      "meaning": "跳；跃"
+    },
+    {
+      "id": "g5u1-0011",
+      "word": "rope",
+      "phonetic": "/rəʊp/",
+      "pos": "名词",
+      "meaning": "绳；粗绳"
+    },
+    {
+      "id": "g5u1-0012",
+      "word": "piano",
+      "phonetic": "/piˈænəʊ/",
+      "pos": "名词",
+      "meaning": "钢琴"
+    },
+    {
+      "id": "g5u1-0013",
+      "word": "chess",
+      "phonetic": "/tʃes/",
+      "pos": "名词",
+      "meaning": "国际象棋"
+    },
+    {
+      "id": "g5u1-0014",
+      "word": "front",
+      "phonetic": "/frʌnt/",
+      "pos": "名词",
+      "meaning": "前部"
+    },
+    {
+      "id": "g5u1-0015",
+      "word": "easy",
+      "phonetic": "/ˈiːzi/",
+      "pos": "形容词",
+      "meaning": "容易的；轻易的"
+    },
+    {
+      "id": "g5u1-0016",
+      "word": "star",
+      "phonetic": "/stɑː/",
+      "pos": "名词",
+      "meaning": "歌唱（或表演）明星"
+    },
+    {
+      "id": "g5u1-0017",
+      "word": "wonderful",
+      "phonetic": "/ˈwʌndəfl/",
+      "pos": "形容词",
+      "meaning": "精彩的；绝妙的"
+    },
+    {
+      "id": "g5u1-0018",
+      "word": "Australia",
+      "phonetic": "/ɒˈstreɪliə/",
+      "pos": "名词",
+      "meaning": "澳大利亚"
+    },
+    {
+      "id": "g5u2-0001",
+      "word": "sad",
+      "phonetic": "/sæd/",
+      "pos": "形容词",
+      "meaning": "悲哀的；难过的"
+    },
+    {
+      "id": "g5u2-0002",
+      "word": "matter",
+      "phonetic": "/ˈmætə(r)/",
+      "pos": "名词",
+      "meaning": "事情；问题"
+    },
+    {
+      "id": "g5u2-0003",
+      "word": "project",
+      "phonetic": "/ˈprɒdʒekt/",
+      "pos": "名词",
+      "meaning": "项目；方案"
+    },
+    {
+      "id": "g5u2-0004",
+      "word": "centre",
+      "phonetic": "/ˈsentə(r)/",
+      "pos": "名词",
+      "meaning": "中心"
+    },
+    {
+      "id": "g5u2-0005",
+      "word": "agree",
+      "phonetic": "/əˈɡriː/",
+      "pos": "动词",
+      "meaning": "同意；赞成"
+    },
+    {
+      "id": "g5u2-0006",
+      "word": "finish",
+      "phonetic": "/ˈfɪnɪʃ/",
+      "pos": "动词",
+      "meaning": "完成；做好"
+    },
+    {
+      "id": "g5u2-0007",
+      "word": "Monday",
+      "phonetic": "/ˈmʌndeɪ/",
+      "pos": "名词",
+      "meaning": "星期一"
+    },
+    {
+      "id": "g5u2-0008",
+      "word": "worried",
+      "phonetic": "/ˈwʌrid/",
+      "pos": "形容词",
+      "meaning": "担心的；担忧的"
+    },
+    {
+      "id": "g5u2-0009",
+      "word": "both",
+      "phonetic": "/bəʊθ/",
+      "pos": "代词",
+      "meaning": "两者"
+    },
+    {
+      "id": "g5u2-0010",
+      "word": "excited",
+      "phonetic": "/ɪkˈsaɪtɪd/",
+      "pos": "形容词",
+      "meaning": "激动的；兴奋的"
+    },
+    {
+      "id": "g5u2-0011",
+      "word": "wrong",
+      "phonetic": "/rɒŋ/",
+      "pos": "形容词",
+      "meaning": "错误的"
+    },
+    {
+      "id": "g5u2-0012",
+      "word": "angry",
+      "phonetic": "/ˈæŋɡri/",
+      "pos": "形容词",
+      "meaning": "愤怒的；生气的"
+    },
+    {
+      "id": "g5u2-0013",
+      "word": "afraid",
+      "phonetic": "/əˈfreɪd/",
+      "pos": "形容词",
+      "meaning": "担心；害怕"
+    },
+    {
+      "id": "g5u2-0014",
+      "word": "parent",
+      "phonetic": "/ˈpeərənt/",
+      "pos": "名词",
+      "meaning": "父亲；母亲"
+    },
+    {
+      "id": "g5u2-0015",
+      "word": "ask",
+      "phonetic": "/ɑːsk/",
+      "pos": "动词",
+      "meaning": "问；询问"
+    },
+    {
+      "id": "g5u2-0016",
+      "word": "move",
+      "phonetic": "/muːv/",
+      "pos": "动词",
+      "meaning": "搬家；移动"
+    },
+    {
+      "id": "g5u2-0017",
+      "word": "yours",
+      "phonetic": "/jɔːz/",
+      "pos": "代词",
+      "meaning": "您的（用于书信结尾的签名前）"
+    },
+    {
+      "id": "g5u3-0001",
+      "word": "Wednesday",
+      "phonetic": "/ˈwenzdeɪ/",
+      "pos": "名词",
+      "meaning": "星期三"
+    },
+    {
+      "id": "g5u3-0002",
+      "word": "subject",
+      "phonetic": "/ˈsʌbdʒɪkt/",
+      "pos": "名词",
+      "meaning": "科目；学科"
+    },
+    {
+      "id": "g5u3-0003",
+      "word": "Monday",
+      "phonetic": "/ˈmʌndeɪ/",
+      "pos": "名词",
+      "meaning": "星期一"
+    },
+    {
+      "id": "g5u3-0004",
+      "word": "Tuesday",
+      "phonetic": "/ˈtjuːzdeɪ/",
+      "pos": "名词",
+      "meaning": "星期二"
+    },
+    {
+      "id": "g5u3-0005",
+      "word": "Friday",
+      "phonetic": "/ˈfraɪdeɪ/",
+      "pos": "名词",
+      "meaning": "星期五"
+    },
+    {
+      "id": "g5u3-0006",
+      "word": "because",
+      "phonetic": "/bɪˈkɒz/",
+      "pos": "连词",
+      "meaning": "因为"
+    },
+    {
+      "id": "g5u3-0007",
+      "word": "Thursday",
+      "phonetic": "/ˈθɜːzdeɪ/",
+      "pos": "名词",
+      "meaning": "星期四"
+    },
+    {
+      "id": "g5u3-0008",
+      "word": "start",
+      "phonetic": "/stɑːt/",
+      "pos": "动词",
+      "meaning": "开始"
+    },
+    {
+      "id": "g5u3-0009",
+      "word": "usually",
+      "phonetic": "/ˈjuːʒuəli/",
+      "pos": "副词",
+      "meaning": "通常地；经常地"
+    },
+    {
+      "id": "g5u3-0010",
+      "word": "weekend",
+      "phonetic": "/ˌwiːkˈend/",
+      "pos": "名词",
+      "meaning": "周末"
+    },
+    {
+      "id": "g5u3-0011",
+      "word": "sometimes",
+      "phonetic": "/ˈsʌmtaɪmz/",
+      "pos": "副词",
+      "meaning": "有时；间或"
+    },
+    {
+      "id": "g5u3-0012",
+      "word": "Saturday",
+      "phonetic": "/ˈsætədeɪ/",
+      "pos": "名词",
+      "meaning": "星期六"
+    },
+    {
+      "id": "g5u3-0013",
+      "word": "Sunday",
+      "phonetic": "/ˈsʌndeɪ/",
+      "pos": "名词",
+      "meaning": "星期日"
+    },
+    {
+      "id": "g5u3-0014",
+      "word": "lesson",
+      "phonetic": "/ˈlesn/",
+      "pos": "名词",
+      "meaning": "课；一节课"
+    },
+    {
+      "id": "g5u3-0015",
+      "word": "evening",
+      "phonetic": "/ˈiːvnɪŋ/",
+      "pos": "名词",
+      "meaning": "晚上；傍晚"
+    },
+    {
+      "id": "g5u3-0016",
+      "word": "answer",
+      "phonetic": "/ˈɑːnsə/",
+      "pos": "动词",
+      "meaning": "答复；回答"
+    },
+    {
+      "id": "g5u3-0017",
+      "word": "ping-pong",
+      "phonetic": "/ˈpɪŋ pɒŋ/",
+      "pos": "名词",
+      "meaning": "乒乓球"
+    },
+    {
+      "id": "g5u3-0018",
+      "word": "night",
+      "phonetic": "/naɪt/",
+      "pos": "名词",
+      "meaning": "夜；夜晚"
+    },
+    {
+      "id": "g5u3-0019",
+      "word": "visit",
+      "phonetic": "/ˈvɪzɪt/",
+      "pos": "动词",
+      "meaning": "看望；拜访；参观"
+    },
+    {
+      "id": "g5u3-0020",
+      "word": "grandparent",
+      "phonetic": "/ˈɡrænpeərənt/",
+      "pos": "名词",
+      "meaning": "祖父；祖母；外祖父；外祖母"
+    },
+    {
+      "id": "g5u4-0001",
+      "word": "stay",
+      "phonetic": "/steɪ/",
+      "pos": "动词",
+      "meaning": "待；保持；继续是"
+    },
+    {
+      "id": "g5u4-0002",
+      "word": "should",
+      "phonetic": "/ʃʊd/",
+      "pos": "情态动词",
+      "meaning": "（提出或征询建议）该，可以"
+    },
+    {
+      "id": "g5u4-0003",
+      "word": "flu",
+      "phonetic": "/fluː/",
+      "pos": "名词",
+      "meaning": "流行性感冒；流感"
+    },
+    {
+      "id": "g5u4-0004",
+      "word": "else",
+      "phonetic": "/els/",
+      "pos": "形容词",
+      "meaning": "其他的；别的"
+    },
+    {
+      "id": "g5u4-0005",
+      "word": "exercise",
+      "phonetic": "/ˈeksəsaɪz/",
+      "pos": "名词",
+      "meaning": "锻炼；训练；操练"
+    },
+    {
+      "id": "g5u4-0006",
+      "word": "enough",
+      "phonetic": "/ɪˈnʌf/",
+      "pos": "形容词 / 代词",
+      "meaning": "足够的；充足的；充分的"
+    },
+    {
+      "id": "g5u4-0007",
+      "word": "if",
+      "phonetic": "/ɪf/",
+      "pos": "连词",
+      "meaning": "如果；假若；倘若"
+    },
+    {
+      "id": "g5u4-0008",
+      "word": "habit",
+      "phonetic": "/ˈhæbɪt/",
+      "pos": "名词",
+      "meaning": "习惯"
+    },
+    {
+      "id": "g5u4-0009",
+      "word": "show",
+      "phonetic": "/ʃəʊ/",
+      "pos": "名词",
+      "meaning": "（电视或广播）节目"
+    },
+    {
+      "id": "g5u4-0010",
+      "word": "phone",
+      "phonetic": "/fəʊn/",
+      "pos": "名词",
+      "meaning": "电话；电话机"
+    },
+    {
+      "id": "g5u4-0011",
+      "word": "then",
+      "phonetic": "/ðen/",
+      "pos": "副词",
+      "meaning": "那么；因此；既然如此"
+    },
+    {
+      "id": "g5u4-0012",
+      "word": "rest",
+      "phonetic": "/rest/",
+      "pos": "动词 / 名词",
+      "meaning": "休息；放松"
+    },
+    {
+      "id": "g5u4-0013",
+      "word": "take care of",
+      "phonetic": "/teɪk keə(r) əv/",
+      "pos": "短语",
+      "meaning": "爱护；照顾"
+    },
+    {
+      "id": "g5u4-0014",
+      "word": "check",
+      "phonetic": "/tʃek/",
+      "pos": "动词",
+      "meaning": "查看；查明"
+    },
+    {
+      "id": "g5u4-0015",
+      "word": "less",
+      "phonetic": "/les/",
+      "pos": "代词",
+      "meaning": "（与不可数名词连用）较少的，更少的"
+    },
+    {
+      "id": "g5u4-0016",
+      "word": "brush",
+      "phonetic": "/brʌʃ/",
+      "pos": "动词",
+      "meaning": "（用刷子）刷净，刷亮，刷平顺"
+    },
+    {
+      "id": "g5u4-0017",
+      "word": "tooth",
+      "phonetic": "/tuːθ/",
+      "pos": "名词",
+      "meaning": "（复数 teeth /tiːθ/）牙；齿"
+    },
+    {
+      "id": "g5u4-0018",
+      "word": "twice",
+      "phonetic": "/twaɪs/",
+      "pos": "副词",
+      "meaning": "两次；两遍"
+    },
+    {
+      "id": "g5u4-0019",
+      "word": "hour",
+      "phonetic": "/ˈaʊə(r)/",
+      "pos": "名词",
+      "meaning": "小时"
+    },
+    {
+      "id": "g5u4-0020",
+      "word": "free",
+      "phonetic": "/friː/",
+      "pos": "形容词",
+      "meaning": "没有安排活动的；空闲的"
+    },
+    {
+      "id": "g5u5-0001",
+      "word": "hungry",
+      "phonetic": "/ˈhʌŋɡri/",
+      "pos": "形容词",
+      "meaning": "感到饿的"
+    },
+    {
+      "id": "g5u5-0002",
+      "word": "beef",
+      "phonetic": "/biːf/",
+      "pos": "名词",
+      "meaning": "牛肉"
+    },
+    {
+      "id": "g5u5-0003",
+      "word": "ice cream",
+      "phonetic": "/ˌaɪs ˈkriːm/",
+      "pos": "名词",
+      "meaning": "（一份）冰激凌"
+    },
+    {
+      "id": "g5u5-0004",
+      "word": "little",
+      "phonetic": "/ˈlɪtl/",
+      "pos": "代词",
+      "meaning": "少许；一点"
+    },
+    {
+      "id": "g5u5-0005",
+      "word": "dumpling",
+      "phonetic": "/ˈdʌmplɪŋ/",
+      "pos": "名词",
+      "meaning": "饺子；汤圆"
+    },
+    {
+      "id": "g5u5-0006",
+      "word": "tea",
+      "phonetic": "/tiː/",
+      "pos": "名词",
+      "meaning": "茶叶；茶；茶水"
+    },
+    {
+      "id": "g5u5-0007",
+      "word": "hamburger",
+      "phonetic": "/ˈhæmbɜːɡə(r)/",
+      "pos": "名词",
+      "meaning": "汉堡包；汉堡牛肉饼"
+    },
+    {
+      "id": "g5u5-0008",
+      "word": "Mrs",
+      "phonetic": "/ˈmɪsɪz/",
+      "pos": "名词",
+      "meaning": "（用于女子的姓氏或姓名前）太太，夫人"
+    },
+    {
+      "id": "g5u5-0009",
+      "word": "coconut",
+      "phonetic": "/ˈkəʊkənʌt/",
+      "pos": "名词",
+      "meaning": "椰子"
+    },
+    {
+      "id": "g5u5-0010",
+      "word": "interesting",
+      "phonetic": "/ˈɪntrəstɪŋ/",
+      "pos": "形容词",
+      "meaning": "有趣的；有吸引力的"
+    },
+    {
+      "id": "g5u5-0011",
+      "word": "seed",
+      "phonetic": "/siːd/",
+      "pos": "名词",
+      "meaning": "种子；籽"
+    },
+    {
+      "id": "g5u5-0012",
+      "word": "pull",
+      "phonetic": "/pʊl/",
+      "pos": "动词",
+      "meaning": "拔出；抽出"
+    },
+    {
+      "id": "g5u5-0013",
+      "word": "pull up",
+      "phonetic": "/pʊl ʌp/",
+      "pos": "短语",
+      "meaning": "拔出"
+    },
+    {
+      "id": "g5u5-0014",
+      "word": "stem",
+      "phonetic": "/stem/",
+      "pos": "名词",
+      "meaning": "（花草的）茎；（花或叶的）梗，柄"
+    },
+    {
+      "id": "g5u5-0015",
+      "word": "root",
+      "phonetic": "/ruːt/",
+      "pos": "名词",
+      "meaning": "根；根茎"
+    },
+    {
+      "id": "g5u5-0016",
+      "word": "lotus",
+      "phonetic": "/ˈləʊtəs/",
+      "pos": "名词",
+      "meaning": "莲属植物"
+    },
+    {
+      "id": "g5u5-0017",
+      "word": "lake",
+      "phonetic": "/leɪk/",
+      "pos": "名词",
+      "meaning": "湖；湖泊"
+    },
+    {
+      "id": "g5u5-0018",
+      "word": "world",
+      "phonetic": "/wɜːld/",
+      "pos": "名词",
+      "meaning": "世界；地球；天下"
+    },
+    {
+      "id": "g5u5-0019",
+      "word": "round",
+      "phonetic": "/raʊnd/",
+      "pos": "形容词",
+      "meaning": "圆形的；环形的；球形的"
+    },
+    {
+      "id": "g5u5-0020",
+      "word": "different",
+      "phonetic": "/ˈdɪfrənt/",
+      "pos": "形容词",
+      "meaning": "不同的；有区别的；有差异的"
+    },
+    {
+      "id": "g5u5-0021",
+      "word": "way",
+      "phonetic": "/weɪ/",
+      "pos": "名词",
+      "meaning": "方法；手段；途径；方式"
+    },
+    {
+      "id": "g5u6-0001",
+      "word": "river",
+      "phonetic": "/ˈrɪvə(r)/",
+      "pos": "名词",
+      "meaning": "河；江"
+    },
+    {
+      "id": "g5u6-0002",
+      "word": "nature",
+      "phonetic": "/ˈneɪtʃə(r)/",
+      "pos": "名词",
+      "meaning": "自然界；大自然"
+    },
+    {
+      "id": "g5u6-0003",
+      "word": "waterfall",
+      "phonetic": "/ˈwɔːtəfɔːl/",
+      "pos": "名词",
+      "meaning": "瀑布"
+    },
+    {
+      "id": "g5u6-0004",
+      "word": "forest",
+      "phonetic": "/ˈfɒrɪst/",
+      "pos": "名词",
+      "meaning": "森林；林区"
+    },
+    {
+      "id": "g5u6-0005",
+      "word": "famous",
+      "phonetic": "/ˈfeɪməs/",
+      "pos": "形容词",
+      "meaning": "著名的；出名的"
+    },
+    {
+      "id": "g5u6-0006",
+      "word": "mountain",
+      "phonetic": "/ˈmaʊntən/",
+      "pos": "名词",
+      "meaning": "高山；山岳"
+    },
+    {
+      "id": "g5u6-0007",
+      "word": "wind",
+      "phonetic": "/wɪnd/",
+      "pos": "名词",
+      "meaning": "风；气流"
+    },
+    {
+      "id": "g5u6-0008",
+      "word": "trip",
+      "phonetic": "/trɪp/",
+      "pos": "名词",
+      "meaning": "（尤指短程往返的）旅行，旅游，出行"
+    },
+    {
+      "id": "g5u6-0009",
+      "word": "dangerous",
+      "phonetic": "/ˈdeɪndʒərəs/",
+      "pos": "形容词",
+      "meaning": "有危险的；不安全的"
+    },
+    {
+      "id": "g5u6-0010",
+      "word": "heavy",
+      "phonetic": "/ˈhevi/",
+      "pos": "形容词",
+      "meaning": "程度大的；严重的"
+    },
+    {
+      "id": "g5u6-0011",
+      "word": "hotel",
+      "phonetic": "/həʊˈtel/",
+      "pos": "名词",
+      "meaning": "旅馆；旅社"
+    },
+    {
+      "id": "g5u6-0012",
+      "word": "close",
+      "phonetic": "/kləʊz/",
+      "pos": "动词",
+      "meaning": "关；关闭；闭上"
+    },
+    {
+      "id": "g5u6-0013",
+      "word": "umbrella",
+      "phonetic": "/ʌmˈbrelə/",
+      "pos": "名词",
+      "meaning": "伞；雨伞"
+    },
+    {
+      "id": "g5u6-0014",
+      "word": "raincoat",
+      "phonetic": "/ˈreɪnkəʊt/",
+      "pos": "名词",
+      "meaning": "雨衣"
+    },
+    {
+      "id": "g5u6-0015",
+      "word": "worry",
+      "phonetic": "/ˈwʌri/",
+      "pos": "动词",
+      "meaning": "担心；担忧；发愁"
+    },
+    {
+      "id": "g5u6-0016",
+      "word": "fine",
+      "phonetic": "/faɪn/",
+      "pos": "形容词",
+      "meaning": "晴朗的"
+    },
+    {
+      "id": "g5u6-0017",
+      "word": "fog",
+      "phonetic": "/fɒɡ/",
+      "pos": "名词",
+      "meaning": "雾"
+    },
+    {
+      "id": "g5u6-0018",
+      "word": "flood",
+      "phonetic": "/flʌd/",
+      "pos": "名词",
+      "meaning": "洪水；水灾"
+    },
+    {
+      "id": "g5u6-0019",
+      "word": "fire",
+      "phonetic": "/ˈfaɪə(r)/",
+      "pos": "名词",
+      "meaning": "火；火灾"
+    },
+    {
+      "id": "g5u6-0020",
+      "word": "know",
+      "phonetic": "/nəʊ/",
+      "pos": "动词",
+      "meaning": "知道；了解"
+    },
+    {
+      "id": "g5u6-0021",
+      "word": "before",
+      "phonetic": "/bɪˈfɔː(r)/",
+      "pos": "介词",
+      "meaning": "在……之前"
+    },
+    {
+      "id": "g5u6-0022",
+      "word": "go hiking",
+      "phonetic": "/ɡəʊ ˈhaɪkɪŋ/",
+      "pos": "短语",
+      "meaning": "徒步旅行"
+    },
+    {
+      "id": "g5u6-0023",
+      "word": "bring",
+      "phonetic": "/brɪŋ/",
+      "pos": "动词",
+      "meaning": "带……到某处；带来；取来"
+    }
+  ]
+}

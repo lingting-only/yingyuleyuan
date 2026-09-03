@@ -1,0 +1,978 @@
+{
+  "id": "pep4b-all",
+  "words": [
+    {
+      "id": "g4d1-0001",
+      "word": "sorry",
+      "phonetic": "/ˈsɒri/",
+      "pos": "感叹词",
+      "meaning": "对不起"
+    },
+    {
+      "id": "g4d1-0002",
+      "word": "late",
+      "phonetic": "/leɪt/",
+      "pos": "形容词",
+      "meaning": "迟到；迟发生"
+    },
+    {
+      "id": "g4d1-0003",
+      "word": "class",
+      "phonetic": "/klɑːs/",
+      "pos": "名词",
+      "meaning": "课；课程；班；班级"
+    },
+    {
+      "id": "g4d1-0004",
+      "word": "hurry up",
+      "phonetic": "/ˈhʌri ʌp/",
+      "pos": "短语",
+      "meaning": "快点；赶快"
+    },
+    {
+      "id": "g4d1-0005",
+      "word": "ready",
+      "phonetic": "/ˈredi/",
+      "pos": "形容词",
+      "meaning": "准备好"
+    },
+    {
+      "id": "g4d1-0006",
+      "word": "rule",
+      "phonetic": "/ruːl/",
+      "pos": "名词",
+      "meaning": "规则；规章"
+    },
+    {
+      "id": "g4d1-0007",
+      "word": "classroom",
+      "phonetic": "/ˈklɑːsruːm/",
+      "pos": "名词",
+      "meaning": "教室"
+    },
+    {
+      "id": "g4d1-0008",
+      "word": "turn off",
+      "phonetic": "/tɜːn ɒf/",
+      "pos": "短语",
+      "meaning": "关掉"
+    },
+    {
+      "id": "g4d1-0009",
+      "word": "light",
+      "phonetic": "/laɪt/",
+      "pos": "名词",
+      "meaning": "灯；光"
+    },
+    {
+      "id": "g4d1-0010",
+      "word": "blackboard",
+      "phonetic": "/ˈblækbɔːd/",
+      "pos": "名词",
+      "meaning": "黑板"
+    },
+    {
+      "id": "g4d1-0011",
+      "word": "desk",
+      "phonetic": "/desk/",
+      "pos": "名词",
+      "meaning": "书桌；办公桌"
+    },
+    {
+      "id": "g4d1-0012",
+      "word": "chair",
+      "phonetic": "/tʃeə(r)/",
+      "pos": "名词",
+      "meaning": "椅子"
+    },
+    {
+      "id": "g4d1-0013",
+      "word": "tidy",
+      "phonetic": "/ˈtaɪdi/",
+      "pos": "形容词 & 动词",
+      "meaning": "整洁的；整齐的；使整洁；整理"
+    },
+    {
+      "id": "g4d1-0014",
+      "word": "music",
+      "phonetic": "/ˈmjuːzɪk/",
+      "pos": "名词",
+      "meaning": "音乐"
+    },
+    {
+      "id": "g4d1-0015",
+      "word": "wall",
+      "phonetic": "/wɔːl/",
+      "pos": "名词",
+      "meaning": "墙；壁"
+    },
+    {
+      "id": "g4d1-0016",
+      "word": "door",
+      "phonetic": "/dɔː(r)/",
+      "pos": "名词",
+      "meaning": "门"
+    },
+    {
+      "id": "g4d1-0017",
+      "word": "window",
+      "phonetic": "/ˈwɪndəʊ/",
+      "pos": "名词",
+      "meaning": "窗"
+    },
+    {
+      "id": "g4d1-0018",
+      "word": "fan",
+      "phonetic": "/fæn/",
+      "pos": "名词",
+      "meaning": "风扇"
+    },
+    {
+      "id": "g4d1-0019",
+      "word": "when",
+      "phonetic": "/wen/",
+      "pos": "副词",
+      "meaning": "当……时；什么时候"
+    },
+    {
+      "id": "g4d1-0020",
+      "word": "understand",
+      "phonetic": "/ˌʌndəˈstænd/",
+      "pos": "动词",
+      "meaning": "懂；理解"
+    },
+    {
+      "id": "g4d1-0021",
+      "word": "newspaper",
+      "phonetic": "/ˈnjuːzpeɪpə(r)/",
+      "pos": "名词",
+      "meaning": "报纸"
+    },
+    {
+      "id": "g4d1-0022",
+      "word": "hand out",
+      "phonetic": "/hænd aʊt/",
+      "pos": "短语",
+      "meaning": "分发"
+    },
+    {
+      "id": "g4d1-0023",
+      "word": "workbook",
+      "phonetic": "/ˈwɜːkbʊk/",
+      "pos": "名词",
+      "meaning": "练习册；作业本"
+    },
+    {
+      "id": "g4d2-0001",
+      "word": "watch",
+      "phonetic": "/wɒtʃ/",
+      "pos": "动词",
+      "meaning": "看"
+    },
+    {
+      "id": "g4d2-0002",
+      "word": "TV",
+      "phonetic": "/ˌtiː ˈviː/",
+      "pos": "名词",
+      "meaning": "电视"
+    },
+    {
+      "id": "g4d2-0003",
+      "word": "homework",
+      "phonetic": "/ˈhəʊmwɜːk/",
+      "pos": "名词",
+      "meaning": "家庭作业"
+    },
+    {
+      "id": "g4d2-0004",
+      "word": "first",
+      "phonetic": "/fɜːst/",
+      "pos": "副词",
+      "meaning": "首先；首次；第一"
+    },
+    {
+      "id": "g4d2-0005",
+      "word": "wet",
+      "phonetic": "/wet/",
+      "pos": "形容词",
+      "meaning": "湿的；未干的"
+    },
+    {
+      "id": "g4d2-0006",
+      "word": "run",
+      "phonetic": "/rʌn/",
+      "pos": "动词",
+      "meaning": "跑；奔跑"
+    },
+    {
+      "id": "g4d2-0007",
+      "word": "house",
+      "phonetic": "/haʊs/",
+      "pos": "名词",
+      "meaning": "房子"
+    },
+    {
+      "id": "g4d2-0008",
+      "word": "safe",
+      "phonetic": "/seɪf/",
+      "pos": "形容词",
+      "meaning": "安全的"
+    },
+    {
+      "id": "g4d2-0009",
+      "word": "word",
+      "phonetic": "/wɜːd/",
+      "pos": "名词",
+      "meaning": "言语；单词；字"
+    },
+    {
+      "id": "g4d2-0010",
+      "word": "wash",
+      "phonetic": "/wɒʃ/",
+      "pos": "动词",
+      "meaning": "洗"
+    },
+    {
+      "id": "g4d2-0011",
+      "word": "loud",
+      "phonetic": "/laʊd/",
+      "pos": "形容词",
+      "meaning": "说话太大声的；吵闹的"
+    },
+    {
+      "id": "g4d2-0012",
+      "word": "sleep",
+      "phonetic": "/sliːp/",
+      "pos": "动词",
+      "meaning": "睡觉"
+    },
+    {
+      "id": "g4d2-0013",
+      "word": "bedroom",
+      "phonetic": "/ˈbedruːm/",
+      "pos": "名词",
+      "meaning": "卧室"
+    },
+    {
+      "id": "g4d2-0014",
+      "word": "kitchen",
+      "phonetic": "/ˈkɪtʃɪn/",
+      "pos": "名词",
+      "meaning": "厨房"
+    },
+    {
+      "id": "g4d2-0015",
+      "word": "living room",
+      "phonetic": "/ˈlɪvɪŋ ruːm/",
+      "pos": "短语",
+      "meaning": "客厅；起居室"
+    },
+    {
+      "id": "g4d2-0016",
+      "word": "study",
+      "phonetic": "/ˈstʌdi/",
+      "pos": "名词",
+      "meaning": "书房"
+    },
+    {
+      "id": "g4d2-0017",
+      "word": "bathroom",
+      "phonetic": "/ˈbɑːθruːm/",
+      "pos": "名词",
+      "meaning": "浴室；洗手间"
+    },
+    {
+      "id": "g4d2-0018",
+      "word": "work",
+      "phonetic": "/wɜːk/",
+      "pos": "动词",
+      "meaning": "（花费时间和精力）做（某事）；工作"
+    },
+    {
+      "id": "g4d2-0019",
+      "word": "think",
+      "phonetic": "/θɪŋk/",
+      "pos": "动词",
+      "meaning": "想；思考"
+    },
+    {
+      "id": "g4d2-0020",
+      "word": "hard",
+      "phonetic": "/hɑːd/",
+      "pos": "副词",
+      "meaning": "努力地；费力地"
+    },
+    {
+      "id": "g4d2-0021",
+      "word": "follow",
+      "phonetic": "/ˈfɒləʊ/",
+      "pos": "动词",
+      "meaning": "遵循，听从（忠告、指示等）"
+    },
+    {
+      "id": "g4d2-0022",
+      "word": "feel",
+      "phonetic": "/fiːl/",
+      "pos": "动词",
+      "meaning": "觉得；感到"
+    },
+    {
+      "id": "g4d3-0001",
+      "word": "over",
+      "phonetic": "/ˈəʊvə(r)/",
+      "pos": "副词",
+      "meaning": "结束（的）"
+    },
+    {
+      "id": "g4d3-0002",
+      "word": "kid",
+      "phonetic": "/kɪd/",
+      "pos": "名词",
+      "meaning": "小孩"
+    },
+    {
+      "id": "g4d3-0003",
+      "word": "dinner",
+      "phonetic": "/ˈdɪnə(r)/",
+      "pos": "名词",
+      "meaning": "（中午或晚上吃的）正餐"
+    },
+    {
+      "id": "g4d3-0004",
+      "word": "art",
+      "phonetic": "/ɑːt/",
+      "pos": "名词",
+      "meaning": "美术；艺术"
+    },
+    {
+      "id": "g4d3-0005",
+      "word": "lunch",
+      "phonetic": "/lʌntʃ/",
+      "pos": "名词",
+      "meaning": "午餐"
+    },
+    {
+      "id": "g4d3-0006",
+      "word": "maths",
+      "phonetic": "/mæθs/",
+      "pos": "名词",
+      "meaning": "数学"
+    },
+    {
+      "id": "g4d3-0007",
+      "word": "get up",
+      "phonetic": "/ɡet ʌp/",
+      "pos": "短语",
+      "meaning": "起床"
+    },
+    {
+      "id": "g4d3-0008",
+      "word": "go to school",
+      "phonetic": "/ɡəʊ tuː skuːl/",
+      "pos": "短语",
+      "meaning": "上学"
+    },
+    {
+      "id": "g4d3-0009",
+      "word": "go home",
+      "phonetic": "/ɡəʊ həʊm/",
+      "pos": "短语",
+      "meaning": "回家"
+    },
+    {
+      "id": "g4d3-0010",
+      "word": "go to bed",
+      "phonetic": "/ɡəʊ tuː bed/",
+      "pos": "短语",
+      "meaning": "上床睡觉"
+    },
+    {
+      "id": "g4d3-0011",
+      "word": "want",
+      "phonetic": "/wɒnt/",
+      "pos": "动词",
+      "meaning": "想要"
+    },
+    {
+      "id": "g4d3-0012",
+      "word": "clock",
+      "phonetic": "/klɒk/",
+      "pos": "名词",
+      "meaning": "时钟"
+    },
+    {
+      "id": "g4d3-0013",
+      "word": "just",
+      "phonetic": "/dʒʌst/",
+      "pos": "副词",
+      "meaning": "只是；仅仅；正要"
+    },
+    {
+      "id": "g4d3-0014",
+      "word": "minute",
+      "phonetic": "/ˈmɪnɪt/",
+      "pos": "名词",
+      "meaning": "分钟"
+    },
+    {
+      "id": "g4d4-0001",
+      "word": "trousers",
+      "phonetic": "/ˈtraʊzəz/",
+      "pos": "名词",
+      "meaning": "裤子"
+    },
+    {
+      "id": "g4d4-0002",
+      "word": "pair",
+      "phonetic": "/peə(r)/",
+      "pos": "名词",
+      "meaning": "（由连在一起的相似两部分构成的）一条，一副"
+    },
+    {
+      "id": "g4d4-0003",
+      "word": "clothes",
+      "phonetic": "/kləʊðz/",
+      "pos": "名词",
+      "meaning": "衣服；服装"
+    },
+    {
+      "id": "g4d4-0004",
+      "word": "shorts",
+      "phonetic": "/ʃɔːts/",
+      "pos": "名词",
+      "meaning": "短裤"
+    },
+    {
+      "id": "g4d4-0005",
+      "word": "jacket",
+      "phonetic": "/ˈdʒækɪt/",
+      "pos": "名词",
+      "meaning": "夹克衫"
+    },
+    {
+      "id": "g4d4-0006",
+      "word": "skirt",
+      "phonetic": "/skɜːt/",
+      "pos": "名词",
+      "meaning": "裙子"
+    },
+    {
+      "id": "g4d4-0007",
+      "word": "dear",
+      "phonetic": "/dɪə(r)/",
+      "pos": "感叹词",
+      "meaning": "天哪"
+    },
+    {
+      "id": "g4d4-0008",
+      "word": "expensive",
+      "phonetic": "/ɪkˈspensɪv/",
+      "pos": "形容词",
+      "meaning": "昂贵的；价格高的"
+    },
+    {
+      "id": "g4d4-0009",
+      "word": "take",
+      "phonetic": "/teɪk/",
+      "pos": "动词",
+      "meaning": "买下"
+    },
+    {
+      "id": "g4d4-0010",
+      "word": "cheap",
+      "phonetic": "/tʃiːp/",
+      "pos": "形容词",
+      "meaning": "便宜的"
+    },
+    {
+      "id": "g4d4-0011",
+      "word": "shoe",
+      "phonetic": "/ʃuː/",
+      "pos": "名词",
+      "meaning": "鞋"
+    },
+    {
+      "id": "g4d4-0012",
+      "word": "beautiful",
+      "phonetic": "/ˈbjuːtɪfl/",
+      "pos": "形容词",
+      "meaning": "美丽的"
+    },
+    {
+      "id": "g4d4-0013",
+      "word": "hat",
+      "phonetic": "/hæt/",
+      "pos": "名词",
+      "meaning": "帽子"
+    },
+    {
+      "id": "g4d4-0014",
+      "word": "sunglasses",
+      "phonetic": "/ˈsʌŋɡlɑːsɪz/",
+      "pos": "名词",
+      "meaning": "太阳镜；墨镜"
+    },
+    {
+      "id": "g4d4-0015",
+      "word": "free",
+      "phonetic": "/friː/",
+      "pos": "形容词",
+      "meaning": "免费的"
+    },
+    {
+      "id": "g4d4-0016",
+      "word": "large",
+      "phonetic": "/lɑːdʒ/",
+      "pos": "形容词",
+      "meaning": "（服装、食物、日用品等）大型号的"
+    },
+    {
+      "id": "g4d4-0017",
+      "word": "size",
+      "phonetic": "/saɪz/",
+      "pos": "名词",
+      "meaning": "尺码；号"
+    },
+    {
+      "id": "g4d4-0018",
+      "word": "list",
+      "phonetic": "/lɪst/",
+      "pos": "名词",
+      "meaning": "清单；目录"
+    },
+    {
+      "id": "g4d4-0019",
+      "word": "try on",
+      "phonetic": "/traɪ ɒn/",
+      "pos": "短语",
+      "meaning": "试穿"
+    },
+    {
+      "id": "g4d4-0020",
+      "word": "any",
+      "phonetic": "/ˈeni/",
+      "pos": "形容词",
+      "meaning": "任何的；任一的"
+    },
+    {
+      "id": "g4d5-0001",
+      "word": "cow",
+      "phonetic": "/kaʊ/",
+      "pos": "名词",
+      "meaning": "奶牛"
+    },
+    {
+      "id": "g4d5-0002",
+      "word": "horse",
+      "phonetic": "/hɔːs/",
+      "pos": "名词",
+      "meaning": "马"
+    },
+    {
+      "id": "g4d5-0003",
+      "word": "sheep",
+      "phonetic": "/ʃiːp/",
+      "pos": "名词",
+      "meaning": "绵羊"
+    },
+    {
+      "id": "g4d5-0004",
+      "word": "pig",
+      "phonetic": "/pɪɡ/",
+      "pos": "名词",
+      "meaning": "猪"
+    },
+    {
+      "id": "g4d5-0005",
+      "word": "chicken",
+      "phonetic": "/ˈtʃɪkɪn/",
+      "pos": "名词",
+      "meaning": "鸡；鸡肉"
+    },
+    {
+      "id": "g4d5-0006",
+      "word": "tomato",
+      "phonetic": "/təˈmɑːtəʊ/",
+      "pos": "名词",
+      "meaning": "西红柿"
+    },
+    {
+      "id": "g4d5-0007",
+      "word": "bee",
+      "phonetic": "/biː/",
+      "pos": "名词",
+      "meaning": "蜜蜂"
+    },
+    {
+      "id": "g4d5-0008",
+      "word": "mouse",
+      "phonetic": "/maʊs/",
+      "pos": "名词",
+      "meaning": "（复数 mice /maɪs/）老鼠"
+    },
+    {
+      "id": "g4d5-0009",
+      "word": "carrot",
+      "phonetic": "/ˈkærət/",
+      "pos": "名词",
+      "meaning": "胡萝卜"
+    },
+    {
+      "id": "g4d5-0010",
+      "word": "potato",
+      "phonetic": "/pəˈteɪtəʊ/",
+      "pos": "名词",
+      "meaning": "土豆"
+    },
+    {
+      "id": "g4d5-0011",
+      "word": "green bean",
+      "phonetic": "/ɡriːn biːn/",
+      "pos": "短语",
+      "meaning": "四季豆"
+    },
+    {
+      "id": "g4d5-0012",
+      "word": "can",
+      "phonetic": "/kæn/",
+      "pos": "名词",
+      "meaning": "（盛食品或饮料的）金属罐"
+    },
+    {
+      "id": "g4d5-0013",
+      "word": "a box of",
+      "phonetic": "/ə bɒks əv/",
+      "pos": "短语",
+      "meaning": "一盒，一箱（东西）"
+    },
+    {
+      "id": "g4d6-0001",
+      "word": "feed",
+      "phonetic": "/fiːd/",
+      "pos": "动词",
+      "meaning": "给（人或动物）食物；饲养"
+    },
+    {
+      "id": "g4d6-0002",
+      "word": "pass",
+      "phonetic": "/pɑːs/",
+      "pos": "动词",
+      "meaning": "给；递"
+    },
+    {
+      "id": "g4d6-0003",
+      "word": "pick",
+      "phonetic": "/pɪk/",
+      "pos": "动词",
+      "meaning": "采；摘"
+    },
+    {
+      "id": "g4d6-0004",
+      "word": "milk",
+      "phonetic": "/mɪlk/",
+      "pos": "动词",
+      "meaning": "挤奶"
+    },
+    {
+      "id": "g4d6-0005",
+      "word": "knife",
+      "phonetic": "/naɪf/",
+      "pos": "名词",
+      "meaning": "刀"
+    },
+    {
+      "id": "g4d6-0006",
+      "word": "fork",
+      "phonetic": "/fɔːk/",
+      "pos": "名词",
+      "meaning": "餐叉"
+    },
+    {
+      "id": "g4d6-0007",
+      "word": "chopstick",
+      "phonetic": "/ˈtʃɒpstɪk/",
+      "pos": "名词",
+      "meaning": "（常用复数）筷子"
+    },
+    {
+      "id": "g4d6-0008",
+      "word": "waste",
+      "phonetic": "/weɪst/",
+      "pos": "名词",
+      "meaning": "浪费；废品"
+    },
+    {
+      "id": "g4d6-0009",
+      "word": "food",
+      "phonetic": "/fuːd/",
+      "pos": "名词",
+      "meaning": "菜肴；食物"
+    },
+    {
+      "id": "g4d6-0010",
+      "word": "delicious",
+      "phonetic": "/dɪˈlɪʃəs/",
+      "pos": "形容词",
+      "meaning": "美味的；可口的"
+    },
+    {
+      "id": "g4d6-0011",
+      "word": "clear the table",
+      "phonetic": "/klɪə(r) ðə ˈteɪbl/",
+      "pos": "短语",
+      "meaning": "收拾餐桌"
+    },
+    {
+      "id": "g4d6-0012",
+      "word": "bowl",
+      "phonetic": "/bəʊl/",
+      "pos": "名词",
+      "meaning": "碗"
+    },
+    {
+      "id": "g4d6-0013",
+      "word": "spoon",
+      "phonetic": "/spuːn/",
+      "pos": "名词",
+      "meaning": "勺；匙；调羹"
+    },
+    {
+      "id": "g4d6-0014",
+      "word": "set the table",
+      "phonetic": "/set ðə ˈteɪbl/",
+      "pos": "短语",
+      "meaning": "摆放餐具"
+    },
+    {
+      "id": "g4d6-0015",
+      "word": "supermarket",
+      "phonetic": "/ˈsuːpəmɑːkɪt/",
+      "pos": "名词",
+      "meaning": "超市"
+    },
+    {
+      "id": "g4d6-0016",
+      "word": "by oneself",
+      "phonetic": "/baɪ wʌnˈself/",
+      "pos": "短语",
+      "meaning": "（某人）独立地；单独"
+    },
+    {
+      "id": "g4d6-0017",
+      "word": "week",
+      "phonetic": "/wiːk/",
+      "pos": "名词",
+      "meaning": "周；星期"
+    },
+    {
+      "id": "g4d6-0018",
+      "word": "salad",
+      "phonetic": "/ˈsæləd/",
+      "pos": "名词",
+      "meaning": "蔬菜沙拉"
+    },
+    {
+      "id": "g4d6-0019",
+      "word": "ad",
+      "phonetic": "/æd/",
+      "pos": "名词",
+      "meaning": "广告"
+    },
+    {
+      "id": "g4dnum-0001",
+      "word": "one",
+      "phonetic": "/wʌn/",
+      "pos": "数词",
+      "meaning": "一"
+    },
+    {
+      "id": "g4dnum-0002",
+      "word": "two",
+      "phonetic": "/tuː/",
+      "pos": "数词",
+      "meaning": "二"
+    },
+    {
+      "id": "g4dnum-0003",
+      "word": "three",
+      "phonetic": "/θriː/",
+      "pos": "数词",
+      "meaning": "三"
+    },
+    {
+      "id": "g4dnum-0004",
+      "word": "four",
+      "phonetic": "/fɔː(r)/",
+      "pos": "数词",
+      "meaning": "四"
+    },
+    {
+      "id": "g4dnum-0005",
+      "word": "five",
+      "phonetic": "/faɪv/",
+      "pos": "数词",
+      "meaning": "五"
+    },
+    {
+      "id": "g4dnum-0006",
+      "word": "six",
+      "phonetic": "/sɪks/",
+      "pos": "数词",
+      "meaning": "六"
+    },
+    {
+      "id": "g4dnum-0007",
+      "word": "seven",
+      "phonetic": "/ˈsevn/",
+      "pos": "数词",
+      "meaning": "七"
+    },
+    {
+      "id": "g4dnum-0008",
+      "word": "eight",
+      "phonetic": "/eɪt/",
+      "pos": "数词",
+      "meaning": "八"
+    },
+    {
+      "id": "g4dnum-0009",
+      "word": "nine",
+      "phonetic": "/naɪn/",
+      "pos": "数词",
+      "meaning": "九"
+    },
+    {
+      "id": "g4dnum-0010",
+      "word": "ten",
+      "phonetic": "/ten/",
+      "pos": "数词",
+      "meaning": "十"
+    },
+    {
+      "id": "g4dnum-0011",
+      "word": "eleven",
+      "phonetic": "/ɪˈlevn/",
+      "pos": "数词",
+      "meaning": "十一"
+    },
+    {
+      "id": "g4dnum-0012",
+      "word": "twelve",
+      "phonetic": "/twelv/",
+      "pos": "数词",
+      "meaning": "十二"
+    },
+    {
+      "id": "g4dnum-0013",
+      "word": "thirteen",
+      "phonetic": "/ˌθɜːˈtiːn/",
+      "pos": "数词",
+      "meaning": "十三"
+    },
+    {
+      "id": "g4dnum-0014",
+      "word": "fourteen",
+      "phonetic": "/ˌfɔːˈtiːn/",
+      "pos": "数词",
+      "meaning": "十四"
+    },
+    {
+      "id": "g4dnum-0015",
+      "word": "fifteen",
+      "phonetic": "/ˌfɪfˈtiːn/",
+      "pos": "数词",
+      "meaning": "十五"
+    },
+    {
+      "id": "g4dnum-0016",
+      "word": "sixteen",
+      "phonetic": "/ˌsɪksˈtiːn/",
+      "pos": "数词",
+      "meaning": "十六"
+    },
+    {
+      "id": "g4dnum-0017",
+      "word": "seventeen",
+      "phonetic": "/ˌsevnˈtiːn/",
+      "pos": "数词",
+      "meaning": "十七"
+    },
+    {
+      "id": "g4dnum-0018",
+      "word": "eighteen",
+      "phonetic": "/ˌeɪˈtiːn/",
+      "pos": "数词",
+      "meaning": "十八"
+    },
+    {
+      "id": "g4dnum-0019",
+      "word": "nineteen",
+      "phonetic": "/ˌnaɪnˈtiːn/",
+      "pos": "数词",
+      "meaning": "十九"
+    },
+    {
+      "id": "g4dnum-0020",
+      "word": "twenty",
+      "phonetic": "/ˈtwenti/",
+      "pos": "数词",
+      "meaning": "二十"
+    },
+    {
+      "id": "g4dnum-0021",
+      "word": "thirty",
+      "phonetic": "/ˈθɜːti/",
+      "pos": "数词",
+      "meaning": "三十"
+    },
+    {
+      "id": "g4dnum-0022",
+      "word": "forty",
+      "phonetic": "/ˈfɔːti/",
+      "pos": "数词",
+      "meaning": "四十"
+    },
+    {
+      "id": "g4dnum-0023",
+      "word": "fifty",
+      "phonetic": "/ˈfɪfti/",
+      "pos": "数词",
+      "meaning": "五十"
+    },
+    {
+      "id": "g4dnum-0024",
+      "word": "sixty",
+      "phonetic": "/ˈsɪksti/",
+      "pos": "数词",
+      "meaning": "六十"
+    },
+    {
+      "id": "g4dnum-0025",
+      "word": "seventy",
+      "phonetic": "/ˈsevnti/",
+      "pos": "数词",
+      "meaning": "七十"
+    },
+    {
+      "id": "g4dnum-0026",
+      "word": "eighty",
+      "phonetic": "/ˈeɪti/",
+      "pos": "数词",
+      "meaning": "八十"
+    },
+    {
+      "id": "g4dnum-0027",
+      "word": "ninety",
+      "phonetic": "/ˈnaɪnti/",
+      "pos": "数词",
+      "meaning": "九十"
+    },
+    {
+      "id": "g4dnum-0028",
+      "word": "hundred",
+      "phonetic": "/ˈhʌndrəd/",
+      "pos": "数词",
+      "meaning": "百"
+    }
+  ]
+}

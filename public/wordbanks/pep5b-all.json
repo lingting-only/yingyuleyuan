@@ -1,0 +1,1076 @@
+{
+  "id": "pep5b-all",
+  "words": [
+    {
+      "id": "g5d1-0001",
+      "word": "eat breakfast",
+      "phonetic": "/iːt ˈbrekfəst/",
+      "pos": "短语",
+      "meaning": "吃早饭"
+    },
+    {
+      "id": "g5d1-0002",
+      "word": "have ... class",
+      "phonetic": "/hæv klɑːs/",
+      "pos": "短语",
+      "meaning": "上……课"
+    },
+    {
+      "id": "g5d1-0003",
+      "word": "play sports",
+      "phonetic": "/pleɪ spɔːts/",
+      "pos": "短语",
+      "meaning": "进行体育运动"
+    },
+    {
+      "id": "g5d1-0004",
+      "word": "exercise",
+      "phonetic": "/ˈeksəsaɪz/",
+      "pos": "名词",
+      "meaning": "活动；运动"
+    },
+    {
+      "id": "g5d1-0005",
+      "word": "do morning exercises",
+      "phonetic": "/duː ˈmɔːnɪŋ ˈeksəsaɪzɪz/",
+      "pos": "短语",
+      "meaning": "做早操"
+    },
+    {
+      "id": "g5d1-0006",
+      "word": "eat dinner",
+      "phonetic": "/iːt ˈdɪnə/",
+      "pos": "短语",
+      "meaning": "吃晚饭"
+    },
+    {
+      "id": "g5d1-0007",
+      "word": "clean my room",
+      "phonetic": "/kliːn maɪ ruːm/",
+      "pos": "短语",
+      "meaning": "打扫我的房间"
+    },
+    {
+      "id": "g5d1-0008",
+      "word": "go for a walk",
+      "phonetic": "/ɡəʊ fɔː(r) ə wɔːk/",
+      "pos": "短语",
+      "meaning": "散步"
+    },
+    {
+      "id": "g5d1-0009",
+      "word": "go shopping",
+      "phonetic": "/ɡəʊ ˈʃɒpɪŋ/",
+      "pos": "短语",
+      "meaning": "去买东西；购物"
+    },
+    {
+      "id": "g5d1-0010",
+      "word": "take",
+      "phonetic": "/teɪk/",
+      "pos": "动词",
+      "meaning": "学习；上（课）"
+    },
+    {
+      "id": "g5d1-0011",
+      "word": "dancing",
+      "phonetic": "/ˈdɑːnsɪŋ/",
+      "pos": "名词",
+      "meaning": "跳舞；舞蹈"
+    },
+    {
+      "id": "g5d1-0012",
+      "word": "take a dancing class",
+      "phonetic": "/teɪk ə ˈdɑːnsɪŋ klɑːs/",
+      "pos": "短语",
+      "meaning": "上舞蹈课"
+    },
+    {
+      "id": "g5d1-0013",
+      "word": "when",
+      "phonetic": "/wen/",
+      "pos": "疑问副词",
+      "meaning": "什么时候；何时"
+    },
+    {
+      "id": "g5d1-0014",
+      "word": "after",
+      "phonetic": "/ˈɑːftə(r)/",
+      "pos": "介词",
+      "meaning": "在（时间）后"
+    },
+    {
+      "id": "g5d1-0015",
+      "word": "start",
+      "phonetic": "/stɑːt/",
+      "pos": "动词",
+      "meaning": "开始"
+    },
+    {
+      "id": "g5d1-0016",
+      "word": "usually",
+      "phonetic": "/ˈjuːʒuəli/",
+      "pos": "副词",
+      "meaning": "通常地；惯常地"
+    },
+    {
+      "id": "g5d1-0017",
+      "word": "Spain",
+      "phonetic": "/speɪn/",
+      "pos": "名词",
+      "meaning": "西班牙"
+    },
+    {
+      "id": "g5d1-0018",
+      "word": "late",
+      "phonetic": "/leɪt/",
+      "pos": "副词",
+      "meaning": "晚；迟"
+    },
+    {
+      "id": "g5d1-0019",
+      "word": "a.m.",
+      "phonetic": "/ˌeɪ em/",
+      "pos": "名词短语",
+      "meaning": "午前；上午"
+    },
+    {
+      "id": "g5d1-0020",
+      "word": "p.m.",
+      "phonetic": "/ˌpiː em/",
+      "pos": "名词短语",
+      "meaning": "午后；下午"
+    },
+    {
+      "id": "g5d1-0021",
+      "word": "why",
+      "phonetic": "/waɪ/",
+      "pos": "疑问副词",
+      "meaning": "为什么"
+    },
+    {
+      "id": "g5d1-0022",
+      "word": "shop",
+      "phonetic": "/ʃɒp/",
+      "pos": "动词",
+      "meaning": "去买东西；购物"
+    },
+    {
+      "id": "g5d1-0023",
+      "word": "work",
+      "phonetic": "/wɜːk/",
+      "pos": "名词",
+      "meaning": "工作"
+    },
+    {
+      "id": "g5d1-0024",
+      "word": "last",
+      "phonetic": "/lɑːst/",
+      "pos": "形容词",
+      "meaning": "上一个的；刚过去的"
+    },
+    {
+      "id": "g5d1-0025",
+      "word": "sound",
+      "phonetic": "/saʊnd/",
+      "pos": "动词",
+      "meaning": "听起来好像"
+    },
+    {
+      "id": "g5d1-0026",
+      "word": "also",
+      "phonetic": "/ˈɔːlsəʊ/",
+      "pos": "副词",
+      "meaning": "还；也"
+    },
+    {
+      "id": "g5d1-0027",
+      "word": "busy",
+      "phonetic": "/ˈbɪzi/",
+      "pos": "形容词",
+      "meaning": "忙的"
+    },
+    {
+      "id": "g5d1-0028",
+      "word": "need",
+      "phonetic": "/niːd/",
+      "pos": "动词",
+      "meaning": "需要"
+    },
+    {
+      "id": "g5d1-0029",
+      "word": "play",
+      "phonetic": "/pleɪ/",
+      "pos": "名词",
+      "meaning": "戏剧；剧本"
+    },
+    {
+      "id": "g5d1-0030",
+      "word": "letter",
+      "phonetic": "/ˈletə(r)/",
+      "pos": "名词",
+      "meaning": "信"
+    },
+    {
+      "id": "g5d1-0031",
+      "word": "live",
+      "phonetic": "/lɪv/",
+      "pos": "动词",
+      "meaning": "居住"
+    },
+    {
+      "id": "g5d1-0032",
+      "word": "island",
+      "phonetic": "/ˈaɪlənd/",
+      "pos": "名词",
+      "meaning": "岛"
+    },
+    {
+      "id": "g5d1-0033",
+      "word": "always",
+      "phonetic": "/ˈɔːlweɪz/",
+      "pos": "副词",
+      "meaning": "总是；一直"
+    },
+    {
+      "id": "g5d1-0034",
+      "word": "cave",
+      "phonetic": "/keɪv/",
+      "pos": "名词",
+      "meaning": "山洞；洞穴"
+    },
+    {
+      "id": "g5d1-0035",
+      "word": "go swimming",
+      "phonetic": "/ɡəʊ ˈswɪmɪŋ/",
+      "pos": "短语",
+      "meaning": "去游泳"
+    },
+    {
+      "id": "g5d1-0036",
+      "word": "win",
+      "phonetic": "/wɪn/",
+      "pos": "动词",
+      "meaning": "获胜"
+    },
+    {
+      "id": "g5d2-0001",
+      "word": "spring",
+      "phonetic": "/sprɪŋ/",
+      "pos": "名词",
+      "meaning": "春天"
+    },
+    {
+      "id": "g5d2-0002",
+      "word": "summer",
+      "phonetic": "/ˈsʌmə(r)/",
+      "pos": "名词",
+      "meaning": "夏天"
+    },
+    {
+      "id": "g5d2-0003",
+      "word": "autumn",
+      "phonetic": "/ˈɔːtəm/",
+      "pos": "名词",
+      "meaning": "秋天"
+    },
+    {
+      "id": "g5d2-0004",
+      "word": "winter",
+      "phonetic": "/ˈwɪntə(r)/",
+      "pos": "名词",
+      "meaning": "冬天"
+    },
+    {
+      "id": "g5d2-0005",
+      "word": "season",
+      "phonetic": "/ˈsiːzn/",
+      "pos": "名词",
+      "meaning": "季节"
+    },
+    {
+      "id": "g5d2-0006",
+      "word": "picnic",
+      "phonetic": "/ˈpɪknɪk/",
+      "pos": "名词",
+      "meaning": "野餐"
+    },
+    {
+      "id": "g5d2-0007",
+      "word": "go on a picnic",
+      "phonetic": "/ɡəʊ ɒn ə ˈpɪknɪk/",
+      "pos": "短语",
+      "meaning": "去野餐"
+    },
+    {
+      "id": "g5d2-0008",
+      "word": "pick",
+      "phonetic": "/pɪk/",
+      "pos": "动词",
+      "meaning": "摘；采集"
+    },
+    {
+      "id": "g5d2-0009",
+      "word": "pick apples",
+      "phonetic": "/pɪk ˈæplz/",
+      "pos": "短语",
+      "meaning": "摘苹果"
+    },
+    {
+      "id": "g5d2-0010",
+      "word": "snowman",
+      "phonetic": "/ˈsnəʊmæn/",
+      "pos": "名词",
+      "meaning": "雪人"
+    },
+    {
+      "id": "g5d2-0011",
+      "word": "make a snowman",
+      "phonetic": "/meɪk ə ˈsnəʊmæn/",
+      "pos": "短语",
+      "meaning": "堆雪人"
+    },
+    {
+      "id": "g5d2-0012",
+      "word": "which",
+      "phonetic": "/wɪtʃ/",
+      "pos": "疑问代词",
+      "meaning": "哪一个"
+    },
+    {
+      "id": "g5d2-0013",
+      "word": "best",
+      "phonetic": "/best/",
+      "pos": "副词",
+      "meaning": "最；最高程度地"
+    },
+    {
+      "id": "g5d2-0014",
+      "word": "snow",
+      "phonetic": "/snəʊ/",
+      "pos": "名词",
+      "meaning": "雪"
+    },
+    {
+      "id": "g5d2-0015",
+      "word": "good job",
+      "phonetic": "/ɡʊd dʒɒb/",
+      "pos": "短语",
+      "meaning": "做得好"
+    },
+    {
+      "id": "g5d2-0016",
+      "word": "because",
+      "phonetic": "/bɪˈkɒz/",
+      "pos": "连词",
+      "meaning": "因为"
+    },
+    {
+      "id": "g5d2-0017",
+      "word": "vacation",
+      "phonetic": "/vəˈkeɪʃn/",
+      "pos": "名词",
+      "meaning": "假期"
+    },
+    {
+      "id": "g5d2-0018",
+      "word": "all",
+      "phonetic": "/ɔːl/",
+      "pos": "形容词",
+      "meaning": "全；完全"
+    },
+    {
+      "id": "g5d2-0019",
+      "word": "pink",
+      "phonetic": "/pɪŋk/",
+      "pos": "名词 & 形容词",
+      "meaning": "粉色；粉色的"
+    },
+    {
+      "id": "g5d2-0020",
+      "word": "lovely",
+      "phonetic": "/ˈlʌvli/",
+      "pos": "形容词",
+      "meaning": "可爱的；美丽的"
+    },
+    {
+      "id": "g5d2-0021",
+      "word": "leaf",
+      "phonetic": "/liːf/",
+      "pos": "名词",
+      "meaning": "（复数 leaves /liːvz/）叶子"
+    },
+    {
+      "id": "g5d2-0022",
+      "word": "fall",
+      "phonetic": "/fɔːl/",
+      "pos": "动词 & 名词",
+      "meaning": "落下；【美】秋天"
+    },
+    {
+      "id": "g5d2-0023",
+      "word": "paint",
+      "phonetic": "/peɪnt/",
+      "pos": "动词",
+      "meaning": "用颜料绘画"
+    },
+    {
+      "id": "g5d3-0001",
+      "word": "January",
+      "phonetic": "/ˈdʒænjuəri/",
+      "pos": "名词",
+      "meaning": "一月"
+    },
+    {
+      "id": "g5d3-0002",
+      "word": "February",
+      "phonetic": "/ˈfebruəri/",
+      "pos": "名词",
+      "meaning": "二月"
+    },
+    {
+      "id": "g5d3-0003",
+      "word": "March",
+      "phonetic": "/mɑːtʃ/",
+      "pos": "名词",
+      "meaning": "三月"
+    },
+    {
+      "id": "g5d3-0004",
+      "word": "April",
+      "phonetic": "/ˈeɪprəl/",
+      "pos": "名词",
+      "meaning": "四月"
+    },
+    {
+      "id": "g5d3-0005",
+      "word": "May",
+      "phonetic": "/meɪ/",
+      "pos": "名词",
+      "meaning": "五月"
+    },
+    {
+      "id": "g5d3-0006",
+      "word": "June",
+      "phonetic": "/dʒuːn/",
+      "pos": "名词",
+      "meaning": "六月"
+    },
+    {
+      "id": "g5d3-0007",
+      "word": "July",
+      "phonetic": "/dʒuˈlaɪ/",
+      "pos": "名词",
+      "meaning": "七月"
+    },
+    {
+      "id": "g5d3-0008",
+      "word": "August",
+      "phonetic": "/ˈɔːɡəst/",
+      "pos": "名词",
+      "meaning": "八月"
+    },
+    {
+      "id": "g5d3-0009",
+      "word": "September",
+      "phonetic": "/sepˈtembə(r)/",
+      "pos": "名词",
+      "meaning": "九月"
+    },
+    {
+      "id": "g5d3-0010",
+      "word": "October",
+      "phonetic": "/ɒkˈtəʊbə(r)/",
+      "pos": "名词",
+      "meaning": "十月"
+    },
+    {
+      "id": "g5d3-0011",
+      "word": "November",
+      "phonetic": "/nəʊˈvembə(r)/",
+      "pos": "名词",
+      "meaning": "十一月"
+    },
+    {
+      "id": "g5d3-0012",
+      "word": "December",
+      "phonetic": "/dɪˈsembə(r)/",
+      "pos": "名词",
+      "meaning": "十二月"
+    },
+    {
+      "id": "g5d3-0013",
+      "word": "few",
+      "phonetic": "/fjuː/",
+      "pos": "形容词",
+      "meaning": "不多；很少"
+    },
+    {
+      "id": "g5d3-0014",
+      "word": "a few",
+      "phonetic": "/ə fjuː/",
+      "pos": "短语",
+      "meaning": "一些"
+    },
+    {
+      "id": "g5d3-0015",
+      "word": "thing",
+      "phonetic": "/θɪŋ/",
+      "pos": "名词",
+      "meaning": "事情"
+    },
+    {
+      "id": "g5d3-0016",
+      "word": "meet",
+      "phonetic": "/miːt/",
+      "pos": "动词",
+      "meaning": "集会；开会"
+    },
+    {
+      "id": "g5d3-0017",
+      "word": "sports meet",
+      "phonetic": "/spɔːts miːt/",
+      "pos": "短语",
+      "meaning": "运动会"
+    },
+    {
+      "id": "g5d3-0018",
+      "word": "trip",
+      "phonetic": "/trɪp/",
+      "pos": "名词",
+      "meaning": "旅行"
+    },
+    {
+      "id": "g5d3-0019",
+      "word": "year",
+      "phonetic": "/jɪə(r)/",
+      "pos": "名词",
+      "meaning": "年"
+    },
+    {
+      "id": "g5d3-0020",
+      "word": "plant",
+      "phonetic": "/plɑːnt/",
+      "pos": "动词",
+      "meaning": "种植"
+    },
+    {
+      "id": "g5d3-0021",
+      "word": "contest",
+      "phonetic": "/ˈkɒntest/",
+      "pos": "名词",
+      "meaning": "比赛；竞赛"
+    },
+    {
+      "id": "g5d3-0022",
+      "word": "the Great Wall",
+      "phonetic": "/ðə ɡreɪt wɔːl/",
+      "pos": "名词短语",
+      "meaning": "长城"
+    },
+    {
+      "id": "g5d3-0023",
+      "word": "national",
+      "phonetic": "/ˈnæʃnəl/",
+      "pos": "形容词",
+      "meaning": "国家的"
+    },
+    {
+      "id": "g5d3-0024",
+      "word": "National Day",
+      "phonetic": "/ˈnæʃnəl deɪ/",
+      "pos": "名词短语",
+      "meaning": "国庆日"
+    },
+    {
+      "id": "g5d3-0025",
+      "word": "American",
+      "phonetic": "/əˈmerɪkən/",
+      "pos": "形容词",
+      "meaning": "美国的"
+    },
+    {
+      "id": "g5d3-0026",
+      "word": "Thanksgiving",
+      "phonetic": "/ˌθæŋksˈɡɪvɪŋ/",
+      "pos": "名词",
+      "meaning": "感恩节"
+    },
+    {
+      "id": "g5d3-0027",
+      "word": "Christmas",
+      "phonetic": "/ˈkrɪsməs/",
+      "pos": "名词",
+      "meaning": "圣诞节"
+    },
+    {
+      "id": "g5d3-0028",
+      "word": "game",
+      "phonetic": "/ɡeɪm/",
+      "pos": "名词",
+      "meaning": "游戏"
+    },
+    {
+      "id": "g5d3-0029",
+      "word": "riddle",
+      "phonetic": "/ˈrɪdl/",
+      "pos": "名词",
+      "meaning": "谜；谜语"
+    },
+    {
+      "id": "g5d3-0030",
+      "word": "act",
+      "phonetic": "/ækt/",
+      "pos": "动词",
+      "meaning": "扮演"
+    },
+    {
+      "id": "g5d3-0031",
+      "word": "act out",
+      "phonetic": "/ækt aʊt/",
+      "pos": "短语",
+      "meaning": "把……表演出来"
+    },
+    {
+      "id": "g5d3-0032",
+      "word": "RSVP",
+      "phonetic": "/ˌɑːr es viː piː/",
+      "pos": "名词短语",
+      "meaning": "（尤用于请柬）请赐复"
+    },
+    {
+      "id": "g5d3-0033",
+      "word": "by",
+      "phonetic": "/baɪ/",
+      "pos": "介词",
+      "meaning": "在……之前"
+    },
+    {
+      "id": "g5d4-0001",
+      "word": "first",
+      "phonetic": "/fɜːst/",
+      "pos": "序数词",
+      "meaning": "第一（的）"
+    },
+    {
+      "id": "g5d4-0002",
+      "word": "second",
+      "phonetic": "/ˈsekənd/",
+      "pos": "序数词",
+      "meaning": "第二（的）"
+    },
+    {
+      "id": "g5d4-0003",
+      "word": "third",
+      "phonetic": "/θɜːd/",
+      "pos": "序数词",
+      "meaning": "第三（的）"
+    },
+    {
+      "id": "g5d4-0004",
+      "word": "fourth",
+      "phonetic": "/fɔːθ/",
+      "pos": "序数词",
+      "meaning": "第四（的）"
+    },
+    {
+      "id": "g5d4-0005",
+      "word": "fifth",
+      "phonetic": "/fɪfθ/",
+      "pos": "序数词",
+      "meaning": "第五（的）"
+    },
+    {
+      "id": "g5d4-0006",
+      "word": "twelfth",
+      "phonetic": "/twelfθ/",
+      "pos": "序数词",
+      "meaning": "第十二（的）"
+    },
+    {
+      "id": "g5d4-0007",
+      "word": "twentieth",
+      "phonetic": "/ˈtwentiəθ/",
+      "pos": "序数词",
+      "meaning": "第二十（的）"
+    },
+    {
+      "id": "g5d4-0008",
+      "word": "twenty-first",
+      "phonetic": "/ˌtwentiˈfɜːst/",
+      "pos": "序数词",
+      "meaning": "第二十一（的）"
+    },
+    {
+      "id": "g5d4-0009",
+      "word": "twenty-third",
+      "phonetic": "/ˌtwentiˈθɜːd/",
+      "pos": "序数词",
+      "meaning": "第二十三（的）"
+    },
+    {
+      "id": "g5d4-0010",
+      "word": "thirtieth",
+      "phonetic": "/ˈθɜːtiəθ/",
+      "pos": "序数词",
+      "meaning": "第三十（的）"
+    },
+    {
+      "id": "g5d4-0011",
+      "word": "other",
+      "phonetic": "/ˈʌðə(r)/",
+      "pos": "形容词",
+      "meaning": "其他"
+    },
+    {
+      "id": "g5d4-0012",
+      "word": "special",
+      "phonetic": "/ˈspeʃl/",
+      "pos": "形容词",
+      "meaning": "特殊的；特别的"
+    },
+    {
+      "id": "g5d4-0013",
+      "word": "show",
+      "phonetic": "/ʃəʊ/",
+      "pos": "名词",
+      "meaning": "展览"
+    },
+    {
+      "id": "g5d4-0014",
+      "word": "festival",
+      "phonetic": "/ˈfestɪvl/",
+      "pos": "名词",
+      "meaning": "节日"
+    },
+    {
+      "id": "g5d4-0015",
+      "word": "kitten",
+      "phonetic": "/ˈkɪtn/",
+      "pos": "名词",
+      "meaning": "小猫"
+    },
+    {
+      "id": "g5d4-0016",
+      "word": "diary",
+      "phonetic": "/ˈdaɪəri/",
+      "pos": "名词",
+      "meaning": "日记"
+    },
+    {
+      "id": "g5d4-0017",
+      "word": "still",
+      "phonetic": "/stɪl/",
+      "pos": "副词",
+      "meaning": "仍然；依旧；还是"
+    },
+    {
+      "id": "g5d4-0018",
+      "word": "noise",
+      "phonetic": "/nɔɪz/",
+      "pos": "名词",
+      "meaning": "声音；响声；噪音"
+    },
+    {
+      "id": "g5d4-0019",
+      "word": "fur",
+      "phonetic": "/fɜː(r)/",
+      "pos": "名词",
+      "meaning": "（某些动物的）浓密的软毛"
+    },
+    {
+      "id": "g5d4-0020",
+      "word": "open",
+      "phonetic": "/ˈəʊpən/",
+      "pos": "形容词",
+      "meaning": "开着的"
+    },
+    {
+      "id": "g5d4-0021",
+      "word": "walk",
+      "phonetic": "/wɔːk/",
+      "pos": "动词",
+      "meaning": "行走"
+    },
+    {
+      "id": "g5d4-0022",
+      "word": "like",
+      "phonetic": "/laɪk/",
+      "pos": "介词",
+      "meaning": "像……那样"
+    },
+    {
+      "id": "g5d5-0001",
+      "word": "mine",
+      "phonetic": "/maɪn/",
+      "pos": "代词",
+      "meaning": "我的"
+    },
+    {
+      "id": "g5d5-0002",
+      "word": "yours",
+      "phonetic": "/jɔːz/",
+      "pos": "代词",
+      "meaning": "你（们）的"
+    },
+    {
+      "id": "g5d5-0003",
+      "word": "his",
+      "phonetic": "/hɪz/",
+      "pos": "代词",
+      "meaning": "他的"
+    },
+    {
+      "id": "g5d5-0004",
+      "word": "hers",
+      "phonetic": "/hɜːz/",
+      "pos": "代词",
+      "meaning": "她的"
+    },
+    {
+      "id": "g5d5-0005",
+      "word": "theirs",
+      "phonetic": "/ðeəz/",
+      "pos": "代词",
+      "meaning": "他们的；她们的；它们的"
+    },
+    {
+      "id": "g5d5-0006",
+      "word": "ours",
+      "phonetic": "/ˈaʊəz/",
+      "pos": "代词",
+      "meaning": "我们的"
+    },
+    {
+      "id": "g5d5-0007",
+      "word": "climbing",
+      "phonetic": "/ˈklaɪmɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）攀登；攀爬"
+    },
+    {
+      "id": "g5d5-0008",
+      "word": "eating",
+      "phonetic": "/ˈiːtɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）吃"
+    },
+    {
+      "id": "g5d5-0009",
+      "word": "playing",
+      "phonetic": "/ˈpleɪɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）玩耍"
+    },
+    {
+      "id": "g5d5-0010",
+      "word": "jumping",
+      "phonetic": "/ˈdʒʌmpɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）跳"
+    },
+    {
+      "id": "g5d5-0011",
+      "word": "drinking",
+      "phonetic": "/ˈdrɪŋkɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）喝（水）"
+    },
+    {
+      "id": "g5d5-0012",
+      "word": "sleeping",
+      "phonetic": "/ˈsliːpɪŋ/",
+      "pos": "动词ing",
+      "meaning": "（正在）睡觉"
+    },
+    {
+      "id": "g5d5-0013",
+      "word": "each",
+      "phonetic": "/iːtʃ/",
+      "pos": "形容词",
+      "meaning": "每一；各个"
+    },
+    {
+      "id": "g5d5-0014",
+      "word": "each other",
+      "phonetic": "/iːtʃ ˈʌðə(r)/",
+      "pos": "短语",
+      "meaning": "相互"
+    },
+    {
+      "id": "g5d5-0015",
+      "word": "excited",
+      "phonetic": "/ɪkˈsaɪtɪd/",
+      "pos": "形容词",
+      "meaning": "兴奋的；激动的"
+    },
+    {
+      "id": "g5d6-0001",
+      "word": "doing morning exercises",
+      "phonetic": "/ˈduːɪŋ ˈmɔːnɪŋ ˈeksəsaɪzɪz/",
+      "pos": "短语",
+      "meaning": "（正在）做早操"
+    },
+    {
+      "id": "g5d6-0002",
+      "word": "having ... class",
+      "phonetic": "/ˈhævɪŋ klɑːs/",
+      "pos": "短语",
+      "meaning": "（正在）上……课"
+    },
+    {
+      "id": "g5d6-0003",
+      "word": "eating lunch",
+      "phonetic": "/ˈiːtɪŋ lʌntʃ/",
+      "pos": "短语",
+      "meaning": "（正在）吃午饭"
+    },
+    {
+      "id": "g5d6-0004",
+      "word": "reading a book",
+      "phonetic": "/ˈriːdɪŋ ə bʊk/",
+      "pos": "短语",
+      "meaning": "（正在）看书"
+    },
+    {
+      "id": "g5d6-0005",
+      "word": "listening to music",
+      "phonetic": "/ˈlɪsnɪŋ tuː ˈmjuːzɪk/",
+      "pos": "短语",
+      "meaning": "（正在）听音乐"
+    },
+    {
+      "id": "g5d6-0006",
+      "word": "keep",
+      "phonetic": "/kiːp/",
+      "pos": "动词",
+      "meaning": "保持某种状态"
+    },
+    {
+      "id": "g5d6-0007",
+      "word": "keep to the right",
+      "phonetic": "/kiːp tuː ðə raɪt/",
+      "pos": "短语",
+      "meaning": "靠右"
+    },
+    {
+      "id": "g5d6-0008",
+      "word": "keep your desk clean",
+      "phonetic": "/kiːp jɔː desk kliːn/",
+      "pos": "短语",
+      "meaning": "保持你的课桌干净"
+    },
+    {
+      "id": "g5d6-0009",
+      "word": "talk quietly",
+      "phonetic": "/tɔːk ˈkwaɪətli/",
+      "pos": "短语",
+      "meaning": "小声讲话"
+    },
+    {
+      "id": "g5d6-0010",
+      "word": "turn",
+      "phonetic": "/tɜːn/",
+      "pos": "名词",
+      "meaning": "顺序"
+    },
+    {
+      "id": "g5d6-0011",
+      "word": "take turns",
+      "phonetic": "/teɪk tɜːnz/",
+      "pos": "短语",
+      "meaning": "按顺序来"
+    },
+    {
+      "id": "g5d6-0012",
+      "word": "bamboo",
+      "phonetic": "/ˌbæmˈbuː/",
+      "pos": "名词",
+      "meaning": "竹子"
+    },
+    {
+      "id": "g5d6-0013",
+      "word": "its",
+      "phonetic": "/ɪts/",
+      "pos": "代词",
+      "meaning": "（指事物、动物或幼儿）它的；他的；她的"
+    },
+    {
+      "id": "g5d6-0014",
+      "word": "show",
+      "phonetic": "/ʃəʊ/",
+      "pos": "动词",
+      "meaning": "给人看"
+    },
+    {
+      "id": "g5d6-0015",
+      "word": "anything",
+      "phonetic": "/ˈeniθɪŋ/",
+      "pos": "代词",
+      "meaning": "任何事物"
+    },
+    {
+      "id": "g5d6-0016",
+      "word": "else",
+      "phonetic": "/els/",
+      "pos": "形容词",
+      "meaning": "另外；其他"
+    },
+    {
+      "id": "g5d6-0017",
+      "word": "exhibition",
+      "phonetic": "/ˌeksɪˈbɪʃn/",
+      "pos": "名词",
+      "meaning": "展览"
+    },
+    {
+      "id": "g5d6-0018",
+      "word": "say",
+      "phonetic": "/seɪ/",
+      "pos": "动词",
+      "meaning": "说；讲"
+    },
+    {
+      "id": "g5d6-0019",
+      "word": "have a look",
+      "phonetic": "/hæv ə lʊk/",
+      "pos": "短语",
+      "meaning": "看一看"
+    },
+    {
+      "id": "g5d6-0020",
+      "word": "sushi",
+      "phonetic": "/ˈsuːʃi/",
+      "pos": "名词",
+      "meaning": "寿司"
+    },
+    {
+      "id": "g5d6-0021",
+      "word": "teach",
+      "phonetic": "/tiːtʃ/",
+      "pos": "动词",
+      "meaning": "教"
+    },
+    {
+      "id": "g5d6-0022",
+      "word": "sure",
+      "phonetic": "/ʃʊə(r)/",
+      "pos": "副词",
+      "meaning": "（表示同意）当然"
+    },
+    {
+      "id": "g5d6-0023",
+      "word": "Canadian",
+      "phonetic": "/kəˈneɪdiən/",
+      "pos": "形容词",
+      "meaning": "加拿大的"
+    },
+    {
+      "id": "g5d6-0024",
+      "word": "Spanish",
+      "phonetic": "/ˈspænɪʃ/",
+      "pos": "形容词",
+      "meaning": "西班牙的"
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+{
+  "id": "pep3a-all",
+  "words": [
+    {
+      "id": "g3u1-0001",
+      "word": "name",
+      "phonetic": "/neɪm/",
+      "pos": "名词",
+      "meaning": "名字"
+    },
+    {
+      "id": "g3u1-0002",
+      "word": "nice",
+      "phonetic": "/naɪs/",
+      "pos": "形容词",
+      "meaning": "令人愉快的；友好的"
+    },
+    {
+      "id": "g3u1-0003",
+      "word": "ear",
+      "phonetic": "/ɪə(r)/",
+      "pos": "名词",
+      "meaning": "耳朵"
+    },
+    {
+      "id": "g3u1-0004",
+      "word": "hand",
+      "phonetic": "/hænd/",
+      "pos": "名词",
+      "meaning": "手"
+    },
+    {
+      "id": "g3u1-0005",
+      "word": "eye",
+      "phonetic": "/aɪ/",
+      "pos": "名词",
+      "meaning": "眼睛"
+    },
+    {
+      "id": "g3u1-0006",
+      "word": "mouth",
+      "phonetic": "/maʊθ/",
+      "pos": "名词",
+      "meaning": "嘴"
+    },
+    {
+      "id": "g3u1-0007",
+      "word": "arm",
+      "phonetic": "/ɑːm/",
+      "pos": "名词",
+      "meaning": "胳膊"
+    },
+    {
+      "id": "g3u1-0008",
+      "word": "can",
+      "phonetic": "/kən, kæn/",
+      "pos": "情态动词",
+      "meaning": "可以"
+    },
+    {
+      "id": "g3u1-0009",
+      "word": "share",
+      "phonetic": "/ʃeə(r)/",
+      "pos": "动词",
+      "meaning": "分享"
+    },
+    {
+      "id": "g3u1-0010",
+      "word": "smile",
+      "phonetic": "/smaɪl/",
+      "pos": "动词",
+      "meaning": "微笑；笑"
+    },
+    {
+      "id": "g3u1-0011",
+      "word": "listen",
+      "phonetic": "/ˈlɪsn/",
+      "pos": "动词",
+      "meaning": "听；倾听"
+    },
+    {
+      "id": "g3u1-0012",
+      "word": "help",
+      "phonetic": "/help/",
+      "pos": "动词",
+      "meaning": "帮助"
+    },
+    {
+      "id": "g3u1-0013",
+      "word": "say",
+      "phonetic": "/seɪ/",
+      "pos": "动词",
+      "meaning": "说；讲"
+    },
+    {
+      "id": "g3u1-0014",
+      "word": "and",
+      "phonetic": "/ənd, ænd/",
+      "pos": "连词",
+      "meaning": "和；与"
+    },
+    {
+      "id": "g3u1-0015",
+      "word": "goodbye",
+      "phonetic": "/ˌɡʊdˈbaɪ/",
+      "pos": "感叹词",
+      "meaning": "再见"
+    },
+    {
+      "id": "g3u1-0016",
+      "word": "toy",
+      "phonetic": "/tɔɪ/",
+      "pos": "名词",
+      "meaning": "玩具"
+    },
+    {
+      "id": "g3u1-0017",
+      "word": "friend",
+      "phonetic": "/frend/",
+      "pos": "名词",
+      "meaning": "朋友"
+    },
+    {
+      "id": "g3u1-0018",
+      "word": "good",
+      "phonetic": "/ɡʊd/",
+      "pos": "形容词",
+      "meaning": "好的"
+    },
+    {
+      "id": "g3u1-0019",
+      "word": "grandfather",
+      "phonetic": "/ˈɡrænfɑːðə(r)/",
+      "pos": "名词",
+      "meaning": "（外）祖父；爷爷；姥爷；外公"
+    },
+    {
+      "id": "g3u1-0020",
+      "word": "grandmother",
+      "phonetic": "/ˈɡrænmʌðə(r)/",
+      "pos": "名词",
+      "meaning": "（外）祖母；奶奶；姥姥；外婆"
+    },
+    {
+      "id": "g3u1-0021",
+      "word": "mother",
+      "phonetic": "/ˈmʌðə(r)/",
+      "pos": "名词",
+      "meaning": "母亲；妈妈"
+    },
+    {
+      "id": "g3u1-0022",
+      "word": "father",
+      "phonetic": "/ˈfɑːðə(r)/",
+      "pos": "名词",
+      "meaning": "父亲；爸爸"
+    },
+    {
+      "id": "g3u1-0023",
+      "word": "me",
+      "phonetic": "/miː/",
+      "pos": "代词",
+      "meaning": "我"
+    },
+    {
+      "id": "g3u1-0024",
+      "word": "sister",
+      "phonetic": "/ˈsɪstə(r)/",
+      "pos": "名词",
+      "meaning": "姐；妹"
+    },
+    {
+      "id": "g3u1-0025",
+      "word": "family",
+      "phonetic": "/ˈfæməli/",
+      "pos": "名词",
+      "meaning": "家；家庭"
+    },
+    {
+      "id": "g3u1-0026",
+      "word": "have",
+      "phonetic": "/hæv/",
+      "pos": "动词",
+      "meaning": "有"
+    },
+    {
+      "id": "g3u1-0027",
+      "word": "big",
+      "phonetic": "/bɪɡ/",
+      "pos": "形容词",
+      "meaning": "大的"
+    },
+    {
+      "id": "g3u1-0028",
+      "word": "cousin",
+      "phonetic": "/ˈkʌzn/",
+      "pos": "名词",
+      "meaning": "堂（表）兄弟；堂（表）姐妹"
+    },
+    {
+      "id": "g3u1-0029",
+      "word": "brother",
+      "phonetic": "/ˈbrʌðə(r)/",
+      "pos": "名词",
+      "meaning": "哥；弟"
+    },
+    {
+      "id": "g3u1-0030",
+      "word": "baby",
+      "phonetic": "/ˈbeɪbi/",
+      "pos": "名词",
+      "meaning": "婴儿"
+    },
+    {
+      "id": "g3u1-0031",
+      "word": "uncle",
+      "phonetic": "/ˈʌŋkl/",
+      "pos": "名词",
+      "meaning": "伯父；叔父；舅父；姑父；姨父"
+    },
+    {
+      "id": "g3u1-0032",
+      "word": "aunt",
+      "phonetic": "/ɑːnt/",
+      "pos": "名词",
+      "meaning": "伯母；婶母；舅母；姑母；姨母"
+    },
+    {
+      "id": "g3u1-0033",
+      "word": "some",
+      "phonetic": "/səm, sʌm/",
+      "pos": "代词 & 形容词",
+      "meaning": "一些"
+    },
+    {
+      "id": "g3u1-0034",
+      "word": "small",
+      "phonetic": "/smɔːl/",
+      "pos": "形容词",
+      "meaning": "小的"
+    },
+    {
+      "id": "g3u2-0001",
+      "word": "mum",
+      "phonetic": "/mʌm/",
+      "pos": "名词",
+      "meaning": "（口语）妈妈"
+    },
+    {
+      "id": "g3u2-0002",
+      "word": "dad",
+      "phonetic": "/dæd/",
+      "pos": "名词",
+      "meaning": "（口语）爸爸；爹爹"
+    },
+    {
+      "id": "g3u2-0003",
+      "word": "grandma",
+      "phonetic": "/ˈɡrænmɑː/",
+      "pos": "名词",
+      "meaning": "奶奶；姥姥"
+    },
+    {
+      "id": "g3u2-0004",
+      "word": "grandpa",
+      "phonetic": "/ˈɡrænpɑː/",
+      "pos": "名词",
+      "meaning": "爷爷；姥爷"
+    },
+    {
+      "id": "g3u2-0005",
+      "word": "bird",
+      "phonetic": "/bɜːd/",
+      "pos": "名词",
+      "meaning": "鸟"
+    },
+    {
+      "id": "g3u2-0006",
+      "word": "rabbit",
+      "phonetic": "/ˈræbɪt/",
+      "pos": "名词",
+      "meaning": "兔"
+    },
+    {
+      "id": "g3u2-0007",
+      "word": "go",
+      "phonetic": "/ɡəʊ/",
+      "pos": "动词",
+      "meaning": "去；走"
+    },
+    {
+      "id": "g3u2-0008",
+      "word": "zoo",
+      "phonetic": "/zuː/",
+      "pos": "名词",
+      "meaning": "动物园"
+    },
+    {
+      "id": "g3u2-0009",
+      "word": "fox",
+      "phonetic": "/fɒks/",
+      "pos": "名词",
+      "meaning": "狐狸"
+    },
+    {
+      "id": "g3u2-0010",
+      "word": "Miss",
+      "phonetic": "/mɪs/",
+      "pos": "名词",
+      "meaning": "（学生对女教师的称呼）老师；女士"
+    },
+    {
+      "id": "g3u2-0011",
+      "word": "panda",
+      "phonetic": "/ˈpændə/",
+      "pos": "名词",
+      "meaning": "大熊猫"
+    },
+    {
+      "id": "g3u2-0012",
+      "word": "red panda",
+      "phonetic": "/red ˈpændə/",
+      "pos": "短语",
+      "meaning": "小熊猫"
+    },
+    {
+      "id": "g3u2-0013",
+      "word": "cute",
+      "phonetic": "/kjuːt/",
+      "pos": "形容词",
+      "meaning": "可爱的"
+    },
+    {
+      "id": "g3u2-0014",
+      "word": "monkey",
+      "phonetic": "/ˈmʌŋki/",
+      "pos": "名词",
+      "meaning": "猴子"
+    },
+    {
+      "id": "g3u2-0015",
+      "word": "tiger",
+      "phonetic": "/ˈtaɪɡə(r)/",
+      "pos": "名词",
+      "meaning": "老虎"
+    },
+    {
+      "id": "g3u2-0016",
+      "word": "elephant",
+      "phonetic": "/ˈelɪfənt/",
+      "pos": "名词",
+      "meaning": "大象"
+    },
+    {
+      "id": "g3u2-0017",
+      "word": "lion",
+      "phonetic": "/ˈlaɪən/",
+      "pos": "名词",
+      "meaning": "狮；狮子"
+    },
+    {
+      "id": "g3u2-0018",
+      "word": "animal",
+      "phonetic": "/ˈænɪml/",
+      "pos": "名词",
+      "meaning": "动物"
+    },
+    {
+      "id": "g3u2-0019",
+      "word": "giraffe",
+      "phonetic": "/dʒəˈrɑːf/",
+      "pos": "名词",
+      "meaning": "长颈鹿"
+    },
+    {
+      "id": "g3u2-0020",
+      "word": "tall",
+      "phonetic": "/tɔːl/",
+      "pos": "形容词",
+      "meaning": "高的"
+    },
+    {
+      "id": "g3u2-0021",
+      "word": "fast",
+      "phonetic": "/fɑːst/",
+      "pos": "形容词",
+      "meaning": "快的"
+    },
+    {
+      "id": "g3u3-0001",
+      "word": "like",
+      "phonetic": "/laɪk/",
+      "pos": "动词",
+      "meaning": "喜欢"
+    },
+    {
+      "id": "g3u3-0002",
+      "word": "dog",
+      "phonetic": "/dɒɡ/",
+      "pos": "名词",
+      "meaning": "狗"
+    },
+    {
+      "id": "g3u3-0003",
+      "word": "pet",
+      "phonetic": "/pet/",
+      "pos": "名词",
+      "meaning": "宠物"
+    },
+    {
+      "id": "g3u3-0004",
+      "word": "cat",
+      "phonetic": "/kæt/",
+      "pos": "名词",
+      "meaning": "猫"
+    },
+    {
+      "id": "g3u3-0005",
+      "word": "fish",
+      "phonetic": "/fɪʃ/",
+      "pos": "名词",
+      "meaning": "鱼；鱼肉"
+    },
+    {
+      "id": "g3u4-0001",
+      "word": "apple",
+      "phonetic": "/ˈæpl/",
+      "pos": "名词",
+      "meaning": "苹果"
+    },
+    {
+      "id": "g3u4-0002",
+      "word": "banana",
+      "phonetic": "/bəˈnɑːnə/",
+      "pos": "名词",
+      "meaning": "香蕉"
+    },
+    {
+      "id": "g3u4-0003",
+      "word": "farm",
+      "phonetic": "/fɑːm/",
+      "pos": "名词",
+      "meaning": "农场"
+    },
+    {
+      "id": "g3u4-0004",
+      "word": "air",
+      "phonetic": "/eə(r)/",
+      "pos": "名词",
+      "meaning": "空气"
+    },
+    {
+      "id": "g3u4-0005",
+      "word": "orange",
+      "phonetic": "/ˈɒrɪndʒ/",
+      "pos": "名词",
+      "meaning": "橙子；柑橘"
+    },
+    {
+      "id": "g3u4-0006",
+      "word": "grape",
+      "phonetic": "/ɡreɪp/",
+      "pos": "名词",
+      "meaning": "葡萄"
+    },
+    {
+      "id": "g3u4-0007",
+      "word": "school",
+      "phonetic": "/skuːl/",
+      "pos": "名词",
+      "meaning": "学校"
+    },
+    {
+      "id": "g3u4-0008",
+      "word": "garden",
+      "phonetic": "/ˈɡɑːdn/",
+      "pos": "名词",
+      "meaning": "花园"
+    },
+    {
+      "id": "g3u4-0009",
+      "word": "need",
+      "phonetic": "/niːd/",
+      "pos": "动词",
+      "meaning": "需要"
+    },
+    {
+      "id": "g3u4-0010",
+      "word": "water",
+      "phonetic": "/ˈwɔːtə(r)/",
+      "pos": "动词",
+      "meaning": "给……浇水；水"
+    },
+    {
+      "id": "g3u4-0011",
+      "word": "flower",
+      "phonetic": "/ˈflaʊə(r)/",
+      "pos": "名词",
+      "meaning": "花；花朵"
+    },
+    {
+      "id": "g3u4-0012",
+      "word": "grass",
+      "phonetic": "/ɡrɑːs/",
+      "pos": "名词",
+      "meaning": "草；草地"
+    },
+    {
+      "id": "g3u4-0013",
+      "word": "plant",
+      "phonetic": "/plɑːnt/",
+      "pos": "动词 & 名词",
+      "meaning": "种植；植物"
+    },
+    {
+      "id": "g3u4-0014",
+      "word": "new",
+      "phonetic": "/njuː/",
+      "pos": "形容词",
+      "meaning": "新的"
+    },
+    {
+      "id": "g3u4-0015",
+      "word": "tree",
+      "phonetic": "/triː/",
+      "pos": "名词",
+      "meaning": "树"
+    },
+    {
+      "id": "g3u4-0016",
+      "word": "sun",
+      "phonetic": "/sʌn/",
+      "pos": "名词",
+      "meaning": "阳光；太阳"
+    },
+    {
+      "id": "g3u4-0017",
+      "word": "give",
+      "phonetic": "/ɡɪv/",
+      "pos": "动词",
+      "meaning": "给"
+    },
+    {
+      "id": "g3u4-0018",
+      "word": "us",
+      "phonetic": "/ʌs/",
+      "pos": "代词",
+      "meaning": "我们"
+    },
+    {
+      "id": "g3u4-0019",
+      "word": "them",
+      "phonetic": "/ðəm, ðem/",
+      "pos": "代词",
+      "meaning": "它们；他们；她们"
+    },
+    {
+      "id": "g3u5-0001",
+      "word": "colour",
+      "phonetic": "/ˈkʌlə(r)/",
+      "pos": "名词",
+      "meaning": "颜色"
+    },
+    {
+      "id": "g3u5-0002",
+      "word": "orange",
+      "phonetic": "/ˈɒrɪndʒ/",
+      "pos": "名词 & 形容词",
+      "meaning": "橙红色；橙红色的"
+    },
+    {
+      "id": "g3u5-0003",
+      "word": "green",
+      "phonetic": "/ɡriːn/",
+      "pos": "名词 & 形容词",
+      "meaning": "绿色；绿色的"
+    },
+    {
+      "id": "g3u5-0004",
+      "word": "red",
+      "phonetic": "/red/",
+      "pos": "名词 & 形容词",
+      "meaning": "红色；红色的"
+    },
+    {
+      "id": "g3u5-0005",
+      "word": "blue",
+      "phonetic": "/bluː/",
+      "pos": "名词 & 形容词",
+      "meaning": "蓝色；蓝色的"
+    },
+    {
+      "id": "g3u5-0006",
+      "word": "make",
+      "phonetic": "/meɪk/",
+      "pos": "动词",
+      "meaning": "使出现；做"
+    },
+    {
+      "id": "g3u5-0007",
+      "word": "purple",
+      "phonetic": "/ˈpɜːpl/",
+      "pos": "名词 & 形容词",
+      "meaning": "紫色；紫色的"
+    },
+    {
+      "id": "g3u5-0008",
+      "word": "brown",
+      "phonetic": "/braʊn/",
+      "pos": "名词 & 形容词",
+      "meaning": "棕色；棕色的"
+    },
+    {
+      "id": "g3u5-0009",
+      "word": "bear",
+      "phonetic": "/beə(r)/",
+      "pos": "名词",
+      "meaning": "熊"
+    },
+    {
+      "id": "g3u5-0010",
+      "word": "yellow",
+      "phonetic": "/ˈjeləʊ/",
+      "pos": "名词 & 形容词",
+      "meaning": "黄色；黄色的"
+    },
+    {
+      "id": "g3u5-0011",
+      "word": "duck",
+      "phonetic": "/dʌk/",
+      "pos": "名词",
+      "meaning": "鸭"
+    },
+    {
+      "id": "g3u5-0012",
+      "word": "sea",
+      "phonetic": "/siː/",
+      "pos": "名词",
+      "meaning": "海；海洋"
+    },
+    {
+      "id": "g3u5-0013",
+      "word": "pink",
+      "phonetic": "/pɪŋk/",
+      "pos": "名词 & 形容词",
+      "meaning": "粉色；粉色的"
+    },
+    {
+      "id": "g3u5-0014",
+      "word": "draw",
+      "phonetic": "/drɔː/",
+      "pos": "动词",
+      "meaning": "画"
+    },
+    {
+      "id": "g3u5-0015",
+      "word": "white",
+      "phonetic": "/waɪt/",
+      "pos": "名词 & 形容词",
+      "meaning": "白色；白色的"
+    },
+    {
+      "id": "g3u5-0016",
+      "word": "black",
+      "phonetic": "/blæk/",
+      "pos": "名词 & 形容词",
+      "meaning": "黑色；黑色的"
+    },
+    {
+      "id": "g3u6-0001",
+      "word": "old",
+      "phonetic": "/əʊld/",
+      "pos": "形容词",
+      "meaning": "（多少）岁；年纪；旧的"
+    },
+    {
+      "id": "g3u6-0002",
+      "word": "five",
+      "phonetic": "/faɪv/",
+      "pos": "数词",
+      "meaning": "五"
+    },
+    {
+      "id": "g3u6-0003",
+      "word": "year",
+      "phonetic": "/jɪə(r)/",
+      "pos": "名词",
+      "meaning": "年纪；年"
+    },
+    {
+      "id": "g3u6-0004",
+      "word": "one",
+      "phonetic": "/wʌn/",
+      "pos": "数词",
+      "meaning": "一"
+    },
+    {
+      "id": "g3u6-0005",
+      "word": "two",
+      "phonetic": "/tuː/",
+      "pos": "数词",
+      "meaning": "二"
+    },
+    {
+      "id": "g3u6-0006",
+      "word": "three",
+      "phonetic": "/θriː/",
+      "pos": "数词",
+      "meaning": "三"
+    },
+    {
+      "id": "g3u6-0007",
+      "word": "four",
+      "phonetic": "/fɔː(r)/",
+      "pos": "数词",
+      "meaning": "四"
+    },
+    {
+      "id": "g3u6-0008",
+      "word": "ten",
+      "phonetic": "/ten/",
+      "pos": "数词",
+      "meaning": "十"
+    },
+    {
+      "id": "g3u6-0009",
+      "word": "six",
+      "phonetic": "/sɪks/",
+      "pos": "数词",
+      "meaning": "六"
+    },
+    {
+      "id": "g3u6-0010",
+      "word": "seven",
+      "phonetic": "/ˈsevn/",
+      "pos": "数词",
+      "meaning": "七"
+    },
+    {
+      "id": "g3u6-0011",
+      "word": "eight",
+      "phonetic": "/eɪt/",
+      "pos": "数词",
+      "meaning": "八"
+    },
+    {
+      "id": "g3u6-0012",
+      "word": "nine",
+      "phonetic": "/naɪn/",
+      "pos": "数词",
+      "meaning": "九"
+    },
+    {
+      "id": "g3u6-0013",
+      "word": "o'clock",
+      "phonetic": "/əˈklɒk/",
+      "pos": "名词短语",
+      "meaning": "（表示整点）……点钟"
+    },
+    {
+      "id": "g3u6-0014",
+      "word": "cut",
+      "phonetic": "/kʌt/",
+      "pos": "动词",
+      "meaning": "切块"
+    },
+    {
+      "id": "g3u6-0015",
+      "word": "eat",
+      "phonetic": "/iːt/",
+      "pos": "动词",
+      "meaning": "吃"
+    },
+    {
+      "id": "g3u6-0016",
+      "word": "cake",
+      "phonetic": "/keɪk/",
+      "pos": "名词",
+      "meaning": "蛋糕"
+    }
+  ]
+}

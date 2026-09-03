@@ -1,0 +1,4212 @@
+{
+  "id": "pep8b-all",
+  "words": [
+    {
+      "id": "g8d1-0001",
+      "word": "calligraphy",
+      "phonetic": "/kəˈlɪɡrəfi/",
+      "pos": "名词",
+      "meaning": "书法"
+    },
+    {
+      "id": "g8d1-0002",
+      "word": "ski",
+      "phonetic": "/skiː/",
+      "pos": "动词",
+      "meaning": "滑雪"
+    },
+    {
+      "id": "g8d1-0003",
+      "word": "program",
+      "phonetic": "/ˈprəʊɡræm/",
+      "pos": "动词 & 名词",
+      "meaning": "编写程序；程序；(=programme) 节目；项目"
+    },
+    {
+      "id": "g8d1-0004",
+      "word": "express",
+      "phonetic": "/ɪkˈspres/",
+      "pos": "动词",
+      "meaning": "表达；表示"
+    },
+    {
+      "id": "g8d1-0005",
+      "word": "instructor",
+      "phonetic": "/ɪnˈstrʌktə(r)/",
+      "pos": "名词",
+      "meaning": "教练；指导者"
+    },
+    {
+      "id": "g8d1-0006",
+      "word": "scared",
+      "phonetic": "/skeə(r)d/",
+      "pos": "形容词",
+      "meaning": "害怕的；对……感到惊慌的"
+    },
+    {
+      "id": "g8d1-0007",
+      "word": "scared of",
+      "phonetic": "/skeəd ɒv/",
+      "pos": "短语",
+      "meaning": "害怕；恐惧"
+    },
+    {
+      "id": "g8d1-0008",
+      "word": "fear",
+      "phonetic": "/fɪə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "害怕；担忧"
+    },
+    {
+      "id": "g8d1-0009",
+      "word": "get over",
+      "phonetic": "/ɡet ˈəʊvə(r)/",
+      "pos": "短语",
+      "meaning": "克服（困难）；解决（问题）"
+    },
+    {
+      "id": "g8d1-0010",
+      "word": "up to",
+      "phonetic": "/ʌp tuː/",
+      "pos": "短语",
+      "meaning": "正在做；由某人决定"
+    },
+    {
+      "id": "g8d1-0011",
+      "word": "poem",
+      "phonetic": "/ˈpəʊɪm/",
+      "pos": "名词",
+      "meaning": "诗"
+    },
+    {
+      "id": "g8d1-0012",
+      "word": "single",
+      "phonetic": "/ˈsɪŋɡl/",
+      "pos": "形容词",
+      "meaning": "单个的；单身的"
+    },
+    {
+      "id": "g8d1-0013",
+      "word": "stroke",
+      "phonetic": "/strəʊk/",
+      "pos": "名词",
+      "meaning": "笔画；击球"
+    },
+    {
+      "id": "g8d1-0014",
+      "word": "give up",
+      "phonetic": "/ɡɪv ʌp/",
+      "pos": "短语",
+      "meaning": "放弃"
+    },
+    {
+      "id": "g8d1-0015",
+      "word": "ink",
+      "phonetic": "/ɪŋk/",
+      "pos": "名词",
+      "meaning": "墨水"
+    },
+    {
+      "id": "g8d1-0016",
+      "word": "return",
+      "phonetic": "/rɪˈtɜːn/",
+      "pos": "名词 & 动词",
+      "meaning": "回来；归还"
+    },
+    {
+      "id": "g8d1-0017",
+      "word": "in return",
+      "phonetic": "/ɪn rɪˈtɜːn/",
+      "pos": "短语",
+      "meaning": "作为回报"
+    },
+    {
+      "id": "g8d1-0018",
+      "word": "deal",
+      "phonetic": "/diːl/",
+      "pos": "名词 & 动词",
+      "meaning": "交易；协议；(dealt, dealt) 对付"
+    },
+    {
+      "id": "g8d1-0019",
+      "word": "manage",
+      "phonetic": "/ˈmænɪdʒ/",
+      "pos": "动词",
+      "meaning": "完成（困难的事）；管理"
+    },
+    {
+      "id": "g8d1-0020",
+      "word": "get into",
+      "phonetic": "/ɡet ˈɪntuː/",
+      "pos": "短语",
+      "meaning": "开始做某事；进入"
+    },
+    {
+      "id": "g8d1-0021",
+      "word": "give it a go",
+      "phonetic": "/ɡɪv ɪt ə ɡəʊ/",
+      "pos": "短语",
+      "meaning": "试一试某事"
+    },
+    {
+      "id": "g8d1-0022",
+      "word": "kung fu",
+      "phonetic": "/ˌkʌŋ ˈfuː/",
+      "pos": "名词",
+      "meaning": "功夫"
+    },
+    {
+      "id": "g8d1-0023",
+      "word": "push",
+      "phonetic": "/pʊʃ/",
+      "pos": "动词",
+      "meaning": "督促；推"
+    },
+    {
+      "id": "g8d1-0024",
+      "word": "myself",
+      "phonetic": "/maɪˈself/",
+      "pos": "代词",
+      "meaning": "我自己"
+    },
+    {
+      "id": "g8d1-0025",
+      "word": "once in a while",
+      "phonetic": "/wʌns ɪn ə waɪl/",
+      "pos": "短语",
+      "meaning": "偶尔地；间或"
+    },
+    {
+      "id": "g8d1-0026",
+      "word": "chat",
+      "phonetic": "/tʃæt/",
+      "pos": "动词 & 名词",
+      "meaning": "闲聊"
+    },
+    {
+      "id": "g8d1-0027",
+      "word": "outing",
+      "phonetic": "/ˈaʊtɪŋ/",
+      "pos": "名词",
+      "meaning": "出外游玩；远足"
+    },
+    {
+      "id": "g8d1-0028",
+      "word": "go on an outing",
+      "phonetic": "/ɡəʊ ɒn ə ˈaʊtɪŋ/",
+      "pos": "短语",
+      "meaning": "出外游玩"
+    },
+    {
+      "id": "g8d1-0029",
+      "word": "reduce",
+      "phonetic": "/rɪˈdjuːs/",
+      "pos": "动词",
+      "meaning": "减少"
+    },
+    {
+      "id": "g8d1-0030",
+      "word": "stress",
+      "phonetic": "/stres/",
+      "pos": "名词",
+      "meaning": "精神压力；紧张"
+    },
+    {
+      "id": "g8d1-0031",
+      "word": "yoga",
+      "phonetic": "/ˈjəʊɡə/",
+      "pos": "名词",
+      "meaning": "瑜伽"
+    },
+    {
+      "id": "g8d1-0032",
+      "word": "object",
+      "phonetic": "/ˈɒbdʒɪkt/",
+      "pos": "名词",
+      "meaning": "物品；宾语"
+    },
+    {
+      "id": "g8d1-0033",
+      "word": "Italian",
+      "phonetic": "/ɪˈtæliən/",
+      "pos": "形容词 & 名词",
+      "meaning": "意大利的；意大利人的；意大利语的；意大利人；意大利语"
+    },
+    {
+      "id": "g8d1-0034",
+      "word": "programmer",
+      "phonetic": "/ˈprəʊɡræmə(r)/",
+      "pos": "名词",
+      "meaning": "程序设计员"
+    },
+    {
+      "id": "g8d1-0035",
+      "word": "allow",
+      "phonetic": "/əˈlaʊ/",
+      "pos": "动词",
+      "meaning": "使……成为可能；允许"
+    },
+    {
+      "id": "g8d1-0036",
+      "word": "sense",
+      "phonetic": "/sens/",
+      "pos": "名词",
+      "meaning": "感觉；感官"
+    },
+    {
+      "id": "g8d1-0037",
+      "word": "achievement",
+      "phonetic": "/əˈtʃiːvmənt/",
+      "pos": "名词",
+      "meaning": "成就"
+    },
+    {
+      "id": "g8d1-0038",
+      "word": "coin",
+      "phonetic": "/kɔɪn/",
+      "pos": "名词",
+      "meaning": "硬币"
+    },
+    {
+      "id": "g8d1-0039",
+      "word": "stamp",
+      "phonetic": "/stæmp/",
+      "pos": "名词",
+      "meaning": "邮票"
+    },
+    {
+      "id": "g8d1-0040",
+      "word": "teenage",
+      "phonetic": "/ˈtiːneɪdʒ/",
+      "pos": "形容词",
+      "meaning": "青少年的"
+    },
+    {
+      "id": "g8d1-0041",
+      "word": "postcard",
+      "phonetic": "/ˈpəʊstkɑːd/",
+      "pos": "名词",
+      "meaning": "明信片"
+    },
+    {
+      "id": "g8d1-0042",
+      "word": "rather",
+      "phonetic": "/ˈrɑːðə(r)/",
+      "pos": "副词",
+      "meaning": "相当；更准确地说"
+    },
+    {
+      "id": "g8d1-0043",
+      "word": "old-fashioned",
+      "phonetic": "/ˌəʊld ˈfæʃnd/",
+      "pos": "形容词",
+      "meaning": "过时的；守旧的"
+    },
+    {
+      "id": "g8d1-0044",
+      "word": "foreign",
+      "phonetic": "/ˈfɒrən/",
+      "pos": "形容词",
+      "meaning": "外国的；国外的"
+    },
+    {
+      "id": "g8d1-0045",
+      "word": "dream of",
+      "phonetic": "/driːm ɒv/",
+      "pos": "短语",
+      "meaning": "梦想；希望"
+    },
+    {
+      "id": "g8d1-0046",
+      "word": "suggestion",
+      "phonetic": "/səˈdʒestʃn/",
+      "pos": "名词",
+      "meaning": "建议；提议"
+    },
+    {
+      "id": "g8d1-0047",
+      "word": "failure",
+      "phonetic": "/ˈfeɪljə(r)/",
+      "pos": "名词",
+      "meaning": "失败"
+    },
+    {
+      "id": "g8d1-0048",
+      "word": "inspire",
+      "phonetic": "/ɪnˈspaɪə(r)/",
+      "pos": "动词",
+      "meaning": "激励；鼓舞"
+    },
+    {
+      "id": "g8d1-0049",
+      "word": "strict",
+      "phonetic": "/strɪkt/",
+      "pos": "形容词",
+      "meaning": "严厉的；严格的"
+    },
+    {
+      "id": "g8d1-0050",
+      "word": "surprisingly",
+      "phonetic": "/səˈpraɪzɪŋli/",
+      "pos": "副词",
+      "meaning": "出人意料地；惊人地"
+    },
+    {
+      "id": "g8d1-0051",
+      "word": "so far",
+      "phonetic": "/səʊ fɑː(r)/",
+      "pos": "短语",
+      "meaning": "到目前为止"
+    },
+    {
+      "id": "g8d1-0052",
+      "word": "stage",
+      "phonetic": "/steɪdʒ/",
+      "pos": "名词",
+      "meaning": "舞台；阶段"
+    },
+    {
+      "id": "g8d1-0053",
+      "word": "importantly",
+      "phonetic": "/ɪmˈpɔːtntli/",
+      "pos": "副词",
+      "meaning": "重要地"
+    },
+    {
+      "id": "g8d1-0054",
+      "word": "Luca",
+      "phonetic": "/ˈluːkə/",
+      "pos": "名词",
+      "meaning": "卢卡"
+    },
+    {
+      "id": "g8d1-0055",
+      "word": "Bruno",
+      "phonetic": "/ˈbruːnəʊ/",
+      "pos": "名词",
+      "meaning": "布鲁诺"
+    },
+    {
+      "id": "g8d1-0056",
+      "word": "India",
+      "phonetic": "/ˈɪndiə/",
+      "pos": "名词",
+      "meaning": "印度"
+    },
+    {
+      "id": "g8d1-0057",
+      "word": "Maya",
+      "phonetic": "/ˈmaɪə/",
+      "pos": "名词",
+      "meaning": "马娅"
+    },
+    {
+      "id": "g8d1-0058",
+      "word": "Badal",
+      "phonetic": "/ˈbɑːdl/",
+      "pos": "名词",
+      "meaning": "巴达尔"
+    },
+    {
+      "id": "g8d1-0059",
+      "word": "Mogao Caves",
+      "phonetic": "/keɪvz/",
+      "pos": "名词短语",
+      "meaning": "莫高窟"
+    },
+    {
+      "id": "g8d2-0001",
+      "word": "ourselves",
+      "phonetic": "/ˌaʊəˈselvz; ɑːˈselvz/",
+      "pos": "代词",
+      "meaning": "我们自己"
+    },
+    {
+      "id": "g8d2-0002",
+      "word": "sore",
+      "phonetic": "/sɔː(r)/",
+      "pos": "形容词",
+      "meaning": "疼痛的；酸痛的"
+    },
+    {
+      "id": "g8d2-0003",
+      "word": "throat",
+      "phonetic": "/θrəʊt/",
+      "pos": "名词",
+      "meaning": "喉咙"
+    },
+    {
+      "id": "g8d2-0004",
+      "word": "stomachache",
+      "phonetic": "/ˈstʌməkeɪk/",
+      "pos": "名词",
+      "meaning": "胃痛；肚子疼"
+    },
+    {
+      "id": "g8d2-0005",
+      "word": "headache",
+      "phonetic": "/ˈhedeɪk/",
+      "pos": "名词",
+      "meaning": "头痛"
+    },
+    {
+      "id": "g8d2-0006",
+      "word": "toothache",
+      "phonetic": "/ˈtuːθeɪk/",
+      "pos": "名词",
+      "meaning": "牙痛"
+    },
+    {
+      "id": "g8d2-0007",
+      "word": "backache",
+      "phonetic": "/ˈbækeɪk/",
+      "pos": "名词",
+      "meaning": "背痛；腰痛"
+    },
+    {
+      "id": "g8d2-0008",
+      "word": "press",
+      "phonetic": "/pres/",
+      "pos": "动词",
+      "meaning": "压；按；挤；推"
+    },
+    {
+      "id": "g8d2-0009",
+      "word": "nosebleed",
+      "phonetic": "/ˈnəʊzbliːd/",
+      "pos": "名词",
+      "meaning": "鼻出血"
+    },
+    {
+      "id": "g8d2-0010",
+      "word": "dentist",
+      "phonetic": "/ˈdentɪst/",
+      "pos": "名词",
+      "meaning": "牙科医生"
+    },
+    {
+      "id": "g8d2-0011",
+      "word": "fever",
+      "phonetic": "/ˈfiːvə(r)/",
+      "pos": "名词",
+      "meaning": "发烧"
+    },
+    {
+      "id": "g8d2-0012",
+      "word": "stomach",
+      "phonetic": "/ˈstʌmək/",
+      "pos": "名词",
+      "meaning": "胃；腹部"
+    },
+    {
+      "id": "g8d2-0013",
+      "word": "avoid",
+      "phonetic": "/əˈvɔɪd/",
+      "pos": "动词",
+      "meaning": "避免；防止"
+    },
+    {
+      "id": "g8d2-0014",
+      "word": "gas",
+      "phonetic": "/ɡæs/",
+      "pos": "名词",
+      "meaning": "气体；燃气"
+    },
+    {
+      "id": "g8d2-0015",
+      "word": "ache",
+      "phonetic": "/eɪk/",
+      "pos": "名词 & 动词",
+      "meaning": "疼痛"
+    },
+    {
+      "id": "g8d2-0016",
+      "word": "X-ray",
+      "phonetic": "/ˈeks reɪ/",
+      "pos": "名词",
+      "meaning": "X光照片；X射线"
+    },
+    {
+      "id": "g8d2-0017",
+      "word": "careless",
+      "phonetic": "/ˈkeələs/",
+      "pos": "形容词",
+      "meaning": "不小心的；粗心的"
+    },
+    {
+      "id": "g8d2-0018",
+      "word": "runny",
+      "phonetic": "/ˈrʌni/",
+      "pos": "形容词",
+      "meaning": "流鼻涕的；流眼泪的"
+    },
+    {
+      "id": "g8d2-0019",
+      "word": "cough",
+      "phonetic": "/kɒf/",
+      "pos": "名词 & 动词",
+      "meaning": "咳嗽"
+    },
+    {
+      "id": "g8d2-0020",
+      "word": "bruised",
+      "phonetic": "/bruːzd/",
+      "pos": "形容词",
+      "meaning": "受了瘀伤的"
+    },
+    {
+      "id": "g8d2-0021",
+      "word": "suffer",
+      "phonetic": "/ˈsʌfə(r)/",
+      "pos": "动词",
+      "meaning": "受苦；遭受"
+    },
+    {
+      "id": "g8d2-0022",
+      "word": "suffer from",
+      "phonetic": "/ˈsʌfə frɒm/",
+      "pos": "短语",
+      "meaning": "受苦；受折磨"
+    },
+    {
+      "id": "g8d2-0023",
+      "word": "take a seat",
+      "phonetic": "/teɪk ə siːt/",
+      "pos": "短语",
+      "meaning": "坐下"
+    },
+    {
+      "id": "g8d2-0024",
+      "word": "take one's temperature",
+      "phonetic": "/teɪk ˈtemprətʃə(r)/",
+      "pos": "短语",
+      "meaning": "给某人量体温"
+    },
+    {
+      "id": "g8d2-0025",
+      "word": "test",
+      "phonetic": "/test/",
+      "pos": "名词 & 动词",
+      "meaning": "检查；测验"
+    },
+    {
+      "id": "g8d2-0026",
+      "word": "flu",
+      "phonetic": "/fluː/",
+      "pos": "名词",
+      "meaning": "流行性感冒"
+    },
+    {
+      "id": "g8d2-0027",
+      "word": "medicine",
+      "phonetic": "/ˈmedsn/",
+      "pos": "名词",
+      "meaning": "药；医学"
+    },
+    {
+      "id": "g8d2-0028",
+      "word": "mask",
+      "phonetic": "/mɑːsk/",
+      "pos": "名词",
+      "meaning": "口罩"
+    },
+    {
+      "id": "g8d2-0029",
+      "word": "virus",
+      "phonetic": "/ˈvaɪrəs/",
+      "pos": "名词",
+      "meaning": "病毒"
+    },
+    {
+      "id": "g8d2-0030",
+      "word": "stop ... from doing",
+      "phonetic": "/stɒp frɒm ˈduːɪŋ/",
+      "pos": "短语",
+      "meaning": "防止……；阻止……"
+    },
+    {
+      "id": "g8d2-0031",
+      "word": "description",
+      "phonetic": "/dɪˈskrɪpʃn/",
+      "pos": "名词",
+      "meaning": "描写；形容"
+    },
+    {
+      "id": "g8d2-0032",
+      "word": "patient",
+      "phonetic": "/ˈpeɪʃnt/",
+      "pos": "名词 & 形容词",
+      "meaning": "病人；有耐心的"
+    },
+    {
+      "id": "g8d2-0033",
+      "word": "injury",
+      "phonetic": "/ˈɪndʒəri/",
+      "pos": "名词",
+      "meaning": "伤害；损伤"
+    },
+    {
+      "id": "g8d2-0034",
+      "word": "illness",
+      "phonetic": "/ˈɪlnəs/",
+      "pos": "名词",
+      "meaning": "疾病"
+    },
+    {
+      "id": "g8d2-0035",
+      "word": "knife",
+      "phonetic": "/naɪf/",
+      "pos": "名词",
+      "meaning": "(pl. knives) 刀"
+    },
+    {
+      "id": "g8d2-0036",
+      "word": "clear",
+      "phonetic": "/klɪə(r)/",
+      "pos": "形容词 & 动词",
+      "meaning": "清晰的；清楚的；清理"
+    },
+    {
+      "id": "g8d2-0037",
+      "word": "pain",
+      "phonetic": "/peɪn/",
+      "pos": "名词",
+      "meaning": "疼痛；痛苦"
+    },
+    {
+      "id": "g8d2-0038",
+      "word": "what's more",
+      "phonetic": "/wɒts mɔː(r)/",
+      "pos": "短语",
+      "meaning": "更有甚者；更为重要的是"
+    },
+    {
+      "id": "g8d2-0039",
+      "word": "brightness",
+      "phonetic": "/ˈbraɪtnəs/",
+      "pos": "名词",
+      "meaning": "亮度"
+    },
+    {
+      "id": "g8d2-0040",
+      "word": "environment",
+      "phonetic": "/ɪnˈvaɪrənmənt/",
+      "pos": "名词",
+      "meaning": "环境"
+    },
+    {
+      "id": "g8d2-0041",
+      "word": "cross",
+      "phonetic": "/krɒs/",
+      "pos": "动词",
+      "meaning": "穿越；横过；交叉"
+    },
+    {
+      "id": "g8d2-0042",
+      "word": "catch fire",
+      "phonetic": "/kætʃ ˈfaɪə(r)/",
+      "pos": "短语",
+      "meaning": "着火"
+    },
+    {
+      "id": "g8d2-0043",
+      "word": "themselves",
+      "phonetic": "/ðəmˈselvz/",
+      "pos": "代词",
+      "meaning": "他（或她、它）们自己"
+    },
+    {
+      "id": "g8d2-0044",
+      "word": "fry",
+      "phonetic": "/fraɪ/",
+      "pos": "动词",
+      "meaning": "油炸；油煎；油炒"
+    },
+    {
+      "id": "g8d2-0045",
+      "word": "turn on",
+      "phonetic": "/tɜːn ɒn/",
+      "pos": "短语",
+      "meaning": "接通（电流、煤气、水等）；打开"
+    },
+    {
+      "id": "g8d2-0046",
+      "word": "stove",
+      "phonetic": "/stəʊv/",
+      "pos": "名词",
+      "meaning": "厨房灶具；炉子"
+    },
+    {
+      "id": "g8d2-0047",
+      "word": "happily",
+      "phonetic": "/ˈhæpɪli/",
+      "pos": "副词",
+      "meaning": "快乐地；高兴地"
+    },
+    {
+      "id": "g8d2-0048",
+      "word": "no way",
+      "phonetic": "/nəʊ weɪ/",
+      "pos": "短语",
+      "meaning": "不可能；没门"
+    },
+    {
+      "id": "g8d2-0049",
+      "word": "burn",
+      "phonetic": "/bɜːn/",
+      "pos": "动词",
+      "meaning": "(burnt, burnt) 燃烧；着火"
+    },
+    {
+      "id": "g8d2-0050",
+      "word": "on fire",
+      "phonetic": "/ɒn ˈfaɪə(r)/",
+      "pos": "短语",
+      "meaning": "着火；起火"
+    },
+    {
+      "id": "g8d2-0051",
+      "word": "flame",
+      "phonetic": "/fleɪm/",
+      "pos": "名词",
+      "meaning": "火焰"
+    },
+    {
+      "id": "g8d2-0052",
+      "word": "panic",
+      "phonetic": "/ˈpænɪk/",
+      "pos": "名词",
+      "meaning": "惊恐；恐慌"
+    },
+    {
+      "id": "g8d2-0053",
+      "word": "onto",
+      "phonetic": "/ˈɒntu; ˈɒntə/",
+      "pos": "介词",
+      "meaning": "向；朝"
+    },
+    {
+      "id": "g8d2-0054",
+      "word": "throw",
+      "phonetic": "/θrəʊ/",
+      "pos": "动词",
+      "meaning": "(threw, thrown) 猛动身体（部位）；扔；抛"
+    },
+    {
+      "id": "g8d2-0055",
+      "word": "roll",
+      "phonetic": "/rəʊl/",
+      "pos": "动词",
+      "meaning": "（使）翻滚；滚动"
+    },
+    {
+      "id": "g8d2-0056",
+      "word": "quick",
+      "phonetic": "/kwɪk/",
+      "pos": "形容词 & 副词",
+      "meaning": "快的；迅速的；迅速地；快速地"
+    },
+    {
+      "id": "g8d2-0057",
+      "word": "be about to",
+      "phonetic": "/biː əˈbaʊt tuː/",
+      "pos": "短语",
+      "meaning": "即将；正要（做某事）"
+    },
+    {
+      "id": "g8d2-0058",
+      "word": "stop short",
+      "phonetic": "/stɒp ʃɔːt/",
+      "pos": "短语",
+      "meaning": "突然停住"
+    },
+    {
+      "id": "g8d2-0059",
+      "word": "aid",
+      "phonetic": "/eɪd/",
+      "pos": "名词 & 动词",
+      "meaning": "帮助；援助"
+    },
+    {
+      "id": "g8d2-0060",
+      "word": "first aid",
+      "phonetic": "/fɜːst eɪd/",
+      "pos": "名词短语",
+      "meaning": "急救"
+    },
+    {
+      "id": "g8d2-0061",
+      "word": "safety",
+      "phonetic": "/ˈseɪfti/",
+      "pos": "名词",
+      "meaning": "安全；安全处所"
+    },
+    {
+      "id": "g8d2-0062",
+      "word": "extinguisher",
+      "phonetic": "/ɪkˈstɪŋɡwɪʃə(r)/",
+      "pos": "名词",
+      "meaning": "灭火器"
+    },
+    {
+      "id": "g8d2-0063",
+      "word": "eat out",
+      "phonetic": "/iːt aʊt/",
+      "pos": "短语",
+      "meaning": "上馆子吃饭；在外用餐"
+    },
+    {
+      "id": "g8d2-0064",
+      "word": "tonight",
+      "phonetic": "/təˈnaɪt/",
+      "pos": "副词 & 名词",
+      "meaning": "在今晚；今夜；今晚"
+    },
+    {
+      "id": "g8d2-0065",
+      "word": "sadly",
+      "phonetic": "/ˈsædli/",
+      "pos": "副词",
+      "meaning": "伤心地；令人遗憾"
+    },
+    {
+      "id": "g8d2-0066",
+      "word": "smoke",
+      "phonetic": "/sməʊk/",
+      "pos": "名词 & 动词",
+      "meaning": "烟；吸烟；冒烟"
+    },
+    {
+      "id": "g8d2-0067",
+      "word": "unfortunately",
+      "phonetic": "/ʌnˈfɔːtʃənətli/",
+      "pos": "副词",
+      "meaning": "不幸地；可惜地"
+    },
+    {
+      "id": "g8d2-0068",
+      "word": "luckily",
+      "phonetic": "/ˈlʌkɪli/",
+      "pos": "副词",
+      "meaning": "幸运地"
+    },
+    {
+      "id": "g8d2-0069",
+      "word": "badly",
+      "phonetic": "/ˈbædli/",
+      "pos": "副词",
+      "meaning": "(worse, worst) 严重地"
+    },
+    {
+      "id": "g8d2-0070",
+      "word": "harm",
+      "phonetic": "/hɑːm/",
+      "pos": "名词 & 动词",
+      "meaning": "伤害；损害"
+    },
+    {
+      "id": "g8d2-0071",
+      "word": "pill",
+      "phonetic": "/pɪl/",
+      "pos": "名词",
+      "meaning": "药丸；药片"
+    },
+    {
+      "id": "g8d2-0072",
+      "word": "painful",
+      "phonetic": "/ˈpeɪnfl/",
+      "pos": "形容词",
+      "meaning": "（身体部位）疼痛的；令人痛苦的"
+    },
+    {
+      "id": "g8d2-0073",
+      "word": "lie",
+      "phonetic": "/laɪ/",
+      "pos": "动词",
+      "meaning": "(lay, lain) 平躺；平放"
+    },
+    {
+      "id": "g8d2-0074",
+      "word": "lie down",
+      "phonetic": "/laɪ daʊn/",
+      "pos": "短语",
+      "meaning": "平躺；平卧"
+    },
+    {
+      "id": "g8d2-0075",
+      "word": "harmful",
+      "phonetic": "/ˈhɑːmfl/",
+      "pos": "形容词",
+      "meaning": "有害的"
+    },
+    {
+      "id": "g8d2-0076",
+      "word": "hit",
+      "phonetic": "/hɪt/",
+      "pos": "动词 & 名词",
+      "meaning": "(hit) 碰撞；击；打；打；击；击中"
+    },
+    {
+      "id": "g8d2-0077",
+      "word": "shock",
+      "phonetic": "/ʃɒk/",
+      "pos": "名词 & 动词",
+      "meaning": "震惊；令人震惊的事；使震惊；使惊愕"
+    },
+    {
+      "id": "g8d2-0078",
+      "word": "bleed",
+      "phonetic": "/bliːd/",
+      "pos": "动词",
+      "meaning": "(bled, bled) 流血；出血"
+    },
+    {
+      "id": "g8d2-0079",
+      "word": "check",
+      "phonetic": "/tʃek/",
+      "pos": "动词 & 名词",
+      "meaning": "检查；查明；检查；调查"
+    },
+    {
+      "id": "g8d2-0080",
+      "word": "tight",
+      "phonetic": "/taɪt/",
+      "pos": "形容词",
+      "meaning": "疼痛的；憋气的；紧的；牢固的"
+    },
+    {
+      "id": "g8d2-0081",
+      "word": "peanut",
+      "phonetic": "/ˈpiːnʌt/",
+      "pos": "名词",
+      "meaning": "花生"
+    },
+    {
+      "id": "g8d2-0082",
+      "word": "nervously",
+      "phonetic": "/ˈnɜːvəsli/",
+      "pos": "副词",
+      "meaning": "紧张不安地"
+    },
+    {
+      "id": "g8d2-0083",
+      "word": "allergic",
+      "phonetic": "/əˈlɜːdʒɪk/",
+      "pos": "形容词",
+      "meaning": "过敏的"
+    },
+    {
+      "id": "g8d2-0084",
+      "word": "from now on",
+      "phonetic": "/frɒm naʊ ɒn/",
+      "pos": "短语",
+      "meaning": "从现在起"
+    },
+    {
+      "id": "g8d2-0085",
+      "word": "Ben",
+      "phonetic": "/ben/",
+      "pos": "名词",
+      "meaning": "本"
+    },
+    {
+      "id": "g8d2-0086",
+      "word": "Nancy",
+      "phonetic": "/ˈnænsi/",
+      "pos": "名词",
+      "meaning": "南希"
+    },
+    {
+      "id": "g8d2-0087",
+      "word": "Jeff",
+      "phonetic": "/dʒef/",
+      "pos": "名词",
+      "meaning": "杰夫"
+    },
+    {
+      "id": "g8d2-0088",
+      "word": "James",
+      "phonetic": "/dʒeɪmz/",
+      "pos": "名词",
+      "meaning": "詹姆斯"
+    },
+    {
+      "id": "g8d2-0089",
+      "word": "Allen",
+      "phonetic": "/ˈælən/",
+      "pos": "名词",
+      "meaning": "艾伦"
+    },
+    {
+      "id": "g8d2-0090",
+      "word": "Kelly",
+      "phonetic": "/ˈkeli/",
+      "pos": "名词",
+      "meaning": "凯莉"
+    },
+    {
+      "id": "g8d2-0091",
+      "word": "Cooper",
+      "phonetic": "/ˈkuːpə(r)/",
+      "pos": "名词",
+      "meaning": "库珀"
+    },
+    {
+      "id": "g8d3-0001",
+      "word": "deal with",
+      "phonetic": "/diːl wɪð/",
+      "pos": "短语",
+      "meaning": "处理；对付"
+    },
+    {
+      "id": "g8d3-0002",
+      "word": "emotion",
+      "phonetic": "/ɪˈməʊʃn/",
+      "pos": "名词",
+      "meaning": "情感；情绪"
+    },
+    {
+      "id": "g8d3-0003",
+      "word": "upset",
+      "phonetic": "/ʌpˈset/",
+      "pos": "形容词",
+      "meaning": "难过的；沮丧的"
+    },
+    {
+      "id": "g8d3-0004",
+      "word": "lonely",
+      "phonetic": "/ˈləʊnli/",
+      "pos": "形容词",
+      "meaning": "孤独的；寂寞的"
+    },
+    {
+      "id": "g8d3-0005",
+      "word": "shocked",
+      "phonetic": "/ʃɒkt/",
+      "pos": "形容词",
+      "meaning": "震惊的"
+    },
+    {
+      "id": "g8d3-0006",
+      "word": "alone",
+      "phonetic": "/əˈləʊn/",
+      "pos": "副词",
+      "meaning": "独自；单独"
+    },
+    {
+      "id": "g8d3-0007",
+      "word": "control",
+      "phonetic": "/kənˈtrəʊl/",
+      "pos": "动词 & 名词",
+      "meaning": "控制"
+    },
+    {
+      "id": "g8d3-0008",
+      "word": "anger",
+      "phonetic": "/ˈæŋɡə(r)/",
+      "pos": "名词",
+      "meaning": "怒火"
+    },
+    {
+      "id": "g8d3-0009",
+      "word": "advise",
+      "phonetic": "/ədˈvaɪz/",
+      "pos": "动词",
+      "meaning": "建议；劝告"
+    },
+    {
+      "id": "g8d3-0010",
+      "word": "hurtful",
+      "phonetic": "/ˈhɜːtfl/",
+      "pos": "形容词",
+      "meaning": "伤感情的"
+    },
+    {
+      "id": "g8d3-0011",
+      "word": "in future",
+      "phonetic": "/ɪn ˈfjuːtʃə(r)/",
+      "pos": "短语",
+      "meaning": "今后；从今以后"
+    },
+    {
+      "id": "g8d3-0012",
+      "word": "forgive",
+      "phonetic": "/fəˈɡɪv/",
+      "pos": "动词",
+      "meaning": "(forgave, forgiven) 原谅；宽恕"
+    },
+    {
+      "id": "g8d3-0013",
+      "word": "fault",
+      "phonetic": "/fɔːlt/",
+      "pos": "名词",
+      "meaning": "过错；责任"
+    },
+    {
+      "id": "g8d3-0014",
+      "word": "clear the air",
+      "phonetic": "/klɪə(r) ði eə(r)/",
+      "pos": "短语",
+      "meaning": "尽释前嫌"
+    },
+    {
+      "id": "g8d3-0015",
+      "word": "present",
+      "phonetic": "/ˈpreznt/",
+      "pos": "名词",
+      "meaning": "礼物"
+    },
+    {
+      "id": "g8d3-0016",
+      "word": "standard",
+      "phonetic": "/ˈstændəd/",
+      "pos": "名词 & 形容词",
+      "meaning": "标准；水平；标准的"
+    },
+    {
+      "id": "g8d3-0017",
+      "word": "award",
+      "phonetic": "/əˈwɔːd/",
+      "pos": "名词",
+      "meaning": "奖；奖品"
+    },
+    {
+      "id": "g8d3-0018",
+      "word": "get across",
+      "phonetic": "/ɡet əˈkrɒs/",
+      "pos": "短语",
+      "meaning": "解释清楚；传达"
+    },
+    {
+      "id": "g8d3-0019",
+      "word": "clearly",
+      "phonetic": "/ˈklɪəli/",
+      "pos": "副词",
+      "meaning": "清楚地"
+    },
+    {
+      "id": "g8d3-0020",
+      "word": "pressure",
+      "phonetic": "/ˈpreʃə(r)/",
+      "pos": "名词",
+      "meaning": "压力"
+    },
+    {
+      "id": "g8d3-0021",
+      "word": "purpose",
+      "phonetic": "/ˈpɜːpəs/",
+      "pos": "名词",
+      "meaning": "目的；意图"
+    },
+    {
+      "id": "g8d3-0022",
+      "word": "on purpose",
+      "phonetic": "/ɒn ˈpɜːpəs/",
+      "pos": "短语",
+      "meaning": "故意；有意地"
+    },
+    {
+      "id": "g8d3-0023",
+      "word": "reduce by half",
+      "phonetic": "/rɪˈdjuːs baɪ hɑːf/",
+      "pos": "短语",
+      "meaning": "减少一半"
+    },
+    {
+      "id": "g8d3-0024",
+      "word": "apologize",
+      "phonetic": "/əˈpɒlədʒaɪz/",
+      "pos": "动词",
+      "meaning": "(=apologise) 道歉"
+    },
+    {
+      "id": "g8d3-0025",
+      "word": "put oneself in sb's shoes",
+      "phonetic": "/pʊt wʌnz self ɪn ʃuːz/",
+      "pos": "短语",
+      "meaning": "设身处地；处于某人的境地"
+    },
+    {
+      "id": "g8d3-0026",
+      "word": "shut",
+      "phonetic": "/ʃʌt/",
+      "pos": "动词",
+      "meaning": "(shut) 关闭；合上；住嘴"
+    },
+    {
+      "id": "g8d3-0027",
+      "word": "shut sb / sth away",
+      "phonetic": "/ʃʌt əˈweɪ/",
+      "pos": "短语",
+      "meaning": "把……关（藏）起来；隔离"
+    },
+    {
+      "id": "g8d3-0028",
+      "word": "lastly",
+      "phonetic": "/ˈlɑːstli/",
+      "pos": "副词",
+      "meaning": "最后"
+    },
+    {
+      "id": "g8d3-0029",
+      "word": "plenty",
+      "phonetic": "/ˈplenti/",
+      "pos": "代词",
+      "meaning": "充足；丰富；大量"
+    },
+    {
+      "id": "g8d3-0030",
+      "word": "plenty of",
+      "phonetic": "/ˈplenti əv/",
+      "pos": "短语",
+      "meaning": "充足；大量"
+    },
+    {
+      "id": "g8d3-0031",
+      "word": "feel blue",
+      "phonetic": "/fiːl bluː/",
+      "pos": "短语",
+      "meaning": "感到忧郁的"
+    },
+    {
+      "id": "g8d3-0032",
+      "word": "on top of the world",
+      "phonetic": "/ɒn tɒp ɒv ðə wɜːld/",
+      "pos": "短语",
+      "meaning": "欢天喜地"
+    },
+    {
+      "id": "g8d3-0033",
+      "word": "all smiles",
+      "phonetic": "/ɔːl smaɪlz/",
+      "pos": "短语",
+      "meaning": "笑容满面"
+    },
+    {
+      "id": "g8d3-0034",
+      "word": "low",
+      "phonetic": "/ləʊ/",
+      "pos": "形容词",
+      "meaning": "沮丧的；低的"
+    },
+    {
+      "id": "g8d3-0035",
+      "word": "in low spirits",
+      "phonetic": "/ɪn ləʊ ˈspɪrɪts/",
+      "pos": "短语",
+      "meaning": "情绪低落；精神不振"
+    },
+    {
+      "id": "g8d3-0036",
+      "word": "ring",
+      "phonetic": "/rɪŋ/",
+      "pos": "动词",
+      "meaning": "(rang, rung) 发出铃声"
+    },
+    {
+      "id": "g8d3-0037",
+      "word": "enter",
+      "phonetic": "/ˈentə(r)/",
+      "pos": "动词",
+      "meaning": "进入"
+    },
+    {
+      "id": "g8d3-0038",
+      "word": "dare",
+      "phonetic": "/deə(r)/",
+      "pos": "动词 & 情态动词",
+      "meaning": "敢于"
+    },
+    {
+      "id": "g8d3-0039",
+      "word": "everybody",
+      "phonetic": "/ˈevribɒdi/",
+      "pos": "代词",
+      "meaning": "每人；所有人"
+    },
+    {
+      "id": "g8d3-0040",
+      "word": "let down",
+      "phonetic": "/let daʊn/",
+      "pos": "短语",
+      "meaning": "使失望"
+    },
+    {
+      "id": "g8d3-0041",
+      "word": "be hard on",
+      "phonetic": "/biː hɑːd ɒn/",
+      "pos": "短语",
+      "meaning": "对……苛刻或过分严厉"
+    },
+    {
+      "id": "g8d3-0042",
+      "word": "player",
+      "phonetic": "/ˈpleɪə(r)/",
+      "pos": "名词",
+      "meaning": "运动员；选手"
+    },
+    {
+      "id": "g8d3-0043",
+      "word": "referee",
+      "phonetic": "/ˌrefəˈriː/",
+      "pos": "名词",
+      "meaning": "裁判"
+    },
+    {
+      "id": "g8d3-0044",
+      "word": "take back",
+      "phonetic": "/teɪk bæk/",
+      "pos": "短语",
+      "meaning": "撤回；收回"
+    },
+    {
+      "id": "g8d3-0045",
+      "word": "decision",
+      "phonetic": "/dɪˈsɪʒn/",
+      "pos": "名词",
+      "meaning": "决定"
+    },
+    {
+      "id": "g8d3-0046",
+      "word": "kick oneself",
+      "phonetic": "/kɪk wʌnˈself/",
+      "pos": "短语",
+      "meaning": "（因干了蠢事等）自责或懊恼"
+    },
+    {
+      "id": "g8d3-0047",
+      "word": "look on the bright side",
+      "phonetic": "/lʊk ɒn ðə braɪt saɪd/",
+      "pos": "短语",
+      "meaning": "从好的方面想；抱乐观态度"
+    },
+    {
+      "id": "g8d3-0048",
+      "word": "score",
+      "phonetic": "/skɔː(r)/",
+      "pos": "名词",
+      "meaning": "得分；比分"
+    },
+    {
+      "id": "g8d3-0049",
+      "word": "proud",
+      "phonetic": "/praʊd/",
+      "pos": "形容词",
+      "meaning": "骄傲的；自豪的"
+    },
+    {
+      "id": "g8d3-0050",
+      "word": "proud of",
+      "phonetic": "/praʊd ɒv/",
+      "pos": "短语",
+      "meaning": "为……感到骄傲"
+    },
+    {
+      "id": "g8d3-0051",
+      "word": "coach",
+      "phonetic": "/kəʊtʃ/",
+      "pos": "名词",
+      "meaning": "教练"
+    },
+    {
+      "id": "g8d3-0052",
+      "word": "as well",
+      "phonetic": "/æz wel/",
+      "pos": "短语",
+      "meaning": "也；又"
+    },
+    {
+      "id": "g8d3-0053",
+      "word": "bit",
+      "phonetic": "/bɪt/",
+      "pos": "名词",
+      "meaning": "有点儿；稍微"
+    },
+    {
+      "id": "g8d3-0054",
+      "word": "a bit",
+      "phonetic": "/ə bɪt/",
+      "pos": "短语",
+      "meaning": "有点儿；稍微"
+    },
+    {
+      "id": "g8d3-0055",
+      "word": "repeat",
+      "phonetic": "/rɪˈpiːt/",
+      "pos": "动词",
+      "meaning": "重复"
+    },
+    {
+      "id": "g8d3-0056",
+      "word": "pull together",
+      "phonetic": "/pʊl təˈɡeðə(r)/",
+      "pos": "短语",
+      "meaning": "齐心协力；通力合作"
+    },
+    {
+      "id": "g8d3-0057",
+      "word": "though",
+      "phonetic": "/ðəʊ/",
+      "pos": "连词",
+      "meaning": "虽然；尽管"
+    },
+    {
+      "id": "g8d3-0058",
+      "word": "even though",
+      "phonetic": "/ˈiːvn ðəʊ/",
+      "pos": "短语",
+      "meaning": "即使；虽然"
+    },
+    {
+      "id": "g8d3-0059",
+      "word": "solution",
+      "phonetic": "/səˈluːʃn/",
+      "pos": "名词",
+      "meaning": "解决办法；解决"
+    },
+    {
+      "id": "g8d3-0060",
+      "word": "joyful",
+      "phonetic": "/ˈdʒɔɪfl/",
+      "pos": "形容词",
+      "meaning": "高兴的；令人愉快的"
+    },
+    {
+      "id": "g8d3-0061",
+      "word": "thankful",
+      "phonetic": "/ˈθæŋkfl/",
+      "pos": "形容词",
+      "meaning": "感谢的；感激的"
+    },
+    {
+      "id": "g8d3-0062",
+      "word": "negative",
+      "phonetic": "/ˈneɡətɪv/",
+      "pos": "形容词",
+      "meaning": "否定的；消极的"
+    },
+    {
+      "id": "g8d3-0063",
+      "word": "bully",
+      "phonetic": "/ˈbʊli/",
+      "pos": "动词 & 名词",
+      "meaning": "霸凌；恐吓；恶霸"
+    },
+    {
+      "id": "g8d3-0064",
+      "word": "shout at sb",
+      "phonetic": "/ʃaʊt æt/",
+      "pos": "短语",
+      "meaning": "冲某人喊叫"
+    },
+    {
+      "id": "g8d3-0065",
+      "word": "from time to time",
+      "phonetic": "/frɒm taɪm tuː taɪm/",
+      "pos": "短语",
+      "meaning": "不时；偶尔"
+    },
+    {
+      "id": "g8d3-0066",
+      "word": "behave",
+      "phonetic": "/bɪˈheɪv/",
+      "pos": "动词",
+      "meaning": "表现；举止得体"
+    },
+    {
+      "id": "g8d3-0067",
+      "word": "differently",
+      "phonetic": "/ˈdɪfrəntli/",
+      "pos": "副词",
+      "meaning": "不同地"
+    },
+    {
+      "id": "g8d3-0068",
+      "word": "physics",
+      "phonetic": "/ˈfɪzɪks/",
+      "pos": "名词",
+      "meaning": "物理；物理学"
+    },
+    {
+      "id": "g8d3-0069",
+      "word": "awake",
+      "phonetic": "/əˈweɪk/",
+      "pos": "形容词",
+      "meaning": "醒着的"
+    },
+    {
+      "id": "g8d3-0070",
+      "word": "normal",
+      "phonetic": "/ˈnɔːml/",
+      "pos": "形容词",
+      "meaning": "正常的；普通的"
+    },
+    {
+      "id": "g8d3-0071",
+      "word": "mad",
+      "phonetic": "/mæd/",
+      "pos": "形容词",
+      "meaning": "发狂的；疯的"
+    },
+    {
+      "id": "g8d3-0072",
+      "word": "mean",
+      "phonetic": "/miːn/",
+      "pos": "形容词",
+      "meaning": "刻薄的；吝啬的"
+    },
+    {
+      "id": "g8d3-0073",
+      "word": "deep",
+      "phonetic": "/diːp/",
+      "pos": "形容词",
+      "meaning": "深的；有……深的"
+    },
+    {
+      "id": "g8d3-0074",
+      "word": "take a deep breath",
+      "phonetic": "/teɪk ə diːp breθ/",
+      "pos": "短语",
+      "meaning": "深呼吸"
+    },
+    {
+      "id": "g8d3-0075",
+      "word": "pass away",
+      "phonetic": "/pɑːs əˈweɪ/",
+      "pos": "短语",
+      "meaning": "去世（委婉说法）"
+    },
+    {
+      "id": "g8d3-0076",
+      "word": "anybody",
+      "phonetic": "/ˈenibɒdi/",
+      "pos": "代词",
+      "meaning": "任何人"
+    },
+    {
+      "id": "g8d3-0077",
+      "word": "remain",
+      "phonetic": "/rɪˈmeɪn/",
+      "pos": "动词",
+      "meaning": "继续存在；保持不变"
+    },
+    {
+      "id": "g8d3-0078",
+      "word": "not only ... but also ...",
+      "phonetic": "/nɒt ˈəʊnli bʌt ˈɔːlsəʊ/",
+      "pos": "短语",
+      "meaning": "不但……而且……"
+    },
+    {
+      "id": "g8d3-0079",
+      "word": "Thompson",
+      "phonetic": "/ˈtɒmpsən/",
+      "pos": "名词",
+      "meaning": "汤普森"
+    },
+    {
+      "id": "g8d4-0001",
+      "word": "wonder",
+      "phonetic": "/ˈwʌndə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "奇观；惊叹；琢磨；想知道；感到诧异"
+    },
+    {
+      "id": "g8d4-0002",
+      "word": "measurement",
+      "phonetic": "/ˈmeʒəmənt/",
+      "pos": "名词",
+      "meaning": "数量；测量"
+    },
+    {
+      "id": "g8d4-0003",
+      "word": "square kilometre",
+      "phonetic": "/skweə ˈkɪləmiːtə(r)/",
+      "pos": "名词短语",
+      "meaning": "平方千米"
+    },
+    {
+      "id": "g8d4-0004",
+      "word": "below",
+      "phonetic": "/bɪˈləʊ/",
+      "pos": "介词 & 副词",
+      "meaning": "在（或到）……下面；少于；低于；在（或到）下面"
+    },
+    {
+      "id": "g8d4-0005",
+      "word": "level",
+      "phonetic": "/ˈlevl/",
+      "pos": "名词",
+      "meaning": "高度；水平；程度"
+    },
+    {
+      "id": "g8d4-0006",
+      "word": "surface",
+      "phonetic": "/ˈsɜːfɪs/",
+      "pos": "名词",
+      "meaning": "表面；表层"
+    },
+    {
+      "id": "g8d4-0007",
+      "word": "depth",
+      "phonetic": "/depθ/",
+      "pos": "名词",
+      "meaning": "深（度）；纵深"
+    },
+    {
+      "id": "g8d4-0008",
+      "word": "dive",
+      "phonetic": "/daɪv/",
+      "pos": "动词 & 名词",
+      "meaning": "潜水；跳水；俯冲"
+    },
+    {
+      "id": "g8d4-0009",
+      "word": "research",
+      "phonetic": "/rɪˈsɜːtʃ/",
+      "pos": "动词 & 名词",
+      "meaning": "研究；调查"
+    },
+    {
+      "id": "g8d4-0010",
+      "word": "vessel",
+      "phonetic": "/ˈvesl/",
+      "pos": "名词",
+      "meaning": "大船；轮船"
+    },
+    {
+      "id": "g8d4-0011",
+      "word": "unusual",
+      "phonetic": "/ʌnˈjuːʒuəl/",
+      "pos": "形容词",
+      "meaning": "特别的；不寻常的"
+    },
+    {
+      "id": "g8d4-0012",
+      "word": "bottom",
+      "phonetic": "/ˈbɒtəm/",
+      "pos": "名词",
+      "meaning": "底部；最下部"
+    },
+    {
+      "id": "g8d4-0013",
+      "word": "waterfall",
+      "phonetic": "/ˈwɔːtəfɔːl/",
+      "pos": "名词",
+      "meaning": "瀑布"
+    },
+    {
+      "id": "g8d4-0014",
+      "word": "civilization",
+      "phonetic": "/ˌsɪvəlaɪˈzeɪʃn/",
+      "pos": "名词",
+      "meaning": "(=civilisation) 文明"
+    },
+    {
+      "id": "g8d4-0015",
+      "word": "means",
+      "phonetic": "/miːnz/",
+      "pos": "名词",
+      "meaning": "(pl. means) 方式；途径"
+    },
+    {
+      "id": "g8d4-0016",
+      "word": "development",
+      "phonetic": "/dɪˈveləpmənt/",
+      "pos": "名词",
+      "meaning": "发展；壮大"
+    },
+    {
+      "id": "g8d4-0017",
+      "word": "desert",
+      "phonetic": "/ˈdezət/",
+      "pos": "名词",
+      "meaning": "沙漠；荒原"
+    },
+    {
+      "id": "g8d4-0018",
+      "word": "cubic",
+      "phonetic": "/ˈkjuːbɪk/",
+      "pos": "形容词",
+      "meaning": "立方的"
+    },
+    {
+      "id": "g8d4-0019",
+      "word": "mile",
+      "phonetic": "/maɪl/",
+      "pos": "名词",
+      "meaning": "英里"
+    },
+    {
+      "id": "g8d4-0020",
+      "word": "pool",
+      "phonetic": "/puːl/",
+      "pos": "名词",
+      "meaning": "池塘；水坑"
+    },
+    {
+      "id": "g8d4-0021",
+      "word": "climber",
+      "phonetic": "/ˈklaɪmə(r)/",
+      "pos": "名词",
+      "meaning": "攀登者；登山者"
+    },
+    {
+      "id": "g8d4-0022",
+      "word": "northern",
+      "phonetic": "/ˈnɔːðən/",
+      "pos": "形容词",
+      "meaning": "北部的；向北的"
+    },
+    {
+      "id": "g8d4-0023",
+      "word": "distance",
+      "phonetic": "/ˈdɪstəns/",
+      "pos": "名词",
+      "meaning": "距离；遥远"
+    },
+    {
+      "id": "g8d4-0024",
+      "word": "survive",
+      "phonetic": "/səˈvaɪv/",
+      "pos": "动词",
+      "meaning": "生存；存活；艰难度过"
+    },
+    {
+      "id": "g8d4-0025",
+      "word": "condition",
+      "phonetic": "/kənˈdɪʃn/",
+      "pos": "名词",
+      "meaning": "状态；境况"
+    },
+    {
+      "id": "g8d4-0026",
+      "word": "degree",
+      "phonetic": "/dɪˈɡriː/",
+      "pos": "名词",
+      "meaning": "度；度数；程度"
+    },
+    {
+      "id": "g8d4-0027",
+      "word": "cliff",
+      "phonetic": "/klɪf/",
+      "pos": "名词",
+      "meaning": "悬崖；峭壁"
+    },
+    {
+      "id": "g8d4-0028",
+      "word": "changeable",
+      "phonetic": "/ˈtʃeɪndʒəbl/",
+      "pos": "形容词",
+      "meaning": "可能变化的；易变的；常变的"
+    },
+    {
+      "id": "g8d4-0029",
+      "word": "death",
+      "phonetic": "/deθ/",
+      "pos": "名词",
+      "meaning": "死亡；毁灭；破灭"
+    },
+    {
+      "id": "g8d4-0030",
+      "word": "determined",
+      "phonetic": "/dɪˈtɜːmɪnd/",
+      "pos": "形容词",
+      "meaning": "有决心的；坚决的"
+    },
+    {
+      "id": "g8d4-0031",
+      "word": "above",
+      "phonetic": "/əˈbʌv/",
+      "pos": "介词 & 副词",
+      "meaning": "在（或向）……上面；超过；在（或向）上面；在（或向）高处；超过"
+    },
+    {
+      "id": "g8d4-0032",
+      "word": "teammate",
+      "phonetic": "/ˈtiːmeɪt/",
+      "pos": "名词",
+      "meaning": "同队队员；队友"
+    },
+    {
+      "id": "g8d4-0033",
+      "word": "shoulder",
+      "phonetic": "/ˈʃəʊldə(r)/",
+      "pos": "名词",
+      "meaning": "肩膀；肩部"
+    },
+    {
+      "id": "g8d4-0034",
+      "word": "bit by bit",
+      "phonetic": "/bɪt baɪ bɪt/",
+      "pos": "短语",
+      "meaning": "一点一点地；逐渐地"
+    },
+    {
+      "id": "g8d4-0035",
+      "word": "ladder",
+      "phonetic": "/ˈlædə(r)/",
+      "pos": "名词",
+      "meaning": "梯子；阶梯；途径"
+    },
+    {
+      "id": "g8d4-0036",
+      "word": "measure",
+      "phonetic": "/ˈmeʒə(r)/",
+      "pos": "动词 & 名词",
+      "meaning": "测量；量度；措施；度量单位"
+    },
+    {
+      "id": "g8d4-0037",
+      "word": "successfully",
+      "phonetic": "/səkˈsesfəli/",
+      "pos": "副词",
+      "meaning": "成功地；顺利地"
+    },
+    {
+      "id": "g8d4-0038",
+      "word": "risk",
+      "phonetic": "/rɪsk/",
+      "pos": "动词 & 名词",
+      "meaning": "使……冒风险（或面临危险）；危险；风险"
+    },
+    {
+      "id": "g8d4-0039",
+      "word": "curiosity",
+      "phonetic": "/ˌkjʊəriˈɒsəti/",
+      "pos": "名词",
+      "meaning": "好奇心；求知欲"
+    },
+    {
+      "id": "g8d4-0040",
+      "word": "ambition",
+      "phonetic": "/æmˈbɪʃn/",
+      "pos": "名词",
+      "meaning": "追求的目标；野心；雄心"
+    },
+    {
+      "id": "g8d4-0041",
+      "word": "explorer",
+      "phonetic": "/ɪkˈsplɔːrə(r)/",
+      "pos": "名词",
+      "meaning": "探险者；勘探者"
+    },
+    {
+      "id": "g8d4-0042",
+      "word": "simply",
+      "phonetic": "/ˈsɪmpli/",
+      "pos": "副词",
+      "meaning": "仅仅；只；简单地"
+    },
+    {
+      "id": "g8d4-0043",
+      "word": "risky",
+      "phonetic": "/ˈrɪski/",
+      "pos": "形容词",
+      "meaning": "有危险（或风险）的"
+    },
+    {
+      "id": "g8d4-0044",
+      "word": "southern",
+      "phonetic": "/ˈsʌðən/",
+      "pos": "形容词",
+      "meaning": "南部的；向南的"
+    },
+    {
+      "id": "g8d4-0045",
+      "word": "located",
+      "phonetic": "/ləʊˈkeɪtɪd/",
+      "pos": "形容词",
+      "meaning": "位于；坐落在"
+    },
+    {
+      "id": "g8d4-0046",
+      "word": "freshwater",
+      "phonetic": "/ˈfreʃwɔːtə(r)/",
+      "pos": "形容词",
+      "meaning": "淡水的；淡水中生长的"
+    },
+    {
+      "id": "g8d4-0047",
+      "word": "type",
+      "phonetic": "/taɪp/",
+      "pos": "名词",
+      "meaning": "类型；种类"
+    },
+    {
+      "id": "g8d4-0048",
+      "word": "attract",
+      "phonetic": "/əˈtrækt/",
+      "pos": "动词",
+      "meaning": "吸引；招引；引起（反应）"
+    },
+    {
+      "id": "g8d4-0049",
+      "word": "curious",
+      "phonetic": "/ˈkjʊəriəs/",
+      "pos": "形容词",
+      "meaning": "好奇的；求知欲强的"
+    },
+    {
+      "id": "g8d4-0050",
+      "word": "traveller",
+      "phonetic": "/ˈtrævələ(r)/",
+      "pos": "名词",
+      "meaning": "(=traveler) 旅行者；游客"
+    },
+    {
+      "id": "g8d4-0051",
+      "word": "natural",
+      "phonetic": "/ˈnætʃrəl/",
+      "pos": "形容词",
+      "meaning": "自然的；天然的；天生的"
+    },
+    {
+      "id": "g8d4-0052",
+      "word": "underwater",
+      "phonetic": "/ˌʌndəˈwɔːtə(r)/",
+      "pos": "形容词 & 副词",
+      "meaning": "水下的；用于水下的；在水下"
+    },
+    {
+      "id": "g8d4-0053",
+      "word": "northeastern",
+      "phonetic": "/ˌnɔːθˈiːstən/",
+      "pos": "形容词",
+      "meaning": "东北的；东北方向的"
+    },
+    {
+      "id": "g8d4-0054",
+      "word": "coast",
+      "phonetic": "/kəʊst/",
+      "pos": "名词",
+      "meaning": "海岸；海滨"
+    },
+    {
+      "id": "g8d4-0055",
+      "word": "coral",
+      "phonetic": "/ˈkɒrəl/",
+      "pos": "名词",
+      "meaning": "珊瑚；珊瑚虫"
+    },
+    {
+      "id": "g8d4-0056",
+      "word": "reef",
+      "phonetic": "/riːf/",
+      "pos": "名词",
+      "meaning": "礁；礁脉"
+    },
+    {
+      "id": "g8d4-0057",
+      "word": "include",
+      "phonetic": "/ɪnˈkluːd/",
+      "pos": "动词",
+      "meaning": "包含；包括"
+    },
+    {
+      "id": "g8d4-0058",
+      "word": "sand",
+      "phonetic": "/sænd/",
+      "pos": "名词",
+      "meaning": "沙子"
+    },
+    {
+      "id": "g8d4-0059",
+      "word": "alive",
+      "phonetic": "/əˈlaɪv/",
+      "pos": "形容词",
+      "meaning": "活着；在世；有活力"
+    },
+    {
+      "id": "g8d4-0060",
+      "word": "structure",
+      "phonetic": "/ˈstrʌktʃə(r)/",
+      "pos": "名词",
+      "meaning": "结构（体）；构造；体系"
+    },
+    {
+      "id": "g8d4-0061",
+      "word": "snorkel",
+      "phonetic": "/ˈsnɔːkl/",
+      "pos": "动词 & 名词",
+      "meaning": "使用呼吸管潜泳；（浮潜用的）呼吸管"
+    },
+    {
+      "id": "g8d4-0062",
+      "word": "school",
+      "phonetic": "/skuːl/",
+      "pos": "名词",
+      "meaning": "（鱼、鲸、海豚等的）群"
+    },
+    {
+      "id": "g8d4-0063",
+      "word": "turtle",
+      "phonetic": "/ˈtɜːtl/",
+      "pos": "名词",
+      "meaning": "海龟；龟"
+    },
+    {
+      "id": "g8d4-0064",
+      "word": "lifetime",
+      "phonetic": "/ˈlaɪftaɪm/",
+      "pos": "名词",
+      "meaning": "一生；终身"
+    },
+    {
+      "id": "g8d4-0065",
+      "word": "Nile River",
+      "phonetic": "/naɪl ˈrɪvə(r)/",
+      "pos": "名词短语",
+      "meaning": "尼罗河"
+    },
+    {
+      "id": "g8d4-0066",
+      "word": "Angel Falls",
+      "phonetic": "/ˈeɪndʒl fɔːlz/",
+      "pos": "名词短语",
+      "meaning": "天使瀑布"
+    },
+    {
+      "id": "g8d4-0067",
+      "word": "Mount Qomolangma",
+      "phonetic": "/ˈtʃəʊməʊ ˈlɑːnmə/",
+      "pos": "名词短语",
+      "meaning": "珠穆朗玛峰"
+    },
+    {
+      "id": "g8d4-0068",
+      "word": "Dead Sea",
+      "phonetic": "/ded siː/",
+      "pos": "名词短语",
+      "meaning": "死海"
+    },
+    {
+      "id": "g8d4-0069",
+      "word": "Sahara Desert",
+      "phonetic": "/səˈhɑːrə ˈdezət/",
+      "pos": "名词短语",
+      "meaning": "撒哈拉沙漠"
+    },
+    {
+      "id": "g8d4-0070",
+      "word": "Mariana Trench",
+      "phonetic": "/ˌmæriˈænə trentʃ/",
+      "pos": "名词短语",
+      "meaning": "马里亚纳海沟"
+    },
+    {
+      "id": "g8d4-0071",
+      "word": "Titanic",
+      "phonetic": "/taɪˈtænɪk/",
+      "pos": "名词",
+      "meaning": "泰坦尼克号"
+    },
+    {
+      "id": "g8d4-0072",
+      "word": "Yangtze River",
+      "phonetic": "/ˈjæŋtsi ˈrɪvə(r)/",
+      "pos": "名词短语",
+      "meaning": "长江"
+    },
+    {
+      "id": "g8d4-0073",
+      "word": "Egypt",
+      "phonetic": "/ˈiːdʒɪpt/",
+      "pos": "名词",
+      "meaning": "埃及"
+    },
+    {
+      "id": "g8d4-0074",
+      "word": "Taklimakan Desert",
+      "phonetic": "/ˌtæklɪˈmɑːkən ˈdezət/",
+      "pos": "名词短语",
+      "meaning": "塔克拉玛干沙漠"
+    },
+    {
+      "id": "g8d4-0075",
+      "word": "Mount Kilimanjaro",
+      "phonetic": "/ˌkɪlmənˈdʒɑːrəʊ/",
+      "pos": "名词短语",
+      "meaning": "乞力马扎罗山"
+    },
+    {
+      "id": "g8d4-0076",
+      "word": "Inga Falls",
+      "phonetic": "/ˈɪŋɡə fɔːlz/",
+      "pos": "名词短语",
+      "meaning": "印加瀑布"
+    },
+    {
+      "id": "g8d4-0077",
+      "word": "East African Rift Valley",
+      "phonetic": "/iːst ˈæfrɪkən rɪft ˈvæli/",
+      "pos": "名词短语",
+      "meaning": "东非大裂谷"
+    },
+    {
+      "id": "g8d4-0078",
+      "word": "Victoria Falls",
+      "phonetic": "/vɪkˈtɔːriə fɔːlz/",
+      "pos": "名词短语",
+      "meaning": "维多利亚瀑布"
+    },
+    {
+      "id": "g8d4-0079",
+      "word": "George Mallory",
+      "phonetic": "/dʒɔːdʒ ˈmæləri/",
+      "pos": "名词",
+      "meaning": "乔治·马洛里"
+    },
+    {
+      "id": "g8d4-0080",
+      "word": "Siberia",
+      "phonetic": "/saɪˈbɪəriə/",
+      "pos": "名词",
+      "meaning": "西伯利亚"
+    },
+    {
+      "id": "g8d4-0081",
+      "word": "Lake Baikal",
+      "phonetic": "/laɪk baɪˈkæl/",
+      "pos": "名词短语",
+      "meaning": "贝加尔湖"
+    },
+    {
+      "id": "g8d4-0082",
+      "word": "Belgium",
+      "phonetic": "/ˈbeldʒəm/",
+      "pos": "名词",
+      "meaning": "比利时"
+    },
+    {
+      "id": "g8d4-0083",
+      "word": "Great Barrier Reef",
+      "phonetic": "/ɡreɪt ˈbæriə(r) riːf/",
+      "pos": "名词短语",
+      "meaning": "大堡礁"
+    },
+    {
+      "id": "g8d5-0001",
+      "word": "temper",
+      "phonetic": "/ˈtempə(r)/",
+      "pos": "名词",
+      "meaning": "脾气；怒气"
+    },
+    {
+      "id": "g8d5-0002",
+      "word": "earthquake",
+      "phonetic": "/ˈɜːθkweɪk/",
+      "pos": "名词",
+      "meaning": "地震"
+    },
+    {
+      "id": "g8d5-0003",
+      "word": "typhoon",
+      "phonetic": "/taɪˈfuːn/",
+      "pos": "名词",
+      "meaning": "台风"
+    },
+    {
+      "id": "g8d5-0004",
+      "word": "wildfire",
+      "phonetic": "/ˈwaɪldfaɪə(r)/",
+      "pos": "名词",
+      "meaning": "野火"
+    },
+    {
+      "id": "g8d5-0005",
+      "word": "snowstorm",
+      "phonetic": "/ˈnəʊstɔːm/",
+      "pos": "名词",
+      "meaning": "暴雪；暴风雪"
+    },
+    {
+      "id": "g8d5-0006",
+      "word": "flood",
+      "phonetic": "/flʌd/",
+      "pos": "名词 & 动词",
+      "meaning": "水灾；洪水；泛滥；淹没"
+    },
+    {
+      "id": "g8d5-0007",
+      "word": "drought",
+      "phonetic": "/draʊt/",
+      "pos": "名词",
+      "meaning": "久旱；旱灾"
+    },
+    {
+      "id": "g8d5-0008",
+      "word": "warn",
+      "phonetic": "/wɔːn/",
+      "pos": "动词",
+      "meaning": "警告；提醒注意"
+    },
+    {
+      "id": "g8d5-0009",
+      "word": "do chores",
+      "phonetic": "/duː tʃɔːz/",
+      "pos": "短语",
+      "meaning": "做家务"
+    },
+    {
+      "id": "g8d5-0010",
+      "word": "wave",
+      "phonetic": "/weɪv/",
+      "pos": "名词 & 动词",
+      "meaning": "波浪；波；挥手；挥手；挥舞"
+    },
+    {
+      "id": "g8d5-0011",
+      "word": "tsunami",
+      "phonetic": "/tsuːˈnɑːmi/",
+      "pos": "名词",
+      "meaning": "海啸"
+    },
+    {
+      "id": "g8d5-0012",
+      "word": "interview",
+      "phonetic": "/ˈɪntəvjuː/",
+      "pos": "名词 & 动词",
+      "meaning": "采访；面试；采访；对（某人）进行面试"
+    },
+    {
+      "id": "g8d5-0013",
+      "word": "possibly",
+      "phonetic": "/ˈpɒsəbli/",
+      "pos": "副词",
+      "meaning": "可能；或许"
+    },
+    {
+      "id": "g8d5-0014",
+      "word": "report",
+      "phonetic": "/rɪˈpɔːt/",
+      "pos": "名词 & 动词",
+      "meaning": "汇报；报道"
+    },
+    {
+      "id": "g8d5-0015",
+      "word": "neighbourhood",
+      "phonetic": "/ˈneɪbəhʊd/",
+      "pos": "名词",
+      "meaning": "街区；临近的地方"
+    },
+    {
+      "id": "g8d5-0016",
+      "word": "roof",
+      "phonetic": "/ruːf/",
+      "pos": "名词",
+      "meaning": "屋顶；顶部"
+    },
+    {
+      "id": "g8d5-0017",
+      "word": "nearly",
+      "phonetic": "/ˈnɪəli/",
+      "pos": "副词",
+      "meaning": "几乎；差不多；将近"
+    },
+    {
+      "id": "g8d5-0018",
+      "word": "trouble",
+      "phonetic": "/ˈtrʌbl/",
+      "pos": "名词 & 动词",
+      "meaning": "苦恼；困难；使忧虑；苦恼；劳驾；麻烦"
+    },
+    {
+      "id": "g8d5-0019",
+      "word": "relative",
+      "phonetic": "/ˈrelətɪv/",
+      "pos": "名词",
+      "meaning": "亲戚；亲属"
+    },
+    {
+      "id": "g8d5-0020",
+      "word": "truck",
+      "phonetic": "/trʌk/",
+      "pos": "名词",
+      "meaning": "卡车"
+    },
+    {
+      "id": "g8d5-0021",
+      "word": "supply",
+      "phonetic": "/səˈplaɪ/",
+      "pos": "名词 & 动词",
+      "meaning": "供应（量）；(pl. supplies) 补给（品）；供应；供给"
+    },
+    {
+      "id": "g8d5-0022",
+      "word": "preparation",
+      "phonetic": "/ˌprepəˈreɪʃn/",
+      "pos": "名词",
+      "meaning": "准备（工作）；预备"
+    },
+    {
+      "id": "g8d5-0023",
+      "word": "make preparations",
+      "phonetic": "/meɪk ˌprepəˈreɪʃn/",
+      "pos": "短语",
+      "meaning": "作准备"
+    },
+    {
+      "id": "g8d5-0024",
+      "word": "power",
+      "phonetic": "/ˈpaʊə(r)/",
+      "pos": "名词",
+      "meaning": "电力；能量；力量"
+    },
+    {
+      "id": "g8d5-0025",
+      "word": "soundly",
+      "phonetic": "/ˈsaʊndli/",
+      "pos": "副词",
+      "meaning": "（睡觉）酣畅地；可靠地；完全彻底地"
+    },
+    {
+      "id": "g8d5-0026",
+      "word": "thick",
+      "phonetic": "/θɪk/",
+      "pos": "形容词",
+      "meaning": "厚的；浓密的"
+    },
+    {
+      "id": "g8d5-0027",
+      "word": "beat",
+      "phonetic": "/biːt/",
+      "pos": "动词",
+      "meaning": "(beat, beaten) 敲；打"
+    },
+    {
+      "id": "g8d5-0028",
+      "word": "hide",
+      "phonetic": "/haɪd/",
+      "pos": "动词",
+      "meaning": "(hid, hidden) 躲藏；隐蔽"
+    },
+    {
+      "id": "g8d5-0029",
+      "word": "tornado",
+      "phonetic": "/tɔːˈneɪdəʊ/",
+      "pos": "名词",
+      "meaning": "龙卷风；旋风"
+    },
+    {
+      "id": "g8d5-0030",
+      "word": "worst",
+      "phonetic": "/wɜːst/",
+      "pos": "形容词 & 副词",
+      "meaning": "最糟（的）；最坏（的）"
+    },
+    {
+      "id": "g8d5-0031",
+      "word": "schoolgirl",
+      "phonetic": "/ˈskuːlɡɜːl/",
+      "pos": "名词",
+      "meaning": "（学校的）女生"
+    },
+    {
+      "id": "g8d5-0032",
+      "word": "froth",
+      "phonetic": "/frɒθ/",
+      "pos": "名词",
+      "meaning": "泡沫；泡沫"
+    },
+    {
+      "id": "g8d5-0033",
+      "word": "refuse",
+      "phonetic": "/rɪˈfjuːz/",
+      "pos": "动词",
+      "meaning": "拒绝；退却"
+    },
+    {
+      "id": "g8d5-0034",
+      "word": "security",
+      "phonetic": "/sɪˈkjʊərəti/",
+      "pos": "名词",
+      "meaning": "安全；保安；保障"
+    },
+    {
+      "id": "g8d5-0035",
+      "word": "guard",
+      "phonetic": "/ɡɑːd/",
+      "pos": "名词 & 动词",
+      "meaning": "卫兵；保卫；保卫"
+    },
+    {
+      "id": "g8d5-0036",
+      "word": "security guard",
+      "phonetic": "/sɪˈkjʊərəti ɡɑːd/",
+      "pos": "名词短语",
+      "meaning": "保安人员"
+    },
+    {
+      "id": "g8d5-0037",
+      "word": "nearby",
+      "phonetic": "/ˌnɪəˈbaɪ/",
+      "pos": "形容词 & 副词",
+      "meaning": "附近的；在附近"
+    },
+    {
+      "id": "g8d5-0038",
+      "word": "scream",
+      "phonetic": "/skriːm/",
+      "pos": "动词",
+      "meaning": "尖叫"
+    },
+    {
+      "id": "g8d5-0039",
+      "word": "thankfully",
+      "phonetic": "/ˈθæŋkfəli/",
+      "pos": "副词",
+      "meaning": "幸亏；感激地"
+    },
+    {
+      "id": "g8d5-0040",
+      "word": "knowledge",
+      "phonetic": "/ˈnɒlɪdʒ/",
+      "pos": "名词",
+      "meaning": "知识；学问"
+    },
+    {
+      "id": "g8d5-0041",
+      "word": "thinking",
+      "phonetic": "/ˈθɪŋkɪŋ/",
+      "pos": "名词",
+      "meaning": "思考；想法"
+    },
+    {
+      "id": "g8d5-0042",
+      "word": "except for",
+      "phonetic": "/ɪkˈsept fɔː(r)/",
+      "pos": "短语",
+      "meaning": "除……之外"
+    },
+    {
+      "id": "g8d5-0043",
+      "word": "as soon as",
+      "phonetic": "/æz suːn æz/",
+      "pos": "短语",
+      "meaning": "一……就……"
+    },
+    {
+      "id": "g8d5-0044",
+      "word": "hero",
+      "phonetic": "/ˈhɪərəʊ/",
+      "pos": "名词",
+      "meaning": "(pl. heroes) 英雄；男主角；偶像"
+    },
+    {
+      "id": "g8d5-0045",
+      "word": "landslide",
+      "phonetic": "/ˈlændslaɪd/",
+      "pos": "名词",
+      "meaning": "（山坡或悬崖的）滑坡；塌方"
+    },
+    {
+      "id": "g8d5-0046",
+      "word": "safeguard",
+      "phonetic": "/ˈseɪfɡɑːd/",
+      "pos": "动词 & 名词",
+      "meaning": "保护；捍卫；安全设施"
+    },
+    {
+      "id": "g8d5-0047",
+      "word": "floodwater",
+      "phonetic": "/ˈflʌdwɔːtə(r)/",
+      "pos": "名词",
+      "meaning": "洪水"
+    },
+    {
+      "id": "g8d5-0048",
+      "word": "manpower",
+      "phonetic": "/ˈmænpaʊə(r)/",
+      "pos": "名词",
+      "meaning": "劳动力；人力"
+    },
+    {
+      "id": "g8d5-0049",
+      "word": "heartbeat",
+      "phonetic": "/ˈhɑːtbiːt/",
+      "pos": "名词",
+      "meaning": "心跳（声）"
+    },
+    {
+      "id": "g8d5-0050",
+      "word": "rescue",
+      "phonetic": "/ˈreskjuː/",
+      "pos": "名词 & 动词",
+      "meaning": "救援；援救；营救"
+    },
+    {
+      "id": "g8d5-0051",
+      "word": "heatwave",
+      "phonetic": "/ˈhiːtweɪv/",
+      "pos": "名词",
+      "meaning": "热浪"
+    },
+    {
+      "id": "g8d5-0052",
+      "word": "since",
+      "phonetic": "/sɪns/",
+      "pos": "介词 & 副词 & 连词",
+      "meaning": "自……以后；从……以来；既然；由于"
+    },
+    {
+      "id": "g8d5-0053",
+      "word": "southwestern",
+      "phonetic": "/ˌsaʊθˈwestən/",
+      "pos": "形容词",
+      "meaning": "西南的；西南方向的"
+    },
+    {
+      "id": "g8d5-0054",
+      "word": "firefighter",
+      "phonetic": "/ˈfaɪəfaɪtə(r)/",
+      "pos": "名词",
+      "meaning": "消防队员"
+    },
+    {
+      "id": "g8d5-0055",
+      "word": "volunteer",
+      "phonetic": "/ˌvɒlənˈtɪə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "志愿者；自告勇者；自愿做；义务做"
+    },
+    {
+      "id": "g8d5-0056",
+      "word": "terribly",
+      "phonetic": "/ˈterəbli/",
+      "pos": "副词",
+      "meaning": "非常糟地；非常"
+    },
+    {
+      "id": "g8d5-0057",
+      "word": "alarm",
+      "phonetic": "/əˈlɑːm/",
+      "pos": "名词",
+      "meaning": "警报（器）；惊恐"
+    },
+    {
+      "id": "g8d5-0058",
+      "word": "alarm clock",
+      "phonetic": "/əˈlɑːm klɒk/",
+      "pos": "名词短语",
+      "meaning": "闹钟"
+    },
+    {
+      "id": "g8d5-0059",
+      "word": "wake up",
+      "phonetic": "/weɪk ʌp/",
+      "pos": "短语",
+      "meaning": "醒来"
+    },
+    {
+      "id": "g8d5-0060",
+      "word": "go off",
+      "phonetic": "/ɡəʊ ɒf/",
+      "pos": "短语",
+      "meaning": "（警报器等）突然发出巨响"
+    },
+    {
+      "id": "g8d5-0061",
+      "word": "review",
+      "phonetic": "/rɪˈvjuː/",
+      "pos": "动词 & 名词",
+      "meaning": "复习；回顾；复查；回顾；审查"
+    },
+    {
+      "id": "g8d5-0062",
+      "word": "sudden",
+      "phonetic": "/ˈsʌdn/",
+      "pos": "形容词",
+      "meaning": "突然的；骤然的"
+    },
+    {
+      "id": "g8d5-0063",
+      "word": "all of a sudden",
+      "phonetic": "/ɔːl əv ə ˈsʌdn/",
+      "pos": "短语",
+      "meaning": "突然；猛地"
+    },
+    {
+      "id": "g8d5-0064",
+      "word": "thunder",
+      "phonetic": "/ˈθʌndə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "雷；雷声；打雷；发出雷鸣般响声"
+    },
+    {
+      "id": "g8d5-0065",
+      "word": "by the time",
+      "phonetic": "/baɪ ðə taɪm/",
+      "pos": "短语",
+      "meaning": "到……的时候"
+    },
+    {
+      "id": "g8d5-0066",
+      "word": "usual",
+      "phonetic": "/ˈjuːʒuəl/",
+      "pos": "形容词",
+      "meaning": "通常的；寻常的"
+    },
+    {
+      "id": "g8d5-0067",
+      "word": "out of breath",
+      "phonetic": "/aʊt əv breθ/",
+      "pos": "短语",
+      "meaning": "上气不接下气"
+    },
+    {
+      "id": "g8d5-0068",
+      "word": "rainstorm",
+      "phonetic": "/ˈreɪnstɔːm/",
+      "pos": "名词",
+      "meaning": "暴风雨"
+    },
+    {
+      "id": "g8d5-0069",
+      "word": "as a result",
+      "phonetic": "/æz ə rɪzʌlt/",
+      "pos": "短语",
+      "meaning": "因此"
+    },
+    {
+      "id": "g8d5-0070",
+      "word": "unlucky",
+      "phonetic": "/ʌnˈlʌki/",
+      "pos": "形容词",
+      "meaning": "不幸的；不顺利的；不吉利的"
+    },
+    {
+      "id": "g8d5-0071",
+      "word": "rainy",
+      "phonetic": "/ˈreɪni/",
+      "pos": "形容词",
+      "meaning": "阴雨的；多雨的"
+    },
+    {
+      "id": "g8d5-0072",
+      "word": "go wrong",
+      "phonetic": "/ɡəʊ rɒŋ/",
+      "pos": "短语",
+      "meaning": "出现问题；发生故障；搞错"
+    },
+    {
+      "id": "g8d5-0073",
+      "word": "Tilly",
+      "phonetic": "/ˈtɪli/",
+      "pos": "名词",
+      "meaning": "蒂莉"
+    },
+    {
+      "id": "g8d5-0074",
+      "word": "Phuket",
+      "phonetic": "/ˌpuːˈket/",
+      "pos": "名词",
+      "meaning": "普吉岛"
+    },
+    {
+      "id": "g8d5-0075",
+      "word": "Indonesia",
+      "phonetic": "/ˌɪndəˈniːʒə/",
+      "pos": "名词",
+      "meaning": "印度尼西亚"
+    },
+    {
+      "id": "g8d5-0076",
+      "word": "Japan",
+      "phonetic": "/dʒəˈpæn/",
+      "pos": "名词",
+      "meaning": "日本"
+    },
+    {
+      "id": "g8d6-0001",
+      "word": "shake",
+      "phonetic": "/ʃeɪk/",
+      "pos": "动词",
+      "meaning": "(shook, shaken) 与（某人）握手；摇动"
+    },
+    {
+      "id": "g8d6-0002",
+      "word": "bow",
+      "phonetic": "/baʊ/",
+      "pos": "动词 & 名词",
+      "meaning": "鞠躬"
+    },
+    {
+      "id": "g8d6-0003",
+      "word": "bump",
+      "phonetic": "/bʌmp/",
+      "pos": "动词 & 名词",
+      "meaning": "碰；撞；碰撞；（撞击造成的）肿块"
+    },
+    {
+      "id": "g8d6-0004",
+      "word": "fist",
+      "phonetic": "/fɪst/",
+      "pos": "名词",
+      "meaning": "拳头"
+    },
+    {
+      "id": "g8d6-0005",
+      "word": "rub",
+      "phonetic": "/rʌb/",
+      "pos": "动词",
+      "meaning": "摩擦；揉"
+    },
+    {
+      "id": "g8d6-0006",
+      "word": "kiss",
+      "phonetic": "/kɪs/",
+      "pos": "动词 & 名词",
+      "meaning": "亲吻"
+    },
+    {
+      "id": "g8d6-0007",
+      "word": "cheek",
+      "phonetic": "/tʃiːk/",
+      "pos": "名词",
+      "meaning": "脸颊"
+    },
+    {
+      "id": "g8d6-0008",
+      "word": "hug",
+      "phonetic": "/hʌɡ/",
+      "pos": "动词 & 名词",
+      "meaning": "拥抱"
+    },
+    {
+      "id": "g8d6-0009",
+      "word": "embarrassed",
+      "phonetic": "/ɪmˈbærəst/",
+      "pos": "形容词",
+      "meaning": "尴尬的"
+    },
+    {
+      "id": "g8d6-0010",
+      "word": "confused",
+      "phonetic": "/kənˈfjuːzd/",
+      "pos": "形容词",
+      "meaning": "困惑的"
+    },
+    {
+      "id": "g8d6-0011",
+      "word": "formal",
+      "phonetic": "/ˈfɔːml/",
+      "pos": "形容词",
+      "meaning": "正式的"
+    },
+    {
+      "id": "g8d6-0012",
+      "word": "curry",
+      "phonetic": "/ˈkʌri/",
+      "pos": "名词",
+      "meaning": "咖喱菜"
+    },
+    {
+      "id": "g8d6-0013",
+      "word": "rude",
+      "phonetic": "/ruːd/",
+      "pos": "形容词",
+      "meaning": "粗鲁的"
+    },
+    {
+      "id": "g8d6-0014",
+      "word": "uncommon",
+      "phonetic": "/ʌnˈkɒmən/",
+      "pos": "形容词",
+      "meaning": "罕见的；不寻常的"
+    },
+    {
+      "id": "g8d6-0015",
+      "word": "palm",
+      "phonetic": "/pɑːm/",
+      "pos": "名词",
+      "meaning": "手掌"
+    },
+    {
+      "id": "g8d6-0016",
+      "word": "namaste",
+      "phonetic": "/ˈnʌməsteɪ/",
+      "pos": "名词",
+      "meaning": "有礼了（印度人行合十礼时口中所念之词）"
+    },
+    {
+      "id": "g8d6-0017",
+      "word": "fork",
+      "phonetic": "/fɔːk/",
+      "pos": "名词",
+      "meaning": "叉子"
+    },
+    {
+      "id": "g8d6-0018",
+      "word": "Indian",
+      "phonetic": "/ˈɪndiən/",
+      "pos": "形容词 & 名词",
+      "meaning": "印度的；印度人的；印度人"
+    },
+    {
+      "id": "g8d6-0019",
+      "word": "manner",
+      "phonetic": "/ˈmænə(r)/",
+      "pos": "名词",
+      "meaning": "方式；(pl. manners) 礼仪"
+    },
+    {
+      "id": "g8d6-0020",
+      "word": "so ... that",
+      "phonetic": "/səʊ ðæt/",
+      "pos": "短语",
+      "meaning": "如此……以至于"
+    },
+    {
+      "id": "g8d6-0021",
+      "word": "confusing",
+      "phonetic": "/kənˈfjuːzɪŋ/",
+      "pos": "形容词",
+      "meaning": "令人困惑的；难以理解的"
+    },
+    {
+      "id": "g8d6-0022",
+      "word": "unless",
+      "phonetic": "/ənˈles/",
+      "pos": "连词",
+      "meaning": "除非；如果不"
+    },
+    {
+      "id": "g8d6-0023",
+      "word": "proper",
+      "phonetic": "/ˈprɒpə(r)/",
+      "pos": "形容词",
+      "meaning": "恰当的；正确的"
+    },
+    {
+      "id": "g8d6-0024",
+      "word": "sit up",
+      "phonetic": "/sɪt ʌp/",
+      "pos": "短语",
+      "meaning": "坐直"
+    },
+    {
+      "id": "g8d6-0025",
+      "word": "keep ... off",
+      "phonetic": "/kiːp ɒf/",
+      "pos": "短语",
+      "meaning": "使不碰到；使避开"
+    },
+    {
+      "id": "g8d6-0026",
+      "word": "elbow",
+      "phonetic": "/ˈelbəʊ/",
+      "pos": "名词",
+      "meaning": "手肘"
+    },
+    {
+      "id": "g8d6-0027",
+      "word": "serving",
+      "phonetic": "/ˈsɜːvɪŋ/",
+      "pos": "形容词 & 名词",
+      "meaning": "分菜用的；一份食物"
+    },
+    {
+      "id": "g8d6-0028",
+      "word": "chopstick",
+      "phonetic": "/ˈtʃɒpstɪk/",
+      "pos": "名词",
+      "meaning": "(usually pl.) 筷子"
+    },
+    {
+      "id": "g8d6-0029",
+      "word": "serving chopsticks",
+      "phonetic": "/ˈsɜːvɪŋ ˈtʃɒpstɪks/",
+      "pos": "名词短语",
+      "meaning": "公筷"
+    },
+    {
+      "id": "g8d6-0030",
+      "word": "embarrassing",
+      "phonetic": "/ɪmˈbærəsɪŋ/",
+      "pos": "形容词",
+      "meaning": "使人难堪的"
+    },
+    {
+      "id": "g8d6-0031",
+      "word": "be / get used to",
+      "phonetic": "/biː juːzd tuː/",
+      "pos": "短语",
+      "meaning": "习惯于"
+    },
+    {
+      "id": "g8d6-0032",
+      "word": "cultural",
+      "phonetic": "/ˈkʌltʃərəl/",
+      "pos": "形容词",
+      "meaning": "与文化有关的；文化的"
+    },
+    {
+      "id": "g8d6-0033",
+      "word": "hear from",
+      "phonetic": "/hɪə(r) frɒm/",
+      "pos": "短语",
+      "meaning": "得到……消息"
+    },
+    {
+      "id": "g8d6-0034",
+      "word": "custom",
+      "phonetic": "/ˈkʌstəm/",
+      "pos": "名词",
+      "meaning": "习俗"
+    },
+    {
+      "id": "g8d6-0035",
+      "word": "occasion",
+      "phonetic": "/əˈkeɪʒn/",
+      "pos": "名词",
+      "meaning": "场合；重大活动"
+    },
+    {
+      "id": "g8d6-0036",
+      "word": "nicely",
+      "phonetic": "/ˈnaɪsli/",
+      "pos": "副词",
+      "meaning": "漂亮地；令人愉快地"
+    },
+    {
+      "id": "g8d6-0037",
+      "word": "blouse",
+      "phonetic": "/blaʊz/",
+      "pos": "名词",
+      "meaning": "（女式）衬衫或短上衣"
+    },
+    {
+      "id": "g8d6-0038",
+      "word": "private",
+      "phonetic": "/ˈpraɪvət/",
+      "pos": "形容词",
+      "meaning": "不喜欢谈论私事的；私人的"
+    },
+    {
+      "id": "g8d6-0039",
+      "word": "whether",
+      "phonetic": "/ˈweðə(r)/",
+      "pos": "连词",
+      "meaning": "是否"
+    },
+    {
+      "id": "g8d6-0040",
+      "word": "married",
+      "phonetic": "/ˈmærid/",
+      "pos": "形容词",
+      "meaning": "已婚的；婚姻的"
+    },
+    {
+      "id": "g8d6-0041",
+      "word": "merci",
+      "phonetic": "/meəˈsiː/",
+      "pos": "感叹词",
+      "meaning": "谢谢（法语）"
+    },
+    {
+      "id": "g8d6-0042",
+      "word": "go a long way",
+      "phonetic": "/ɡəʊ ə lɒŋ weɪ/",
+      "pos": "短语",
+      "meaning": "帮助很大"
+    },
+    {
+      "id": "g8d6-0043",
+      "word": "au revoir",
+      "phonetic": "/əʊ rəˈvwɑː(r)/",
+      "pos": "感叹词",
+      "meaning": "再见（法语）"
+    },
+    {
+      "id": "g8d6-0044",
+      "word": "unsafe",
+      "phonetic": "/ʌnˈseɪf/",
+      "pos": "形容词",
+      "meaning": "不安全的；危险的"
+    },
+    {
+      "id": "g8d6-0045",
+      "word": "improper",
+      "phonetic": "/ɪmˈprɒpə(r)/",
+      "pos": "形容词",
+      "meaning": "不合适的"
+    },
+    {
+      "id": "g8d6-0046",
+      "word": "informal",
+      "phonetic": "/ɪnˈfɔːml/",
+      "pos": "形容词",
+      "meaning": "非正式的"
+    },
+    {
+      "id": "g8d6-0047",
+      "word": "jeans",
+      "phonetic": "/dʒiːnz/",
+      "pos": "名词",
+      "meaning": "牛仔裤"
+    },
+    {
+      "id": "g8d6-0048",
+      "word": "marry",
+      "phonetic": "/ˈmæri/",
+      "pos": "动词",
+      "meaning": "结婚；娶；嫁"
+    },
+    {
+      "id": "g8d6-0049",
+      "word": "congratulate",
+      "phonetic": "/kənˈɡrætʃuleɪt/",
+      "pos": "动词",
+      "meaning": "祝贺"
+    },
+    {
+      "id": "g8d6-0050",
+      "word": "Asian",
+      "phonetic": "/ˈeɪʃn/",
+      "pos": "形容词 & 名词",
+      "meaning": "亚洲的；亚洲人"
+    },
+    {
+      "id": "g8d6-0051",
+      "word": "tradition",
+      "phonetic": "/trəˈdɪʃn/",
+      "pos": "名词",
+      "meaning": "传统"
+    },
+    {
+      "id": "g8d6-0052",
+      "word": "firstly",
+      "phonetic": "/ˈfɜːstli/",
+      "pos": "副词",
+      "meaning": "第一；首先"
+    },
+    {
+      "id": "g8d6-0053",
+      "word": "secondly",
+      "phonetic": "/ˈsekəndli/",
+      "pos": "副词",
+      "meaning": "第二；其次"
+    },
+    {
+      "id": "g8d6-0054",
+      "word": "thirdly",
+      "phonetic": "/ˈθɜːdli/",
+      "pos": "副词",
+      "meaning": "第三"
+    },
+    {
+      "id": "g8d6-0055",
+      "word": "correctly",
+      "phonetic": "/kəˈrektli/",
+      "pos": "副词",
+      "meaning": "正确地；得体地"
+    },
+    {
+      "id": "g8d6-0056",
+      "word": "receive",
+      "phonetic": "/rɪˈsiːv/",
+      "pos": "动词",
+      "meaning": "收到"
+    },
+    {
+      "id": "g8d6-0057",
+      "word": "sign-off",
+      "phonetic": "/ˈsaɪn ɒf/",
+      "pos": "名词",
+      "meaning": "结束写信"
+    },
+    {
+      "id": "g8d6-0058",
+      "word": "main",
+      "phonetic": "/meɪn/",
+      "pos": "形容词",
+      "meaning": "主要的"
+    },
+    {
+      "id": "g8d6-0059",
+      "word": "in one's forties",
+      "phonetic": "/ɪn wʌnz ˈfɔːtiz/",
+      "pos": "短语",
+      "meaning": "四十多岁"
+    },
+    {
+      "id": "g8d6-0060",
+      "word": "false",
+      "phonetic": "/fɔːls/",
+      "pos": "形容词",
+      "meaning": "错误的；不真实的"
+    },
+    {
+      "id": "g8d6-0061",
+      "word": "impression",
+      "phonetic": "/ɪmˈpreʃn/",
+      "pos": "名词",
+      "meaning": "印象"
+    },
+    {
+      "id": "g8d6-0062",
+      "word": "cheer",
+      "phonetic": "/tʃɪə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "欢呼；庆祝"
+    },
+    {
+      "id": "g8d6-0063",
+      "word": "cheers",
+      "phonetic": "/tʃɪəz/",
+      "pos": "感叹词",
+      "meaning": "再见；干杯"
+    },
+    {
+      "id": "g8d6-0064",
+      "word": "Ji-Hoon",
+      "phonetic": "/dʒiː huːn/",
+      "pos": "名词",
+      "meaning": "智勋（朝鲜或韩国人名）"
+    },
+    {
+      "id": "g8d6-0065",
+      "word": "Kaito",
+      "phonetic": "/kaɪtəʊ/",
+      "pos": "名词",
+      "meaning": "海斗（日本人名）"
+    },
+    {
+      "id": "g8d6-0066",
+      "word": "Marie",
+      "phonetic": "/məˈriː/",
+      "pos": "名词",
+      "meaning": "玛丽"
+    },
+    {
+      "id": "g8d6-0067",
+      "word": "Turkiye",
+      "phonetic": "/ˈtɜːkiə/",
+      "pos": "名词",
+      "meaning": "土耳其"
+    },
+    {
+      "id": "g8d6-0068",
+      "word": "Mexico",
+      "phonetic": "/ˈmeksɪkəʊ/",
+      "pos": "名词",
+      "meaning": "墨西哥"
+    },
+    {
+      "id": "g8d6-0069",
+      "word": "Peru",
+      "phonetic": "/pəˈruː/",
+      "pos": "名词",
+      "meaning": "秘鲁"
+    },
+    {
+      "id": "g8d6-0070",
+      "word": "Germany",
+      "phonetic": "/ˈdʒɜːməni/",
+      "pos": "名词",
+      "meaning": "德国"
+    },
+    {
+      "id": "g8d6-0071",
+      "word": "Paris",
+      "phonetic": "/ˈpærɪs/",
+      "pos": "名词",
+      "meaning": "巴黎（法国首都）"
+    },
+    {
+      "id": "g8d7-0001",
+      "word": "a good read",
+      "phonetic": "/ə ɡʊd riːd/",
+      "pos": "短语",
+      "meaning": "好的读物；好书（或文章等）"
+    },
+    {
+      "id": "g8d7-0002",
+      "word": "adventure",
+      "phonetic": "/ədˈventʃə(r)/",
+      "pos": "名词",
+      "meaning": "冒险；冒险经历"
+    },
+    {
+      "id": "g8d7-0003",
+      "word": "fantasy",
+      "phonetic": "/ˈfæntəsi/",
+      "pos": "名词",
+      "meaning": "幻想；幻想作品"
+    },
+    {
+      "id": "g8d7-0004",
+      "word": "mystery",
+      "phonetic": "/ˈmɪstri/",
+      "pos": "名词",
+      "meaning": "悬疑小说（或电影、戏剧）；神秘的事物；奥秘"
+    },
+    {
+      "id": "g8d7-0005",
+      "word": "fiction",
+      "phonetic": "/ˈfɪkʃn/",
+      "pos": "名词",
+      "meaning": "小说"
+    },
+    {
+      "id": "g8d7-0006",
+      "word": "science fiction",
+      "phonetic": "/ˈsaɪəns ˈfɪkʃn/",
+      "pos": "名词短语",
+      "meaning": "科幻小说（或影片等）"
+    },
+    {
+      "id": "g8d7-0007",
+      "word": "detective",
+      "phonetic": "/dɪˈtektɪv/",
+      "pos": "名词",
+      "meaning": "侦探"
+    },
+    {
+      "id": "g8d7-0008",
+      "word": "alien",
+      "phonetic": "/ˈeɪliən/",
+      "pos": "名词",
+      "meaning": "外星人"
+    },
+    {
+      "id": "g8d7-0009",
+      "word": "attack",
+      "phonetic": "/əˈtæk/",
+      "pos": "动词 & 名词",
+      "meaning": "攻击；进攻"
+    },
+    {
+      "id": "g8d7-0010",
+      "word": "historical",
+      "phonetic": "/hɪˈstɔːrɪkl/",
+      "pos": "形容词",
+      "meaning": "历史的；有关历史的"
+    },
+    {
+      "id": "g8d7-0011",
+      "word": "force",
+      "phonetic": "/fɔːs/",
+      "pos": "动词 & 名词",
+      "meaning": "强迫；迫使；用力推动；力；武力"
+    },
+    {
+      "id": "g8d7-0012",
+      "word": "steal",
+      "phonetic": "/stiːl/",
+      "pos": "动词",
+      "meaning": "(stole, stolen) 偷；窃取"
+    },
+    {
+      "id": "g8d7-0013",
+      "word": "punish",
+      "phonetic": "/ˈpʌnɪʃ/",
+      "pos": "动词",
+      "meaning": "惩罚；处罚"
+    },
+    {
+      "id": "g8d7-0014",
+      "word": "idiom",
+      "phonetic": "/ˈɪdiəm/",
+      "pos": "名词",
+      "meaning": "习语；成语"
+    },
+    {
+      "id": "g8d7-0015",
+      "word": "recently",
+      "phonetic": "/ˈriːsntli/",
+      "pos": "副词",
+      "meaning": "最近；不久前"
+    },
+    {
+      "id": "g8d7-0016",
+      "word": "lost",
+      "phonetic": "/lɒst/",
+      "pos": "形容词",
+      "meaning": "迷路的；丢失的；失去的"
+    },
+    {
+      "id": "g8d7-0017",
+      "word": "get lost",
+      "phonetic": "/ɡet lɒst/",
+      "pos": "短语",
+      "meaning": "迷路"
+    },
+    {
+      "id": "g8d7-0018",
+      "word": "hear of",
+      "phonetic": "/hɪə(r) əv/",
+      "pos": "短语",
+      "meaning": "听说；得知"
+    },
+    {
+      "id": "g8d7-0019",
+      "word": "recommend",
+      "phonetic": "/ˌrekəˈmend/",
+      "pos": "动词",
+      "meaning": "推荐；建议"
+    },
+    {
+      "id": "g8d7-0020",
+      "word": "society",
+      "phonetic": "/səˈsaɪəti/",
+      "pos": "名词",
+      "meaning": "社会；社团"
+    },
+    {
+      "id": "g8d7-0021",
+      "word": "literary",
+      "phonetic": "/ˈlɪtərəri/",
+      "pos": "形容词",
+      "meaning": "文学的；文学上的"
+    },
+    {
+      "id": "g8d7-0022",
+      "word": "base",
+      "phonetic": "/beɪs/",
+      "pos": "动词 & 名词",
+      "meaning": "把（总部等）设在；根基；基础；根据地"
+    },
+    {
+      "id": "g8d7-0023",
+      "word": "base on",
+      "phonetic": "/beɪs ɒn/",
+      "pos": "短语",
+      "meaning": "以……为基础；以……为根据"
+    },
+    {
+      "id": "g8d7-0024",
+      "word": "summary",
+      "phonetic": "/ˈsʌməri/",
+      "pos": "名词",
+      "meaning": "总结；概要"
+    },
+    {
+      "id": "g8d7-0025",
+      "word": "spoiled",
+      "phonetic": "/spɔɪld/",
+      "pos": "形容词",
+      "meaning": "(=spoilt) 宠坏的；娇惯坏的"
+    },
+    {
+      "id": "g8d7-0026",
+      "word": "selfish",
+      "phonetic": "/ˈselfɪʃ/",
+      "pos": "形容词",
+      "meaning": "自私的"
+    },
+    {
+      "id": "g8d7-0027",
+      "word": "lock",
+      "phonetic": "/lɒk/",
+      "pos": "动词 & 名词",
+      "meaning": "用锁锁上；锁"
+    },
+    {
+      "id": "g8d7-0028",
+      "word": "lock up",
+      "phonetic": "/lɒk ʌp/",
+      "pos": "短语",
+      "meaning": "锁好（建筑物的）门"
+    },
+    {
+      "id": "g8d7-0029",
+      "word": "unlock",
+      "phonetic": "/ʌnˈlɒk/",
+      "pos": "动词",
+      "meaning": "开……的锁；发现；揭开"
+    },
+    {
+      "id": "g8d7-0030",
+      "word": "hidden",
+      "phonetic": "/ˈhɪdn/",
+      "pos": "形容词",
+      "meaning": "隐藏的；秘密的"
+    },
+    {
+      "id": "g8d7-0031",
+      "word": "nobody",
+      "phonetic": "/ˈnəʊbədi/",
+      "pos": "代词",
+      "meaning": "没有人；谁也不"
+    },
+    {
+      "id": "g8d7-0032",
+      "word": "therefore",
+      "phonetic": "/ˈðeəfɔː(r)/",
+      "pos": "副词",
+      "meaning": "因此；所以"
+    },
+    {
+      "id": "g8d7-0033",
+      "word": "state",
+      "phonetic": "/steɪt/",
+      "pos": "名词 & 动词",
+      "meaning": "状态；国家；州；陈述；说明"
+    },
+    {
+      "id": "g8d7-0034",
+      "word": "weak",
+      "phonetic": "/wiːk/",
+      "pos": "形容词",
+      "meaning": "虚弱的；（能力）弱的"
+    },
+    {
+      "id": "g8d7-0035",
+      "word": "secretly",
+      "phonetic": "/ˈsiːkrətli/",
+      "pos": "副词",
+      "meaning": "秘密地"
+    },
+    {
+      "id": "g8d7-0036",
+      "word": "prove",
+      "phonetic": "/pruːv/",
+      "pos": "动词",
+      "meaning": "(proved, proved或proven) 证明；证实；显示是"
+    },
+    {
+      "id": "g8d7-0037",
+      "word": "get to one's feet",
+      "phonetic": "/ɡet tuː wʌnz fiːt/",
+      "pos": "短语",
+      "meaning": "站起身来"
+    },
+    {
+      "id": "g8d7-0038",
+      "word": "day by day",
+      "phonetic": "/deɪ baɪ deɪ/",
+      "pos": "短语",
+      "meaning": "一天天；逐日"
+    },
+    {
+      "id": "g8d7-0039",
+      "word": "build-up",
+      "phonetic": "/ˈbɪld ʌp/",
+      "pos": "名词",
+      "meaning": "准备期"
+    },
+    {
+      "id": "g8d7-0040",
+      "word": "climax",
+      "phonetic": "/ˈklaɪmæks/",
+      "pos": "名词",
+      "meaning": "高潮；极点"
+    },
+    {
+      "id": "g8d7-0041",
+      "word": "effect",
+      "phonetic": "/ɪˈfekt/",
+      "pos": "名词",
+      "meaning": "影响；结果"
+    },
+    {
+      "id": "g8d7-0042",
+      "word": "in time",
+      "phonetic": "/ɪn taɪm/",
+      "pos": "短语",
+      "meaning": "来得及；及时"
+    },
+    {
+      "id": "g8d7-0043",
+      "word": "reader",
+      "phonetic": "/ˈriːdə(r)/",
+      "pos": "名词",
+      "meaning": "读者；简易读物"
+    },
+    {
+      "id": "g8d7-0044",
+      "word": "librarian",
+      "phonetic": "/laɪˈbreəriən/",
+      "pos": "名词",
+      "meaning": "图书管理员；图书馆馆长"
+    },
+    {
+      "id": "g8d7-0045",
+      "word": "consider",
+      "phonetic": "/kənˈsɪdə(r)/",
+      "pos": "动词",
+      "meaning": "认为；仔细考虑"
+    },
+    {
+      "id": "g8d7-0046",
+      "word": "enemy",
+      "phonetic": "/ˈenəmi/",
+      "pos": "名词",
+      "meaning": "敌人"
+    },
+    {
+      "id": "g8d7-0047",
+      "word": "naughty",
+      "phonetic": "/ˈnɔːti/",
+      "pos": "形容词",
+      "meaning": "淘气的"
+    },
+    {
+      "id": "g8d7-0048",
+      "word": "gentle",
+      "phonetic": "/ˈdʒentl/",
+      "pos": "形容词",
+      "meaning": "温柔的"
+    },
+    {
+      "id": "g8d7-0049",
+      "word": "defeat",
+      "phonetic": "/dɪˈfiːt/",
+      "pos": "动词 & 名词",
+      "meaning": "击败；战胜；失败；击败"
+    },
+    {
+      "id": "g8d7-0050",
+      "word": "recommendation",
+      "phonetic": "/ˌrekəmenˈdeɪʃn/",
+      "pos": "名词",
+      "meaning": "推荐；提议"
+    },
+    {
+      "id": "g8d7-0051",
+      "word": "basic",
+      "phonetic": "/ˈbeɪsɪk/",
+      "pos": "形容词",
+      "meaning": "基本的；初步的"
+    },
+    {
+      "id": "g8d7-0052",
+      "word": "American",
+      "phonetic": "/əˈmerɪkən/",
+      "pos": "形容词 & 名词",
+      "meaning": "美国的；美洲的；美国人；美洲人"
+    },
+    {
+      "id": "g8d7-0053",
+      "word": "bone",
+      "phonetic": "/bəʊn/",
+      "pos": "名词",
+      "meaning": "骨头"
+    },
+    {
+      "id": "g8d7-0054",
+      "word": "doubt",
+      "phonetic": "/daʊt/",
+      "pos": "动词 & 名词",
+      "meaning": "怀疑；疑惑；不确定"
+    },
+    {
+      "id": "g8d7-0055",
+      "word": "destroy",
+      "phonetic": "/dɪˈstrɔɪ/",
+      "pos": "动词",
+      "meaning": "破坏；摧毁"
+    },
+    {
+      "id": "g8d7-0056",
+      "word": "introduction",
+      "phonetic": "/ˌɪntrəˈdʌkʃn/",
+      "pos": "名词",
+      "meaning": "介绍；序言；采用"
+    },
+    {
+      "id": "g8d7-0057",
+      "word": "Journey to the West",
+      "phonetic": "/ˈdʒɜːni tuː ðə west/",
+      "pos": "名词短语",
+      "meaning": "《西游记》"
+    },
+    {
+      "id": "g8d7-0058",
+      "word": "Harry Potter and the Philosopher's Stone",
+      "phonetic": "/ˈhæri ˈpɒtə(r) ənd ðə fɪˈlɒsəfəz stəʊn/",
+      "pos": "名词短语",
+      "meaning": "《哈利·波特与魔法石》"
+    },
+    {
+      "id": "g8d7-0059",
+      "word": "The Time Machine",
+      "phonetic": "/ðə taɪm məˈʃiːn/",
+      "pos": "名词短语",
+      "meaning": "《时间机器》"
+    },
+    {
+      "id": "g8d7-0060",
+      "word": "The Final Problem",
+      "phonetic": "/ðə ˈfaɪnl ˈprɒbləm/",
+      "pos": "名词短语",
+      "meaning": "《最后一案》"
+    },
+    {
+      "id": "g8d7-0061",
+      "word": "The Three-Body Problem",
+      "phonetic": "/ðə θriː ˈbɒdi ˈprɒbləm/",
+      "pos": "名词短语",
+      "meaning": "《三体》"
+    },
+    {
+      "id": "g8d7-0062",
+      "word": "Around the World in Eighty Days",
+      "phonetic": "/əˈraʊnd ðə wɜːld ɪn ˈeɪti deɪz/",
+      "pos": "名词短语",
+      "meaning": "《八十天环游世界》"
+    },
+    {
+      "id": "g8d7-0063",
+      "word": "Sherlock Holmes",
+      "phonetic": "/ˈʃɜːlɒk həʊmz/",
+      "pos": "名词短语",
+      "meaning": "夏洛克·福尔摩斯"
+    },
+    {
+      "id": "g8d7-0064",
+      "word": "The Romance of the Three Kingdoms",
+      "phonetic": "/ðə rəʊˈmæns əv ðə θriː ˈkɪŋdəmz/",
+      "pos": "名词短语",
+      "meaning": "《三国演义》"
+    },
+    {
+      "id": "g8d7-0065",
+      "word": "Oliver Twist",
+      "phonetic": "/ˈɒlɪvə(r) twɪst/",
+      "pos": "名词短语",
+      "meaning": "《雾都孤儿》"
+    },
+    {
+      "id": "g8d7-0066",
+      "word": "Charles Dickens",
+      "phonetic": "/tʃɑːlz ˈdɪkɪnz/",
+      "pos": "名词短语",
+      "meaning": "查尔斯·狄更斯"
+    },
+    {
+      "id": "g8d7-0067",
+      "word": "Alice's Adventures in Wonderland",
+      "phonetic": "/ˈælɪsɪz əˈdventʃəz ɪn ˈwʌndəlænd/",
+      "pos": "名词短语",
+      "meaning": "《爱丽丝梦游仙境》"
+    },
+    {
+      "id": "g8d7-0068",
+      "word": "Lewis Carroll",
+      "phonetic": "/ˈluːɪs ˈkærəl/",
+      "pos": "名词短语",
+      "meaning": "刘易斯·卡罗尔"
+    },
+    {
+      "id": "g8d7-0069",
+      "word": "The Adventures of Tom Sawyer",
+      "phonetic": "/ðə əˈdventʃəz əv tɒm ˈsɔːjə(r)/",
+      "pos": "名词短语",
+      "meaning": "《汤姆·索亚历险记》"
+    },
+    {
+      "id": "g8d7-0070",
+      "word": "The Little Prince",
+      "phonetic": "/ðə ˈlɪtl prɪns/",
+      "pos": "名词短语",
+      "meaning": "《小王子》"
+    },
+    {
+      "id": "g8d7-0071",
+      "word": "The Little Match Girl",
+      "phonetic": "/ðə ˈlɪtl mætʃ ɡɜːl/",
+      "pos": "名词短语",
+      "meaning": "《卖火柴的小女孩》"
+    },
+    {
+      "id": "g8d7-0072",
+      "word": "Outlaws of the Marsh",
+      "phonetic": "/ˈaʊtlɔːz əv ðə mɑːʃ/",
+      "pos": "名词短语",
+      "meaning": "《水浒传》"
+    },
+    {
+      "id": "g8d7-0073",
+      "word": "My Childhood",
+      "phonetic": "/maɪ ˈtʃaɪldhʊd/",
+      "pos": "名词短语",
+      "meaning": "《童年》"
+    },
+    {
+      "id": "g8d7-0074",
+      "word": "The Wonderful Wizard of Oz",
+      "phonetic": "/ðə ˈwʌndəfl ˈwɪzəd əv ɒz/",
+      "pos": "名词短语",
+      "meaning": "《绿野仙踪》"
+    },
+    {
+      "id": "g8d7-0075",
+      "word": "A Dream of Red Mansions",
+      "phonetic": "/ə driːm əv red ˈmænʃənz/",
+      "pos": "名词短语",
+      "meaning": "《红楼梦》"
+    },
+    {
+      "id": "g8d7-0076",
+      "word": "Treasure Island",
+      "phonetic": "/ˈtreʒə(r) ˈaɪlənd/",
+      "pos": "名词短语",
+      "meaning": "《金银岛》"
+    },
+    {
+      "id": "g8d7-0077",
+      "word": "Red Star over China",
+      "phonetic": "/red stɑː(r) ˈəʊvə ˈtʃaɪnə/",
+      "pos": "名词短语",
+      "meaning": "《红星照耀中国》"
+    },
+    {
+      "id": "g8d7-0078",
+      "word": "The Secret Garden",
+      "phonetic": "/ðə ˈsiːkrət ˈɡɑːdn/",
+      "pos": "名词短语",
+      "meaning": "《秘密花园》"
+    },
+    {
+      "id": "g8d7-0079",
+      "word": "Frances Hodgson Burnett",
+      "phonetic": "/ˈfrɑːnsɪs ˈhɒdʒsn ˈbɜːnɪt/",
+      "pos": "名词短语",
+      "meaning": "弗朗西斯·霍奇森·伯内特"
+    },
+    {
+      "id": "g8d7-0080",
+      "word": "Lennox",
+      "phonetic": "/ˈlenəks/",
+      "pos": "名词",
+      "meaning": "伦诺克斯"
+    },
+    {
+      "id": "g8d7-0081",
+      "word": "Craven",
+      "phonetic": "/ˈkreɪvn/",
+      "pos": "名词",
+      "meaning": "克雷文"
+    },
+    {
+      "id": "g8d7-0082",
+      "word": "Dickon",
+      "phonetic": "/ˈdɪkən/",
+      "pos": "名词",
+      "meaning": "迪康"
+    },
+    {
+      "id": "g8d7-0083",
+      "word": "Colin",
+      "phonetic": "/ˈkɒlɪn/",
+      "pos": "名词",
+      "meaning": "科林"
+    },
+    {
+      "id": "g8d7-0084",
+      "word": "The Old Man and the Sea",
+      "phonetic": "/ðə əʊld mæn ənd ðə siː/",
+      "pos": "名词短语",
+      "meaning": "《老人与海》"
+    },
+    {
+      "id": "g8d7-0085",
+      "word": "Ernest Hemingway",
+      "phonetic": "/ˈɜːnɪst ˈhemɪŋweɪ/",
+      "pos": "名词短语",
+      "meaning": "欧内斯特·海明威"
+    },
+    {
+      "id": "g8d7-0086",
+      "word": "Pulitzer Prize",
+      "phonetic": "/ˈpʊlɪtsə(r) praɪz/",
+      "pos": "名词短语",
+      "meaning": "普利策奖"
+    },
+    {
+      "id": "g8d8-0001",
+      "word": "make a difference",
+      "phonetic": "/meɪk ə ˈdɪfrəns/",
+      "pos": "短语",
+      "meaning": "有（重要）作用"
+    },
+    {
+      "id": "g8d8-0002",
+      "word": "visitor",
+      "phonetic": "/ˈvɪzɪtə(r)/",
+      "pos": "名词",
+      "meaning": "参观者；来访者"
+    },
+    {
+      "id": "g8d8-0003",
+      "word": "elderly",
+      "phonetic": "/ˈeldəli/",
+      "pos": "形容词",
+      "meaning": "年纪较大的；上了年纪的"
+    },
+    {
+      "id": "g8d8-0004",
+      "word": "the elderly",
+      "phonetic": "/ðə ˈeldəli/",
+      "pos": "短语",
+      "meaning": "老人；上了年纪的人"
+    },
+    {
+      "id": "g8d8-0005",
+      "word": "organization",
+      "phonetic": "/ˌɔːɡənaɪˈzeɪʃn/",
+      "pos": "名词",
+      "meaning": "(=organisation) 组织；团体；机构"
+    },
+    {
+      "id": "g8d8-0006",
+      "word": "stadium",
+      "phonetic": "/ˈsteɪdiəm/",
+      "pos": "名词",
+      "meaning": "体育馆；运动场"
+    },
+    {
+      "id": "g8d8-0007",
+      "word": "provide",
+      "phonetic": "/prəˈvaɪd/",
+      "pos": "动词",
+      "meaning": "提供；给予"
+    },
+    {
+      "id": "g8d8-0008",
+      "word": "owner",
+      "phonetic": "/ˈəʊnə(r)/",
+      "pos": "名词",
+      "meaning": "主人；物主"
+    },
+    {
+      "id": "g8d8-0009",
+      "word": "cage",
+      "phonetic": "/keɪdʒ/",
+      "pos": "名词",
+      "meaning": "笼子"
+    },
+    {
+      "id": "g8d8-0010",
+      "word": "donation",
+      "phonetic": "/dəʊˈneɪʃn/",
+      "pos": "名词",
+      "meaning": "捐赠物；捐赠"
+    },
+    {
+      "id": "g8d8-0011",
+      "word": "interviewer",
+      "phonetic": "/ˈɪntəvjuːə(r)/",
+      "pos": "名词",
+      "meaning": "面试官；采访者"
+    },
+    {
+      "id": "g8d8-0012",
+      "word": "shelter",
+      "phonetic": "/ˈʃeltə(r)/",
+      "pos": "名词",
+      "meaning": "庇护所；居所"
+    },
+    {
+      "id": "g8d8-0013",
+      "word": "youth",
+      "phonetic": "/juːθ/",
+      "pos": "名词",
+      "meaning": "青年；青年时期"
+    },
+    {
+      "id": "g8d8-0014",
+      "word": "active",
+      "phonetic": "/ˈæktɪv/",
+      "pos": "形容词",
+      "meaning": "活跃的；积极的"
+    },
+    {
+      "id": "g8d8-0015",
+      "word": "come along",
+      "phonetic": "/kʌm əˈlɒŋ/",
+      "pos": "短语",
+      "meaning": "赶快；跟着来"
+    },
+    {
+      "id": "g8d8-0016",
+      "word": "army",
+      "phonetic": "/ˈɑːmi/",
+      "pos": "名词",
+      "meaning": "军队"
+    },
+    {
+      "id": "g8d8-0017",
+      "word": "primary",
+      "phonetic": "/ˈpraɪməri/",
+      "pos": "形容词",
+      "meaning": "小学教育的；首要的"
+    },
+    {
+      "id": "g8d8-0018",
+      "word": "help out",
+      "phonetic": "/help aʊt/",
+      "pos": "短语",
+      "meaning": "分担工作；帮忙做"
+    },
+    {
+      "id": "g8d8-0019",
+      "word": "charity",
+      "phonetic": "/ˈtʃærəti/",
+      "pos": "名词",
+      "meaning": "慈善机构（或组织）；慈善事业"
+    },
+    {
+      "id": "g8d8-0020",
+      "word": "warmly",
+      "phonetic": "/ˈwɔːmli/",
+      "pos": "副词",
+      "meaning": "热情地；温暖地"
+    },
+    {
+      "id": "g8d8-0021",
+      "word": "lady",
+      "phonetic": "/ˈleɪdi/",
+      "pos": "名词",
+      "meaning": "女士；淑女"
+    },
+    {
+      "id": "g8d8-0022",
+      "word": "gentleman",
+      "phonetic": "/ˈdʒentlmən/",
+      "pos": "名词",
+      "meaning": "(pl. gentlemen) 先生；君子"
+    },
+    {
+      "id": "g8d8-0023",
+      "word": "bark",
+      "phonetic": "/bɑːk/",
+      "pos": "动词 & 名词",
+      "meaning": "（狗）吠叫；狗叫声"
+    },
+    {
+      "id": "g8d8-0024",
+      "word": "sign up",
+      "phonetic": "/saɪn ʌp/",
+      "pos": "短语",
+      "meaning": "报名"
+    },
+    {
+      "id": "g8d8-0025",
+      "word": "ever since",
+      "phonetic": "/ˈevə sɪns/",
+      "pos": "短语",
+      "meaning": "自从；自……以后"
+    },
+    {
+      "id": "g8d8-0026",
+      "word": "adult",
+      "phonetic": "/ˈædʌlt; əˈdʌlt/",
+      "pos": "名词 & 形容词",
+      "meaning": "成年人；成年的；成熟的"
+    },
+    {
+      "id": "g8d8-0027",
+      "word": "missing",
+      "phonetic": "/ˈmɪsɪŋ/",
+      "pos": "形容词",
+      "meaning": "失踪的；丢失的"
+    },
+    {
+      "id": "g8d8-0028",
+      "word": "practical",
+      "phonetic": "/ˈpræktɪkl/",
+      "pos": "形容词",
+      "meaning": "实用的；实际的"
+    },
+    {
+      "id": "g8d8-0029",
+      "word": "life-saving",
+      "phonetic": "/ˈlaɪf seɪvɪŋ/",
+      "pos": "形容词",
+      "meaning": "救命的；救生的"
+    },
+    {
+      "id": "g8d8-0030",
+      "word": "teamwork",
+      "phonetic": "/ˈtiːmwɜːk/",
+      "pos": "名词",
+      "meaning": "团队合作"
+    },
+    {
+      "id": "g8d8-0031",
+      "word": "successful",
+      "phonetic": "/səkˈsesfl/",
+      "pos": "形容词",
+      "meaning": "成功的；有成就的"
+    },
+    {
+      "id": "g8d8-0032",
+      "word": "most of all",
+      "phonetic": "/məʊst əv ɔːl/",
+      "pos": "短语",
+      "meaning": "最主要的是"
+    },
+    {
+      "id": "g8d8-0033",
+      "word": "value",
+      "phonetic": "/ˈvæljuː/",
+      "pos": "名词",
+      "meaning": "重要作用；价值"
+    },
+    {
+      "id": "g8d8-0034",
+      "word": "voluntary",
+      "phonetic": "/ˈvɒləntri/",
+      "pos": "形容词",
+      "meaning": "自愿的；无偿的"
+    },
+    {
+      "id": "g8d8-0035",
+      "word": "ordinary",
+      "phonetic": "/ˈɔːdnri/",
+      "pos": "形容词",
+      "meaning": "平凡的；普通的"
+    },
+    {
+      "id": "g8d8-0036",
+      "word": "worth",
+      "phonetic": "/wɜːθ/",
+      "pos": "形容词",
+      "meaning": "值得；有价值"
+    },
+    {
+      "id": "g8d8-0037",
+      "word": "audience",
+      "phonetic": "/ˈɔːdiəns/",
+      "pos": "名词",
+      "meaning": "听众；观众"
+    },
+    {
+      "id": "g8d8-0038",
+      "word": "willing",
+      "phonetic": "/ˈwɪlɪŋ/",
+      "pos": "形容词",
+      "meaning": "乐意的；愿意的"
+    },
+    {
+      "id": "g8d8-0039",
+      "word": "on the go",
+      "phonetic": "/ɒn ðə ɡəʊ/",
+      "pos": "短语",
+      "meaning": "忙碌的"
+    },
+    {
+      "id": "g8d8-0040",
+      "word": "in need",
+      "phonetic": "/ɪn niːd/",
+      "pos": "短语",
+      "meaning": "处于贫困中；生活困难"
+    },
+    {
+      "id": "g8d8-0041",
+      "word": "success",
+      "phonetic": "/səkˈses/",
+      "pos": "名词",
+      "meaning": "成功"
+    },
+    {
+      "id": "g8d8-0042",
+      "word": "elder",
+      "phonetic": "/ˈeldə(r)/",
+      "pos": "形容词",
+      "meaning": "（尤指家庭中两个成员）年龄较长的"
+    },
+    {
+      "id": "g8d8-0043",
+      "word": "donate",
+      "phonetic": "/dəʊˈneɪt/",
+      "pos": "动词",
+      "meaning": "捐赠；赠送"
+    },
+    {
+      "id": "g8d8-0044",
+      "word": "pocket",
+      "phonetic": "/ˈpɒkɪt/",
+      "pos": "名词",
+      "meaning": "口袋"
+    },
+    {
+      "id": "g8d8-0045",
+      "word": "effort",
+      "phonetic": "/ˈefət/",
+      "pos": "名词",
+      "meaning": "努力；艰难的尝试"
+    },
+    {
+      "id": "g8d8-0046",
+      "word": "hand out",
+      "phonetic": "/hænd aʊt/",
+      "pos": "短语",
+      "meaning": "分发"
+    },
+    {
+      "id": "g8d8-0047",
+      "word": "familiar with",
+      "phonetic": "/fəˈmɪliə(r) wɪð/",
+      "pos": "短语",
+      "meaning": "通晓；熟悉"
+    },
+    {
+      "id": "g8d8-0048",
+      "word": "talent",
+      "phonetic": "/ˈtælənt/",
+      "pos": "名词",
+      "meaning": "才能；天赋；天才"
+    },
+    {
+      "id": "g8d8-0049",
+      "word": "madam",
+      "phonetic": "/ˈmædəm/",
+      "pos": "名词",
+      "meaning": "（正式、礼貌的称呼）女士；夫人"
+    },
+    {
+      "id": "g8d8-0050",
+      "word": "advertisement",
+      "phonetic": "/ədˈvɜːtɪsmənt; ˌædvəˈtaɪzmənt/",
+      "pos": "名词",
+      "meaning": "广告；启事"
+    },
+    {
+      "id": "g8d8-0051",
+      "word": "Robert",
+      "phonetic": "/ˈrɒbət/",
+      "pos": "名词",
+      "meaning": "罗伯特"
+    },
+    {
+      "id": "g8d8-0052",
+      "word": "Rose",
+      "phonetic": "/rəʊz/",
+      "pos": "名词",
+      "meaning": "罗斯；罗丝"
+    },
+    {
+      "id": "g8d8-0053",
+      "word": "United Nations Peacekeeping",
+      "phonetic": "/juːˈnaɪtɪd ˈneɪʃnz ˈpiːskiːpɪŋ/",
+      "pos": "名词短语",
+      "meaning": "联合国维和部队"
+    },
+    {
+      "id": "g8d8-0054",
+      "word": "Argentina",
+      "phonetic": "/ˌɑːdʒənˈtiːnə/",
+      "pos": "名词",
+      "meaning": "阿根廷"
+    },
+    {
+      "id": "g8d8-0055",
+      "word": "Blue Sky Rescue",
+      "phonetic": "/bluː skaɪ ˈreskjuː/",
+      "pos": "名词短语",
+      "meaning": "蓝天救援队"
+    },
+    {
+      "id": "g8d8-0056",
+      "word": "Philippines",
+      "phonetic": "/ˈfɪlɪpiːnz/",
+      "pos": "名词",
+      "meaning": "菲律宾"
+    }
+  ]
+}

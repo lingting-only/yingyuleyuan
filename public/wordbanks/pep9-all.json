@@ -1,0 +1,3407 @@
+{
+  "id": "pep9-all",
+  "words": [
+    {
+      "id": "pep9-1-0001",
+      "word": "bring about",
+      "phonetic": "/brɪŋ əˈbaʊt/",
+      "pos": "短语",
+      "meaning": "带来；引起"
+    },
+    {
+      "id": "pep9-1-0002",
+      "word": "rough",
+      "phonetic": "/rʌf/",
+      "pos": "形容词",
+      "meaning": "崎岖的"
+    },
+    {
+      "id": "pep9-1-0003",
+      "word": "be covered with",
+      "phonetic": "/biː ˈkʌvəd wɪð/",
+      "pos": "短语",
+      "meaning": "被……覆盖"
+    },
+    {
+      "id": "pep9-1-0004",
+      "word": "sandstorm",
+      "phonetic": "/ˈsændstɔːm/",
+      "pos": "名词",
+      "meaning": "沙尘暴"
+    },
+    {
+      "id": "pep9-1-0005",
+      "word": "farmland",
+      "phonetic": "/ˈfɑːmlænd/",
+      "pos": "名词",
+      "meaning": "耕地"
+    },
+    {
+      "id": "pep9-1-0006",
+      "word": "shortage",
+      "phonetic": "/ˈʃɔːtɪdʒ/",
+      "pos": "名词",
+      "meaning": "短缺"
+    },
+    {
+      "id": "pep9-1-0007",
+      "word": "lack",
+      "phonetic": "/læk/",
+      "pos": "名词",
+      "meaning": "缺乏"
+    },
+    {
+      "id": "pep9-1-0008",
+      "word": "bush",
+      "phonetic": "/bʊʃ/",
+      "pos": "名词",
+      "meaning": "灌木"
+    },
+    {
+      "id": "pep9-1-0009",
+      "word": "root",
+      "phonetic": "/ruːt/",
+      "pos": "名词",
+      "meaning": "根"
+    },
+    {
+      "id": "pep9-1-0010",
+      "word": "soil",
+      "phonetic": "/sɔɪl/",
+      "pos": "名词",
+      "meaning": "土壤"
+    },
+    {
+      "id": "pep9-1-0011",
+      "word": "sandy",
+      "phonetic": "/ˈsændi/",
+      "pos": "形容词",
+      "meaning": "铺满沙子的；含沙的"
+    },
+    {
+      "id": "pep9-1-0012",
+      "word": "government",
+      "phonetic": "/ˈɡʌvənmənt/",
+      "pos": "名词",
+      "meaning": "政府"
+    },
+    {
+      "id": "pep9-1-0013",
+      "word": "support",
+      "phonetic": "/səˈpɔːt/",
+      "pos": "名词 & 动词",
+      "meaning": "支持"
+    },
+    {
+      "id": "pep9-1-0014",
+      "word": "corn",
+      "phonetic": "/kɔːn/",
+      "pos": "名词",
+      "meaning": "玉米；谷物"
+    },
+    {
+      "id": "pep9-1-0015",
+      "word": "high-tech",
+      "phonetic": "/ˌhaɪ ˈtek/",
+      "pos": "形容词",
+      "meaning": "高科技的"
+    },
+    {
+      "id": "pep9-1-0016",
+      "word": "greenhouse",
+      "phonetic": "/ˈɡriːnhaʊs/",
+      "pos": "名词",
+      "meaning": "温室"
+    },
+    {
+      "id": "pep9-1-0017",
+      "word": "highway",
+      "phonetic": "/ˈhaɪweɪ/",
+      "pos": "名词",
+      "meaning": "公路"
+    },
+    {
+      "id": "pep9-1-0018",
+      "word": "railway",
+      "phonetic": "/ˈreɪlweɪ/",
+      "pos": "名词",
+      "meaning": "铁路"
+    },
+    {
+      "id": "pep9-1-0019",
+      "word": "attraction",
+      "phonetic": "/əˈtrækʃn/",
+      "pos": "名词",
+      "meaning": "向往的地方；吸引力"
+    },
+    {
+      "id": "pep9-1-0020",
+      "word": "product",
+      "phonetic": "/ˈprɒdʌkt/",
+      "pos": "名词",
+      "meaning": "产品"
+    },
+    {
+      "id": "pep9-1-0021",
+      "word": "greatly",
+      "phonetic": "/ˈɡreɪtli/",
+      "pos": "副词",
+      "meaning": "大大地；非常"
+    },
+    {
+      "id": "pep9-1-0022",
+      "word": "socialist",
+      "phonetic": "/ˈsəʊʃəlɪst/",
+      "pos": "形容词 & 名词",
+      "meaning": "社会主义的；社会主义者"
+    },
+    {
+      "id": "pep9-1-0023",
+      "word": "e-payment",
+      "phonetic": "/iːˈpeɪmənt/",
+      "pos": "名词",
+      "meaning": "电子支付"
+    },
+    {
+      "id": "pep9-1-0024",
+      "word": "housing",
+      "phonetic": "/ˈhaʊzɪŋ/",
+      "pos": "名词",
+      "meaning": "住房；住宅"
+    },
+    {
+      "id": "pep9-1-0025",
+      "word": "digital",
+      "phonetic": "/ˈdɪdʒɪtl/",
+      "pos": "形容词",
+      "meaning": "电子的"
+    },
+    {
+      "id": "pep9-1-0026",
+      "word": "audio",
+      "phonetic": "/ˈɔːdiəʊ/",
+      "pos": "形容词 & 名词",
+      "meaning": "音频的；音频"
+    },
+    {
+      "id": "pep9-1-0027",
+      "word": "dirt",
+      "phonetic": "/dɜːt/",
+      "pos": "名词",
+      "meaning": "泥土；尘土"
+    },
+    {
+      "id": "pep9-1-0028",
+      "word": "track",
+      "phonetic": "/træk/",
+      "pos": "名词",
+      "meaning": "小路；轨道"
+    },
+    {
+      "id": "pep9-1-0029",
+      "word": "wide",
+      "phonetic": "/waɪd/",
+      "pos": "形容词",
+      "meaning": "宽的；宽阔的"
+    },
+    {
+      "id": "pep9-1-0030",
+      "word": "link",
+      "phonetic": "/lɪŋk/",
+      "pos": "名词 & 动词",
+      "meaning": "交通路线；联系；连接"
+    },
+    {
+      "id": "pep9-1-0031",
+      "word": "port",
+      "phonetic": "/pɔːt/",
+      "pos": "名词",
+      "meaning": "港口"
+    },
+    {
+      "id": "pep9-1-0032",
+      "word": "capital",
+      "phonetic": "/ˈkæpɪtl/",
+      "pos": "名词",
+      "meaning": "首都"
+    },
+    {
+      "id": "pep9-1-0033",
+      "word": "Kenyan",
+      "phonetic": "/ˈkenjən/",
+      "pos": "名词 & 形容词",
+      "meaning": "肯尼亚人；肯尼亚的；肯尼亚人的"
+    },
+    {
+      "id": "pep9-1-0034",
+      "word": "benefit",
+      "phonetic": "/ˈbenɪfɪt/",
+      "pos": "动词 & 名词",
+      "meaning": "得益于；使受益；优势；益处"
+    },
+    {
+      "id": "pep9-1-0035",
+      "word": "be happy with",
+      "phonetic": "/biː ˈhæpi wɪð/",
+      "pos": "短语",
+      "meaning": "对……感到满意"
+    },
+    {
+      "id": "pep9-1-0036",
+      "word": "convenient",
+      "phonetic": "/kənˈviːniənt/",
+      "pos": "形容词",
+      "meaning": "方便的"
+    },
+    {
+      "id": "pep9-1-0037",
+      "word": "business",
+      "phonetic": "/ˈbɪznəs/",
+      "pos": "名词",
+      "meaning": "生意；商业"
+    },
+    {
+      "id": "pep9-1-0038",
+      "word": "ease",
+      "phonetic": "/iːz/",
+      "pos": "名词",
+      "meaning": "容易；自在"
+    },
+    {
+      "id": "pep9-1-0039",
+      "word": "with ease",
+      "phonetic": "/wɪð iːz/",
+      "pos": "短语",
+      "meaning": "轻而易举地"
+    },
+    {
+      "id": "pep9-1-0040",
+      "word": "lorry",
+      "phonetic": "/ˈlɒri/",
+      "pos": "名词",
+      "meaning": "卡车"
+    },
+    {
+      "id": "pep9-1-0041",
+      "word": "manager",
+      "phonetic": "/ˈmænɪdʒə(r)/",
+      "pos": "名词",
+      "meaning": "经理"
+    },
+    {
+      "id": "pep9-1-0042",
+      "word": "conclusion",
+      "phonetic": "/kənˈkluːʒn/",
+      "pos": "名词",
+      "meaning": "总结"
+    },
+    {
+      "id": "pep9-1-0043",
+      "word": "narrow",
+      "phonetic": "/ˈnærəʊ/",
+      "pos": "形容词",
+      "meaning": "狭窄的"
+    },
+    {
+      "id": "pep9-1-0044",
+      "word": "villager",
+      "phonetic": "/ˈvɪlɪdʒə(r)/",
+      "pos": "名词",
+      "meaning": "村民"
+    },
+    {
+      "id": "pep9-1-0045",
+      "word": "the Olympics",
+      "phonetic": "/əˈlɪmpɪks/",
+      "pos": "名词短语",
+      "meaning": "奥林匹克运动会"
+    },
+    {
+      "id": "pep9-1-0046",
+      "word": "lead",
+      "phonetic": "/liːd/",
+      "pos": "动词 & 名词",
+      "meaning": "带领；过（某种生活）；领先地位；主角"
+    },
+    {
+      "id": "pep9-1-0047",
+      "word": "man-made",
+      "phonetic": "/ˌmænˈmeɪd/",
+      "pos": "形容词",
+      "meaning": "人造的；非天然的"
+    },
+    {
+      "id": "pep9-1-0048",
+      "word": "miracle",
+      "phonetic": "/ˈmɪrəkl/",
+      "pos": "名词",
+      "meaning": "奇迹"
+    },
+    {
+      "id": "pep9-2-0001",
+      "word": "junior",
+      "phonetic": "/ˈdʒuːniə(r)/",
+      "pos": "形容词",
+      "meaning": "低级的；初级的"
+    },
+    {
+      "id": "pep9-2-0002",
+      "word": "flat",
+      "phonetic": "/flæt/",
+      "pos": "名词",
+      "meaning": "公寓"
+    },
+    {
+      "id": "pep9-2-0003",
+      "word": "discussion",
+      "phonetic": "/dɪˈskʌʃn/",
+      "pos": "名词",
+      "meaning": "讨论"
+    },
+    {
+      "id": "pep9-2-0004",
+      "word": "aspect",
+      "phonetic": "/ˈæspekt/",
+      "pos": "名词",
+      "meaning": "方面"
+    },
+    {
+      "id": "pep9-2-0005",
+      "word": "inspiring",
+      "phonetic": "/ɪnˈspaɪərɪŋ/",
+      "pos": "形容词",
+      "meaning": "鼓舞人心的；激励的"
+    },
+    {
+      "id": "pep9-2-0006",
+      "word": "admire",
+      "phonetic": "/ədˈmaɪə(r)/",
+      "pos": "动词",
+      "meaning": "钦佩；赞赏"
+    },
+    {
+      "id": "pep9-2-0007",
+      "word": "historian",
+      "phonetic": "/hɪˈstɔːriən/",
+      "pos": "名词",
+      "meaning": "历史学家"
+    },
+    {
+      "id": "pep9-2-0008",
+      "word": "researcher",
+      "phonetic": "/rɪˈsɜːtʃə(r)/",
+      "pos": "名词",
+      "meaning": "研究人员"
+    },
+    {
+      "id": "pep9-2-0009",
+      "word": "chemist",
+      "phonetic": "/ˈkemɪst/",
+      "pos": "名词",
+      "meaning": "化学家"
+    },
+    {
+      "id": "pep9-2-0010",
+      "word": "physicist",
+      "phonetic": "/ˈfɪzɪsɪst/",
+      "pos": "名词",
+      "meaning": "物理学家"
+    },
+    {
+      "id": "pep9-2-0011",
+      "word": "hunger",
+      "phonetic": "/ˈhʌŋɡə(r)/",
+      "pos": "名词",
+      "meaning": "饥饿"
+    },
+    {
+      "id": "pep9-2-0012",
+      "word": "chemistry",
+      "phonetic": "/ˈkemɪstri/",
+      "pos": "名词",
+      "meaning": "化学"
+    },
+    {
+      "id": "pep9-2-0013",
+      "word": "drop out (of sth)",
+      "phonetic": "/drɒp aʊt (ɒv)/",
+      "pos": "短语",
+      "meaning": "辍学；不再参加"
+    },
+    {
+      "id": "pep9-2-0014",
+      "word": "calendar",
+      "phonetic": "/ˈkælɪndə(r)/",
+      "pos": "名词",
+      "meaning": "日历"
+    },
+    {
+      "id": "pep9-2-0015",
+      "word": "discovery",
+      "phonetic": "/dɪˈskʌvəri/",
+      "pos": "名词",
+      "meaning": "发现"
+    },
+    {
+      "id": "pep9-2-0016",
+      "word": "century",
+      "phonetic": "/ˈsentʃəri/",
+      "pos": "名词",
+      "meaning": "世纪"
+    },
+    {
+      "id": "pep9-2-0017",
+      "word": "wounded",
+      "phonetic": "/ˈwuːndɪd/",
+      "pos": "形容词",
+      "meaning": "受伤的；负伤的"
+    },
+    {
+      "id": "pep9-2-0018",
+      "word": "soldier",
+      "phonetic": "/ˈsəʊldʒə(r)/",
+      "pos": "名词",
+      "meaning": "士兵"
+    },
+    {
+      "id": "pep9-2-0019",
+      "word": "British",
+      "phonetic": "/ˈbrɪtɪʃ/",
+      "pos": "形容词 & 名词",
+      "meaning": "英国的；英国人的；英国人"
+    },
+    {
+      "id": "pep9-2-0020",
+      "word": "airway",
+      "phonetic": "/ˈeəweɪ/",
+      "pos": "名词",
+      "meaning": "（飞机的）航线；航路"
+    },
+    {
+      "id": "pep9-2-0021",
+      "word": "nation",
+      "phonetic": "/ˈneɪʃn/",
+      "pos": "名词",
+      "meaning": "国家；民族"
+    },
+    {
+      "id": "pep9-2-0022",
+      "word": "spread",
+      "phonetic": "/spred/",
+      "pos": "名词 & 动词",
+      "meaning": "传播；散布；传播；散布（spread, spread）"
+    },
+    {
+      "id": "pep9-2-0023",
+      "word": "disease",
+      "phonetic": "/dɪˈziːz/",
+      "pos": "名词",
+      "meaning": "疾病"
+    },
+    {
+      "id": "pep9-2-0024",
+      "word": "pioneer",
+      "phonetic": "/ˌpaɪəˈnɪə(r)/",
+      "pos": "名词",
+      "meaning": "先驱；先锋"
+    },
+    {
+      "id": "pep9-2-0025",
+      "word": "admirable",
+      "phonetic": "/ˈædmərəbl/",
+      "pos": "形容词",
+      "meaning": "令人钦佩的"
+    },
+    {
+      "id": "pep9-2-0026",
+      "word": "pyramid",
+      "phonetic": "/ˈpɪrəmɪd/",
+      "pos": "名词",
+      "meaning": "金字塔"
+    },
+    {
+      "id": "pep9-2-0027",
+      "word": "balance",
+      "phonetic": "/ˈbæləns/",
+      "pos": "名词 & 动词",
+      "meaning": "平衡；保持平衡"
+    },
+    {
+      "id": "pep9-2-0028",
+      "word": "courage",
+      "phonetic": "/ˈkʌrɪdʒ/",
+      "pos": "名词",
+      "meaning": "勇气；勇敢"
+    },
+    {
+      "id": "pep9-2-0029",
+      "word": "wisdom",
+      "phonetic": "/ˈwɪzdəm/",
+      "pos": "名词",
+      "meaning": "智慧；学问"
+    },
+    {
+      "id": "pep9-2-0030",
+      "word": "look up to sb",
+      "phonetic": "/lʊk ʌp tuː/",
+      "pos": "短语",
+      "meaning": "钦佩；仰慕"
+    },
+    {
+      "id": "pep9-2-0031",
+      "word": "inspiration",
+      "phonetic": "/ˌɪnspəˈreɪʃn/",
+      "pos": "名词",
+      "meaning": "鼓舞人心的人（或事物）"
+    },
+    {
+      "id": "pep9-2-0032",
+      "word": "brave",
+      "phonetic": "/breɪv/",
+      "pos": "形容词 & 动词",
+      "meaning": "勇敢的；无畏的；勇敢面对；经受（困难）"
+    },
+    {
+      "id": "pep9-2-0033",
+      "word": "necessary",
+      "phonetic": "/ˈnesəsəri/",
+      "pos": "形容词",
+      "meaning": "必要的；必需的"
+    },
+    {
+      "id": "pep9-2-0034",
+      "word": "seed",
+      "phonetic": "/siːd/",
+      "pos": "名词",
+      "meaning": "种子"
+    },
+    {
+      "id": "pep9-2-0035",
+      "word": "childhood",
+      "phonetic": "/ˈtʃaɪldhʊd/",
+      "pos": "名词",
+      "meaning": "童年"
+    },
+    {
+      "id": "pep9-2-0036",
+      "word": "come true",
+      "phonetic": "/kʌm truː/",
+      "pos": "短语",
+      "meaning": "实现；成为现实"
+    },
+    {
+      "id": "pep9-2-0037",
+      "word": "dynasty",
+      "phonetic": "/ˈdɪnəsti; ˈdaɪnəsti/",
+      "pos": "名词",
+      "meaning": "朝代；王朝"
+    },
+    {
+      "id": "pep9-2-0038",
+      "word": "western",
+      "phonetic": "/ˈwestən/",
+      "pos": "形容词",
+      "meaning": "西方的；西部的"
+    },
+    {
+      "id": "pep9-2-0039",
+      "word": "scientific",
+      "phonetic": "/ˌsaɪənˈtɪfɪk/",
+      "pos": "形容词",
+      "meaning": "科学（上）的"
+    },
+    {
+      "id": "pep9-2-0040",
+      "word": "biologist",
+      "phonetic": "/baɪˈɒlədʒɪst/",
+      "pos": "名词",
+      "meaning": "生物学家"
+    },
+    {
+      "id": "pep9-2-0041",
+      "word": "whole",
+      "phonetic": "/həʊl/",
+      "pos": "形容词",
+      "meaning": "所有的；完全的"
+    },
+    {
+      "id": "pep9-2-0042",
+      "word": "bank",
+      "phonetic": "/bæŋk/",
+      "pos": "名词",
+      "meaning": "银行"
+    },
+    {
+      "id": "pep9-2-0043",
+      "word": "forever",
+      "phonetic": "/fəˈrevə(r)/",
+      "pos": "副词",
+      "meaning": "永远"
+    },
+    {
+      "id": "pep9-2-0044",
+      "word": "radio",
+      "phonetic": "/ˈreɪdiəʊ/",
+      "pos": "名词",
+      "meaning": "无线电；收音机"
+    },
+    {
+      "id": "pep9-2-0045",
+      "word": "leave behind",
+      "phonetic": "/liːv bɪˈhaɪnd/",
+      "pos": "短语",
+      "meaning": "留下；遗留"
+    },
+    {
+      "id": "pep9-2-0046",
+      "word": "collection",
+      "phonetic": "/kəˈlekʃn/",
+      "pos": "名词",
+      "meaning": "收集物；收藏品"
+    },
+    {
+      "id": "pep9-2-0047",
+      "word": "live on",
+      "phonetic": "/lɪv ɒn/",
+      "pos": "短语",
+      "meaning": "继续存在；继续活着"
+    },
+    {
+      "id": "pep9-2-0048",
+      "word": "exploration",
+      "phonetic": "/ˌekspləˈreɪʃn/",
+      "pos": "名词",
+      "meaning": "探索"
+    },
+    {
+      "id": "pep9-2-0049",
+      "word": "universe",
+      "phonetic": "/ˈjuːnɪvɜːs/",
+      "pos": "名词",
+      "meaning": "宇宙"
+    },
+    {
+      "id": "pep9-2-0050",
+      "word": "socialism",
+      "phonetic": "/ˈsəʊʃəlɪzəm/",
+      "pos": "名词",
+      "meaning": "社会主义"
+    },
+    {
+      "id": "pep9-2-0051",
+      "word": "hole",
+      "phonetic": "/həʊl/",
+      "pos": "名词",
+      "meaning": "洞；孔"
+    },
+    {
+      "id": "pep9-2-0052",
+      "word": "daughter",
+      "phonetic": "/ˈdɔːtə(r)/",
+      "pos": "名词",
+      "meaning": "女儿"
+    },
+    {
+      "id": "pep9-2-0053",
+      "word": "herself",
+      "phonetic": "/hɜːˈself; həˈself/",
+      "pos": "代词",
+      "meaning": "她自己；她本人"
+    },
+    {
+      "id": "pep9-2-0054",
+      "word": "flight",
+      "phonetic": "/flaɪt/",
+      "pos": "名词",
+      "meaning": "飞行；航班"
+    },
+    {
+      "id": "pep9-2-0055",
+      "word": "woodwork",
+      "phonetic": "/ˈwʊdwɜːk/",
+      "pos": "名词",
+      "meaning": "木工手艺"
+    },
+    {
+      "id": "pep9-2-0056",
+      "word": "inventor",
+      "phonetic": "/ɪnˈventə(r)/",
+      "pos": "名词",
+      "meaning": "发明家"
+    },
+    {
+      "id": "pep9-2-0057",
+      "word": "above all",
+      "phonetic": "/əˈbʌv ɔːl/",
+      "pos": "短语",
+      "meaning": "最重要的是；尤其是"
+    },
+    {
+      "id": "pep9-2-0058",
+      "word": "thinker",
+      "phonetic": "/ˈθɪŋkə(r)/",
+      "pos": "名词",
+      "meaning": "思想家"
+    },
+    {
+      "id": "pep9-2-0059",
+      "word": "period",
+      "phonetic": "/ˈpɪəriəd/",
+      "pos": "名词",
+      "meaning": "时期；一段时间"
+    },
+    {
+      "id": "pep9-2-0060",
+      "word": "kingdom",
+      "phonetic": "/ˈkɪŋdəm/",
+      "pos": "名词",
+      "meaning": "王国"
+    },
+    {
+      "id": "pep9-2-0061",
+      "word": "kindness",
+      "phonetic": "/ˈkaɪndnəs/",
+      "pos": "名词",
+      "meaning": "善良"
+    },
+    {
+      "id": "pep9-2-0062",
+      "word": "whether",
+      "phonetic": "/ˈweðə(r)/",
+      "pos": "连词",
+      "meaning": "是否"
+    },
+    {
+      "id": "pep9-2-0063",
+      "word": "mankind",
+      "phonetic": "/mænˈkaɪnd/",
+      "pos": "名词",
+      "meaning": "人类"
+    },
+    {
+      "id": "pep9-2-0064",
+      "word": "Mombasa",
+      "phonetic": "/məmˈbæsə/",
+      "pos": "名词",
+      "meaning": "蒙巴萨（肯尼亚城市）"
+    },
+    {
+      "id": "pep9-2-0065",
+      "word": "Michael Faraday",
+      "phonetic": "/ˈmaɪkl ˈfærədeɪ/",
+      "pos": "名词",
+      "meaning": "迈克尔·法拉第"
+    },
+    {
+      "id": "pep9-2-0066",
+      "word": "Marie Curie",
+      "phonetic": "/ˈkjʊəri/",
+      "pos": "名词",
+      "meaning": "玛丽·居里"
+    },
+    {
+      "id": "pep9-2-0067",
+      "word": "Nobel Prize",
+      "phonetic": "/nəʊˈbel/",
+      "pos": "名词短语",
+      "meaning": "诺贝尔奖"
+    },
+    {
+      "id": "pep9-2-0068",
+      "word": "Isaac Newton",
+      "phonetic": "/ˈaɪzək ˈnjuːtn/",
+      "pos": "名词",
+      "meaning": "艾萨克·牛顿"
+    },
+    {
+      "id": "pep9-2-0069",
+      "word": "Isambard Brunel",
+      "phonetic": "/ˈɪzməbɑːd bruːˈnel/",
+      "pos": "名词",
+      "meaning": "伊桑巴德·布鲁内尔"
+    },
+    {
+      "id": "pep9-2-0070",
+      "word": "Alan Turing",
+      "phonetic": "/ˈælən ˈtjʊərɪŋ/",
+      "pos": "名词",
+      "meaning": "阿兰·图灵"
+    },
+    {
+      "id": "pep9-2-0071",
+      "word": "I.M. Pei",
+      "phonetic": "/peɪ/",
+      "pos": "名词",
+      "meaning": "贝聿铭"
+    },
+    {
+      "id": "pep9-2-0072",
+      "word": "Louvre Museum",
+      "phonetic": "/ˈluːvə/",
+      "pos": "名词短语",
+      "meaning": "卢浮宫博物馆"
+    },
+    {
+      "id": "pep9-2-0073",
+      "word": "Confucius",
+      "phonetic": "/kənˈfjuːʃəs/",
+      "pos": "名词",
+      "meaning": "孔子"
+    },
+    {
+      "id": "pep9-2-0074",
+      "word": "Victor Hugo",
+      "phonetic": "/ˈvɪktə(r) ˈhjuːɡəʊ/",
+      "pos": "名词",
+      "meaning": "维克多·雨果"
+    },
+    {
+      "id": "pep9-2-0075",
+      "word": "Western Regions",
+      "phonetic": "/ˈriːdʒənz/",
+      "pos": "名词短语",
+      "meaning": "西域"
+    },
+    {
+      "id": "pep9-2-0076",
+      "word": "the Silk Road",
+      "phonetic": "/ðə sɪlk rəʊd/",
+      "pos": "名词短语",
+      "meaning": "丝绸之路"
+    },
+    {
+      "id": "pep9-2-0077",
+      "word": "Irène",
+      "phonetic": "/aɪˈriːn/",
+      "pos": "名词",
+      "meaning": "艾琳"
+    },
+    {
+      "id": "pep9-2-0078",
+      "word": "Amelia Earhart",
+      "phonetic": "/əˈmiːliə ˈeəhɑːt/",
+      "pos": "名词",
+      "meaning": "阿梅莉亚·埃尔哈特"
+    },
+    {
+      "id": "pep9-2-0079",
+      "word": "Atlantic Ocean",
+      "phonetic": "/ətˈlæntɪk/",
+      "pos": "名词短语",
+      "meaning": "大西洋"
+    },
+    {
+      "id": "pep9-2-0080",
+      "word": "BCE",
+      "phonetic": "/ˌbiː siː ˈiː/",
+      "pos": "缩写",
+      "meaning": "（before the Common Era）公元前"
+    },
+    {
+      "id": "pep9-2-0081",
+      "word": "the Warring States Period",
+      "phonetic": "/ðə ˈwɒrɪŋ steɪts ˈpɪəriəd/",
+      "pos": "名词短语",
+      "meaning": "战国时期"
+    },
+    {
+      "id": "pep9-3-0001",
+      "word": "learner",
+      "phonetic": "/ˈlɜːnə(r)/",
+      "pos": "名词",
+      "meaning": "学习者"
+    },
+    {
+      "id": "pep9-3-0002",
+      "word": "flashcard",
+      "phonetic": "/ˈflæʃkɑːd/",
+      "pos": "名词",
+      "meaning": "（用于学习的）卡片；抽认卡"
+    },
+    {
+      "id": "pep9-3-0003",
+      "word": "project",
+      "phonetic": "/ˈprɒdʒekt/",
+      "pos": "名词",
+      "meaning": "计划；项目"
+    },
+    {
+      "id": "pep9-3-0004",
+      "word": "website",
+      "phonetic": "/ˈwebsaɪt/",
+      "pos": "名词",
+      "meaning": "网站"
+    },
+    {
+      "id": "pep9-3-0005",
+      "word": "hands-on",
+      "phonetic": "/ˌhændzˈɒn/",
+      "pos": "形容词",
+      "meaning": "动手的；实际操作的"
+    },
+    {
+      "id": "pep9-3-0006",
+      "word": "experiment",
+      "phonetic": "/ɪkˈsperɪmənt/",
+      "pos": "名词",
+      "meaning": "实验；试验"
+    },
+    {
+      "id": "pep9-3-0007",
+      "word": "look up",
+      "phonetic": "/lʊk ʌp/",
+      "pos": "短语",
+      "meaning": "查阅；检查"
+    },
+    {
+      "id": "pep9-3-0008",
+      "word": "dictionary",
+      "phonetic": "/ˈdɪkʃənri/",
+      "pos": "名词",
+      "meaning": "词典；字典"
+    },
+    {
+      "id": "pep9-3-0009",
+      "word": "aloud",
+      "phonetic": "/əˈlaʊd/",
+      "pos": "副词",
+      "meaning": "出声地；大声地"
+    },
+    {
+      "id": "pep9-3-0010",
+      "word": "dialogue",
+      "phonetic": "/ˈdaɪəlɒɡ/",
+      "pos": "名词",
+      "meaning": "对话；对白"
+    },
+    {
+      "id": "pep9-3-0011",
+      "word": "suit",
+      "phonetic": "/suːt/",
+      "pos": "动词 & 名词",
+      "meaning": "适合；有利于；套装"
+    },
+    {
+      "id": "pep9-3-0012",
+      "word": "general",
+      "phonetic": "/ˈdʒenərəl/",
+      "pos": "形容词",
+      "meaning": "总的；大体的"
+    },
+    {
+      "id": "pep9-3-0013",
+      "word": "in general",
+      "phonetic": "/ɪn ˈdʒenərəl/",
+      "pos": "短语",
+      "meaning": "总的来说；通常"
+    },
+    {
+      "id": "pep9-3-0014",
+      "word": "speed",
+      "phonetic": "/spiːd/",
+      "pos": "名词 & 动词",
+      "meaning": "速度；加速；促进"
+    },
+    {
+      "id": "pep9-3-0015",
+      "word": "grammar",
+      "phonetic": "/ˈɡræmə(r)/",
+      "pos": "名词",
+      "meaning": "语法"
+    },
+    {
+      "id": "pep9-3-0016",
+      "word": "podcast",
+      "phonetic": "/ˈpɒdkɑːst/",
+      "pos": "名词",
+      "meaning": "播客"
+    },
+    {
+      "id": "pep9-3-0017",
+      "word": "zero",
+      "phonetic": "/ˈzɪərəʊ/",
+      "pos": "数词",
+      "meaning": "零；最低程度"
+    },
+    {
+      "id": "pep9-3-0018",
+      "word": "come across",
+      "phonetic": "/kʌm əˈkrɒs/",
+      "pos": "短语",
+      "meaning": "（偶然）遇见；发现"
+    },
+    {
+      "id": "pep9-3-0019",
+      "word": "step by step",
+      "phonetic": "/step baɪ step/",
+      "pos": "短语",
+      "meaning": "逐步地；循序渐进地"
+    },
+    {
+      "id": "pep9-3-0020",
+      "word": "build up",
+      "phonetic": "/bɪld ʌp/",
+      "pos": "短语",
+      "meaning": "增加；加强；创建"
+    },
+    {
+      "id": "pep9-3-0021",
+      "word": "actively",
+      "phonetic": "/ˈæktɪvli/",
+      "pos": "副词",
+      "meaning": "积极地"
+    },
+    {
+      "id": "pep9-3-0022",
+      "word": "enjoyable",
+      "phonetic": "/ɪnˈdʒɔɪəbl/",
+      "pos": "形容词",
+      "meaning": "有乐趣的；使人快乐的"
+    },
+    {
+      "id": "pep9-3-0023",
+      "word": "strategy",
+      "phonetic": "/ˈstrætədʒi/",
+      "pos": "名词",
+      "meaning": "策略"
+    },
+    {
+      "id": "pep9-3-0024",
+      "word": "put off",
+      "phonetic": "/pʊt ɒf/",
+      "pos": "短语",
+      "meaning": "推迟；拖延"
+    },
+    {
+      "id": "pep9-3-0025",
+      "word": "correct",
+      "phonetic": "/kəˈrekt/",
+      "pos": "形容词",
+      "meaning": "正确的；恰当的"
+    },
+    {
+      "id": "pep9-3-0026",
+      "word": "suggest",
+      "phonetic": "/səˈdʒest/",
+      "pos": "动词",
+      "meaning": "建议；提议"
+    },
+    {
+      "id": "pep9-3-0027",
+      "word": "method",
+      "phonetic": "/ˈmeθəd/",
+      "pos": "名词",
+      "meaning": "方法"
+    },
+    {
+      "id": "pep9-3-0028",
+      "word": "summarize",
+      "phonetic": "/ˈsʌməraɪz/",
+      "pos": "动词",
+      "meaning": "总结；概括"
+    },
+    {
+      "id": "pep9-3-0029",
+      "word": "growth",
+      "phonetic": "/ɡrəʊθ/",
+      "pos": "名词",
+      "meaning": "成长；增加"
+    },
+    {
+      "id": "pep9-3-0030",
+      "word": "mindset",
+      "phonetic": "/ˈmaɪndset/",
+      "pos": "名词",
+      "meaning": "观念模式"
+    },
+    {
+      "id": "pep9-3-0031",
+      "word": "material",
+      "phonetic": "/məˈtɪəriəl/",
+      "pos": "名词",
+      "meaning": "材料"
+    },
+    {
+      "id": "pep9-3-0032",
+      "word": "in part",
+      "phonetic": "/ɪn pɑːt/",
+      "pos": "短语",
+      "meaning": "在某种程度上；部分地"
+    },
+    {
+      "id": "pep9-3-0033",
+      "word": "guidance",
+      "phonetic": "/ˈɡaɪdns/",
+      "pos": "名词",
+      "meaning": "指导"
+    },
+    {
+      "id": "pep9-3-0034",
+      "word": "feedback",
+      "phonetic": "/ˈfiːdbæk/",
+      "pos": "名词",
+      "meaning": "反馈的意见"
+    },
+    {
+      "id": "pep9-3-0035",
+      "word": "addition",
+      "phonetic": "/əˈdɪʃn/",
+      "pos": "名词",
+      "meaning": "添加；加法"
+    },
+    {
+      "id": "pep9-3-0036",
+      "word": "in addition",
+      "phonetic": "/ɪn əˈdɪʃn/",
+      "pos": "短语",
+      "meaning": "另外；此外"
+    },
+    {
+      "id": "pep9-3-0037",
+      "word": "resource",
+      "phonetic": "/rɪˈsɔːs/",
+      "pos": "名词",
+      "meaning": "资源；资料"
+    },
+    {
+      "id": "pep9-3-0038",
+      "word": "textbook",
+      "phonetic": "/ˈtekstbʊk/",
+      "pos": "名词",
+      "meaning": "教科书；课本"
+    },
+    {
+      "id": "pep9-3-0039",
+      "word": "advantage",
+      "phonetic": "/ədˈvɑːntɪdʒ/",
+      "pos": "名词",
+      "meaning": "优势；优点"
+    },
+    {
+      "id": "pep9-3-0040",
+      "word": "take advantage of",
+      "phonetic": "/teɪk ədˈvɑːntɪdʒ ɒv/",
+      "pos": "短语",
+      "meaning": "利用"
+    },
+    {
+      "id": "pep9-3-0041",
+      "word": "efficiently",
+      "phonetic": "/ɪˈfɪʃntli/",
+      "pos": "副词",
+      "meaning": "效率高地"
+    },
+    {
+      "id": "pep9-3-0042",
+      "word": "valley",
+      "phonetic": "/ˈvæli/",
+      "pos": "名词",
+      "meaning": "山谷；溪谷"
+    },
+    {
+      "id": "pep9-3-0043",
+      "word": "pronunciation",
+      "phonetic": "/prəˌnʌnsiˈeɪʃn/",
+      "pos": "名词",
+      "meaning": "发音；读音"
+    },
+    {
+      "id": "pep9-3-0044",
+      "word": "click",
+      "phonetic": "/klɪk/",
+      "pos": "动词",
+      "meaning": "（用鼠标或在触摸板上）点击；（使）发出咔嗒声"
+    },
+    {
+      "id": "pep9-3-0045",
+      "word": "magazine",
+      "phonetic": "/ˌmæɡəˈziːn/",
+      "pos": "名词",
+      "meaning": "杂志；期刊"
+    },
+    {
+      "id": "pep9-3-0046",
+      "word": "open up",
+      "phonetic": "/ˈəʊpən ʌp/",
+      "pos": "短语",
+      "meaning": "打开；开放"
+    },
+    {
+      "id": "pep9-3-0047",
+      "word": "shelf",
+      "phonetic": "/ʃelf/",
+      "pos": "名词",
+      "meaning": "（墙壁、书橱等的）架子；搁板"
+    },
+    {
+      "id": "pep9-3-0048",
+      "word": "schoolwork",
+      "phonetic": "/ˈskuːlwɜːk/",
+      "pos": "名词",
+      "meaning": "学校作业"
+    },
+    {
+      "id": "pep9-3-0049",
+      "word": "print",
+      "phonetic": "/prɪnt/",
+      "pos": "名词 & 动词",
+      "meaning": "印刷品；打印"
+    },
+    {
+      "id": "pep9-3-0050",
+      "word": "newspaper",
+      "phonetic": "/ˈnjuːzpeɪpə(r)/",
+      "pos": "名词",
+      "meaning": "报纸"
+    },
+    {
+      "id": "pep9-3-0051",
+      "word": "e-book",
+      "phonetic": "/ˈiː bʊk/",
+      "pos": "名词",
+      "meaning": "电子书"
+    },
+    {
+      "id": "pep9-3-0052",
+      "word": "recent",
+      "phonetic": "/ˈriːsnt/",
+      "pos": "形容词",
+      "meaning": "最近的；最新的"
+    },
+    {
+      "id": "pep9-3-0053",
+      "word": "Frank",
+      "phonetic": "/fræŋk/",
+      "pos": "名词",
+      "meaning": "弗兰克"
+    },
+    {
+      "id": "pep9-3-0054",
+      "word": "HSK",
+      "phonetic": "/ˌeɪtʃ es ˈkeɪ/",
+      "pos": "缩写",
+      "meaning": "汉语水平考试"
+    },
+    {
+      "id": "pep9-3-0055",
+      "word": "Cathy",
+      "phonetic": "/ˈkæθi/",
+      "pos": "名词",
+      "meaning": "凯茜"
+    },
+    {
+      "id": "pep9-3-0056",
+      "word": "Terry",
+      "phonetic": "/ˈteri/",
+      "pos": "名词",
+      "meaning": "特里；特丽"
+    },
+    {
+      "id": "pep9-4-0001",
+      "word": "position",
+      "phonetic": "/pəˈzɪʃn/",
+      "pos": "名词 & 动词",
+      "meaning": "位置；地方；安置；使处于"
+    },
+    {
+      "id": "pep9-4-0002",
+      "word": "sadness",
+      "phonetic": "/ˈsædnəs/",
+      "pos": "名词",
+      "meaning": "悲伤"
+    },
+    {
+      "id": "pep9-4-0003",
+      "word": "run out (of sth)",
+      "phonetic": "/rʌn aʊt (ɒv)/",
+      "pos": "短语",
+      "meaning": "用完；耗尽"
+    },
+    {
+      "id": "pep9-4-0004",
+      "word": "react",
+      "phonetic": "/riˈækt/",
+      "pos": "动词",
+      "meaning": "作出反应；回应"
+    },
+    {
+      "id": "pep9-4-0005",
+      "word": "mix up",
+      "phonetic": "/mɪks ʌp/",
+      "pos": "短语",
+      "meaning": "混淆；弄乱"
+    },
+    {
+      "id": "pep9-4-0006",
+      "word": "put sth to good use",
+      "phonetic": "/pʊt stʊ tuː ɡʊd juːz/",
+      "pos": "短语",
+      "meaning": "有效使用（或利用）某物"
+    },
+    {
+      "id": "pep9-4-0007",
+      "word": "chain",
+      "phonetic": "/tʃeɪn/",
+      "pos": "名词",
+      "meaning": "链条"
+    },
+    {
+      "id": "pep9-4-0008",
+      "word": "stable",
+      "phonetic": "/ˈsteɪbl/",
+      "pos": "形容词",
+      "meaning": "稳定的；稳固的"
+    },
+    {
+      "id": "pep9-4-0009",
+      "word": "lecture",
+      "phonetic": "/ˈlektʃə(r)/",
+      "pos": "名词",
+      "meaning": "讲座；讲课"
+    },
+    {
+      "id": "pep9-4-0010",
+      "word": "retell",
+      "phonetic": "/ˌriːˈtel/",
+      "pos": "动词",
+      "meaning": "复述"
+    },
+    {
+      "id": "pep9-4-0011",
+      "word": "memorize",
+      "phonetic": "/ˈmeməraɪz/",
+      "pos": "动词",
+      "meaning": "记住；记忆"
+    },
+    {
+      "id": "pep9-4-0012",
+      "word": "tick",
+      "phonetic": "/tɪk/",
+      "pos": "动词 & 名词",
+      "meaning": "给……打钩；对号；钩号"
+    },
+    {
+      "id": "pep9-4-0013",
+      "word": "grandson",
+      "phonetic": "/ˈɡrænsʌn/",
+      "pos": "名词",
+      "meaning": "孙子；外孙"
+    },
+    {
+      "id": "pep9-4-0014",
+      "word": "go through",
+      "phonetic": "/ɡəʊ θruː/",
+      "pos": "短语",
+      "meaning": "经历；仔细察看"
+    },
+    {
+      "id": "pep9-4-0015",
+      "word": "happen to",
+      "phonetic": "/ˈhæpən tuː/",
+      "pos": "短语",
+      "meaning": "发生于；使遭遇"
+    },
+    {
+      "id": "pep9-4-0016",
+      "word": "keep (...) in mind",
+      "phonetic": "/kiːp ɪn maɪnd/",
+      "pos": "短语",
+      "meaning": "记在心中；记住"
+    },
+    {
+      "id": "pep9-4-0017",
+      "word": "case",
+      "phonetic": "/keɪs/",
+      "pos": "名词",
+      "meaning": "情况；事实"
+    },
+    {
+      "id": "pep9-4-0018",
+      "word": "in sb's case",
+      "phonetic": "/ɪn ˈsʌms keɪs/",
+      "pos": "短语",
+      "meaning": "就某人的情况而言"
+    },
+    {
+      "id": "pep9-4-0019",
+      "word": "opera",
+      "phonetic": "/ˈɒprə/",
+      "pos": "名词",
+      "meaning": "歌剧；歌剧团"
+    },
+    {
+      "id": "pep9-4-0020",
+      "word": "ticket",
+      "phonetic": "/ˈtɪkɪt/",
+      "pos": "名词",
+      "meaning": "入场券；票"
+    },
+    {
+      "id": "pep9-4-0021",
+      "word": "wallet",
+      "phonetic": "/ˈwɒlɪt/",
+      "pos": "名词",
+      "meaning": "钱包"
+    },
+    {
+      "id": "pep9-4-0022",
+      "word": "picnic",
+      "phonetic": "/ˈpɪknɪk/",
+      "pos": "名词",
+      "meaning": "野餐"
+    },
+    {
+      "id": "pep9-4-0023",
+      "word": "pardon",
+      "phonetic": "/ˈpɑːdn/",
+      "pos": "动词 & 感叹词",
+      "meaning": "原谅；请再说一遍；抱歉"
+    },
+    {
+      "id": "pep9-4-0024",
+      "word": "airport",
+      "phonetic": "/ˈeəpɔːt/",
+      "pos": "名词",
+      "meaning": "机场"
+    },
+    {
+      "id": "pep9-4-0025",
+      "word": "gunshot",
+      "phonetic": "/ˈɡʌnʃɒt/",
+      "pos": "名词",
+      "meaning": "枪声；（射出的）炮弹"
+    },
+    {
+      "id": "pep9-4-0026",
+      "word": "grown-up",
+      "phonetic": "/ˌɡrəʊnˈʌp/",
+      "pos": "形容词",
+      "meaning": "成年的"
+    },
+    {
+      "id": "pep9-4-0027",
+      "word": "recall",
+      "phonetic": "/rɪˈkɔːl/",
+      "pos": "动词",
+      "meaning": "回忆起；回想起"
+    },
+    {
+      "id": "pep9-4-0028",
+      "word": "grapevine",
+      "phonetic": "/ˈɡreɪpvaɪn/",
+      "pos": "名词",
+      "meaning": "葡萄藤；葡萄树"
+    },
+    {
+      "id": "pep9-4-0029",
+      "word": "boost",
+      "phonetic": "/buːst/",
+      "pos": "动词 & 名词",
+      "meaning": "促进；使增长；帮助；增长"
+    },
+    {
+      "id": "pep9-4-0030",
+      "word": "to start with",
+      "phonetic": "/tuː stɑːt wɪð/",
+      "pos": "短语",
+      "meaning": "首先"
+    },
+    {
+      "id": "pep9-4-0031",
+      "word": "short-term",
+      "phonetic": "/ˌʃɔːt ˈtɜːm/",
+      "pos": "形容词",
+      "meaning": "短期的"
+    },
+    {
+      "id": "pep9-4-0032",
+      "word": "long-term",
+      "phonetic": "/ˌlɒŋ ˈtɜːm/",
+      "pos": "形容词",
+      "meaning": "长期的"
+    },
+    {
+      "id": "pep9-4-0033",
+      "word": "technique",
+      "phonetic": "/tekˈniːk/",
+      "pos": "名词",
+      "meaning": "技巧"
+    },
+    {
+      "id": "pep9-4-0034",
+      "word": "passage",
+      "phonetic": "/ˈpæsɪdʒ/",
+      "pos": "名词",
+      "meaning": "段落；走廊"
+    },
+    {
+      "id": "pep9-4-0035",
+      "word": "likely",
+      "phonetic": "/ˈlaɪkli/",
+      "pos": "形容词",
+      "meaning": "可能的"
+    },
+    {
+      "id": "pep9-4-0036",
+      "word": "wear out",
+      "phonetic": "/weə aʊt/",
+      "pos": "短语",
+      "meaning": "使疲乏；磨损"
+    },
+    {
+      "id": "pep9-4-0037",
+      "word": "discuss",
+      "phonetic": "/dɪˈskʌs/",
+      "pos": "动词",
+      "meaning": "讨论；谈论；商量"
+    },
+    {
+      "id": "pep9-4-0038",
+      "word": "image",
+      "phonetic": "/ˈɪmɪdʒ/",
+      "pos": "名词",
+      "meaning": "图像；形象"
+    },
+    {
+      "id": "pep9-4-0039",
+      "word": "graph",
+      "phonetic": "/ɡrɑːf/",
+      "pos": "名词",
+      "meaning": "图；图表"
+    },
+    {
+      "id": "pep9-4-0040",
+      "word": "view",
+      "phonetic": "/vjuː/",
+      "pos": "动词 & 名词",
+      "meaning": "看；观看；观点；视野"
+    },
+    {
+      "id": "pep9-4-0041",
+      "word": "effective",
+      "phonetic": "/ɪˈfektɪv/",
+      "pos": "形容词",
+      "meaning": "有效的"
+    },
+    {
+      "id": "pep9-4-0042",
+      "word": "engine",
+      "phonetic": "/ˈendʒɪn/",
+      "pos": "名词",
+      "meaning": "发动机"
+    },
+    {
+      "id": "pep9-4-0043",
+      "word": "fuel",
+      "phonetic": "/ˈfjuːəl/",
+      "pos": "名词",
+      "meaning": "燃料"
+    },
+    {
+      "id": "pep9-4-0044",
+      "word": "address",
+      "phonetic": "/əˈdres/",
+      "pos": "名词",
+      "meaning": "地址"
+    },
+    {
+      "id": "pep9-4-0045",
+      "word": "password",
+      "phonetic": "/ˈpɑːswɜːd/",
+      "pos": "名词",
+      "meaning": "密码；口令"
+    },
+    {
+      "id": "pep9-4-0046",
+      "word": "account",
+      "phonetic": "/əˈkaʊnt/",
+      "pos": "名词",
+      "meaning": "账户；账目"
+    },
+    {
+      "id": "pep9-4-0047",
+      "word": "increase",
+      "phonetic": "/ˈɪŋkriːs/",
+      "pos": "名词 & 动词",
+      "meaning": "增长；增加"
+    },
+    {
+      "id": "pep9-4-0048",
+      "word": "wild",
+      "phonetic": "/waɪld/",
+      "pos": "形容词",
+      "meaning": "野生的；自然生长的"
+    },
+    {
+      "id": "pep9-4-0049",
+      "word": "blood",
+      "phonetic": "/blʌd/",
+      "pos": "名词",
+      "meaning": "血"
+    },
+    {
+      "id": "pep9-4-0050",
+      "word": "wound",
+      "phonetic": "/wuːnd/",
+      "pos": "名词 & 动词",
+      "meaning": "伤口；创伤；使受伤"
+    },
+    {
+      "id": "pep9-4-0051",
+      "word": "mall",
+      "phonetic": "/mɔːl/",
+      "pos": "名词",
+      "meaning": "购物商场"
+    },
+    {
+      "id": "pep9-4-0052",
+      "word": "notebook",
+      "phonetic": "/ˈnəʊtbʊk/",
+      "pos": "名词",
+      "meaning": "笔记本；笔记本电脑"
+    },
+    {
+      "id": "pep9-4-0053",
+      "word": "squirrel",
+      "phonetic": "/ˈskwɪrəl/",
+      "pos": "名词",
+      "meaning": "松鼠"
+    },
+    {
+      "id": "pep9-4-0054",
+      "word": "nut",
+      "phonetic": "/nʌt/",
+      "pos": "名词",
+      "meaning": "坚果"
+    },
+    {
+      "id": "pep9-4-0055",
+      "word": "dolphin",
+      "phonetic": "/ˈdɒlfɪn/",
+      "pos": "名词",
+      "meaning": "海豚"
+    },
+    {
+      "id": "pep9-4-0056",
+      "word": "recognize",
+      "phonetic": "/ˈrekəɡnaɪz/",
+      "pos": "动词",
+      "meaning": "辨认出；认可"
+    },
+    {
+      "id": "pep9-4-0057",
+      "word": "outline",
+      "phonetic": "/ˈaʊtlaɪn/",
+      "pos": "名词 & 动词",
+      "meaning": "纲要；概述"
+    },
+    {
+      "id": "pep9-4-0058",
+      "word": "fully",
+      "phonetic": "/ˈfʊli/",
+      "pos": "副词",
+      "meaning": "完全地"
+    },
+    {
+      "id": "pep9-4-0059",
+      "word": "divide",
+      "phonetic": "/dɪˈvaɪd/",
+      "pos": "动词",
+      "meaning": "（把……）分成"
+    },
+    {
+      "id": "pep9-4-0060",
+      "word": "divide sth into",
+      "phonetic": "/dɪˈvaɪd ˈsʌm θɪŋ ɪntuː/",
+      "pos": "短语",
+      "meaning": "把某物分为"
+    },
+    {
+      "id": "pep9-4-0061",
+      "word": "one-size-fits-all",
+      "phonetic": "/ˌwʌn saɪz fɪts ˈɔːl/",
+      "pos": "形容词",
+      "meaning": "通用的"
+    },
+    {
+      "id": "pep9-4-0062",
+      "word": "Rick",
+      "phonetic": "/rɪk/",
+      "pos": "名词",
+      "meaning": "里克"
+    },
+    {
+      "id": "pep9-4-0063",
+      "word": "Johnny",
+      "phonetic": "/ˈdʒɒni/",
+      "pos": "名词",
+      "meaning": "约翰尼"
+    },
+    {
+      "id": "pep9-4-0064",
+      "word": "Bob",
+      "phonetic": "/bɒb/",
+      "pos": "名词",
+      "meaning": "鲍勃"
+    },
+    {
+      "id": "pep9-5-0001",
+      "word": "invention",
+      "phonetic": "/ɪnˈvenʃn/",
+      "pos": "名词",
+      "meaning": "发明；创造"
+    },
+    {
+      "id": "pep9-5-0002",
+      "word": "camera",
+      "phonetic": "/ˈkæmərə/",
+      "pos": "名词",
+      "meaning": "照相机；（电影）摄影机"
+    },
+    {
+      "id": "pep9-5-0003",
+      "word": "laptop",
+      "phonetic": "/ˈlæptɒp/",
+      "pos": "名词",
+      "meaning": "笔记本电脑"
+    },
+    {
+      "id": "pep9-5-0004",
+      "word": "high-speed train",
+      "phonetic": "/haɪ spiːd treɪn/",
+      "pos": "名词短语",
+      "meaning": "高速列车"
+    },
+    {
+      "id": "pep9-5-0005",
+      "word": "super",
+      "phonetic": "/ˈsuːpə(r)/",
+      "pos": "形容词",
+      "meaning": "超级的；顶好的"
+    },
+    {
+      "id": "pep9-5-0006",
+      "word": "sunglasses",
+      "phonetic": "/ˈsʌŋɡlɑːsɪz/",
+      "pos": "名词",
+      "meaning": "墨镜"
+    },
+    {
+      "id": "pep9-5-0007",
+      "word": "mini-",
+      "phonetic": "/ˈmɪni/",
+      "pos": "前缀",
+      "meaning": "微型的；短的"
+    },
+    {
+      "id": "pep9-5-0008",
+      "word": "itself",
+      "phonetic": "/ɪtˈself/",
+      "pos": "代词",
+      "meaning": "它自己"
+    },
+    {
+      "id": "pep9-5-0009",
+      "word": "button",
+      "phonetic": "/ˈbʌtn/",
+      "pos": "名词",
+      "meaning": "按钮；扣子"
+    },
+    {
+      "id": "pep9-5-0010",
+      "word": "hundreds (of ...)",
+      "phonetic": "/ˈhʌndrɪdz ɒv/",
+      "pos": "短语",
+      "meaning": "许多；大量"
+    },
+    {
+      "id": "pep9-5-0011",
+      "word": "produce",
+      "phonetic": "/prəˈdjuːs/",
+      "pos": "动词",
+      "meaning": "生产；繁育"
+    },
+    {
+      "id": "pep9-5-0012",
+      "word": "file",
+      "phonetic": "/faɪl/",
+      "pos": "名词",
+      "meaning": "（计算机的）文件；文件夹"
+    },
+    {
+      "id": "pep9-5-0013",
+      "word": "plastic",
+      "phonetic": "/ˈplæstɪk/",
+      "pos": "名词 & 形容词",
+      "meaning": "塑料（的）"
+    },
+    {
+      "id": "pep9-5-0014",
+      "word": "printer",
+      "phonetic": "/ˈprɪntə(r)/",
+      "pos": "名词",
+      "meaning": "打印机；印刷公司"
+    },
+    {
+      "id": "pep9-5-0015",
+      "word": "invent",
+      "phonetic": "/ɪnˈvent/",
+      "pos": "动词",
+      "meaning": "发明；编造"
+    },
+    {
+      "id": "pep9-5-0016",
+      "word": "all over the world",
+      "phonetic": "/ɔːl ˈəʊvə ðə wɜːld/",
+      "pos": "短语",
+      "meaning": "全世界"
+    },
+    {
+      "id": "pep9-5-0017",
+      "word": "suppose",
+      "phonetic": "/səˈpəʊz/",
+      "pos": "动词",
+      "meaning": "认为；推断"
+    },
+    {
+      "id": "pep9-5-0018",
+      "word": "be supposed to do / be sth",
+      "phonetic": "/biː səˈpəʊzd tuː/",
+      "pos": "短语",
+      "meaning": "应当做（某事）或是（某物）"
+    },
+    {
+      "id": "pep9-5-0019",
+      "word": "wheel",
+      "phonetic": "/wiːl/",
+      "pos": "名词",
+      "meaning": "车轮；轮子"
+    },
+    {
+      "id": "pep9-5-0020",
+      "word": "frozen",
+      "phonetic": "/ˈfrəʊzn/",
+      "pos": "形容词",
+      "meaning": "冻硬的；冰封的"
+    },
+    {
+      "id": "pep9-5-0021",
+      "word": "complete",
+      "phonetic": "/kəmˈpliːt/",
+      "pos": "动词 & 形容词",
+      "meaning": "完成；结束；完全的；彻底的"
+    },
+    {
+      "id": "pep9-5-0022",
+      "word": "layer",
+      "phonetic": "/ˈleɪə(r)/",
+      "pos": "名词",
+      "meaning": "层；表层"
+    },
+    {
+      "id": "pep9-5-0023",
+      "word": "melt",
+      "phonetic": "/melt/",
+      "pos": "动词",
+      "meaning": "（使）融化；逐渐消失"
+    },
+    {
+      "id": "pep9-5-0024",
+      "word": "pipe",
+      "phonetic": "/paɪp/",
+      "pos": "名词",
+      "meaning": "管道；管子；烟斗"
+    },
+    {
+      "id": "pep9-5-0025",
+      "word": "tunnel",
+      "phonetic": "/ˈtʌnl/",
+      "pos": "名词",
+      "meaning": "隧道；地下通道"
+    },
+    {
+      "id": "pep9-5-0026",
+      "word": "tourism",
+      "phonetic": "/ˈtʊərɪzəm/",
+      "pos": "名词",
+      "meaning": "旅游业"
+    },
+    {
+      "id": "pep9-5-0027",
+      "word": "gain",
+      "phonetic": "/ɡeɪn/",
+      "pos": "动词",
+      "meaning": "获得；取得"
+    },
+    {
+      "id": "pep9-5-0028",
+      "word": "reality",
+      "phonetic": "/riˈæləti/",
+      "pos": "名词",
+      "meaning": "现实；事实"
+    },
+    {
+      "id": "pep9-5-0029",
+      "word": "papermaking",
+      "phonetic": "/ˈpeɪpəˌmeɪkɪŋ/",
+      "pos": "名词",
+      "meaning": "造纸工艺；造纸业"
+    },
+    {
+      "id": "pep9-5-0030",
+      "word": "responsible",
+      "phonetic": "/rɪˈspɒnsəbl/",
+      "pos": "形容词",
+      "meaning": "作为原因的；有责任的"
+    },
+    {
+      "id": "pep9-5-0031",
+      "word": "responsible for sth",
+      "phonetic": "/rɪˈspɒnsəbl fɔːr/",
+      "pos": "短语",
+      "meaning": "引起某事"
+    },
+    {
+      "id": "pep9-5-0032",
+      "word": "rapid",
+      "phonetic": "/ˈræpɪd/",
+      "pos": "形容词",
+      "meaning": "迅速的；瞬间的"
+    },
+    {
+      "id": "pep9-5-0033",
+      "word": "shape",
+      "phonetic": "/ʃeɪp/",
+      "pos": "动词 & 名词",
+      "meaning": "塑造；形状"
+    },
+    {
+      "id": "pep9-5-0034",
+      "word": "bronze",
+      "phonetic": "/brɒnz/",
+      "pos": "名词 & 形容词",
+      "meaning": "青铜（的）；青铜色（的）"
+    },
+    {
+      "id": "pep9-5-0035",
+      "word": "ware",
+      "phonetic": "/weə(r)/",
+      "pos": "名词",
+      "meaning": "制品；陶器"
+    },
+    {
+      "id": "pep9-5-0036",
+      "word": "stone",
+      "phonetic": "/stəʊn/",
+      "pos": "名词",
+      "meaning": "石头；岩石"
+    },
+    {
+      "id": "pep9-5-0037",
+      "word": "jute",
+      "phonetic": "/dʒuːt/",
+      "pos": "名词",
+      "meaning": "黄麻纤维"
+    },
+    {
+      "id": "pep9-5-0038",
+      "word": "fibre",
+      "phonetic": "/ˈfaɪbə(r)/",
+      "pos": "名词",
+      "meaning": "纤维；纤维素"
+    },
+    {
+      "id": "pep9-5-0039",
+      "word": "expensive",
+      "phonetic": "/ɪkˈspensɪv/",
+      "pos": "形容词",
+      "meaning": "昂贵的；价格高的"
+    },
+    {
+      "id": "pep9-5-0040",
+      "word": "officer",
+      "phonetic": "/ˈɒfɪsə(r)/",
+      "pos": "名词",
+      "meaning": "官员；高级职员"
+    },
+    {
+      "id": "pep9-5-0041",
+      "word": "workshop",
+      "phonetic": "/ˈwɜːkʃɒp/",
+      "pos": "名词",
+      "meaning": "作坊；讲习班"
+    },
+    {
+      "id": "pep9-5-0042",
+      "word": "none",
+      "phonetic": "/nʌn/",
+      "pos": "代词",
+      "meaning": "没有一个；毫无"
+    },
+    {
+      "id": "pep9-5-0043",
+      "word": "ideal",
+      "phonetic": "/aɪˈdiːəl/",
+      "pos": "形容词 & 名词",
+      "meaning": "最合适的；理想的；理想；完美的人（或事物）"
+    },
+    {
+      "id": "pep9-5-0044",
+      "word": "certain",
+      "phonetic": "/ˈsɜːtn/",
+      "pos": "形容词 & 代词",
+      "meaning": "某些；确定的；（不提及人或事物的名称时用）某些"
+    },
+    {
+      "id": "pep9-5-0045",
+      "word": "suitable",
+      "phonetic": "/ˈsuːtəbl/",
+      "pos": "形容词",
+      "meaning": "合适的；适宜的"
+    },
+    {
+      "id": "pep9-5-0046",
+      "word": "liquid",
+      "phonetic": "/ˈlɪkwɪd/",
+      "pos": "名词 & 形容词",
+      "meaning": "液体；液体的"
+    },
+    {
+      "id": "pep9-5-0047",
+      "word": "cheap",
+      "phonetic": "/tʃiːp/",
+      "pos": "形容词 & 副词",
+      "meaning": "便宜的；低廉地"
+    },
+    {
+      "id": "pep9-5-0048",
+      "word": "creation",
+      "phonetic": "/kriˈeɪʃn/",
+      "pos": "名词",
+      "meaning": "创造；作品"
+    },
+    {
+      "id": "pep9-5-0049",
+      "word": "later on",
+      "phonetic": "/ˈleɪtər ɒn/",
+      "pos": "短语",
+      "meaning": "后来；其后"
+    },
+    {
+      "id": "pep9-5-0050",
+      "word": "speed up",
+      "phonetic": "/spiːd ʌp/",
+      "pos": "短语",
+      "meaning": "（使）加速"
+    },
+    {
+      "id": "pep9-5-0051",
+      "word": "Arabic",
+      "phonetic": "/ˈærəbɪk/",
+      "pos": "形容词 & 名词",
+      "meaning": "阿拉伯语的；阿拉伯语"
+    },
+    {
+      "id": "pep9-5-0052",
+      "word": "result in",
+      "phonetic": "/rɪˈzʌlt ɪn/",
+      "pos": "短语",
+      "meaning": "造成；导致"
+    },
+    {
+      "id": "pep9-5-0053",
+      "word": "lead to",
+      "phonetic": "/liːd tuː/",
+      "pos": "短语",
+      "meaning": "导致；造成"
+    },
+    {
+      "id": "pep9-5-0054",
+      "word": "birth",
+      "phonetic": "/bɜːθ/",
+      "pos": "名词",
+      "meaning": "起源；诞生"
+    },
+    {
+      "id": "pep9-5-0055",
+      "word": "rapidly",
+      "phonetic": "/ˈræpɪdli/",
+      "pos": "副词",
+      "meaning": "迅速地；快速地"
+    },
+    {
+      "id": "pep9-5-0056",
+      "word": "afford",
+      "phonetic": "/əˈfɔːd/",
+      "pos": "动词",
+      "meaning": "买得起；能做"
+    },
+    {
+      "id": "pep9-5-0057",
+      "word": "company",
+      "phonetic": "/ˈkʌmpəni/",
+      "pos": "名词",
+      "meaning": "公司；剧团"
+    },
+    {
+      "id": "pep9-5-0058",
+      "word": "sticky",
+      "phonetic": "/ˈstɪki/",
+      "pos": "形容词",
+      "meaning": "黏（性）的；闷热的"
+    },
+    {
+      "id": "pep9-5-0059",
+      "word": "production",
+      "phonetic": "/prəˈdʌkʃn/",
+      "pos": "名词",
+      "meaning": "生产；制作"
+    },
+    {
+      "id": "pep9-5-0060",
+      "word": "gradually",
+      "phonetic": "/ˈɡrædʒuəli/",
+      "pos": "副词",
+      "meaning": "逐渐地；逐步地"
+    },
+    {
+      "id": "pep9-5-0061",
+      "word": "widely",
+      "phonetic": "/ˈwaɪdli/",
+      "pos": "副词",
+      "meaning": "广泛地；普遍地"
+    },
+    {
+      "id": "pep9-5-0062",
+      "word": "be looking to do sth",
+      "phonetic": "/biː ˈlʊkɪŋ tuː duː/",
+      "pos": "短语",
+      "meaning": "试图找到做某事的方法"
+    },
+    {
+      "id": "pep9-5-0063",
+      "word": "glider",
+      "phonetic": "/ˈɡlaɪdə(r)/",
+      "pos": "名词",
+      "meaning": "滑翔机"
+    },
+    {
+      "id": "pep9-6-0001",
+      "word": "beyond",
+      "phonetic": "/bɪˈjɒnd/",
+      "pos": "介词 & 副词",
+      "meaning": "超出；在……较远的一边；在（或向）更远处"
+    },
+    {
+      "id": "pep9-6-0002",
+      "word": "mission",
+      "phonetic": "/ˈmɪʃn/",
+      "pos": "名词",
+      "meaning": "任务；使命"
+    },
+    {
+      "id": "pep9-6-0003",
+      "word": "telescope",
+      "phonetic": "/ˈtelɪskəʊp/",
+      "pos": "名词",
+      "meaning": "望远镜"
+    },
+    {
+      "id": "pep9-6-0004",
+      "word": "rover",
+      "phonetic": "/ˈrəʊvə(r)/",
+      "pos": "名词",
+      "meaning": "探测器；漫游者"
+    },
+    {
+      "id": "pep9-6-0005",
+      "word": "manned",
+      "phonetic": "/mænd/",
+      "pos": "形容词",
+      "meaning": "需人操作的"
+    },
+    {
+      "id": "pep9-6-0006",
+      "word": "maintain",
+      "phonetic": "/meɪnˈteɪn/",
+      "pos": "动词",
+      "meaning": "维修；保持"
+    },
+    {
+      "id": "pep9-6-0007",
+      "word": "launch",
+      "phonetic": "/lɔːntʃ/",
+      "pos": "动词 & 名词",
+      "meaning": "发射；发起"
+    },
+    {
+      "id": "pep9-6-0008",
+      "word": "weightless",
+      "phonetic": "/ˈweɪtləs/",
+      "pos": "形容词",
+      "meaning": "失重的；无重量的"
+    },
+    {
+      "id": "pep9-6-0009",
+      "word": "movement",
+      "phonetic": "/ˈmuːvmənt/",
+      "pos": "名词",
+      "meaning": "运动；活动"
+    },
+    {
+      "id": "pep9-6-0010",
+      "word": "asleep",
+      "phonetic": "/əˈsliːp/",
+      "pos": "形容词",
+      "meaning": "睡着（的）"
+    },
+    {
+      "id": "pep9-6-0011",
+      "word": "fall asleep",
+      "phonetic": "/fɔːl əˈsliːp/",
+      "pos": "短语",
+      "meaning": "入睡"
+    },
+    {
+      "id": "pep9-6-0012",
+      "word": "tie",
+      "phonetic": "/taɪ/",
+      "pos": "动词 & 名词",
+      "meaning": "系上；束紧；领带"
+    },
+    {
+      "id": "pep9-6-0013",
+      "word": "geology",
+      "phonetic": "/dʒiˈɒlədʒi/",
+      "pos": "名词",
+      "meaning": "地质；地质学"
+    },
+    {
+      "id": "pep9-6-0014",
+      "word": "satellite",
+      "phonetic": "/ˈsætəlaɪt/",
+      "pos": "名词",
+      "meaning": "人造卫星；卫星"
+    },
+    {
+      "id": "pep9-6-0015",
+      "word": "crazy",
+      "phonetic": "/ˈkreɪzi/",
+      "pos": "形容词",
+      "meaning": "疯狂的；不理智的"
+    },
+    {
+      "id": "pep9-6-0016",
+      "word": "human being",
+      "phonetic": "/ˈhjuːmən ˈbiːɪŋ/",
+      "pos": "名词短语",
+      "meaning": "人；人类"
+    },
+    {
+      "id": "pep9-6-0017",
+      "word": "require",
+      "phonetic": "/rɪˈkwaɪə(r)/",
+      "pos": "动词",
+      "meaning": "需要；要求"
+    },
+    {
+      "id": "pep9-6-0018",
+      "word": "rocket",
+      "phonetic": "/ˈrɒkɪt/",
+      "pos": "名词",
+      "meaning": "火箭"
+    },
+    {
+      "id": "pep9-6-0019",
+      "word": "cancel",
+      "phonetic": "/ˈkænsl/",
+      "pos": "动词",
+      "meaning": "取消；终止"
+    },
+    {
+      "id": "pep9-6-0020",
+      "word": "publish",
+      "phonetic": "/ˈpʌblɪʃ/",
+      "pos": "动词",
+      "meaning": "刊登；出版"
+    },
+    {
+      "id": "pep9-6-0021",
+      "word": "exoplanet",
+      "phonetic": "/ˈeksəʊˌplænɪt/",
+      "pos": "名词",
+      "meaning": "系外行星"
+    },
+    {
+      "id": "pep9-6-0022",
+      "word": "solar",
+      "phonetic": "/ˈsəʊlə(r)/",
+      "pos": "形容词",
+      "meaning": "太阳的；太阳能的"
+    },
+    {
+      "id": "pep9-6-0023",
+      "word": "god",
+      "phonetic": "/ɡɒd/",
+      "pos": "名词",
+      "meaning": "神"
+    },
+    {
+      "id": "pep9-6-0024",
+      "word": "mysterious",
+      "phonetic": "/mɪˈstɪəriəs/",
+      "pos": "形容词",
+      "meaning": "神秘的；奇怪的"
+    },
+    {
+      "id": "pep9-6-0025",
+      "word": "spacecraft",
+      "phonetic": "/ˈspeɪskrɑːft/",
+      "pos": "名词",
+      "meaning": "（pl. spacecraft）宇宙飞船"
+    },
+    {
+      "id": "pep9-6-0026",
+      "word": "in case",
+      "phonetic": "/ɪn keɪs/",
+      "pos": "短语",
+      "meaning": "以防万一"
+    },
+    {
+      "id": "pep9-6-0027",
+      "word": "board",
+      "phonetic": "/bɔːd/",
+      "pos": "名词",
+      "meaning": "板；牌子"
+    },
+    {
+      "id": "pep9-6-0028",
+      "word": "on board",
+      "phonetic": "/ɒn bɔːd/",
+      "pos": "短语",
+      "meaning": "在船（或火车、飞机）上"
+    },
+    {
+      "id": "pep9-6-0029",
+      "word": "billion",
+      "phonetic": "/ˈbɪljən/",
+      "pos": "数词",
+      "meaning": "十亿"
+    },
+    {
+      "id": "pep9-6-0030",
+      "word": "trillion",
+      "phonetic": "/ˈtrɪljən/",
+      "pos": "数词",
+      "meaning": "万亿；兆"
+    },
+    {
+      "id": "pep9-6-0031",
+      "word": "completely",
+      "phonetic": "/kəmˈpliːtli/",
+      "pos": "副词",
+      "meaning": "彻底地；完全地"
+    },
+    {
+      "id": "pep9-6-0032",
+      "word": "cooperate",
+      "phonetic": "/kəʊˈɒpəreɪt/",
+      "pos": "动词",
+      "meaning": "合作；协作"
+    },
+    {
+      "id": "pep9-6-0033",
+      "word": "cooperate with",
+      "phonetic": "/kəʊˈɒpəreɪt wɪð/",
+      "pos": "短语",
+      "meaning": "合作；协作；配合"
+    },
+    {
+      "id": "pep9-6-0034",
+      "word": "set foot on",
+      "phonetic": "/set fʊt ɒn/",
+      "pos": "短语",
+      "meaning": "访问；参观（某地）"
+    },
+    {
+      "id": "pep9-6-0035",
+      "word": "galaxy",
+      "phonetic": "/ˈɡæləksi/",
+      "pos": "名词",
+      "meaning": "星系"
+    },
+    {
+      "id": "pep9-6-0036",
+      "word": "unmanned",
+      "phonetic": "/ˌʌnˈmænd/",
+      "pos": "形容词",
+      "meaning": "无（需）人操作的"
+    },
+    {
+      "id": "pep9-6-0037",
+      "word": "craft",
+      "phonetic": "/krɑːft/",
+      "pos": "名词",
+      "meaning": "技艺；工艺；（pl. craft）飞行器；船"
+    },
+    {
+      "id": "pep9-6-0038",
+      "word": "spaceship",
+      "phonetic": "/ˈspeɪsʃɪp/",
+      "pos": "名词",
+      "meaning": "（航天）飞船"
+    },
+    {
+      "id": "pep9-6-0039",
+      "word": "survey",
+      "phonetic": "/ˈsɜːveɪ/",
+      "pos": "名词",
+      "meaning": "测绘；民意调查"
+    },
+    {
+      "id": "pep9-6-0040",
+      "word": "crowded",
+      "phonetic": "/ˈkraʊdɪd/",
+      "pos": "形容词",
+      "meaning": "人（太）多的；拥挤的"
+    },
+    {
+      "id": "pep9-6-0041",
+      "word": "operate",
+      "phonetic": "/ˈɒpəreɪt/",
+      "pos": "动词",
+      "meaning": "操作；运行"
+    },
+    {
+      "id": "pep9-6-0042",
+      "word": "Guglielmo Marconi",
+      "phonetic": "/ˈɡʊɡjelməʊ mɑːˈkəʊni/",
+      "pos": "名词",
+      "meaning": "古列尔莫·马科尼"
+    },
+    {
+      "id": "pep9-6-0043",
+      "word": "Alexander Bell",
+      "phonetic": "/ˌælɪɡˈzɑːndə(r)/",
+      "pos": "名词",
+      "meaning": "亚历山大·贝尔"
+    },
+    {
+      "id": "pep9-6-0044",
+      "word": "Europe",
+      "phonetic": "/ˈjʊərəp/",
+      "pos": "名词",
+      "meaning": "欧洲"
+    },
+    {
+      "id": "pep9-6-0045",
+      "word": "Lhasa",
+      "phonetic": "/ˈlɑːsə/",
+      "pos": "名词",
+      "meaning": "拉萨（中国城市）"
+    },
+    {
+      "id": "pep9-6-0046",
+      "word": "Tanggula Pass",
+      "phonetic": "/ˈtæŋɡələ pɑːs/",
+      "pos": "名词短语",
+      "meaning": "唐古拉山口"
+    },
+    {
+      "id": "pep9-6-0047",
+      "word": "CE",
+      "phonetic": "/ˌsiː ˈiː/",
+      "pos": "缩写",
+      "meaning": "（Common Era）公元"
+    },
+    {
+      "id": "pep9-6-0048",
+      "word": "Oakland",
+      "phonetic": "/ˈəʊklənd/",
+      "pos": "名词",
+      "meaning": "奥克兰（美国城市）"
+    },
+    {
+      "id": "pep9-6-0049",
+      "word": "Spencer Silver",
+      "phonetic": "/ˈspensə(r) ˈsɪlvə(r)/",
+      "pos": "名词",
+      "meaning": "斯潘塞·西尔弗"
+    },
+    {
+      "id": "pep9-6-0050",
+      "word": "Arthur Fry",
+      "phonetic": "/ˈɑːθə(r)/",
+      "pos": "名词",
+      "meaning": "亚瑟·弗赖伊"
+    },
+    {
+      "id": "pep9-6-0051",
+      "word": "Orville Wright",
+      "phonetic": "/ˈɔːvɪl raɪt/",
+      "pos": "名词",
+      "meaning": "奥维尔·赖特"
+    },
+    {
+      "id": "pep9-6-0052",
+      "word": "Wilbur Wright",
+      "phonetic": "/ˈwɪlbə(r) raɪt/",
+      "pos": "名词",
+      "meaning": "威尔伯·赖特"
+    },
+    {
+      "id": "pep9-6-0053",
+      "word": "Mars",
+      "phonetic": "/mɑːz/",
+      "pos": "名词",
+      "meaning": "火星"
+    },
+    {
+      "id": "pep9-6-0054",
+      "word": "Voyager 1",
+      "phonetic": "/ˈvɔɪədʒə(r)/",
+      "pos": "名词短语",
+      "meaning": "旅行者1号探测器"
+    },
+    {
+      "id": "pep9-6-0055",
+      "word": "Proxima Centauri",
+      "phonetic": "/ˈprɒksɪmə senˈtɔːri/",
+      "pos": "名词短语",
+      "meaning": "比邻星"
+    },
+    {
+      "id": "pep9-6-0056",
+      "word": "Ann",
+      "phonetic": "/æn/",
+      "pos": "名词",
+      "meaning": "安"
+    },
+    {
+      "id": "pep9-7-0001",
+      "word": "rhythm",
+      "phonetic": "/ˈrɪðəm/",
+      "pos": "名词",
+      "meaning": "节奏；韵律"
+    },
+    {
+      "id": "pep9-7-0002",
+      "word": "folk",
+      "phonetic": "/fəʊk/",
+      "pos": "形容词 & 名词",
+      "meaning": "民间的；民间音乐；（pl. folks）各位"
+    },
+    {
+      "id": "pep9-7-0003",
+      "word": "traditional",
+      "phonetic": "/trəˈdɪʃənl/",
+      "pos": "形容词",
+      "meaning": "传统的；习俗的"
+    },
+    {
+      "id": "pep9-7-0004",
+      "word": "pop",
+      "phonetic": "/pɒp/",
+      "pos": "名词 & 动词",
+      "meaning": "流行音乐；蹦出"
+    },
+    {
+      "id": "pep9-7-0005",
+      "word": "jazz",
+      "phonetic": "/dʒæz/",
+      "pos": "名词",
+      "meaning": "爵士乐"
+    },
+    {
+      "id": "pep9-7-0006",
+      "word": "rap",
+      "phonetic": "/ræp/",
+      "pos": "名词 & 动词",
+      "meaning": "说唱乐；表演说唱乐"
+    },
+    {
+      "id": "pep9-7-0007",
+      "word": "comment",
+      "phonetic": "/ˈkɒment/",
+      "pos": "名词 & 动词",
+      "meaning": "评论；批评"
+    },
+    {
+      "id": "pep9-7-0008",
+      "word": "sing along to",
+      "phonetic": "/sɪŋ əˈlɒŋ tuː/",
+      "pos": "短语",
+      "meaning": "随着唱"
+    },
+    {
+      "id": "pep9-7-0009",
+      "word": "lyric",
+      "phonetic": "/ˈlɪrɪk/",
+      "pos": "名词 & 形容词",
+      "meaning": "歌词；抒情的"
+    },
+    {
+      "id": "pep9-7-0010",
+      "word": "electric",
+      "phonetic": "/ɪˈlektrɪk/",
+      "pos": "形容词",
+      "meaning": "电的；令人激动的"
+    },
+    {
+      "id": "pep9-7-0011",
+      "word": "electric guitar",
+      "phonetic": "/ɪˈlektrɪk ɡɪˈtɑː/",
+      "pos": "名词短语",
+      "meaning": "电吉他"
+    },
+    {
+      "id": "pep9-7-0012",
+      "word": "keyboard",
+      "phonetic": "/ˈkiːbɔːd/",
+      "pos": "名词",
+      "meaning": "电子琴；键盘"
+    },
+    {
+      "id": "pep9-7-0013",
+      "word": "trumpet",
+      "phonetic": "/ˈtrʌmpɪt/",
+      "pos": "名词",
+      "meaning": "小号；喇叭"
+    },
+    {
+      "id": "pep9-7-0014",
+      "word": "style",
+      "phonetic": "/staɪl/",
+      "pos": "名词",
+      "meaning": "风格；方式"
+    },
+    {
+      "id": "pep9-7-0015",
+      "word": "performance",
+      "phonetic": "/pəˈfɔːməns/",
+      "pos": "名词",
+      "meaning": "演出；表演"
+    },
+    {
+      "id": "pep9-7-0016",
+      "word": "golden",
+      "phonetic": "/ˈɡəʊldən/",
+      "pos": "形容词",
+      "meaning": "金色的"
+    },
+    {
+      "id": "pep9-7-0017",
+      "word": "lover",
+      "phonetic": "/ˈlʌvə(r)/",
+      "pos": "名词",
+      "meaning": "情人；爱好者"
+    },
+    {
+      "id": "pep9-7-0018",
+      "word": "romantic",
+      "phonetic": "/rəʊˈmæntɪk/",
+      "pos": "形容词",
+      "meaning": "浪漫的；爱情的"
+    },
+    {
+      "id": "pep9-7-0019",
+      "word": "performer",
+      "phonetic": "/pəˈfɔːmə(r)/",
+      "pos": "名词",
+      "meaning": "演奏者；表演者"
+    },
+    {
+      "id": "pep9-7-0020",
+      "word": "dance to",
+      "phonetic": "/dɑːns tuː/",
+      "pos": "短语",
+      "meaning": "随着跳舞"
+    },
+    {
+      "id": "pep9-7-0021",
+      "word": "purple",
+      "phonetic": "/ˈpɜːpl/",
+      "pos": "名词 & 形容词",
+      "meaning": "紫色；紫色的"
+    },
+    {
+      "id": "pep9-7-0022",
+      "word": "poet",
+      "phonetic": "/ˈpəʊɪt/",
+      "pos": "名词",
+      "meaning": "诗人"
+    },
+    {
+      "id": "pep9-7-0023",
+      "word": "policewoman",
+      "phonetic": "/pəˈliːswʊmən/",
+      "pos": "名词",
+      "meaning": "（pl. policewomen）女警察"
+    },
+    {
+      "id": "pep9-7-0024",
+      "word": "deaf",
+      "phonetic": "/def/",
+      "pos": "形容词",
+      "meaning": "聋的"
+    },
+    {
+      "id": "pep9-7-0025",
+      "word": "composer",
+      "phonetic": "/kəmˈpəʊzə(r)/",
+      "pos": "名词",
+      "meaning": "作曲家"
+    },
+    {
+      "id": "pep9-7-0026",
+      "word": "electronic",
+      "phonetic": "/ɪˌlekˈtrɒnɪk/",
+      "pos": "形容词",
+      "meaning": "电子的"
+    },
+    {
+      "id": "pep9-7-0027",
+      "word": "download",
+      "phonetic": "/ˌdaʊnˈləʊd/",
+      "pos": "动词 & 名词",
+      "meaning": "下载；已下载的数据资料"
+    },
+    {
+      "id": "pep9-7-0028",
+      "word": "rating",
+      "phonetic": "/ˈreɪtɪŋ/",
+      "pos": "名词",
+      "meaning": "评分；等级"
+    },
+    {
+      "id": "pep9-7-0029",
+      "word": "hats off (to sb)",
+      "phonetic": "/hæts ɒf/",
+      "pos": "短语",
+      "meaning": "（向某人）表示敬佩"
+    },
+    {
+      "id": "pep9-7-0030",
+      "word": "genius",
+      "phonetic": "/ˈdʒiːniəs/",
+      "pos": "名词",
+      "meaning": "天才人物；天赋"
+    },
+    {
+      "id": "pep9-7-0031",
+      "word": "pianist",
+      "phonetic": "/ˈpɪənɪst/",
+      "pos": "名词",
+      "meaning": "钢琴家；钢琴演奏者"
+    },
+    {
+      "id": "pep9-7-0032",
+      "word": "gifted",
+      "phonetic": "/ˈɡɪftɪd/",
+      "pos": "形容词",
+      "meaning": "有天赋的"
+    },
+    {
+      "id": "pep9-7-0033",
+      "word": "outdo",
+      "phonetic": "/ˌaʊtˈduː/",
+      "pos": "动词",
+      "meaning": "（outdid, outdone）胜过"
+    },
+    {
+      "id": "pep9-7-0034",
+      "word": "widen",
+      "phonetic": "/ˈwaɪdn/",
+      "pos": "动词",
+      "meaning": "拓宽；（使）扩展"
+    },
+    {
+      "id": "pep9-7-0035",
+      "word": "soul",
+      "phonetic": "/səʊl/",
+      "pos": "名词",
+      "meaning": "真挚情感；灵魂"
+    },
+    {
+      "id": "pep9-7-0036",
+      "word": "look down on",
+      "phonetic": "/lʊk daʊn ɒn/",
+      "pos": "短语",
+      "meaning": "轻视；蔑视"
+    },
+    {
+      "id": "pep9-7-0037",
+      "word": "Polish",
+      "phonetic": "/ˈpəʊlɪʃ/",
+      "pos": "形容词 & 名词",
+      "meaning": "波兰的；波兰人；波兰语"
+    },
+    {
+      "id": "pep9-7-0038",
+      "word": "characteristic",
+      "phonetic": "/ˌkærəktəˈrɪstɪk/",
+      "pos": "名词 & 形容词",
+      "meaning": "特征；品质；典型的；独特的"
+    },
+    {
+      "id": "pep9-7-0039",
+      "word": "valuable",
+      "phonetic": "/ˈvæljuəbl/",
+      "pos": "形容词",
+      "meaning": "宝贵的；贵重的"
+    },
+    {
+      "id": "pep9-7-0040",
+      "word": "proudly",
+      "phonetic": "/ˈpraʊdli/",
+      "pos": "副词",
+      "meaning": "自豪地；壮观地"
+    },
+    {
+      "id": "pep9-7-0041",
+      "word": "funeral",
+      "phonetic": "/ˈfjuːnərəl/",
+      "pos": "名词",
+      "meaning": "葬礼"
+    },
+    {
+      "id": "pep9-7-0042",
+      "word": "young and old",
+      "phonetic": "/jʌŋ ənd əʊld/",
+      "pos": "短语",
+      "meaning": "老老少少"
+    },
+    {
+      "id": "pep9-7-0043",
+      "word": "profession",
+      "phonetic": "/prəˈfeʃn/",
+      "pos": "名词",
+      "meaning": "职业；行业"
+    },
+    {
+      "id": "pep9-7-0044",
+      "word": "contribution",
+      "phonetic": "/ˌkɒntrɪˈbjuːʃn/",
+      "pos": "名词",
+      "meaning": "贡献；捐款"
+    },
+    {
+      "id": "pep9-7-0045",
+      "word": "cartoon",
+      "phonetic": "/kɑːˈtuːn/",
+      "pos": "名词",
+      "meaning": "动画片；漫画"
+    },
+    {
+      "id": "pep9-7-0046",
+      "word": "fair",
+      "phonetic": "/feə(r)/",
+      "pos": "形容词 & 名词",
+      "meaning": "公平的；合理的；露天游乐场；集市"
+    },
+    {
+      "id": "pep9-7-0047",
+      "word": "fair and square",
+      "phonetic": "/feə ənd skweə/",
+      "pos": "短语",
+      "meaning": "光明正大"
+    },
+    {
+      "id": "pep9-7-0048",
+      "word": "tape",
+      "phonetic": "/teɪp/",
+      "pos": "名词",
+      "meaning": "磁带；录像带"
+    },
+    {
+      "id": "pep9-7-0049",
+      "word": "tap",
+      "phonetic": "/tæp/",
+      "pos": "动词 & 名词",
+      "meaning": "（用手指或脚）打节拍；轻敲；水龙头；轻拍"
+    },
+    {
+      "id": "pep9-7-0050",
+      "word": "tap one's feet",
+      "phonetic": "/tæp wʌnz fiːt/",
+      "pos": "短语",
+      "meaning": "用脚打节拍"
+    },
+    {
+      "id": "pep9-7-0051",
+      "word": "champion",
+      "phonetic": "/ˈtʃæmpiən/",
+      "pos": "名词 & 动词",
+      "meaning": "冠军；捍卫"
+    },
+    {
+      "id": "pep9-7-0052",
+      "word": "finger",
+      "phonetic": "/ˈfɪŋɡə(r)/",
+      "pos": "名词",
+      "meaning": "手指"
+    },
+    {
+      "id": "pep9-7-0053",
+      "word": "schoolmate",
+      "phonetic": "/ˈskuːlmeɪt/",
+      "pos": "名词",
+      "meaning": "同学"
+    },
+    {
+      "id": "pep9-7-0054",
+      "word": "nowadays",
+      "phonetic": "/ˈnaʊədeɪz/",
+      "pos": "副词",
+      "meaning": "现在；目前"
+    },
+    {
+      "id": "pep9-7-0055",
+      "word": "imagination",
+      "phonetic": "/ɪˌmædʒɪˈneɪʃn/",
+      "pos": "名词",
+      "meaning": "想象力；想象"
+    },
+    {
+      "id": "pep9-7-0056",
+      "word": "Clarice",
+      "phonetic": "/ˈklærɪs/",
+      "pos": "名词",
+      "meaning": "克拉丽斯"
+    },
+    {
+      "id": "pep9-7-0057",
+      "word": "Debbie",
+      "phonetic": "/ˈdebi/",
+      "pos": "名词",
+      "meaning": "黛比"
+    },
+    {
+      "id": "pep9-7-0058",
+      "word": "Robert Schumann",
+      "phonetic": "/ˈʃuːmən/",
+      "pos": "名词",
+      "meaning": "罗伯特·舒曼"
+    },
+    {
+      "id": "pep9-7-0059",
+      "word": "Frédéric Chopin",
+      "phonetic": "/ˈfredərɪk ˈʃəʊpæn/",
+      "pos": "名词",
+      "meaning": "弗雷德里克·肖邦"
+    },
+    {
+      "id": "pep9-7-0060",
+      "word": "Poland",
+      "phonetic": "/ˈpəʊlənd/",
+      "pos": "名词",
+      "meaning": "波兰"
+    },
+    {
+      "id": "pep9-7-0061",
+      "word": "Vienna",
+      "phonetic": "/viˈenə/",
+      "pos": "名词",
+      "meaning": "维也纳（奥地利首都）"
+    },
+    {
+      "id": "pep9-8-0001",
+      "word": "pull-up",
+      "phonetic": "/ˈpʊl ʌp/",
+      "pos": "名词",
+      "meaning": "引体向上"
+    },
+    {
+      "id": "pep9-8-0002",
+      "word": "relay",
+      "phonetic": "/ˈriːleɪ/",
+      "pos": "名词",
+      "meaning": "接力赛"
+    },
+    {
+      "id": "pep9-8-0003",
+      "word": "shot-put",
+      "phonetic": "/ˈʃɒt pʊt/",
+      "pos": "名词",
+      "meaning": "推铅球"
+    },
+    {
+      "id": "pep9-8-0004",
+      "word": "boxing",
+      "phonetic": "/ˈbɒksɪŋ/",
+      "pos": "名词",
+      "meaning": "拳击（运动）"
+    },
+    {
+      "id": "pep9-8-0005",
+      "word": "competition",
+      "phonetic": "/ˌkɒmpəˈtɪʃn/",
+      "pos": "名词",
+      "meaning": "比赛；竞赛"
+    },
+    {
+      "id": "pep9-8-0006",
+      "word": "tryout",
+      "phonetic": "/ˈtraɪaʊt/",
+      "pos": "名词",
+      "meaning": "预赛；选拔赛"
+    },
+    {
+      "id": "pep9-8-0007",
+      "word": "handoff",
+      "phonetic": "/ˈhændɒf/",
+      "pos": "名词",
+      "meaning": "接力棒交接"
+    },
+    {
+      "id": "pep9-8-0008",
+      "word": "baton",
+      "phonetic": "/ˈbætən/",
+      "pos": "名词",
+      "meaning": "接力棒"
+    },
+    {
+      "id": "pep9-8-0009",
+      "word": "judge",
+      "phonetic": "/dʒʌdʒ/",
+      "pos": "名词 & 动词",
+      "meaning": "裁判员；法官；判断；认定"
+    },
+    {
+      "id": "pep9-8-0010",
+      "word": "runner",
+      "phonetic": "/ˈrʌnə(r)/",
+      "pos": "名词",
+      "meaning": "参加赛跑的人"
+    },
+    {
+      "id": "pep9-8-0011",
+      "word": "advertisement",
+      "phonetic": "/ədˈvɜːtɪsmənt/",
+      "pos": "名词",
+      "meaning": "（=ad）广告；启事"
+    },
+    {
+      "id": "pep9-8-0012",
+      "word": "take the lead",
+      "phonetic": "/teɪk ðə liːd/",
+      "pos": "短语",
+      "meaning": "带头（做某事）"
+    },
+    {
+      "id": "pep9-8-0013",
+      "word": "smooth",
+      "phonetic": "/smuːð/",
+      "pos": "形容词",
+      "meaning": "顺利的；光滑的"
+    },
+    {
+      "id": "pep9-8-0014",
+      "word": "make up ground on sb/sth",
+      "phonetic": "/meɪk ʌp ɡraʊnd ɒn/",
+      "pos": "短语",
+      "meaning": "逼近正在向前的人或物"
+    },
+    {
+      "id": "pep9-8-0015",
+      "word": "catch up with",
+      "phonetic": "/kætʃ ʌp wɪð/",
+      "pos": "短语",
+      "meaning": "赶上；追上（某人）"
+    },
+    {
+      "id": "pep9-8-0016",
+      "word": "figure",
+      "phonetic": "/ˈfɪɡə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "（冰上动作的）花样；数字；人物；认为"
+    },
+    {
+      "id": "pep9-8-0017",
+      "word": "figure skating",
+      "phonetic": "/ˈfɪɡə ˈskeɪtɪŋ/",
+      "pos": "名词短语",
+      "meaning": "花样滑冰"
+    },
+    {
+      "id": "pep9-8-0018",
+      "word": "amaze",
+      "phonetic": "/əˈmeɪz/",
+      "pos": "动词",
+      "meaning": "使惊奇；使惊诧"
+    },
+    {
+      "id": "pep9-8-0019",
+      "word": "strength",
+      "phonetic": "/streŋθ/",
+      "pos": "名词",
+      "meaning": "力量；体力"
+    },
+    {
+      "id": "pep9-8-0020",
+      "word": "truly",
+      "phonetic": "/ˈtruːli/",
+      "pos": "副词",
+      "meaning": "真正地；诚恳地"
+    },
+    {
+      "id": "pep9-8-0021",
+      "word": "anyway",
+      "phonetic": "/ˈeniweɪ/",
+      "pos": "副词",
+      "meaning": "无论如何；不管怎样"
+    },
+    {
+      "id": "pep9-8-0022",
+      "word": "ceremony",
+      "phonetic": "/ˈserəməni/",
+      "pos": "名词",
+      "meaning": "典礼；仪式"
+    },
+    {
+      "id": "pep9-8-0023",
+      "word": "neither",
+      "phonetic": "/ˈnaɪðə(r); ˈniːðə(r)/",
+      "pos": "连词 & 代词",
+      "meaning": "两者皆非；两者都不"
+    },
+    {
+      "id": "pep9-8-0024",
+      "word": "nor",
+      "phonetic": "/nɔː(r)/",
+      "pos": "连词 & 副词",
+      "meaning": "也不"
+    },
+    {
+      "id": "pep9-8-0025",
+      "word": "neither ... nor ...",
+      "phonetic": "/ˈnaɪðə nɔː/",
+      "pos": "短语",
+      "meaning": "既不……也不……"
+    },
+    {
+      "id": "pep9-8-0026",
+      "word": "try out",
+      "phonetic": "/traɪ aʊt/",
+      "pos": "短语",
+      "meaning": "参加选拔；试用"
+    },
+    {
+      "id": "pep9-8-0027",
+      "word": "bouldering",
+      "phonetic": "/ˈbəʊldərɪŋ/",
+      "pos": "名词",
+      "meaning": "攀岩"
+    },
+    {
+      "id": "pep9-8-0028",
+      "word": "compete",
+      "phonetic": "/kəmˈpiːt/",
+      "pos": "动词",
+      "meaning": "参加比赛；竞争"
+    },
+    {
+      "id": "pep9-8-0029",
+      "word": "mascot",
+      "phonetic": "/ˈmæskət/",
+      "pos": "名词",
+      "meaning": "吉祥物"
+    },
+    {
+      "id": "pep9-8-0030",
+      "word": "motto",
+      "phonetic": "/ˈmɒtəʊ/",
+      "pos": "名词",
+      "meaning": "口号；格言"
+    },
+    {
+      "id": "pep9-8-0031",
+      "word": "dramatic",
+      "phonetic": "/drəˈmætɪk/",
+      "pos": "形容词",
+      "meaning": "激动人心的；出乎意料的"
+    },
+    {
+      "id": "pep9-8-0032",
+      "word": "freestyle",
+      "phonetic": "/ˈfriːstaɪl/",
+      "pos": "名词",
+      "meaning": "自由式体育比赛"
+    },
+    {
+      "id": "pep9-8-0033",
+      "word": "talented",
+      "phonetic": "/ˈtælɪntɪd/",
+      "pos": "形容词",
+      "meaning": "有才能的；天才的"
+    },
+    {
+      "id": "pep9-8-0034",
+      "word": "in wonder",
+      "phonetic": "/ɪn ˈwʌndər/",
+      "pos": "短语",
+      "meaning": "惊奇地"
+    },
+    {
+      "id": "pep9-8-0035",
+      "word": "set a record",
+      "phonetic": "/set ə ˈrekɔːd/",
+      "pos": "短语",
+      "meaning": "创造纪录"
+    },
+    {
+      "id": "pep9-8-0036",
+      "word": "gold",
+      "phonetic": "/ɡəʊld/",
+      "pos": "名词 & 形容词",
+      "meaning": "金；金牌；金色；金质的；金色的"
+    },
+    {
+      "id": "pep9-8-0037",
+      "word": "medal",
+      "phonetic": "/ˈmedl/",
+      "pos": "名词",
+      "meaning": "奖章；勋章"
+    },
+    {
+      "id": "pep9-8-0038",
+      "word": "reform",
+      "phonetic": "/rɪˈfɔːm/",
+      "pos": "名词",
+      "meaning": "改革；变革"
+    },
+    {
+      "id": "pep9-8-0039",
+      "word": "reform and opening-up",
+      "phonetic": "/rɪˈfɔːm ənd ˈəʊpənɪŋ ʌp/",
+      "pos": "短语",
+      "meaning": "改革开放"
+    },
+    {
+      "id": "pep9-8-0040",
+      "word": "worldwide",
+      "phonetic": "/ˌwɜːldˈwaɪd/",
+      "pos": "形容词 & 副词",
+      "meaning": "世界范围的；在全世界；世界各地"
+    },
+    {
+      "id": "pep9-8-0041",
+      "word": "citizen",
+      "phonetic": "/ˈsɪtɪzn/",
+      "pos": "名词",
+      "meaning": "市民；公民"
+    },
+    {
+      "id": "pep9-8-0042",
+      "word": "pride",
+      "phonetic": "/praɪd/",
+      "pos": "名词",
+      "meaning": "自豪（感）；骄傲"
+    },
+    {
+      "id": "pep9-8-0043",
+      "word": "harmony",
+      "phonetic": "/ˈhɑːməni/",
+      "pos": "名词",
+      "meaning": "和谐；和睦"
+    },
+    {
+      "id": "pep9-8-0044",
+      "word": "deeply",
+      "phonetic": "/ˈdiːpli/",
+      "pos": "副词",
+      "meaning": "非常；极其"
+    },
+    {
+      "id": "pep9-8-0045",
+      "word": "high point",
+      "phonetic": "/haɪ pɔɪnt/",
+      "pos": "短语",
+      "meaning": "最好（或最有意思）的部分"
+    },
+    {
+      "id": "pep9-8-0046",
+      "word": "master",
+      "phonetic": "/ˈmɑːstə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "能手；掌握；精通"
+    },
+    {
+      "id": "pep9-8-0047",
+      "word": "satisfy",
+      "phonetic": "/ˈsætɪsfaɪ/",
+      "pos": "动词",
+      "meaning": "使（某人）满意"
+    },
+    {
+      "id": "pep9-8-0048",
+      "word": "round",
+      "phonetic": "/raʊnd/",
+      "pos": "名词",
+      "meaning": "比赛阶段；轮次"
+    },
+    {
+      "id": "pep9-8-0049",
+      "word": "Greek",
+      "phonetic": "/ɡriːk/",
+      "pos": "形容词 & 名词",
+      "meaning": "希腊的；希腊人的；古希腊人；希腊人"
+    },
+    {
+      "id": "pep9-8-0050",
+      "word": "Roman",
+      "phonetic": "/ˈrəʊmən/",
+      "pos": "形容词 & 名词",
+      "meaning": "古罗马的；罗马的；罗马人；罗马字体"
+    },
+    {
+      "id": "pep9-8-0051",
+      "word": "drown",
+      "phonetic": "/draʊn/",
+      "pos": "动词",
+      "meaning": "（使）淹死；（使）溺毙"
+    },
+    {
+      "id": "pep9-8-0052",
+      "word": "crowd",
+      "phonetic": "/kraʊd/",
+      "pos": "名词",
+      "meaning": "人群；观众"
+    },
+    {
+      "id": "pep9-8-0053",
+      "word": "Bing Dwen Dwen",
+      "phonetic": "/bɪŋ dwen dwen/",
+      "pos": "名词",
+      "meaning": "冰墩墩"
+    },
+    {
+      "id": "pep9-8-0054",
+      "word": "Usain Bolt",
+      "phonetic": "/juːˈseɪn bəʊlt/",
+      "pos": "名词",
+      "meaning": "尤塞恩·博尔特"
+    },
+    {
+      "id": "pep9-8-0055",
+      "word": "Greece",
+      "phonetic": "/ɡriːs/",
+      "pos": "名词",
+      "meaning": "希腊"
+    },
+    {
+      "id": "pep9-8-0056",
+      "word": "Eric Moussambani",
+      "phonetic": "/ˌmuːsəmˈbɑːni/",
+      "pos": "名词",
+      "meaning": "埃里克·穆桑巴尼"
+    },
+    {
+      "id": "pep9-8-0057",
+      "word": "Equatorial Guinea",
+      "phonetic": "/ˌekwəˈtɔːriəl ˈɡini/",
+      "pos": "名词短语",
+      "meaning": "赤道几内亚"
+    }
+  ]
+}

@@ -1,0 +1,2336 @@
+{
+  "id": "pep7a-all",
+  "words": [
+    {
+      "id": "g7s1-0001",
+      "word": "unit",
+      "phonetic": "/ˈjuːnɪt/",
+      "pos": "名词",
+      "meaning": "单元"
+    },
+    {
+      "id": "g7s1-0002",
+      "word": "starter unit",
+      "phonetic": "/ˈstɑːtə(r) ˈjuːnɪt/",
+      "pos": "名词短语",
+      "meaning": "过渡单元"
+    },
+    {
+      "id": "g7s1-0003",
+      "word": "section",
+      "phonetic": "/ˈsekʃn/",
+      "pos": "名词",
+      "meaning": "部分；地区"
+    },
+    {
+      "id": "g7s1-0004",
+      "word": "greet",
+      "phonetic": "/ɡriːt/",
+      "pos": "动词",
+      "meaning": "招呼；问候"
+    },
+    {
+      "id": "g7s1-0005",
+      "word": "each",
+      "phonetic": "/iːtʃ/",
+      "pos": "形容词 & 代词",
+      "meaning": "每个；各自"
+    },
+    {
+      "id": "g7s1-0006",
+      "word": "other",
+      "phonetic": "/ˈʌðə(r)/",
+      "pos": "代词 & 形容词",
+      "meaning": "另外的人（或物）；另外的；其他的"
+    },
+    {
+      "id": "g7s1-0007",
+      "word": "each other",
+      "phonetic": "/iːtʃ ˈʌðə(r)/",
+      "pos": "短语",
+      "meaning": "互相；彼此"
+    },
+    {
+      "id": "g7s1-0008",
+      "word": "oh",
+      "phonetic": "/əʊ/",
+      "pos": "感叹词",
+      "meaning": "哦；啊"
+    },
+    {
+      "id": "g7s1-0009",
+      "word": "everyone",
+      "phonetic": "/ˈevriwʌn/",
+      "pos": "代词",
+      "meaning": "每人；所有人"
+    },
+    {
+      "id": "g7s1-0010",
+      "word": "start",
+      "phonetic": "/stɑːt/",
+      "pos": "动词",
+      "meaning": "开始；着手"
+    },
+    {
+      "id": "g7s1-0011",
+      "word": "conversation",
+      "phonetic": "/ˌkɒnvəˈseɪʃn/",
+      "pos": "名词",
+      "meaning": "谈话；交谈"
+    },
+    {
+      "id": "g7s1-0012",
+      "word": "spell",
+      "phonetic": "/spel/",
+      "pos": "动词",
+      "meaning": "用字母拼；拼写"
+    },
+    {
+      "id": "g7s1-0013",
+      "word": "bell",
+      "phonetic": "/bel/",
+      "pos": "名词",
+      "meaning": "铃（声）；钟（声）"
+    },
+    {
+      "id": "g7s1-0014",
+      "word": "Helen",
+      "phonetic": "/ˈhelən/",
+      "pos": "名词",
+      "meaning": "海伦"
+    },
+    {
+      "id": "g7s1-0015",
+      "word": "Ella",
+      "phonetic": "/ˈelə/",
+      "pos": "名词",
+      "meaning": "埃拉"
+    },
+    {
+      "id": "g7s1-0016",
+      "word": "Emma",
+      "phonetic": "/ˈemə/",
+      "pos": "名词",
+      "meaning": "埃玛"
+    },
+    {
+      "id": "g7s1-0017",
+      "word": "Peter",
+      "phonetic": "/ˈpiːtə(r)/",
+      "pos": "名词",
+      "meaning": "彼得"
+    },
+    {
+      "id": "g7s1-0018",
+      "word": "Brown",
+      "phonetic": "/braʊn/",
+      "pos": "名词",
+      "meaning": "布朗"
+    },
+    {
+      "id": "g7s1-0019",
+      "word": "PRC",
+      "phonetic": "/ˌpiː ɑː siː/",
+      "pos": "名词短语",
+      "meaning": "中华人民共和国"
+    },
+    {
+      "id": "g7s1-0020",
+      "word": "PLA",
+      "phonetic": "/ˌpiː el eɪ/",
+      "pos": "名词短语",
+      "meaning": "中国人民解放军"
+    },
+    {
+      "id": "g7s1-0021",
+      "word": "VR",
+      "phonetic": "/ˌviː ɑː(r)/",
+      "pos": "名词短语",
+      "meaning": "虚拟现实"
+    },
+    {
+      "id": "g7s1-0022",
+      "word": "WHO",
+      "phonetic": "/ˌdʌbljuː eɪtʃ əʊ/",
+      "pos": "名词短语",
+      "meaning": "世界卫生组织"
+    },
+    {
+      "id": "g7s1-0023",
+      "word": "UN",
+      "phonetic": "/ˌjuː en/",
+      "pos": "名词短语",
+      "meaning": "联合国"
+    },
+    {
+      "id": "g7s1-0024",
+      "word": "Miller",
+      "phonetic": "/ˈmɪlə(r)/",
+      "pos": "名词",
+      "meaning": "米勒"
+    },
+    {
+      "id": "g7s2-0001",
+      "word": "bottle",
+      "phonetic": "/ˈbɒtl/",
+      "pos": "名词",
+      "meaning": "瓶子"
+    },
+    {
+      "id": "g7s2-0002",
+      "word": "eraser",
+      "phonetic": "/ɪˈreɪzə(r)/",
+      "pos": "名词",
+      "meaning": "橡皮"
+    },
+    {
+      "id": "g7s2-0003",
+      "word": "key",
+      "phonetic": "/kiː/",
+      "pos": "名词",
+      "meaning": "钥匙；关键"
+    },
+    {
+      "id": "g7s2-0004",
+      "word": "thing",
+      "phonetic": "/θɪŋ/",
+      "pos": "名词",
+      "meaning": "东西；事情"
+    },
+    {
+      "id": "g7s2-0005",
+      "word": "need",
+      "phonetic": "/niːd/",
+      "pos": "动词 & 名词",
+      "meaning": "需要"
+    },
+    {
+      "id": "g7s2-0006",
+      "word": "You're welcome",
+      "phonetic": "/jʊə(r) ˈwelkəm/",
+      "pos": "短语",
+      "meaning": "别客气；不用谢"
+    },
+    {
+      "id": "g7s3-0001",
+      "word": "fun",
+      "phonetic": "/fʌn/",
+      "pos": "名词 & 形容词",
+      "meaning": "乐趣；快乐；有趣的；使人快乐的"
+    },
+    {
+      "id": "g7s3-0002",
+      "word": "yard",
+      "phonetic": "/jɑːd/",
+      "pos": "名词",
+      "meaning": "院子；园圃"
+    },
+    {
+      "id": "g7s3-0003",
+      "word": "carrot",
+      "phonetic": "/ˈkærət/",
+      "pos": "名词",
+      "meaning": "胡萝卜"
+    },
+    {
+      "id": "g7s3-0004",
+      "word": "goose",
+      "phonetic": "/ɡuːs/",
+      "pos": "名词",
+      "meaning": "(pl. geese) 鹅"
+    },
+    {
+      "id": "g7s3-0005",
+      "word": "count",
+      "phonetic": "/kaʊnt/",
+      "pos": "动词",
+      "meaning": "数数"
+    },
+    {
+      "id": "g7s3-0006",
+      "word": "another",
+      "phonetic": "/əˈnʌðə(r)/",
+      "pos": "形容词 & 代词",
+      "meaning": "另一；又一（人或事物）"
+    },
+    {
+      "id": "g7s3-0007",
+      "word": "else",
+      "phonetic": "/els/",
+      "pos": "副词",
+      "meaning": "其他的；别的"
+    },
+    {
+      "id": "g7s3-0008",
+      "word": "circle",
+      "phonetic": "/ˈsɜːkl/",
+      "pos": "动词 & 名词",
+      "meaning": "圈出；圆形；圆圈"
+    },
+    {
+      "id": "g7s3-0009",
+      "word": "look at",
+      "phonetic": "/lʊk æt/",
+      "pos": "短语",
+      "meaning": "看；瞧"
+    },
+    {
+      "id": "g7u1-0001",
+      "word": "make friends",
+      "phonetic": "/meɪk frendz/",
+      "pos": "短语",
+      "meaning": "交朋友"
+    },
+    {
+      "id": "g7u1-0002",
+      "word": "get to know",
+      "phonetic": "/ɡet tə nəʊ/",
+      "pos": "短语",
+      "meaning": "认识；了解"
+    },
+    {
+      "id": "g7u1-0003",
+      "word": "full",
+      "phonetic": "/fʊl/",
+      "pos": "形容词",
+      "meaning": "完整的；满的"
+    },
+    {
+      "id": "g7u1-0004",
+      "word": "full name",
+      "phonetic": "/fʊl neɪm/",
+      "pos": "短语",
+      "meaning": "全名"
+    },
+    {
+      "id": "g7u1-0005",
+      "word": "grade",
+      "phonetic": "/ɡreɪd/",
+      "pos": "名词",
+      "meaning": "年级；等级"
+    },
+    {
+      "id": "g7u1-0006",
+      "word": "last name",
+      "phonetic": "/lɑːst neɪm/",
+      "pos": "短语",
+      "meaning": "姓氏"
+    },
+    {
+      "id": "g7u1-0007",
+      "word": "classmate",
+      "phonetic": "/ˈklɑːsmeɪt/",
+      "pos": "名词",
+      "meaning": "同班同学"
+    },
+    {
+      "id": "g7u1-0008",
+      "word": "class teacher",
+      "phonetic": "/klɑːs ˈtiːtʃə(r)/",
+      "pos": "短语",
+      "meaning": "班主任"
+    },
+    {
+      "id": "g7u1-0009",
+      "word": "first name",
+      "phonetic": "/fɜːst neɪm/",
+      "pos": "短语",
+      "meaning": "名字"
+    },
+    {
+      "id": "g7u1-0010",
+      "word": "mistake",
+      "phonetic": "/mɪˈsteɪk/",
+      "pos": "名词",
+      "meaning": "错误；失误"
+    },
+    {
+      "id": "g7u1-0011",
+      "word": "country",
+      "phonetic": "/ˈkʌntri/",
+      "pos": "名词",
+      "meaning": "国家"
+    },
+    {
+      "id": "g7u1-0012",
+      "word": "same",
+      "phonetic": "/seɪm/",
+      "pos": "形容词",
+      "meaning": "相同的"
+    },
+    {
+      "id": "g7u1-0013",
+      "word": "twin",
+      "phonetic": "/twɪn/",
+      "pos": "名词 & 形容词",
+      "meaning": "双胞胎之一；双胞胎之一的"
+    },
+    {
+      "id": "g7u1-0014",
+      "word": "both",
+      "phonetic": "/bəʊθ/",
+      "pos": "形容词 & 代词",
+      "meaning": "两个；两个都"
+    },
+    {
+      "id": "g7u1-0015",
+      "word": "band",
+      "phonetic": "/bænd/",
+      "pos": "名词",
+      "meaning": "乐队"
+    },
+    {
+      "id": "g7u1-0016",
+      "word": "pot",
+      "phonetic": "/pɒt/",
+      "pos": "名词",
+      "meaning": "锅"
+    },
+    {
+      "id": "g7u1-0017",
+      "word": "a lot",
+      "phonetic": "/ə lɒt/",
+      "pos": "短语",
+      "meaning": "很；非常"
+    },
+    {
+      "id": "g7u1-0018",
+      "word": "tofu",
+      "phonetic": "/ˈtəʊfuː/",
+      "pos": "名词",
+      "meaning": "豆腐"
+    },
+    {
+      "id": "g7u1-0019",
+      "word": "parrot",
+      "phonetic": "/ˈpærət/",
+      "pos": "名词",
+      "meaning": "鹦鹉"
+    },
+    {
+      "id": "g7u1-0020",
+      "word": "guitar",
+      "phonetic": "/ɡɪˈtɑː(r)/",
+      "pos": "名词",
+      "meaning": "吉他"
+    },
+    {
+      "id": "g7u1-0021",
+      "word": "tennis",
+      "phonetic": "/ˈtenɪs/",
+      "pos": "名词",
+      "meaning": "网球运动"
+    },
+    {
+      "id": "g7u1-0022",
+      "word": "page",
+      "phonetic": "/peɪdʒ/",
+      "pos": "名词",
+      "meaning": "页面；（书刊或纸张）页"
+    },
+    {
+      "id": "g7u1-0023",
+      "word": "even",
+      "phonetic": "/ˈiːvn/",
+      "pos": "副词",
+      "meaning": "甚至；连；愈加"
+    },
+    {
+      "id": "g7u1-0024",
+      "word": "hey",
+      "phonetic": "/heɪ/",
+      "pos": "感叹词",
+      "meaning": "嘿；喂"
+    },
+    {
+      "id": "g7u1-0025",
+      "word": "play the guitar",
+      "phonetic": "/pleɪ ðə ɡɪˈtɑː(r)/",
+      "pos": "短语",
+      "meaning": "弹吉他"
+    },
+    {
+      "id": "g7u1-0026",
+      "word": "would",
+      "phonetic": "/wʊd; wəd/",
+      "pos": "情态动词",
+      "meaning": "想（用于礼貌地邀请或向某人提供某物）；将会"
+    },
+    {
+      "id": "g7u1-0027",
+      "word": "would ('d) like",
+      "phonetic": "/wʊd laɪk/",
+      "pos": "短语",
+      "meaning": "表示愿意、喜欢"
+    },
+    {
+      "id": "g7u1-0028",
+      "word": "information",
+      "phonetic": "/ˌɪnfəˈmeɪʃn/",
+      "pos": "名词",
+      "meaning": "信息；消息"
+    },
+    {
+      "id": "g7u1-0029",
+      "word": "hobby",
+      "phonetic": "/ˈhɒbi/",
+      "pos": "名词",
+      "meaning": "业余爱好"
+    },
+    {
+      "id": "g7u1-0030",
+      "word": "re",
+      "phonetic": "/riː/",
+      "pos": "介词",
+      "meaning": "（用于回复电子邮件）关于；事由"
+    },
+    {
+      "id": "g7u1-0031",
+      "word": "Green",
+      "phonetic": "/ɡriːn/",
+      "pos": "名词",
+      "meaning": "格林"
+    },
+    {
+      "id": "g7u1-0032",
+      "word": "UK",
+      "phonetic": "/ˌjuː keɪ/",
+      "pos": "名词短语",
+      "meaning": "英国"
+    },
+    {
+      "id": "g7u1-0033",
+      "word": "US",
+      "phonetic": "/ˌjuː es/",
+      "pos": "名词短语",
+      "meaning": "美国"
+    },
+    {
+      "id": "g7u1-0034",
+      "word": "Smith",
+      "phonetic": "/smɪθ/",
+      "pos": "名词",
+      "meaning": "史密斯"
+    },
+    {
+      "id": "g7u1-0035",
+      "word": "Lisa",
+      "phonetic": "/ˈliːsə/",
+      "pos": "名词",
+      "meaning": "莉萨"
+    },
+    {
+      "id": "g7u1-0036",
+      "word": "Tom",
+      "phonetic": "/tɒm/",
+      "pos": "名词",
+      "meaning": "汤姆"
+    },
+    {
+      "id": "g7u1-0037",
+      "word": "hot pot",
+      "phonetic": "/hɒt pɒt/",
+      "pos": "短语",
+      "meaning": "火锅"
+    },
+    {
+      "id": "g7u1-0038",
+      "word": "Sally",
+      "phonetic": "/ˈsæli/",
+      "pos": "名词",
+      "meaning": "萨莉"
+    },
+    {
+      "id": "g7u1-0039",
+      "word": "Wood",
+      "phonetic": "/wʊd/",
+      "pos": "名词",
+      "meaning": "伍德"
+    },
+    {
+      "id": "g7u1-0040",
+      "word": "Sydney",
+      "phonetic": "/ˈsɪdni/",
+      "pos": "名词",
+      "meaning": "悉尼（澳大利亚城市）"
+    },
+    {
+      "id": "g7u1-0041",
+      "word": "Australia",
+      "phonetic": "/ɒˈstreɪliə/",
+      "pos": "名词",
+      "meaning": "澳大利亚"
+    },
+    {
+      "id": "g7u1-0042",
+      "word": "Mapo tofu",
+      "phonetic": "/ˌmɑːpəʊ ˈtəʊfuː/",
+      "pos": "短语",
+      "meaning": "麻婆豆腐"
+    },
+    {
+      "id": "g7u1-0043",
+      "word": "Beijing roast duck",
+      "phonetic": "/beɪˈdʒɪŋ rəʊst dʌk/",
+      "pos": "短语",
+      "meaning": "北京烤鸭"
+    },
+    {
+      "id": "g7u1-0044",
+      "word": "Singapore",
+      "phonetic": "/ˌsɪŋəˈpɔː(r)/",
+      "pos": "名词",
+      "meaning": "新加坡"
+    },
+    {
+      "id": "g7u1-0045",
+      "word": "the Great Wall",
+      "phonetic": "/ðə ɡreɪt wɔːl/",
+      "pos": "短语",
+      "meaning": "长城"
+    },
+    {
+      "id": "g7u1-0046",
+      "word": "Pauline",
+      "phonetic": "/pɔːˈliːn/",
+      "pos": "名词",
+      "meaning": "保利娜"
+    },
+    {
+      "id": "g7u1-0047",
+      "word": "Lee",
+      "phonetic": "/liː/",
+      "pos": "名词",
+      "meaning": "李"
+    },
+    {
+      "id": "g7u1-0048",
+      "word": "Coco",
+      "phonetic": "/ˈkəʊkəʊ/",
+      "pos": "名词",
+      "meaning": "科科"
+    },
+    {
+      "id": "g7u1-0049",
+      "word": "London",
+      "phonetic": "/ˈlʌndən/",
+      "pos": "名词",
+      "meaning": "伦敦（英国首都）"
+    },
+    {
+      "id": "g7u2-0001",
+      "word": "mean",
+      "phonetic": "/miːn/",
+      "pos": "动词",
+      "meaning": "意思是；打算"
+    },
+    {
+      "id": "g7u2-0002",
+      "word": "husband",
+      "phonetic": "/ˈhʌzbənd/",
+      "pos": "名词",
+      "meaning": "丈夫"
+    },
+    {
+      "id": "g7u2-0003",
+      "word": "bat",
+      "phonetic": "/bæt/",
+      "pos": "名词",
+      "meaning": "球棒；球拍"
+    },
+    {
+      "id": "g7u2-0004",
+      "word": "ping-pong bat",
+      "phonetic": "/ˈpɪŋ pɒŋ bæt/",
+      "pos": "短语",
+      "meaning": "乒乓球拍"
+    },
+    {
+      "id": "g7u2-0005",
+      "word": "play ping-pong",
+      "phonetic": "/pleɪ ˈpɪŋ pɒŋ/",
+      "pos": "短语",
+      "meaning": "打乒乓球"
+    },
+    {
+      "id": "g7u2-0006",
+      "word": "together",
+      "phonetic": "/təˈɡeðə(r)/",
+      "pos": "副词",
+      "meaning": "在一起；共同"
+    },
+    {
+      "id": "g7u2-0007",
+      "word": "every day",
+      "phonetic": "/ˈevri deɪ/",
+      "pos": "短语",
+      "meaning": "每天"
+    },
+    {
+      "id": "g7u2-0008",
+      "word": "fishing rod",
+      "phonetic": "/ˈfɪʃɪŋ rɒd/",
+      "pos": "短语",
+      "meaning": "钓竿"
+    },
+    {
+      "id": "g7u2-0009",
+      "word": "spend",
+      "phonetic": "/spend/",
+      "pos": "动词",
+      "meaning": "花（时间、钱等）"
+    },
+    {
+      "id": "g7u2-0010",
+      "word": "a lot of / lots of",
+      "phonetic": "/ə lɒt əv / lɒts əv/",
+      "pos": "短语",
+      "meaning": "大量；许多"
+    },
+    {
+      "id": "g7u2-0011",
+      "word": "really",
+      "phonetic": "/ˈriːəli/",
+      "pos": "副词",
+      "meaning": "非常；确实；真正地"
+    },
+    {
+      "id": "g7u2-0012",
+      "word": "member",
+      "phonetic": "/ˈmembə(r)/",
+      "pos": "名词",
+      "meaning": "成员；会员"
+    },
+    {
+      "id": "g7u2-0013",
+      "word": "activity",
+      "phonetic": "/ækˈtɪvəti/",
+      "pos": "名词",
+      "meaning": "活动"
+    },
+    {
+      "id": "g7u2-0014",
+      "word": "chess",
+      "phonetic": "/tʃes/",
+      "pos": "名词",
+      "meaning": "国际象棋"
+    },
+    {
+      "id": "g7u2-0015",
+      "word": "Chinese chess",
+      "phonetic": "/ˌtʃaɪˈniːz tʃes/",
+      "pos": "短语",
+      "meaning": "中国象棋"
+    },
+    {
+      "id": "g7u2-0016",
+      "word": "grandparent",
+      "phonetic": "/ˈɡrænpeərənt/",
+      "pos": "名词",
+      "meaning": "祖父（母）；外祖父（母）"
+    },
+    {
+      "id": "g7u2-0017",
+      "word": "funny",
+      "phonetic": "/ˈfʌni/",
+      "pos": "形容词",
+      "meaning": "好笑的；奇怪的"
+    },
+    {
+      "id": "g7u2-0018",
+      "word": "laugh",
+      "phonetic": "/lɑːf/",
+      "pos": "动词 & 名词",
+      "meaning": "笑；发笑；笑声"
+    },
+    {
+      "id": "g7u2-0019",
+      "word": "different",
+      "phonetic": "/ˈdɪfrənt/",
+      "pos": "形容词",
+      "meaning": "不同的"
+    },
+    {
+      "id": "g7u2-0020",
+      "word": "violin",
+      "phonetic": "/ˌvaɪəˈlɪn/",
+      "pos": "名词",
+      "meaning": "小提琴"
+    },
+    {
+      "id": "g7u2-0021",
+      "word": "have fun",
+      "phonetic": "/hæv fʌn/",
+      "pos": "短语",
+      "meaning": "玩得高兴"
+    },
+    {
+      "id": "g7u2-0022",
+      "word": "hat",
+      "phonetic": "/hæt/",
+      "pos": "名词",
+      "meaning": "帽子"
+    },
+    {
+      "id": "g7u2-0023",
+      "word": "handsome",
+      "phonetic": "/ˈhænsəm/",
+      "pos": "形容词",
+      "meaning": "英俊的"
+    },
+    {
+      "id": "g7u2-0024",
+      "word": "knee",
+      "phonetic": "/niː/",
+      "pos": "名词",
+      "meaning": "膝；膝盖"
+    },
+    {
+      "id": "g7u2-0025",
+      "word": "at night",
+      "phonetic": "/æt naɪt/",
+      "pos": "短语",
+      "meaning": "在夜晚"
+    },
+    {
+      "id": "g7u2-0026",
+      "word": "in the middle",
+      "phonetic": "/ɪn ðə ˈmɪdl/",
+      "pos": "短语",
+      "meaning": "在中间"
+    },
+    {
+      "id": "g7u2-0027",
+      "word": "grandchild",
+      "phonetic": "/ˈɡræntʃaɪld/",
+      "pos": "名词",
+      "meaning": "(pl. grandchildren)（外）孙子；（外）孙女"
+    },
+    {
+      "id": "g7u2-0028",
+      "word": "son",
+      "phonetic": "/sʌn/",
+      "pos": "名词",
+      "meaning": "儿子"
+    },
+    {
+      "id": "g7u2-0029",
+      "word": "hike",
+      "phonetic": "/haɪk/",
+      "pos": "动词 & 名词",
+      "meaning": "远足；徒步旅行"
+    },
+    {
+      "id": "g7u2-0030",
+      "word": "go hiking",
+      "phonetic": "/ɡəʊ ˈhaɪkɪŋ/",
+      "pos": "短语",
+      "meaning": "远足；徒步旅行"
+    },
+    {
+      "id": "g7u2-0031",
+      "word": "next to",
+      "phonetic": "/nekst tuː/",
+      "pos": "短语",
+      "meaning": "紧邻；在……近旁"
+    },
+    {
+      "id": "g7u2-0032",
+      "word": "David",
+      "phonetic": "/ˈdeɪvɪd/",
+      "pos": "名词",
+      "meaning": "戴维"
+    },
+    {
+      "id": "g7u2-0033",
+      "word": "Jim",
+      "phonetic": "/dʒɪm/",
+      "pos": "名词",
+      "meaning": "吉姆"
+    },
+    {
+      "id": "g7u2-0034",
+      "word": "Kate",
+      "phonetic": "/keɪt/",
+      "pos": "名词",
+      "meaning": "凯特"
+    },
+    {
+      "id": "g7u2-0035",
+      "word": "Lily",
+      "phonetic": "/ˈlɪli/",
+      "pos": "名词",
+      "meaning": "莉莉"
+    },
+    {
+      "id": "g7u2-0036",
+      "word": "Ireland",
+      "phonetic": "/ˈaɪələnd/",
+      "pos": "名词",
+      "meaning": "爱尔兰"
+    },
+    {
+      "id": "g7u2-0037",
+      "word": "Fred",
+      "phonetic": "/fred/",
+      "pos": "名词",
+      "meaning": "弗雷德"
+    },
+    {
+      "id": "g7u2-0038",
+      "word": "Sam",
+      "phonetic": "/sæm/",
+      "pos": "名词",
+      "meaning": "萨姆"
+    },
+    {
+      "id": "g7u2-0039",
+      "word": "Jane",
+      "phonetic": "/dʒeɪn/",
+      "pos": "名词",
+      "meaning": "简"
+    },
+    {
+      "id": "g7u2-0040",
+      "word": "Jack",
+      "phonetic": "/dʒæk/",
+      "pos": "名词",
+      "meaning": "杰克"
+    },
+    {
+      "id": "g7u2-0041",
+      "word": "Sarah",
+      "phonetic": "/ˈseərə/",
+      "pos": "名词",
+      "meaning": "萨拉"
+    },
+    {
+      "id": "g7u2-0042",
+      "word": "Oscar",
+      "phonetic": "/ˈɒskə(r)/",
+      "pos": "名词",
+      "meaning": "奥斯卡"
+    },
+    {
+      "id": "g7u2-0043",
+      "word": "Lucy",
+      "phonetic": "/ˈluːsi/",
+      "pos": "名词",
+      "meaning": "露西"
+    },
+    {
+      "id": "g7u3-0001",
+      "word": "hall",
+      "phonetic": "/hɔːl/",
+      "pos": "名词",
+      "meaning": "礼堂；大厅"
+    },
+    {
+      "id": "g7u3-0002",
+      "word": "dining hall",
+      "phonetic": "/ˈdaɪnɪŋ hɔːl/",
+      "pos": "短语",
+      "meaning": "餐厅"
+    },
+    {
+      "id": "g7u3-0003",
+      "word": "in front of",
+      "phonetic": "/ɪn frʌnt əv/",
+      "pos": "短语",
+      "meaning": "在……前面"
+    },
+    {
+      "id": "g7u3-0004",
+      "word": "building",
+      "phonetic": "/ˈbɪldɪŋ/",
+      "pos": "名词",
+      "meaning": "建筑物；房子"
+    },
+    {
+      "id": "g7u3-0005",
+      "word": "across",
+      "phonetic": "/əˈkrɒs/",
+      "pos": "副词 & 介词",
+      "meaning": "在（……）对面；横过"
+    },
+    {
+      "id": "g7u3-0006",
+      "word": "across from",
+      "phonetic": "/əˈkrɒs frɒm/",
+      "pos": "短语",
+      "meaning": "在对面"
+    },
+    {
+      "id": "g7u3-0007",
+      "word": "centre",
+      "phonetic": "/ˈsentə(r)/",
+      "pos": "名词",
+      "meaning": "(=center) 中心；中央"
+    },
+    {
+      "id": "g7u3-0008",
+      "word": "gym",
+      "phonetic": "/dʒɪm/",
+      "pos": "名词",
+      "meaning": "(=gymnasium) 体育馆；健身房；（尤指学校的）体育活动"
+    },
+    {
+      "id": "g7u3-0009",
+      "word": "field",
+      "phonetic": "/fiːld/",
+      "pos": "名词",
+      "meaning": "场地；田地"
+    },
+    {
+      "id": "g7u3-0010",
+      "word": "sports field",
+      "phonetic": "/spɔːts fiːld/",
+      "pos": "短语",
+      "meaning": "运动场"
+    },
+    {
+      "id": "g7u3-0011",
+      "word": "office",
+      "phonetic": "/ˈɒfɪs/",
+      "pos": "名词",
+      "meaning": "办公室"
+    },
+    {
+      "id": "g7u3-0012",
+      "word": "large",
+      "phonetic": "/lɑːdʒ/",
+      "pos": "形容词",
+      "meaning": "大的；大号的"
+    },
+    {
+      "id": "g7u3-0013",
+      "word": "special",
+      "phonetic": "/ˈspeʃl/",
+      "pos": "形容词",
+      "meaning": "特别的；特殊的"
+    },
+    {
+      "id": "g7u3-0014",
+      "word": "smart",
+      "phonetic": "/smɑːt/",
+      "pos": "形容词",
+      "meaning": "智能的；聪明的"
+    },
+    {
+      "id": "g7u3-0015",
+      "word": "whiteboard",
+      "phonetic": "/ˈwaɪtbɔːd/",
+      "pos": "名词",
+      "meaning": "白板；白色书写板"
+    },
+    {
+      "id": "g7u3-0016",
+      "word": "put up",
+      "phonetic": "/pʊt ʌp/",
+      "pos": "短语",
+      "meaning": "张贴；搭建"
+    },
+    {
+      "id": "g7u3-0017",
+      "word": "important",
+      "phonetic": "/ɪmˈpɔːtnt/",
+      "pos": "形容词",
+      "meaning": "重要的"
+    },
+    {
+      "id": "g7u3-0018",
+      "word": "notice",
+      "phonetic": "/ˈnəʊtɪs/",
+      "pos": "名词 & 动词",
+      "meaning": "通知；注意；注意到；意识到"
+    },
+    {
+      "id": "g7u3-0019",
+      "word": "locker",
+      "phonetic": "/ˈlɒkə(r)/",
+      "pos": "名词",
+      "meaning": "有锁存物柜；寄物柜"
+    },
+    {
+      "id": "g7u3-0020",
+      "word": "drawer",
+      "phonetic": "/drɔː(r)/",
+      "pos": "名词",
+      "meaning": "抽屉"
+    },
+    {
+      "id": "g7u3-0021",
+      "word": "at the back (of)",
+      "phonetic": "/æt ðə bæk əv/",
+      "pos": "短语",
+      "meaning": "在（……）后面"
+    },
+    {
+      "id": "g7u3-0022",
+      "word": "corner",
+      "phonetic": "/ˈkɔːnə(r)/",
+      "pos": "名词",
+      "meaning": "角；墙角；街角"
+    },
+    {
+      "id": "g7u3-0023",
+      "word": "bookcase",
+      "phonetic": "/ˈbʊkkeɪs/",
+      "pos": "名词",
+      "meaning": "书架；书柜"
+    },
+    {
+      "id": "g7u3-0024",
+      "word": "screen",
+      "phonetic": "/skriːn/",
+      "pos": "名词",
+      "meaning": "屏幕；银幕"
+    },
+    {
+      "id": "g7u3-0025",
+      "word": "at school",
+      "phonetic": "/æt skuːl/",
+      "pos": "短语",
+      "meaning": "在学校"
+    },
+    {
+      "id": "g7u3-0026",
+      "word": "different from",
+      "phonetic": "/ˈdɪfrənt frɒm/",
+      "pos": "短语",
+      "meaning": "与……不一样"
+    },
+    {
+      "id": "g7u3-0027",
+      "word": "modern",
+      "phonetic": "/ˈmɒdn/",
+      "pos": "形容词",
+      "meaning": "现代的；当代的"
+    },
+    {
+      "id": "g7u3-0028",
+      "word": "do exercises",
+      "phonetic": "/duː ˈeksəsaɪzɪz/",
+      "pos": "短语",
+      "meaning": "做体操"
+    },
+    {
+      "id": "g7u3-0029",
+      "word": "amazing",
+      "phonetic": "/əˈmeɪzɪŋ/",
+      "pos": "形容词",
+      "meaning": "惊人的；使人大为惊奇的"
+    },
+    {
+      "id": "g7u3-0030",
+      "word": "raise",
+      "phonetic": "/reɪz/",
+      "pos": "动词",
+      "meaning": "使升高；提高"
+    },
+    {
+      "id": "g7u3-0031",
+      "word": "flag",
+      "phonetic": "/flæɡ/",
+      "pos": "名词",
+      "meaning": "旗；旗帜"
+    },
+    {
+      "id": "g7u3-0032",
+      "word": "most",
+      "phonetic": "/məʊst/",
+      "pos": "形容词 & 代词 & 副词",
+      "meaning": "大多数；最多；最大；最"
+    },
+    {
+      "id": "g7u3-0033",
+      "word": "change",
+      "phonetic": "/tʃeɪndʒ/",
+      "pos": "动词 & 名词",
+      "meaning": "改变；变化"
+    },
+    {
+      "id": "g7u3-0034",
+      "word": "seat",
+      "phonetic": "/siːt/",
+      "pos": "名词",
+      "meaning": "座位"
+    },
+    {
+      "id": "g7u3-0035",
+      "word": "delicious",
+      "phonetic": "/dɪˈlɪʃəs/",
+      "pos": "形容词",
+      "meaning": "美味的；可口的"
+    },
+    {
+      "id": "g7u3-0036",
+      "word": "How about ...?",
+      "phonetic": "/haʊ əˈbaʊt/",
+      "pos": "短语",
+      "meaning": "……怎么样？"
+    },
+    {
+      "id": "g7u3-0037",
+      "word": "yours",
+      "phonetic": "/jɔːz/",
+      "pos": "代词",
+      "meaning": "（通常写作 Yours，用于书信结尾的签名前）你的；您的"
+    },
+    {
+      "id": "g7u3-0038",
+      "word": "send",
+      "phonetic": "/send/",
+      "pos": "动词",
+      "meaning": "发送；邮寄"
+    },
+    {
+      "id": "g7u3-0039",
+      "word": "similar",
+      "phonetic": "/ˈsɪmələ(r)/",
+      "pos": "形容词",
+      "meaning": "类似的；相像的"
+    },
+    {
+      "id": "g7u3-0040",
+      "word": "similar to",
+      "phonetic": "/ˈsɪmələ(r) tuː/",
+      "pos": "短语",
+      "meaning": "类似的；相像的"
+    },
+    {
+      "id": "g7u3-0041",
+      "word": "sound",
+      "phonetic": "/saʊnd/",
+      "pos": "动词 & 名词",
+      "meaning": "听起来；好像；声音；响声"
+    },
+    {
+      "id": "g7u3-0042",
+      "word": "bye for now",
+      "phonetic": "/baɪ fə(r) naʊ/",
+      "pos": "短语",
+      "meaning": "再见"
+    },
+    {
+      "id": "g7u3-0043",
+      "word": "Flora",
+      "phonetic": "/ˈflɔːrə/",
+      "pos": "名词",
+      "meaning": "弗洛拉"
+    },
+    {
+      "id": "g7u4-0001",
+      "word": "biology",
+      "phonetic": "/baɪˈɒlədʒi/",
+      "pos": "名词",
+      "meaning": "生物学"
+    },
+    {
+      "id": "g7u4-0002",
+      "word": "IT",
+      "phonetic": "/ˌaɪ tiː/",
+      "pos": "名词短语",
+      "meaning": "(=information technology) 信息技术"
+    },
+    {
+      "id": "g7u4-0003",
+      "word": "geography",
+      "phonetic": "/dʒiˈɒɡrəfi/",
+      "pos": "名词",
+      "meaning": "地理（学）"
+    },
+    {
+      "id": "g7u4-0004",
+      "word": "history",
+      "phonetic": "/ˈhɪstri/",
+      "pos": "名词",
+      "meaning": "历史；历史课"
+    },
+    {
+      "id": "g7u4-0005",
+      "word": "boring",
+      "phonetic": "/ˈbɔːrɪŋ/",
+      "pos": "形容词",
+      "meaning": "乏味的；令人生厌的"
+    },
+    {
+      "id": "g7u4-0006",
+      "word": "useful",
+      "phonetic": "/ˈjuːsfl/",
+      "pos": "形容词",
+      "meaning": "有用的；有益的"
+    },
+    {
+      "id": "g7u4-0007",
+      "word": "exciting",
+      "phonetic": "/ɪkˈsaɪtɪŋ/",
+      "pos": "形容词",
+      "meaning": "令人激动的；使人兴奋的"
+    },
+    {
+      "id": "g7u4-0008",
+      "word": "past",
+      "phonetic": "/pɑːst/",
+      "pos": "名词 & 形容词 & 介词",
+      "meaning": "过去；过去的事情；过去的；在……之后"
+    },
+    {
+      "id": "g7u4-0009",
+      "word": "good with",
+      "phonetic": "/ɡʊd wɪð/",
+      "pos": "短语",
+      "meaning": "灵巧的；善于应付……的"
+    },
+    {
+      "id": "g7u4-0010",
+      "word": "number",
+      "phonetic": "/ˈnʌmbə(r)/",
+      "pos": "名词",
+      "meaning": "数字；号码"
+    },
+    {
+      "id": "g7u4-0011",
+      "word": "help sb with",
+      "phonetic": "/help ˈsʌmbədi wɪð/",
+      "pos": "短语",
+      "meaning": "帮助某人做（某事）"
+    },
+    {
+      "id": "g7u4-0012",
+      "word": "reason",
+      "phonetic": "/ˈriːzn/",
+      "pos": "名词",
+      "meaning": "原因；理由"
+    },
+    {
+      "id": "g7u4-0013",
+      "word": "listen to",
+      "phonetic": "/ˈlɪsn tuː/",
+      "pos": "短语",
+      "meaning": "听；倾听"
+    },
+    {
+      "id": "g7u4-0014",
+      "word": "good at",
+      "phonetic": "/ɡʊd æt/",
+      "pos": "短语",
+      "meaning": "擅长"
+    },
+    {
+      "id": "g7u4-0015",
+      "word": "remember",
+      "phonetic": "/rɪˈmembə(r)/",
+      "pos": "动词",
+      "meaning": "记住；记起"
+    },
+    {
+      "id": "g7u4-0016",
+      "word": "as",
+      "phonetic": "/æz; əz/",
+      "pos": "介词 & 连词",
+      "meaning": "如同；作为；当……时；由于"
+    },
+    {
+      "id": "g7u4-0017",
+      "word": "AM",
+      "phonetic": "/ˌeɪ em/",
+      "pos": "名词短语",
+      "meaning": "(=a.m.) 上午"
+    },
+    {
+      "id": "g7u4-0018",
+      "word": "PM",
+      "phonetic": "/ˌpiː em/",
+      "pos": "名词短语",
+      "meaning": "(=p.m.) 下午；午后"
+    },
+    {
+      "id": "g7u4-0019",
+      "word": "French",
+      "phonetic": "/frentʃ/",
+      "pos": "名词 & 形容词",
+      "meaning": "法语；法国的；法国人的；法语的"
+    },
+    {
+      "id": "g7u4-0020",
+      "word": "excellent",
+      "phonetic": "/ˈeksələnt/",
+      "pos": "形容词",
+      "meaning": "优秀的；极好的"
+    },
+    {
+      "id": "g7u4-0021",
+      "word": "instrument",
+      "phonetic": "/ˈɪnstrəmənt/",
+      "pos": "名词",
+      "meaning": "乐器；器械；工具"
+    },
+    {
+      "id": "g7u4-0022",
+      "word": "singer",
+      "phonetic": "/ˈsɪŋə(r)/",
+      "pos": "名词",
+      "meaning": "歌手"
+    },
+    {
+      "id": "g7u4-0023",
+      "word": "future",
+      "phonetic": "/ˈfjuːtʃə(r)/",
+      "pos": "名词",
+      "meaning": "将来；未来"
+    },
+    {
+      "id": "g7u4-0024",
+      "word": "in the future",
+      "phonetic": "/ɪn ðə ˈfjuːtʃə(r)/",
+      "pos": "短语",
+      "meaning": "将来；未来"
+    },
+    {
+      "id": "g7u4-0025",
+      "word": "term",
+      "phonetic": "/tɜːm/",
+      "pos": "名词",
+      "meaning": "学期"
+    },
+    {
+      "id": "g7u4-0026",
+      "word": "work out",
+      "phonetic": "/wɜːk aʊt/",
+      "pos": "短语",
+      "meaning": "计算出；解决"
+    },
+    {
+      "id": "g7u4-0027",
+      "word": "problem",
+      "phonetic": "/ˈprɒbləm/",
+      "pos": "名词",
+      "meaning": "难题；困难"
+    },
+    {
+      "id": "g7u4-0028",
+      "word": "in class",
+      "phonetic": "/ɪn klɑːs/",
+      "pos": "短语",
+      "meaning": "课堂上"
+    },
+    {
+      "id": "g7u4-0029",
+      "word": "magic",
+      "phonetic": "/ˈmædʒɪk/",
+      "pos": "名词 & 形容词",
+      "meaning": "魔法；魔力；魔术；有魔力的；有神奇力量的"
+    },
+    {
+      "id": "g7u4-0030",
+      "word": "life",
+      "phonetic": "/laɪf/",
+      "pos": "名词",
+      "meaning": "生活；生命"
+    },
+    {
+      "id": "g7u4-0031",
+      "word": "scientist",
+      "phonetic": "/ˈsaɪəntɪst/",
+      "pos": "名词",
+      "meaning": "科学家"
+    },
+    {
+      "id": "g7u4-0032",
+      "word": "Baker",
+      "phonetic": "/ˈbeɪkə(r)/",
+      "pos": "名词",
+      "meaning": "贝克"
+    },
+    {
+      "id": "g7u4-0033",
+      "word": "Mike",
+      "phonetic": "/maɪk/",
+      "pos": "名词",
+      "meaning": "迈克"
+    },
+    {
+      "id": "g7u4-0034",
+      "word": "Davis",
+      "phonetic": "/ˈdeɪvɪs/",
+      "pos": "名词",
+      "meaning": "戴维斯"
+    },
+    {
+      "id": "g7u4-0035",
+      "word": "Canada",
+      "phonetic": "/ˈkænədə/",
+      "pos": "名词",
+      "meaning": "加拿大"
+    },
+    {
+      "id": "g7u5-0001",
+      "word": "club",
+      "phonetic": "/klʌb/",
+      "pos": "名词",
+      "meaning": "俱乐部；社团"
+    },
+    {
+      "id": "g7u5-0002",
+      "word": "join",
+      "phonetic": "/dʒɔɪn/",
+      "pos": "动词",
+      "meaning": "参加；加入"
+    },
+    {
+      "id": "g7u5-0003",
+      "word": "choose",
+      "phonetic": "/tʃuːz/",
+      "pos": "动词",
+      "meaning": "选择；挑选"
+    },
+    {
+      "id": "g7u5-0004",
+      "word": "drama",
+      "phonetic": "/ˈdrɑːmə/",
+      "pos": "名词",
+      "meaning": "戏剧；戏剧表演"
+    },
+    {
+      "id": "g7u5-0005",
+      "word": "play Chinese chess",
+      "phonetic": "/pleɪ ˌtʃaɪˈniːz tʃes/",
+      "pos": "短语",
+      "meaning": "下中国象棋"
+    },
+    {
+      "id": "g7u5-0006",
+      "word": "feeling",
+      "phonetic": "/ˈfiːlɪŋ/",
+      "pos": "名词",
+      "meaning": "感觉；情感"
+    },
+    {
+      "id": "g7u5-0007",
+      "word": "news",
+      "phonetic": "/njuːz/",
+      "pos": "名词",
+      "meaning": "消息；新闻"
+    },
+    {
+      "id": "g7u5-0008",
+      "word": "musical",
+      "phonetic": "/ˈmjuːzɪkl/",
+      "pos": "形容词",
+      "meaning": "音乐的；有音乐天赋的"
+    },
+    {
+      "id": "g7u5-0009",
+      "word": "musical instrument",
+      "phonetic": "/ˈmjuːzɪkl ˈɪnstrəmənt/",
+      "pos": "短语",
+      "meaning": "乐器"
+    },
+    {
+      "id": "g7u5-0010",
+      "word": "exactly",
+      "phonetic": "/ɪɡˈzæktli/",
+      "pos": "副词",
+      "meaning": "正是如此；准确地"
+    },
+    {
+      "id": "g7u5-0011",
+      "word": "drum",
+      "phonetic": "/drʌm/",
+      "pos": "名词",
+      "meaning": "鼓"
+    },
+    {
+      "id": "g7u5-0012",
+      "word": "ability",
+      "phonetic": "/əˈbɪləti/",
+      "pos": "名词",
+      "meaning": "能力；才能"
+    },
+    {
+      "id": "g7u5-0013",
+      "word": "paint",
+      "phonetic": "/peɪnt/",
+      "pos": "动词 & 名词",
+      "meaning": "用颜料画；在……上刷油漆；油漆；涂料"
+    },
+    {
+      "id": "g7u5-0014",
+      "word": "climb",
+      "phonetic": "/klaɪm/",
+      "pos": "动词",
+      "meaning": "攀登；爬"
+    },
+    {
+      "id": "g7u5-0015",
+      "word": "more",
+      "phonetic": "/mɔː(r)/",
+      "pos": "形容词 & 代词",
+      "meaning": "更多（的）"
+    },
+    {
+      "id": "g7u5-0016",
+      "word": "act",
+      "phonetic": "/ækt/",
+      "pos": "动词 & 名词",
+      "meaning": "扮演；行动；（戏剧等）一幕；行动"
+    },
+    {
+      "id": "g7u5-0017",
+      "word": "act out",
+      "phonetic": "/ækt aʊt/",
+      "pos": "短语",
+      "meaning": "表演"
+    },
+    {
+      "id": "g7u5-0018",
+      "word": "at home",
+      "phonetic": "/æt həʊm/",
+      "pos": "短语",
+      "meaning": "在家里"
+    },
+    {
+      "id": "g7u5-0019",
+      "word": "interested",
+      "phonetic": "/ˈɪntrəstɪd/",
+      "pos": "形容词",
+      "meaning": "感兴趣的"
+    },
+    {
+      "id": "g7u5-0020",
+      "word": "interested in",
+      "phonetic": "/ˈɪntrəstɪd ɪn/",
+      "pos": "短语",
+      "meaning": "对……感兴趣"
+    },
+    {
+      "id": "g7u5-0021",
+      "word": "nature",
+      "phonetic": "/ˈneɪtʃə(r)/",
+      "pos": "名词",
+      "meaning": "自然界；大自然"
+    },
+    {
+      "id": "g7u5-0022",
+      "word": "beef",
+      "phonetic": "/biːf/",
+      "pos": "名词",
+      "meaning": "牛肉"
+    },
+    {
+      "id": "g7u5-0023",
+      "word": "soon",
+      "phonetic": "/suːn/",
+      "pos": "副词",
+      "meaning": "不久；很快"
+    },
+    {
+      "id": "g7u5-0024",
+      "word": "than",
+      "phonetic": "/ðæn; ðən/",
+      "pos": "介词 & 连词",
+      "meaning": "（用以引出比较的第二部分）比"
+    },
+    {
+      "id": "g7u5-0025",
+      "word": "more than",
+      "phonetic": "/mɔː(r) ðən/",
+      "pos": "短语",
+      "meaning": "多于"
+    },
+    {
+      "id": "g7u5-0026",
+      "word": "mind",
+      "phonetic": "/maɪnd/",
+      "pos": "名词",
+      "meaning": "头脑；心思"
+    },
+    {
+      "id": "g7u5-0027",
+      "word": "fall",
+      "phonetic": "/fɔːl/",
+      "pos": "动词 & 名词",
+      "meaning": "进入；掉落；跌倒；（美式）秋天"
+    },
+    {
+      "id": "g7u5-0028",
+      "word": "fall in love with",
+      "phonetic": "/fɔːl ɪn lʌv wɪð/",
+      "pos": "短语",
+      "meaning": "爱上……"
+    },
+    {
+      "id": "g7u5-0029",
+      "word": "take photos",
+      "phonetic": "/teɪk ˈfəʊtəʊz/",
+      "pos": "短语",
+      "meaning": "拍照"
+    },
+    {
+      "id": "g7u5-0030",
+      "word": "collect",
+      "phonetic": "/kəˈlekt/",
+      "pos": "动词",
+      "meaning": "收集；采集"
+    },
+    {
+      "id": "g7u5-0031",
+      "word": "insect",
+      "phonetic": "/ˈɪnsekt/",
+      "pos": "名词",
+      "meaning": "昆虫"
+    },
+    {
+      "id": "g7u5-0032",
+      "word": "discover",
+      "phonetic": "/dɪˈskʌvə(r)/",
+      "pos": "动词",
+      "meaning": "发现；发觉"
+    },
+    {
+      "id": "g7u5-0033",
+      "word": "wildlife",
+      "phonetic": "/ˈwaɪldlaɪf/",
+      "pos": "名词",
+      "meaning": "野生动物；野生生物"
+    },
+    {
+      "id": "g7u5-0034",
+      "word": "Linda",
+      "phonetic": "/ˈlɪndə/",
+      "pos": "名词",
+      "meaning": "琳达"
+    },
+    {
+      "id": "g7u5-0035",
+      "word": "Alice",
+      "phonetic": "/ˈælɪs/",
+      "pos": "名词",
+      "meaning": "爱丽丝"
+    },
+    {
+      "id": "g7u5-0036",
+      "word": "Bill",
+      "phonetic": "/bɪl/",
+      "pos": "名词",
+      "meaning": "比尔"
+    },
+    {
+      "id": "g7u5-0037",
+      "word": "Jenny",
+      "phonetic": "/ˈdʒeni/",
+      "pos": "名词",
+      "meaning": "珍妮"
+    },
+    {
+      "id": "g7u6-0001",
+      "word": "make use of",
+      "phonetic": "/meɪk juːz əv/",
+      "pos": "短语",
+      "meaning": "使用……；利用……"
+    },
+    {
+      "id": "g7u6-0002",
+      "word": "quarter",
+      "phonetic": "/ˈkwɔːtə(r)/",
+      "pos": "名词",
+      "meaning": "一刻钟；四等份之一"
+    },
+    {
+      "id": "g7u6-0003",
+      "word": "shower",
+      "phonetic": "/ˈʃaʊə(r)/",
+      "pos": "名词 & 动词",
+      "meaning": "淋浴；淋浴器；阵雨；洗淋浴"
+    },
+    {
+      "id": "g7u6-0004",
+      "word": "take a shower",
+      "phonetic": "/teɪk ə ˈʃaʊə(r)/",
+      "pos": "短语",
+      "meaning": "淋浴"
+    },
+    {
+      "id": "g7u6-0005",
+      "word": "get dressed",
+      "phonetic": "/ɡet drest/",
+      "pos": "短语",
+      "meaning": "穿衣服"
+    },
+    {
+      "id": "g7u6-0006",
+      "word": "brush",
+      "phonetic": "/brʌʃ/",
+      "pos": "动词 & 名词",
+      "meaning": "（用刷子）刷；刷子；画笔"
+    },
+    {
+      "id": "g7u6-0007",
+      "word": "tooth",
+      "phonetic": "/tuːθ/",
+      "pos": "名词",
+      "meaning": "(pl. teeth) 牙齿"
+    },
+    {
+      "id": "g7u6-0008",
+      "word": "duty",
+      "phonetic": "/ˈdjuːti/",
+      "pos": "名词",
+      "meaning": "值班；职责"
+    },
+    {
+      "id": "g7u6-0009",
+      "word": "on duty",
+      "phonetic": "/ɒn ˈdjuːti/",
+      "pos": "短语",
+      "meaning": "值班"
+    },
+    {
+      "id": "g7u6-0010",
+      "word": "usually",
+      "phonetic": "/ˈjuːʒuəli/",
+      "pos": "副词",
+      "meaning": "通常地；一般地"
+    },
+    {
+      "id": "g7u6-0011",
+      "word": "get up",
+      "phonetic": "/ɡet ʌp/",
+      "pos": "短语",
+      "meaning": "起床；站起"
+    },
+    {
+      "id": "g7u6-0012",
+      "word": "reporter",
+      "phonetic": "/rɪˈpɔːtə(r)/",
+      "pos": "名词",
+      "meaning": "记者"
+    },
+    {
+      "id": "g7u6-0013",
+      "word": "around",
+      "phonetic": "/əˈraʊnd/",
+      "pos": "副词 & 介词",
+      "meaning": "大约；环绕；到处"
+    },
+    {
+      "id": "g7u6-0014",
+      "word": "homework",
+      "phonetic": "/ˈhəʊmwɜːk/",
+      "pos": "名词",
+      "meaning": "家庭作业"
+    },
+    {
+      "id": "g7u6-0015",
+      "word": "go to bed",
+      "phonetic": "/ɡəʊ tuː bed/",
+      "pos": "短语",
+      "meaning": "上床睡觉"
+    },
+    {
+      "id": "g7u6-0016",
+      "word": "saying",
+      "phonetic": "/ˈseɪɪŋ/",
+      "pos": "名词",
+      "meaning": "谚语；格言"
+    },
+    {
+      "id": "g7u6-0017",
+      "word": "rise",
+      "phonetic": "/raɪz/",
+      "pos": "动词 & 名词",
+      "meaning": "起床；升起；增长；增加；增强"
+    },
+    {
+      "id": "g7u6-0018",
+      "word": "stay",
+      "phonetic": "/steɪ/",
+      "pos": "动词",
+      "meaning": "停留；待"
+    },
+    {
+      "id": "g7u6-0019",
+      "word": "routine",
+      "phonetic": "/ruːˈtiːn/",
+      "pos": "名词",
+      "meaning": "常规"
+    },
+    {
+      "id": "g7u6-0020",
+      "word": "restaurant",
+      "phonetic": "/ˈrestrɒnt/",
+      "pos": "名词",
+      "meaning": "餐馆；餐厅"
+    },
+    {
+      "id": "g7u6-0021",
+      "word": "housework",
+      "phonetic": "/ˈhaʊswɜːk/",
+      "pos": "名词",
+      "meaning": "家务劳动"
+    },
+    {
+      "id": "g7u6-0022",
+      "word": "while",
+      "phonetic": "/waɪl/",
+      "pos": "名词 & 连词",
+      "meaning": "一段时间；一会儿；在……期间；当……的时候"
+    },
+    {
+      "id": "g7u6-0023",
+      "word": "weekend",
+      "phonetic": "/ˌwiːkˈend/",
+      "pos": "名词",
+      "meaning": "周末"
+    },
+    {
+      "id": "g7u6-0024",
+      "word": "at weekends",
+      "phonetic": "/æt ˈwiːkendz/",
+      "pos": "短语",
+      "meaning": "在周末"
+    },
+    {
+      "id": "g7u6-0025",
+      "word": "daily",
+      "phonetic": "/ˈdeɪli/",
+      "pos": "形容词",
+      "meaning": "每日的；日常的"
+    },
+    {
+      "id": "g7u6-0026",
+      "word": "daily routine",
+      "phonetic": "/ˈdeɪli ruːˈtiːn/",
+      "pos": "短语",
+      "meaning": "日常生活"
+    },
+    {
+      "id": "g7u6-0027",
+      "word": "only",
+      "phonetic": "/ˈəʊnli/",
+      "pos": "副词",
+      "meaning": "只；仅"
+    },
+    {
+      "id": "g7u6-0028",
+      "word": "break",
+      "phonetic": "/breɪk/",
+      "pos": "名词 & 动词",
+      "meaning": "休息；间断；（使）破碎；损坏"
+    },
+    {
+      "id": "g7u6-0029",
+      "word": "Finnish",
+      "phonetic": "/ˈfɪnɪʃ/",
+      "pos": "名词 & 形容词",
+      "meaning": "芬兰语；芬兰的；芬兰人的；芬兰语的"
+    },
+    {
+      "id": "g7u6-0030",
+      "word": "finish",
+      "phonetic": "/ˈfɪnɪʃ/",
+      "pos": "动词",
+      "meaning": "结束；完成"
+    },
+    {
+      "id": "g7u6-0031",
+      "word": "hockey",
+      "phonetic": "/ˈhɒki/",
+      "pos": "名词",
+      "meaning": "曲棍球"
+    },
+    {
+      "id": "g7u6-0032",
+      "word": "ice hockey",
+      "phonetic": "/aɪs ˈhɒki/",
+      "pos": "短语",
+      "meaning": "冰球运动；冰上曲棍球"
+    },
+    {
+      "id": "g7u6-0033",
+      "word": "already",
+      "phonetic": "/ɔːlˈredi/",
+      "pos": "副词",
+      "meaning": "已经；早已"
+    },
+    {
+      "id": "g7u6-0034",
+      "word": "dark",
+      "phonetic": "/dɑːk/",
+      "pos": "形容词",
+      "meaning": "昏暗的；深色的"
+    },
+    {
+      "id": "g7u6-0035",
+      "word": "outside",
+      "phonetic": "/ˌaʊtˈsaɪd/",
+      "pos": "副词 & 介词 & 形容词",
+      "meaning": "在（……）外面；外面的"
+    },
+    {
+      "id": "g7u6-0036",
+      "word": "part",
+      "phonetic": "/pɑːt/",
+      "pos": "名词",
+      "meaning": "部分"
+    },
+    {
+      "id": "g7u6-0037",
+      "word": "everyday",
+      "phonetic": "/ˈevrɪdeɪ/",
+      "pos": "形容词",
+      "meaning": "每天的；日常的"
+    },
+    {
+      "id": "g7u7-0001",
+      "word": "prepare",
+      "phonetic": "/prɪˈpeə(r)/",
+      "pos": "动词",
+      "meaning": "把……预备好；准备"
+    },
+    {
+      "id": "g7u7-0002",
+      "word": "prepare sth for",
+      "phonetic": "/prɪˈpeə(r) sʌmθɪŋ fɔː(r)/",
+      "pos": "短语",
+      "meaning": "为……把某物准备好"
+    },
+    {
+      "id": "g7u7-0003",
+      "word": "home economics",
+      "phonetic": "/həʊm ˌiːkəˈnɒmɪks/",
+      "pos": "名词短语",
+      "meaning": "家政学；家庭经济学"
+    },
+    {
+      "id": "g7u7-0004",
+      "word": "Timo",
+      "phonetic": "/ˈtiːməʊ/",
+      "pos": "名词",
+      "meaning": "蒂莫"
+    },
+    {
+      "id": "g7u7-0005",
+      "word": "Hala",
+      "phonetic": "/ˈhɑːlə/",
+      "pos": "名词",
+      "meaning": "哈拉"
+    },
+    {
+      "id": "g7u7-0006",
+      "word": "Helsinki",
+      "phonetic": "/helˈsɪŋki/",
+      "pos": "名词",
+      "meaning": "赫尔辛基（芬兰首都）"
+    },
+    {
+      "id": "g7u7-0007",
+      "word": "Finland",
+      "phonetic": "/ˈfɪnlənd/",
+      "pos": "名词",
+      "meaning": "芬兰"
+    },
+    {
+      "id": "g7u7-0008",
+      "word": "celebrate",
+      "phonetic": "/ˈselɪbreɪt/",
+      "pos": "动词",
+      "meaning": "庆祝；庆贺"
+    },
+    {
+      "id": "g7u7-0009",
+      "word": "surprise",
+      "phonetic": "/səˈpraɪz/",
+      "pos": "名词 & 动词",
+      "meaning": "惊奇；惊讶；使感到意外"
+    },
+    {
+      "id": "g7u7-0010",
+      "word": "something",
+      "phonetic": "/ˈsʌmθɪŋ/",
+      "pos": "代词",
+      "meaning": "某事；某物"
+    },
+    {
+      "id": "g7u7-0011",
+      "word": "sale",
+      "phonetic": "/seɪl/",
+      "pos": "名词",
+      "meaning": "出售；销售"
+    },
+    {
+      "id": "g7u7-0012",
+      "word": "kilo",
+      "phonetic": "/ˈkiːləʊ/",
+      "pos": "名词",
+      "meaning": "(=kilogram) (pl. kilos) 千克；公斤"
+    },
+    {
+      "id": "g7u7-0013",
+      "word": "yogurt",
+      "phonetic": "/ˈjəʊɡət/",
+      "pos": "名词",
+      "meaning": "(=yoghurt) 酸奶"
+    },
+    {
+      "id": "g7u7-0014",
+      "word": "total",
+      "phonetic": "/ˈtəʊtl/",
+      "pos": "名词 & 形容词",
+      "meaning": "总数；合计；总的；全体的"
+    },
+    {
+      "id": "g7u7-0015",
+      "word": "price",
+      "phonetic": "/praɪs/",
+      "pos": "名词",
+      "meaning": "价格"
+    },
+    {
+      "id": "g7u7-0016",
+      "word": "balloon",
+      "phonetic": "/bəˈluːn/",
+      "pos": "名词",
+      "meaning": "气球"
+    },
+    {
+      "id": "g7u7-0017",
+      "word": "chocolate",
+      "phonetic": "/ˈtʃɒklət/",
+      "pos": "名词",
+      "meaning": "巧克力"
+    },
+    {
+      "id": "g7u7-0018",
+      "word": "pizza",
+      "phonetic": "/ˈpiːtsə/",
+      "pos": "名词",
+      "meaning": "比萨饼"
+    },
+    {
+      "id": "g7u7-0019",
+      "word": "list",
+      "phonetic": "/lɪst/",
+      "pos": "名词 & 动词",
+      "meaning": "名单；清单；列表；列清单"
+    },
+    {
+      "id": "g7u7-0020",
+      "word": "own",
+      "phonetic": "/əʊn/",
+      "pos": "形容词 & 代词",
+      "meaning": "自己的；本人的"
+    },
+    {
+      "id": "g7u7-0021",
+      "word": "example",
+      "phonetic": "/ɪɡˈzɑːmpl/",
+      "pos": "名词",
+      "meaning": "例子；范例"
+    },
+    {
+      "id": "g7u7-0022",
+      "word": "for example",
+      "phonetic": "/fɔː(r) ɪɡˈzɑːmpl/",
+      "pos": "短语",
+      "meaning": "例如"
+    },
+    {
+      "id": "g7u7-0023",
+      "word": "language",
+      "phonetic": "/ˈlæŋɡwɪdʒ/",
+      "pos": "名词",
+      "meaning": "语言"
+    },
+    {
+      "id": "g7u7-0024",
+      "word": "international",
+      "phonetic": "/ˌɪntəˈnæʃnəl/",
+      "pos": "形容词",
+      "meaning": "国际的"
+    },
+    {
+      "id": "g7u7-0025",
+      "word": "mark",
+      "phonetic": "/mɑːk/",
+      "pos": "动词 & 名词",
+      "meaning": "做记号；纪念；打分；记号"
+    },
+    {
+      "id": "g7u7-0026",
+      "word": "national",
+      "phonetic": "/ˈnæʃnəl/",
+      "pos": "形容词",
+      "meaning": "国家的；民族的"
+    },
+    {
+      "id": "g7u7-0027",
+      "word": "found",
+      "phonetic": "/faʊnd/",
+      "pos": "动词",
+      "meaning": "创建；创立"
+    },
+    {
+      "id": "g7u7-0028",
+      "word": "meaningful",
+      "phonetic": "/ˈmiːnɪŋfl/",
+      "pos": "形容词",
+      "meaning": "重要的；重大的"
+    },
+    {
+      "id": "g7u7-0029",
+      "word": "make a wish",
+      "phonetic": "/meɪk ə wɪʃ/",
+      "pos": "短语",
+      "meaning": "许愿"
+    },
+    {
+      "id": "g7u7-0030",
+      "word": "celebration",
+      "phonetic": "/ˌselɪˈbreɪʃn/",
+      "pos": "名词",
+      "meaning": "庆典；庆祝（活动）"
+    },
+    {
+      "id": "g7u7-0031",
+      "word": "post",
+      "phonetic": "/pəʊst/",
+      "pos": "名词 & 动词",
+      "meaning": "帖子；邮政；邮寄；发布"
+    },
+    {
+      "id": "g7u7-0032",
+      "word": "contact",
+      "phonetic": "/ˈkɒntækt/",
+      "pos": "名词 & 动词",
+      "meaning": "联系；接触；联系；联络"
+    },
+    {
+      "id": "g7u7-0033",
+      "word": "symbol",
+      "phonetic": "/ˈsɪmbl/",
+      "pos": "名词",
+      "meaning": "象征；符号"
+    },
+    {
+      "id": "g7u7-0034",
+      "word": "take a photo",
+      "phonetic": "/teɪk ə ˈfəʊtəʊ/",
+      "pos": "短语",
+      "meaning": "拍照"
+    },
+    {
+      "id": "g7u7-0035",
+      "word": "village",
+      "phonetic": "/ˈvɪlɪdʒ/",
+      "pos": "名词",
+      "meaning": "村庄；村镇"
+    },
+    {
+      "id": "g7u7-0036",
+      "word": "grow",
+      "phonetic": "/ɡrəʊ/",
+      "pos": "动词",
+      "meaning": "成长；长大；增长"
+    },
+    {
+      "id": "g7u7-0037",
+      "word": "blow",
+      "phonetic": "/bləʊ/",
+      "pos": "动词",
+      "meaning": "吹；刮"
+    },
+    {
+      "id": "g7u7-0038",
+      "word": "blow out",
+      "phonetic": "/bləʊ aʊt/",
+      "pos": "短语",
+      "meaning": "吹灭"
+    },
+    {
+      "id": "g7u7-0039",
+      "word": "enjoy",
+      "phonetic": "/ɪnˈdʒɔɪ/",
+      "pos": "动词",
+      "meaning": "享受……的乐趣；喜欢"
+    },
+    {
+      "id": "g7u7-0040",
+      "word": "height",
+      "phonetic": "/haɪt/",
+      "pos": "名词",
+      "meaning": "身高；高度"
+    },
+    {
+      "id": "g7u7-0041",
+      "word": "later",
+      "phonetic": "/ˈleɪtə(r)/",
+      "pos": "副词 & 形容词",
+      "meaning": "以后（的）；后来（的）"
+    },
+    {
+      "id": "g7u7-0042",
+      "word": "next time",
+      "phonetic": "/nekst taɪm/",
+      "pos": "短语",
+      "meaning": "下次"
+    },
+    {
+      "id": "g7u7-0043",
+      "word": "whom",
+      "phonetic": "/huːm/",
+      "pos": "代词",
+      "meaning": "谁；什么人"
+    },
+    {
+      "id": "g7u7-0044",
+      "word": "William Shakespeare",
+      "phonetic": "/ˈwɪljəm ˈʃeɪkspɪə(r)/",
+      "pos": "名词短语",
+      "meaning": "威廉·莎士比亚"
+    },
+    {
+      "id": "g7u7-0045",
+      "word": "Florence Nightingale",
+      "phonetic": "/ˈflɒrəns ˈnaɪtɪŋɡeɪl/",
+      "pos": "名词短语",
+      "meaning": "弗洛伦斯·南丁格尔"
+    },
+    {
+      "id": "g7u7-0046",
+      "word": "National Day",
+      "phonetic": "/ˈnæʃnəl deɪ/",
+      "pos": "名词短语",
+      "meaning": "国庆节"
+    },
+    {
+      "id": "g7u7-0047",
+      "word": "CPC Founding Day",
+      "phonetic": "/ˌsiː piː siː ˈfaʊndɪŋ deɪ/",
+      "pos": "名词短语",
+      "meaning": "中国共产党建党纪念日"
+    },
+    {
+      "id": "g7u7-0048",
+      "word": "PLA Day",
+      "phonetic": "/ˌpiː el eɪ deɪ/",
+      "pos": "名词短语",
+      "meaning": "中国人民解放军建军节"
+    },
+    {
+      "id": "g7u7-0049",
+      "word": "Judy",
+      "phonetic": "/ˈdʒuːdi/",
+      "pos": "名词",
+      "meaning": "朱迪"
+    },
+    {
+      "id": "g7u7-0050",
+      "word": "Clark",
+      "phonetic": "/klɑːk/",
+      "pos": "名词",
+      "meaning": "克拉克"
+    }
+  ]
+}

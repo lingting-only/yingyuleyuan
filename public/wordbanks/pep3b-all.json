@@ -1,0 +1,803 @@
+{
+  "id": "pep3b-all",
+  "words": [
+    {
+      "id": "g3d1-0001",
+      "word": "where",
+      "phonetic": "/weə(r)/",
+      "pos": "疑问副词",
+      "meaning": "在哪里；到哪里"
+    },
+    {
+      "id": "g3d1-0002",
+      "word": "from",
+      "phonetic": "/frɒm/",
+      "pos": "介词",
+      "meaning": "（表示来源）来自，从……来"
+    },
+    {
+      "id": "g3d1-0003",
+      "word": "about",
+      "phonetic": "/əˈbaʊt/",
+      "pos": "介词",
+      "meaning": "大约；左右"
+    },
+    {
+      "id": "g3d1-0004",
+      "word": "today",
+      "phonetic": "/təˈdeɪ/",
+      "pos": "名词 & 副词",
+      "meaning": "今天"
+    },
+    {
+      "id": "g3d1-0005",
+      "word": "teacher",
+      "phonetic": "/ˈtiːtʃə(r)/",
+      "pos": "名词",
+      "meaning": "教师"
+    },
+    {
+      "id": "g3d1-0006",
+      "word": "student",
+      "phonetic": "/ˈstjuːdnt/",
+      "pos": "名词",
+      "meaning": "学生"
+    },
+    {
+      "id": "g3d1-0007",
+      "word": "after",
+      "phonetic": "/ˈɑːftə(r)/",
+      "pos": "介词",
+      "meaning": "在……后面"
+    },
+    {
+      "id": "g3d1-0008",
+      "word": "who",
+      "phonetic": "/huː/",
+      "pos": "疑问代词",
+      "meaning": "谁；什么人"
+    },
+    {
+      "id": "g3d1-0009",
+      "word": "girl",
+      "phonetic": "/ɡɜːl/",
+      "pos": "名词",
+      "meaning": "女孩"
+    },
+    {
+      "id": "g3d1-0010",
+      "word": "neighbour",
+      "phonetic": "/ˈneɪbə(r)/",
+      "pos": "名词",
+      "meaning": "邻居"
+    },
+    {
+      "id": "g3d1-0011",
+      "word": "boy",
+      "phonetic": "/bɔɪ/",
+      "pos": "名词",
+      "meaning": "男孩"
+    },
+    {
+      "id": "g3d1-0012",
+      "word": "woman",
+      "phonetic": "/ˈwʊmən/",
+      "pos": "名词",
+      "meaning": "成年女子；妇女"
+    },
+    {
+      "id": "g3d1-0013",
+      "word": "man",
+      "phonetic": "/mæn/",
+      "pos": "名词",
+      "meaning": "成年男子；男人"
+    },
+    {
+      "id": "g3d1-0014",
+      "word": "Mr",
+      "phonetic": "/ˈmɪstə(r)/",
+      "pos": "名词",
+      "meaning": "（用于男子的姓氏或姓名前）先生"
+    },
+    {
+      "id": "g3d1-0015",
+      "word": "classmate",
+      "phonetic": "/ˈklɑːsmeɪt/",
+      "pos": "名词",
+      "meaning": "同班同学"
+    },
+    {
+      "id": "g3d1-0016",
+      "word": "he",
+      "phonetic": "/hiː/",
+      "pos": "代词",
+      "meaning": "他"
+    },
+    {
+      "id": "g3d1-0017",
+      "word": "English",
+      "phonetic": "/ˈɪŋɡlɪʃ/",
+      "pos": "名词 & 形容词",
+      "meaning": "英语的；英语"
+    },
+    {
+      "id": "g3d1-0018",
+      "word": "she",
+      "phonetic": "/ʃiː/",
+      "pos": "代词",
+      "meaning": "她"
+    },
+    {
+      "id": "g3d1-0019",
+      "word": "very",
+      "phonetic": "/ˈveri/",
+      "pos": "副词",
+      "meaning": "很；非常；十分"
+    },
+    {
+      "id": "g3d1-0020",
+      "word": "UK",
+      "phonetic": "/ˌjuː keɪ/",
+      "pos": "名词短语",
+      "meaning": "英国"
+    },
+    {
+      "id": "g3d1-0021",
+      "word": "China",
+      "phonetic": "/ˈtʃaɪnə/",
+      "pos": "名词",
+      "meaning": "中国"
+    },
+    {
+      "id": "g3d1-0022",
+      "word": "Canada",
+      "phonetic": "/ˈkænədə/",
+      "pos": "名词",
+      "meaning": "加拿大"
+    },
+    {
+      "id": "g3d1-0023",
+      "word": "USA",
+      "phonetic": "/ˌjuː es eɪ/",
+      "pos": "名词短语",
+      "meaning": "美国"
+    },
+    {
+      "id": "g3d2-0001",
+      "word": "has",
+      "phonetic": "/hæz/",
+      "pos": "动词",
+      "meaning": "（have的第三人称单数形式）具有（某种外表、特性或特征）"
+    },
+    {
+      "id": "g3d2-0002",
+      "word": "long",
+      "phonetic": "/lɒŋ/",
+      "pos": "形容词",
+      "meaning": "（长度或距离）长的"
+    },
+    {
+      "id": "g3d2-0003",
+      "word": "body",
+      "phonetic": "/ˈbɒdi/",
+      "pos": "名词",
+      "meaning": "身体"
+    },
+    {
+      "id": "g3d2-0004",
+      "word": "short",
+      "phonetic": "/ʃɔːt/",
+      "pos": "形容词",
+      "meaning": "短的；个子矮的"
+    },
+    {
+      "id": "g3d2-0005",
+      "word": "leg",
+      "phonetic": "/leɡ/",
+      "pos": "名词",
+      "meaning": "腿"
+    },
+    {
+      "id": "g3d2-0006",
+      "word": "right",
+      "phonetic": "/raɪt/",
+      "pos": "形容词",
+      "meaning": "（意见或判断）准确，确切，恰当"
+    },
+    {
+      "id": "g3d2-0007",
+      "word": "fat",
+      "phonetic": "/fæt/",
+      "pos": "形容词",
+      "meaning": "肥的；肥胖的"
+    },
+    {
+      "id": "g3d2-0008",
+      "word": "thin",
+      "phonetic": "/θɪn/",
+      "pos": "形容词",
+      "meaning": "瘦的"
+    },
+    {
+      "id": "g3d2-0009",
+      "word": "slow",
+      "phonetic": "/sləʊ/",
+      "pos": "形容词",
+      "meaning": "缓慢的；慢的"
+    },
+    {
+      "id": "g3d2-0010",
+      "word": "love",
+      "phonetic": "/lʌv/",
+      "pos": "动词",
+      "meaning": "喜爱；爱"
+    },
+    {
+      "id": "g3d2-0011",
+      "word": "tail",
+      "phonetic": "/teɪl/",
+      "pos": "名词",
+      "meaning": "尾；尾巴"
+    },
+    {
+      "id": "g3d2-0012",
+      "word": "her",
+      "phonetic": "/hɜː(r)/",
+      "pos": "代词",
+      "meaning": "她；她的"
+    },
+    {
+      "id": "g3d2-0013",
+      "word": "gift",
+      "phonetic": "/ɡɪft/",
+      "pos": "名词",
+      "meaning": "礼物"
+    },
+    {
+      "id": "g3d2-0014",
+      "word": "picture",
+      "phonetic": "/ˈpɪktʃə(r)/",
+      "pos": "名词",
+      "meaning": "图画；绘画"
+    },
+    {
+      "id": "g3d2-0015",
+      "word": "card",
+      "phonetic": "/kɑːd/",
+      "pos": "名词",
+      "meaning": "贺卡；慰问卡；卡片"
+    },
+    {
+      "id": "g3d2-0016",
+      "word": "sing",
+      "phonetic": "/sɪŋ/",
+      "pos": "动词",
+      "meaning": "唱（歌）；演唱"
+    },
+    {
+      "id": "g3d2-0017",
+      "word": "dance",
+      "phonetic": "/dɑːns/",
+      "pos": "动词",
+      "meaning": "跳舞"
+    },
+    {
+      "id": "g3d2-0018",
+      "word": "face",
+      "phonetic": "/feɪs/",
+      "pos": "名词",
+      "meaning": "脸；面孔"
+    },
+    {
+      "id": "g3d2-0019",
+      "word": "all",
+      "phonetic": "/ɔːl/",
+      "pos": "形容词 & 代词",
+      "meaning": "所有；全部"
+    },
+    {
+      "id": "g3d2-0020",
+      "word": "so",
+      "phonetic": "/səʊ/",
+      "pos": "副词",
+      "meaning": "（表示大小或数量）这么，那么"
+    },
+    {
+      "id": "g3d2-0021",
+      "word": "talk",
+      "phonetic": "/tɔːk/",
+      "pos": "动词",
+      "meaning": "（用某种语言）讲，说；说话"
+    },
+    {
+      "id": "g3d2-0022",
+      "word": "song",
+      "phonetic": "/sɒŋ/",
+      "pos": "名词",
+      "meaning": "歌；歌曲"
+    },
+    {
+      "id": "g3d2-0023",
+      "word": "or",
+      "phonetic": "/ɔː(r)/",
+      "pos": "连词",
+      "meaning": "或；或者；还是"
+    },
+    {
+      "id": "g3d2-0024",
+      "word": "much",
+      "phonetic": "/mʌtʃ/",
+      "pos": "形容词 & 代词",
+      "meaning": "许多；大量"
+    },
+    {
+      "id": "g3d3-0001",
+      "word": "eraser",
+      "phonetic": "/ɪˈreɪzə(r)/",
+      "pos": "名词",
+      "meaning": "橡皮"
+    },
+    {
+      "id": "g3d3-0002",
+      "word": "find",
+      "phonetic": "/faɪnd/",
+      "pos": "动词",
+      "meaning": "找到；找回"
+    },
+    {
+      "id": "g3d3-0003",
+      "word": "ruler",
+      "phonetic": "/ˈruːlə(r)/",
+      "pos": "名词",
+      "meaning": "直尺"
+    },
+    {
+      "id": "g3d3-0004",
+      "word": "pen",
+      "phonetic": "/pen/",
+      "pos": "名词",
+      "meaning": "钢笔"
+    },
+    {
+      "id": "g3d3-0005",
+      "word": "pencil",
+      "phonetic": "/ˈpensl/",
+      "pos": "名词",
+      "meaning": "铅笔"
+    },
+    {
+      "id": "g3d3-0006",
+      "word": "book",
+      "phonetic": "/bʊk/",
+      "pos": "名词",
+      "meaning": "书；书籍"
+    },
+    {
+      "id": "g3d3-0007",
+      "word": "bag",
+      "phonetic": "/bæɡ/",
+      "pos": "名词",
+      "meaning": "包；袋"
+    },
+    {
+      "id": "g3d3-0008",
+      "word": "paper",
+      "phonetic": "/ˈpeɪpə(r)/",
+      "pos": "名词",
+      "meaning": "纸"
+    },
+    {
+      "id": "g3d3-0009",
+      "word": "these",
+      "phonetic": "/ðiːz/",
+      "pos": "代词",
+      "meaning": "这些"
+    },
+    {
+      "id": "g3d3-0010",
+      "word": "see",
+      "phonetic": "/siː/",
+      "pos": "动词",
+      "meaning": "看见"
+    },
+    {
+      "id": "g3d3-0011",
+      "word": "smell",
+      "phonetic": "/smel/",
+      "pos": "动词",
+      "meaning": "闻（气味）"
+    },
+    {
+      "id": "g3d3-0012",
+      "word": "taste",
+      "phonetic": "/teɪst/",
+      "pos": "动词",
+      "meaning": "尝（味道）"
+    },
+    {
+      "id": "g3d3-0013",
+      "word": "hear",
+      "phonetic": "/hɪə(r)/",
+      "pos": "动词",
+      "meaning": "听见；听到"
+    },
+    {
+      "id": "g3d3-0014",
+      "word": "touch",
+      "phonetic": "/tʌtʃ/",
+      "pos": "动词",
+      "meaning": "触摸；碰"
+    },
+    {
+      "id": "g3d3-0015",
+      "word": "learn",
+      "phonetic": "/lɜːn/",
+      "pos": "动词",
+      "meaning": "学；学习"
+    },
+    {
+      "id": "g3d3-0016",
+      "word": "nose",
+      "phonetic": "/nəʊz/",
+      "pos": "名词",
+      "meaning": "鼻；鼻子"
+    },
+    {
+      "id": "g3d3-0017",
+      "word": "tongue",
+      "phonetic": "/tʌŋ/",
+      "pos": "名词",
+      "meaning": "舌；舌头"
+    },
+    {
+      "id": "g3d3-0018",
+      "word": "class",
+      "phonetic": "/klɑːs/",
+      "pos": "名词",
+      "meaning": "课；班级"
+    },
+    {
+      "id": "g3d3-0019",
+      "word": "in class",
+      "phonetic": "/ɪn klɑːs/",
+      "pos": "短语",
+      "meaning": "在课堂上"
+    },
+    {
+      "id": "g3d3-0020",
+      "word": "computer",
+      "phonetic": "/kəmˈpjuːtə(r)/",
+      "pos": "名词",
+      "meaning": "计算机；电脑"
+    },
+    {
+      "id": "g3d4-0001",
+      "word": "breakfast",
+      "phonetic": "/ˈbrekfəst/",
+      "pos": "名词",
+      "meaning": "早餐；早饭"
+    },
+    {
+      "id": "g3d4-0002",
+      "word": "time",
+      "phonetic": "/taɪm/",
+      "pos": "名词",
+      "meaning": "时间"
+    },
+    {
+      "id": "g3d4-0003",
+      "word": "bread",
+      "phonetic": "/bred/",
+      "pos": "名词",
+      "meaning": "面包"
+    },
+    {
+      "id": "g3d4-0004",
+      "word": "egg",
+      "phonetic": "/eɡ/",
+      "pos": "名词",
+      "meaning": "（作食物用的）蛋；鸡蛋"
+    },
+    {
+      "id": "g3d4-0005",
+      "word": "milk",
+      "phonetic": "/mɪlk/",
+      "pos": "名词",
+      "meaning": "（牛或羊等的）奶"
+    },
+    {
+      "id": "g3d4-0006",
+      "word": "noodle",
+      "phonetic": "/ˈnuːdl/",
+      "pos": "名词",
+      "meaning": "（常用复数）面条"
+    },
+    {
+      "id": "g3d4-0007",
+      "word": "juice",
+      "phonetic": "/dʒuːs/",
+      "pos": "名词",
+      "meaning": "果汁"
+    },
+    {
+      "id": "g3d4-0008",
+      "word": "rice",
+      "phonetic": "/raɪs/",
+      "pos": "名词",
+      "meaning": "大米"
+    },
+    {
+      "id": "g3d4-0009",
+      "word": "meat",
+      "phonetic": "/miːt/",
+      "pos": "名词",
+      "meaning": "肉"
+    },
+    {
+      "id": "g3d4-0010",
+      "word": "vegetable",
+      "phonetic": "/ˈvedʒtəbl/",
+      "pos": "名词",
+      "meaning": "蔬菜"
+    },
+    {
+      "id": "g3d4-0011",
+      "word": "healthy",
+      "phonetic": "/ˈhelθi/",
+      "pos": "形容词",
+      "meaning": "健康的"
+    },
+    {
+      "id": "g3d4-0012",
+      "word": "plate",
+      "phonetic": "/pleɪt/",
+      "pos": "名词",
+      "meaning": "盘子"
+    },
+    {
+      "id": "g3d4-0013",
+      "word": "soup",
+      "phonetic": "/suːp/",
+      "pos": "名词",
+      "meaning": "汤"
+    },
+    {
+      "id": "g3d4-0014",
+      "word": "fruit",
+      "phonetic": "/fruːt/",
+      "pos": "名词",
+      "meaning": "水果"
+    },
+    {
+      "id": "g3d4-0015",
+      "word": "colourful",
+      "phonetic": "/ˈkʌləfl/",
+      "pos": "形容词",
+      "meaning": "五彩缤纷的"
+    },
+    {
+      "id": "g3d4-0016",
+      "word": "candy",
+      "phonetic": "/ˈkændi/",
+      "pos": "名词",
+      "meaning": "糖果"
+    },
+    {
+      "id": "g3d4-0017",
+      "word": "yummy",
+      "phonetic": "/ˈjʌmi/",
+      "pos": "形容词",
+      "meaning": "很好吃的"
+    },
+    {
+      "id": "g3d5-0001",
+      "word": "at",
+      "phonetic": "/æt/",
+      "pos": "介词",
+      "meaning": "在（某处）"
+    },
+    {
+      "id": "g3d5-0002",
+      "word": "boat",
+      "phonetic": "/bəʊt/",
+      "pos": "名词",
+      "meaning": "小船；舟"
+    },
+    {
+      "id": "g3d5-0003",
+      "word": "cool",
+      "phonetic": "/kuːl/",
+      "pos": "形容词",
+      "meaning": "（因时髦、漂亮且与众不同而）酷的，绝妙的"
+    },
+    {
+      "id": "g3d5-0004",
+      "word": "keep",
+      "phonetic": "/kiːp/",
+      "pos": "动词",
+      "meaning": "保有；留着"
+    },
+    {
+      "id": "g3d5-0005",
+      "word": "home",
+      "phonetic": "/həʊm/",
+      "pos": "名词",
+      "meaning": "家；住所"
+    },
+    {
+      "id": "g3d5-0006",
+      "word": "ball",
+      "phonetic": "/bɔːl/",
+      "pos": "名词",
+      "meaning": "球"
+    },
+    {
+      "id": "g3d5-0007",
+      "word": "doll",
+      "phonetic": "/dɒl/",
+      "pos": "名词",
+      "meaning": "玩偶；玩具娃娃"
+    },
+    {
+      "id": "g3d5-0008",
+      "word": "car",
+      "phonetic": "/kɑː(r)/",
+      "pos": "名词",
+      "meaning": "小汽车；轿车"
+    },
+    {
+      "id": "g3d5-0009",
+      "word": "on",
+      "phonetic": "/ɒn/",
+      "pos": "介词",
+      "meaning": "（覆盖、附着）在……上"
+    },
+    {
+      "id": "g3d5-0010",
+      "word": "shelf",
+      "phonetic": "/ʃelf/",
+      "pos": "名词",
+      "meaning": "（复数 shelves）架子"
+    },
+    {
+      "id": "g3d5-0011",
+      "word": "in",
+      "phonetic": "/ɪn/",
+      "pos": "介词",
+      "meaning": "在……内；在……中"
+    },
+    {
+      "id": "g3d5-0012",
+      "word": "box",
+      "phonetic": "/bɒks/",
+      "pos": "名词",
+      "meaning": "盒子"
+    },
+    {
+      "id": "g3d5-0013",
+      "word": "cap",
+      "phonetic": "/kæp/",
+      "pos": "名词",
+      "meaning": "帽子"
+    },
+    {
+      "id": "g3d5-0014",
+      "word": "map",
+      "phonetic": "/mæp/",
+      "pos": "名词",
+      "meaning": "地图"
+    },
+    {
+      "id": "g3d5-0015",
+      "word": "under",
+      "phonetic": "/ˈʌndə(r)/",
+      "pos": "介词",
+      "meaning": "在（或到、通过）……下面"
+    },
+    {
+      "id": "g3d5-0016",
+      "word": "still",
+      "phonetic": "/stɪl/",
+      "pos": "副词",
+      "meaning": "还是；仍然"
+    },
+    {
+      "id": "g3d5-0017",
+      "word": "put",
+      "phonetic": "/pʊt/",
+      "pos": "动词",
+      "meaning": "放；安置"
+    },
+    {
+      "id": "g3d6-0001",
+      "word": "fifteen",
+      "phonetic": "/ˌfɪfˈtiːn/",
+      "pos": "数词",
+      "meaning": "十五"
+    },
+    {
+      "id": "g3d6-0002",
+      "word": "twelve",
+      "phonetic": "/twelv/",
+      "pos": "数词",
+      "meaning": "十二"
+    },
+    {
+      "id": "g3d6-0003",
+      "word": "fourteen",
+      "phonetic": "/ˌfɔːˈtiːn/",
+      "pos": "数词",
+      "meaning": "十四"
+    },
+    {
+      "id": "g3d6-0004",
+      "word": "thirteen",
+      "phonetic": "/ˌθɜːˈtiːn/",
+      "pos": "数词",
+      "meaning": "十三"
+    },
+    {
+      "id": "g3d6-0005",
+      "word": "eleven",
+      "phonetic": "/ɪˈlevn/",
+      "pos": "数词",
+      "meaning": "十一"
+    },
+    {
+      "id": "g3d6-0006",
+      "word": "twenty",
+      "phonetic": "/ˈtwenti/",
+      "pos": "数词",
+      "meaning": "二十"
+    },
+    {
+      "id": "g3d6-0007",
+      "word": "seventeen",
+      "phonetic": "/ˌsevnˈtiːn/",
+      "pos": "数词",
+      "meaning": "十七"
+    },
+    {
+      "id": "g3d6-0008",
+      "word": "sixteen",
+      "phonetic": "/ˌsɪksˈtiːn/",
+      "pos": "数词",
+      "meaning": "十六"
+    },
+    {
+      "id": "g3d6-0009",
+      "word": "eighteen",
+      "phonetic": "/ˌeɪˈtiːn/",
+      "pos": "数词",
+      "meaning": "十八"
+    },
+    {
+      "id": "g3d6-0010",
+      "word": "nineteen",
+      "phonetic": "/ˌnaɪnˈtiːn/",
+      "pos": "数词",
+      "meaning": "十九"
+    },
+    {
+      "id": "g3d6-0011",
+      "word": "piggy bank",
+      "phonetic": "/ˈpɪɡi bæŋk/",
+      "pos": "名词短语",
+      "meaning": "猪形储钱罐"
+    },
+    {
+      "id": "g3d6-0012",
+      "word": "pay",
+      "phonetic": "/peɪ/",
+      "pos": "动词",
+      "meaning": "付费"
+    },
+    {
+      "id": "g3d6-0013",
+      "word": "back",
+      "phonetic": "/bæk/",
+      "pos": "副词",
+      "meaning": "回到原处"
+    }
+  ]
+}

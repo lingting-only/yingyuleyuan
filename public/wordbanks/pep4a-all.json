@@ -1,0 +1,775 @@
+{
+  "id": "pep4a-all",
+  "words": [
+    {
+      "id": "g4u1-0001",
+      "word": "PE",
+      "phonetic": "/ˌpiː ˈiː/",
+      "pos": "名词",
+      "meaning": "体育（课）"
+    },
+    {
+      "id": "g4u1-0002",
+      "word": "job",
+      "phonetic": "/dʒɒb/",
+      "pos": "名词",
+      "meaning": "工作；职业"
+    },
+    {
+      "id": "g4u1-0003",
+      "word": "doctor",
+      "phonetic": "/ˈdɒktə(r)/",
+      "pos": "名词",
+      "meaning": "医生"
+    },
+    {
+      "id": "g4u1-0004",
+      "word": "farmer",
+      "phonetic": "/ˈfɑːmə(r)/",
+      "pos": "名词",
+      "meaning": "农场主；农民"
+    },
+    {
+      "id": "g4u1-0005",
+      "word": "nurse",
+      "phonetic": "/nɜːs/",
+      "pos": "名词",
+      "meaning": "护士"
+    },
+    {
+      "id": "g4u1-0006",
+      "word": "office worker",
+      "phonetic": "/ˈɒfɪs ˈwɜːkə(r)/",
+      "pos": "短语",
+      "meaning": "公司职员"
+    },
+    {
+      "id": "g4u1-0007",
+      "word": "factory worker",
+      "phonetic": "/ˈfæktri ˈwɜːkə(r)/",
+      "pos": "短语",
+      "meaning": "工厂工人"
+    },
+    {
+      "id": "g4u1-0008",
+      "word": "busy",
+      "phonetic": "/ˈbɪzi/",
+      "pos": "形容词",
+      "meaning": "忙碌的"
+    },
+    {
+      "id": "g4u1-0009",
+      "word": "tired",
+      "phonetic": "/ˈtaɪəd/",
+      "pos": "形容词",
+      "meaning": "疲倦的"
+    },
+    {
+      "id": "g4u1-0010",
+      "word": "chore",
+      "phonetic": "/tʃɔː(r)/",
+      "pos": "名词",
+      "meaning": "家庭内务"
+    },
+    {
+      "id": "g4u1-0011",
+      "word": "cook",
+      "phonetic": "/kʊk/",
+      "pos": "动词",
+      "meaning": "烹饪；煮"
+    },
+    {
+      "id": "g4u1-0012",
+      "word": "clean",
+      "phonetic": "/kliːn/",
+      "pos": "动词 & 形容词",
+      "meaning": "打扫；干净的"
+    },
+    {
+      "id": "g4u1-0013",
+      "word": "room",
+      "phonetic": "/ruːm/",
+      "pos": "名词",
+      "meaning": "房间"
+    },
+    {
+      "id": "g4u1-0014",
+      "word": "look after",
+      "phonetic": "/lʊk ˈɑːftə(r)/",
+      "pos": "短语",
+      "meaning": "照顾"
+    },
+    {
+      "id": "g4u1-0015",
+      "word": "sweep",
+      "phonetic": "/swiːp/",
+      "pos": "动词",
+      "meaning": "扫"
+    },
+    {
+      "id": "g4u1-0016",
+      "word": "floor",
+      "phonetic": "/flɔː(r)/",
+      "pos": "名词",
+      "meaning": "地板；地面"
+    },
+    {
+      "id": "g4u1-0017",
+      "word": "together",
+      "phonetic": "/təˈɡeðə(r)/",
+      "pos": "副词",
+      "meaning": "在一起；共同"
+    },
+    {
+      "id": "g4u1-0018",
+      "word": "people",
+      "phonetic": "/ˈpiːpl/",
+      "pos": "名词",
+      "meaning": "人；人们"
+    },
+    {
+      "id": "g4u1-0019",
+      "word": "child",
+      "phonetic": "/tʃaɪld/",
+      "pos": "名词",
+      "meaning": "(复数 children /ˈtʃɪldrən/) 儿童；小孩"
+    },
+    {
+      "id": "g4u2-0001",
+      "word": "his",
+      "phonetic": "/hɪz/",
+      "pos": "代词",
+      "meaning": "他的"
+    },
+    {
+      "id": "g4u2-0002",
+      "word": "strong",
+      "phonetic": "/strɒŋ/",
+      "pos": "形容词",
+      "meaning": "强壮的"
+    },
+    {
+      "id": "g4u2-0003",
+      "word": "hair",
+      "phonetic": "/heə(r)/",
+      "pos": "名词",
+      "meaning": "头发"
+    },
+    {
+      "id": "g4u2-0004",
+      "word": "also",
+      "phonetic": "/ˈɔːlsəʊ/",
+      "pos": "副词",
+      "meaning": "也"
+    },
+    {
+      "id": "g4u2-0005",
+      "word": "kind",
+      "phonetic": "/kaɪnd/",
+      "pos": "形容词",
+      "meaning": "友好的"
+    },
+    {
+      "id": "g4u2-0006",
+      "word": "quiet",
+      "phonetic": "/ˈkwaɪət/",
+      "pos": "形容词",
+      "meaning": "文静的"
+    },
+    {
+      "id": "g4u2-0007",
+      "word": "best",
+      "phonetic": "/best/",
+      "pos": "形容词",
+      "meaning": "最好的"
+    },
+    {
+      "id": "g4u2-0008",
+      "word": "read",
+      "phonetic": "/riːd/",
+      "pos": "动词",
+      "meaning": "阅读"
+    },
+    {
+      "id": "g4u2-0009",
+      "word": "Chinese",
+      "phonetic": "/ˌtʃaɪˈniːz/",
+      "pos": "名词 & 形容词",
+      "meaning": "中文；中国人；中国的"
+    },
+    {
+      "id": "g4u2-0010",
+      "word": "play",
+      "phonetic": "/pleɪ/",
+      "pos": "动词",
+      "meaning": "玩耍"
+    },
+    {
+      "id": "g4u2-0011",
+      "word": "game",
+      "phonetic": "/ɡeɪm/",
+      "pos": "名词",
+      "meaning": "游戏"
+    },
+    {
+      "id": "g4u2-0012",
+      "word": "football",
+      "phonetic": "/ˈfʊtbɔːl/",
+      "pos": "名词",
+      "meaning": "足球运动"
+    },
+    {
+      "id": "g4u2-0013",
+      "word": "basketball",
+      "phonetic": "/ˈbɑːskɪtbɔːl/",
+      "pos": "名词",
+      "meaning": "篮球运动"
+    },
+    {
+      "id": "g4u2-0014",
+      "word": "always",
+      "phonetic": "/ˈɔːlweɪz/",
+      "pos": "副词",
+      "meaning": "总是"
+    },
+    {
+      "id": "g4u3-0001",
+      "word": "afternoon",
+      "phonetic": "/ˌɑːftəˈnuːn/",
+      "pos": "名词",
+      "meaning": "下午"
+    },
+    {
+      "id": "g4u3-0002",
+      "word": "there",
+      "phonetic": "/ðeə(r)/",
+      "pos": "副词",
+      "meaning": "（表示存在或发生）；在那里"
+    },
+    {
+      "id": "g4u3-0003",
+      "word": "playground",
+      "phonetic": "/ˈpleɪɡraʊnd/",
+      "pos": "名词",
+      "meaning": "游乐场；操场"
+    },
+    {
+      "id": "g4u3-0004",
+      "word": "park",
+      "phonetic": "/pɑːk/",
+      "pos": "名词",
+      "meaning": "公园"
+    },
+    {
+      "id": "g4u3-0005",
+      "word": "over",
+      "phonetic": "/ˈəʊvə(r)/",
+      "pos": "介词",
+      "meaning": "在……的远端（或对面）"
+    },
+    {
+      "id": "g4u3-0006",
+      "word": "hospital",
+      "phonetic": "/ˈhɒspɪtl/",
+      "pos": "名词",
+      "meaning": "医院"
+    },
+    {
+      "id": "g4u3-0007",
+      "word": "shop",
+      "phonetic": "/ʃɒp/",
+      "pos": "名词",
+      "meaning": "商店"
+    },
+    {
+      "id": "g4u3-0008",
+      "word": "toilet",
+      "phonetic": "/ˈtɔɪlət/",
+      "pos": "名词",
+      "meaning": "厕所；卫生间"
+    },
+    {
+      "id": "g4u3-0009",
+      "word": "bus stop",
+      "phonetic": "/bʌs stɒp/",
+      "pos": "短语",
+      "meaning": "公共汽车站"
+    },
+    {
+      "id": "g4u3-0010",
+      "word": "library",
+      "phonetic": "/ˈlaɪbrəri/",
+      "pos": "名词",
+      "meaning": "图书馆"
+    },
+    {
+      "id": "g4u3-0011",
+      "word": "sport",
+      "phonetic": "/spɔːt/",
+      "pos": "名词",
+      "meaning": "体育运动"
+    },
+    {
+      "id": "g4u3-0012",
+      "word": "walk",
+      "phonetic": "/wɔːk/",
+      "pos": "动词",
+      "meaning": "散步；行走"
+    },
+    {
+      "id": "g4u3-0013",
+      "word": "community",
+      "phonetic": "/kəˈmjuːnəti/",
+      "pos": "名词",
+      "meaning": "社区"
+    },
+    {
+      "id": "g4u3-0014",
+      "word": "favourite",
+      "phonetic": "/ˈfeɪvərɪt/",
+      "pos": "形容词",
+      "meaning": "最喜欢的"
+    },
+    {
+      "id": "g4u3-0015",
+      "word": "place",
+      "phonetic": "/pleɪs/",
+      "pos": "名词",
+      "meaning": "地方；场所"
+    },
+    {
+      "id": "g4u3-0016",
+      "word": "photo",
+      "phonetic": "/ˈfəʊtəʊ/",
+      "pos": "名词",
+      "meaning": "照片"
+    },
+    {
+      "id": "g4u3-0017",
+      "word": "story",
+      "phonetic": "/ˈstɔːri/",
+      "pos": "名词",
+      "meaning": "故事"
+    },
+    {
+      "id": "g4u3-0018",
+      "word": "buy",
+      "phonetic": "/baɪ/",
+      "pos": "动词",
+      "meaning": "购买"
+    },
+    {
+      "id": "g4u4-0001",
+      "word": "firefighter",
+      "phonetic": "/ˈfaɪəfaɪtə(r)/",
+      "pos": "名词",
+      "meaning": "消防队员"
+    },
+    {
+      "id": "g4u4-0002",
+      "word": "why",
+      "phonetic": "/waɪ/",
+      "pos": "疑问副词",
+      "meaning": "为什么"
+    },
+    {
+      "id": "g4u4-0003",
+      "word": "driver",
+      "phonetic": "/ˈdraɪvə(r)/",
+      "pos": "名词",
+      "meaning": "司机"
+    },
+    {
+      "id": "g4u4-0004",
+      "word": "cleaner",
+      "phonetic": "/ˈkliːnə(r)/",
+      "pos": "名词",
+      "meaning": "清洁工"
+    },
+    {
+      "id": "g4u4-0005",
+      "word": "cook",
+      "phonetic": "/kʊk/",
+      "pos": "名词",
+      "meaning": "厨师"
+    },
+    {
+      "id": "g4u4-0006",
+      "word": "delivery worker",
+      "phonetic": "/dɪˈlɪvəri ˈwɜːkə(r)/",
+      "pos": "短语",
+      "meaning": "快递员"
+    },
+    {
+      "id": "g4u4-0007",
+      "word": "police officer",
+      "phonetic": "/pəˈliːs ˈɒfɪsə(r)/",
+      "pos": "短语",
+      "meaning": "警察；警员"
+    },
+    {
+      "id": "g4u4-0008",
+      "word": "a lot of",
+      "phonetic": "/ə lɒt əv/",
+      "pos": "短语",
+      "meaning": "大量；许多"
+    },
+    {
+      "id": "g4u4-0009",
+      "word": "now",
+      "phonetic": "/naʊ/",
+      "pos": "副词",
+      "meaning": "现在"
+    },
+    {
+      "id": "g4u4-0010",
+      "word": "make the bed",
+      "phonetic": "/meɪk ðə bed/",
+      "pos": "短语",
+      "meaning": "铺床"
+    },
+    {
+      "id": "g4u4-0011",
+      "word": "old",
+      "phonetic": "/əʊld/",
+      "pos": "形容词",
+      "meaning": "过去的；年纪大的；老的"
+    },
+    {
+      "id": "g4u4-0012",
+      "word": "tell",
+      "phonetic": "/tel/",
+      "pos": "动词",
+      "meaning": "讲述；告诉"
+    },
+    {
+      "id": "g4u4-0013",
+      "word": "everyone",
+      "phonetic": "/ˈevriwʌn/",
+      "pos": "代词",
+      "meaning": "每人"
+    },
+    {
+      "id": "g4u4-0014",
+      "word": "Ms",
+      "phonetic": "/mɪz/",
+      "pos": "名词",
+      "meaning": "（用于女子的姓氏或姓名前，不指明婚否）女士"
+    },
+    {
+      "id": "g4u5-0001",
+      "word": "speak",
+      "phonetic": "/spiːk/",
+      "pos": "动词",
+      "meaning": "说话；发言"
+    },
+    {
+      "id": "g4u5-0002",
+      "word": "weather",
+      "phonetic": "/ˈweðə(r)/",
+      "pos": "名词",
+      "meaning": "天气"
+    },
+    {
+      "id": "g4u5-0003",
+      "word": "sunny",
+      "phonetic": "/ˈsʌni/",
+      "pos": "形容词",
+      "meaning": "阳光充足的"
+    },
+    {
+      "id": "g4u5-0004",
+      "word": "hot",
+      "phonetic": "/hɒt/",
+      "pos": "形容词",
+      "meaning": "热的"
+    },
+    {
+      "id": "g4u5-0005",
+      "word": "bad",
+      "phonetic": "/bæd/",
+      "pos": "形容词",
+      "meaning": "令人不快的；坏的"
+    },
+    {
+      "id": "g4u5-0006",
+      "word": "cold",
+      "phonetic": "/kəʊld/",
+      "pos": "形容词",
+      "meaning": "冷的"
+    },
+    {
+      "id": "g4u5-0007",
+      "word": "windy",
+      "phonetic": "/ˈwɪndi/",
+      "pos": "形容词",
+      "meaning": "多风的"
+    },
+    {
+      "id": "g4u5-0008",
+      "word": "cloudy",
+      "phonetic": "/ˈklaʊdi/",
+      "pos": "形容词",
+      "meaning": "多云的"
+    },
+    {
+      "id": "g4u5-0009",
+      "word": "rainy",
+      "phonetic": "/ˈreɪni/",
+      "pos": "形容词",
+      "meaning": "阴雨的"
+    },
+    {
+      "id": "g4u5-0010",
+      "word": "snowy",
+      "phonetic": "/ˈsnəʊi/",
+      "pos": "形容词",
+      "meaning": "多雪的"
+    },
+    {
+      "id": "g4u5-0011",
+      "word": "cool",
+      "phonetic": "/kuːl/",
+      "pos": "形容词",
+      "meaning": "凉爽的"
+    },
+    {
+      "id": "g4u5-0012",
+      "word": "warm",
+      "phonetic": "/wɔːm/",
+      "pos": "形容词",
+      "meaning": "温暖的"
+    },
+    {
+      "id": "g4u5-0013",
+      "word": "tomorrow",
+      "phonetic": "/təˈmɒrəʊ/",
+      "pos": "副词 & 名词",
+      "meaning": "在明天"
+    },
+    {
+      "id": "g4u5-0014",
+      "word": "rain",
+      "phonetic": "/reɪn/",
+      "pos": "动词",
+      "meaning": "下雨"
+    },
+    {
+      "id": "g4u5-0015",
+      "word": "closed",
+      "phonetic": "/kləʊzd/",
+      "pos": "形容词",
+      "meaning": "关闭的"
+    },
+    {
+      "id": "g4u5-0016",
+      "word": "film",
+      "phonetic": "/fɪlm/",
+      "pos": "名词",
+      "meaning": "电影"
+    },
+    {
+      "id": "g4u5-0017",
+      "word": "idea",
+      "phonetic": "/aɪˈdɪə/",
+      "pos": "名词",
+      "meaning": "想法；主意"
+    },
+    {
+      "id": "g4u5-0018",
+      "word": "fly",
+      "phonetic": "/flaɪ/",
+      "pos": "动词",
+      "meaning": "操纵（飞行器等）；飞"
+    },
+    {
+      "id": "g4u5-0019",
+      "word": "kite",
+      "phonetic": "/kaɪt/",
+      "pos": "名词",
+      "meaning": "风筝"
+    },
+    {
+      "id": "g4u5-0020",
+      "word": "snowman",
+      "phonetic": "/ˈsnəʊmæn/",
+      "pos": "名词",
+      "meaning": "雪人"
+    },
+    {
+      "id": "g4u5-0021",
+      "word": "fun",
+      "phonetic": "/fʌn/",
+      "pos": "名词",
+      "meaning": "享乐；乐趣"
+    },
+    {
+      "id": "g4u5-0022",
+      "word": "their",
+      "phonetic": "/ðeə(r)/",
+      "pos": "代词",
+      "meaning": "他们的；她们的；它们的"
+    },
+    {
+      "id": "g4u5-0023",
+      "word": "swim",
+      "phonetic": "/swɪm/",
+      "pos": "动词",
+      "meaning": "游泳"
+    },
+    {
+      "id": "g4u5-0024",
+      "word": "Sydney",
+      "phonetic": "/ˈsɪdni/",
+      "pos": "名词",
+      "meaning": "悉尼"
+    },
+    {
+      "id": "g4u6-0001",
+      "word": "whose",
+      "phonetic": "/huːz/",
+      "pos": "疑问代词",
+      "meaning": "谁的"
+    },
+    {
+      "id": "g4u6-0002",
+      "word": "sweater",
+      "phonetic": "/ˈswetə(r)/",
+      "pos": "名词",
+      "meaning": "毛衣"
+    },
+    {
+      "id": "g4u6-0003",
+      "word": "sock",
+      "phonetic": "/sɒk/",
+      "pos": "名词",
+      "meaning": "短袜"
+    },
+    {
+      "id": "g4u6-0004",
+      "word": "mine",
+      "phonetic": "/maɪn/",
+      "pos": "代词",
+      "meaning": "我的"
+    },
+    {
+      "id": "g4u6-0005",
+      "word": "wear",
+      "phonetic": "/weə(r)/",
+      "pos": "动词",
+      "meaning": "穿；戴"
+    },
+    {
+      "id": "g4u6-0006",
+      "word": "shirt",
+      "phonetic": "/ʃɜːt/",
+      "pos": "名词",
+      "meaning": "衬衫"
+    },
+    {
+      "id": "g4u6-0007",
+      "word": "coat",
+      "phonetic": "/kəʊt/",
+      "pos": "名词",
+      "meaning": "大衣；外套"
+    },
+    {
+      "id": "g4u6-0008",
+      "word": "dress",
+      "phonetic": "/dres/",
+      "pos": "名词",
+      "meaning": "连衣裙"
+    },
+    {
+      "id": "g4u6-0009",
+      "word": "which",
+      "phonetic": "/wɪtʃ/",
+      "pos": "疑问代词",
+      "meaning": "哪一个；哪一些"
+    },
+    {
+      "id": "g4u6-0010",
+      "word": "season",
+      "phonetic": "/ˈsiːzn/",
+      "pos": "名词",
+      "meaning": "季节"
+    },
+    {
+      "id": "g4u6-0011",
+      "word": "winter",
+      "phonetic": "/ˈwɪntə(r)/",
+      "pos": "名词",
+      "meaning": "冬天"
+    },
+    {
+      "id": "g4u6-0012",
+      "word": "snow",
+      "phonetic": "/snəʊ/",
+      "pos": "动词 & 名词",
+      "meaning": "下雪；雪"
+    },
+    {
+      "id": "g4u6-0013",
+      "word": "get together",
+      "phonetic": "/ɡet təˈɡeðə(r)/",
+      "pos": "短语",
+      "meaning": "聚会"
+    },
+    {
+      "id": "g4u6-0014",
+      "word": "spring",
+      "phonetic": "/sprɪŋ/",
+      "pos": "名词",
+      "meaning": "春天"
+    },
+    {
+      "id": "g4u6-0015",
+      "word": "summer",
+      "phonetic": "/ˈsʌmə(r)/",
+      "pos": "名词",
+      "meaning": "夏天"
+    },
+    {
+      "id": "g4u6-0016",
+      "word": "autumn",
+      "phonetic": "/ˈɔːtəm/",
+      "pos": "名词",
+      "meaning": "秋天"
+    },
+    {
+      "id": "g4u6-0017",
+      "word": "T-shirt",
+      "phonetic": "/ˈtiː ʃɜːt/",
+      "pos": "名词",
+      "meaning": "T恤衫"
+    },
+    {
+      "id": "g4u6-0018",
+      "word": "fall",
+      "phonetic": "/fɔːl/",
+      "pos": "动词",
+      "meaning": "落下"
+    },
+    {
+      "id": "g4u6-0019",
+      "word": "leaf",
+      "phonetic": "/liːf/",
+      "pos": "名词",
+      "meaning": "（复数 leaves）叶"
+    },
+    {
+      "id": "g4u6-0020",
+      "word": "glove",
+      "phonetic": "/ɡlʌv/",
+      "pos": "名词",
+      "meaning": "手套"
+    },
+    {
+      "id": "g4u6-0021",
+      "word": "then",
+      "phonetic": "/ðen/",
+      "pos": "副词",
+      "meaning": "然后；那时"
+    }
+  ]
+}
