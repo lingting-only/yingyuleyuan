@@ -32,6 +32,14 @@
     "description": "上下册全部单词，按课本单元顺序"
   },
   {
+    "id": "pep_gaozhong_bixiu1",
+    "type": "word",
+    "grade": "高中必修一",
+    "titleCn": "高中必修一词汇",
+    "titleEn": "PEP Vocabulary",
+    "description": "高中必修一词汇表"
+  },
+  {
     "id": "CET4_T",
     "type": "word",
     "grade": "CET4",
