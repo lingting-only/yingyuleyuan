@@ -610,7 +610,8 @@ export default function HomePage() {
           <span className="hidden md:inline">退出错题</span>
         </Button>
       )}
-      <Tooltip>
+      <div className="hidden">
+        <Tooltip>
         <TooltipTrigger asChild>
           <Button variant="ghost" size="icon-sm" onClick={() => setShowImage(!showImage)}>
             {showImage ? <ImageIcon className="w-4 h-4" /> : <ImageOff className="w-4 h-4" />}
@@ -619,6 +620,7 @@ export default function HomePage() {
         </TooltipTrigger>
         <TooltipContent side="bottom">{showImage ? '隐藏图片' : '显示图片'}</TooltipContent>
       </Tooltip>
+      </div>
       <Tooltip>
         <TooltipTrigger asChild>
           <Button
@@ -644,10 +646,6 @@ export default function HomePage() {
         </TooltipTrigger>
         <TooltipContent side="bottom">重置进度</TooltipContent>
       </Tooltip>
-      <div className="flex items-center gap-1.5 text-sm text-muted-foreground shrink-0">
-        <Play className="w-3.5 h-3.5" />
-        {formatTime(timer)}
-      </div>
       {/* 移动端补充：全屏与主题切换（桌面端由 TopBar 固定提供） */}
       <Tooltip>
         <TooltipTrigger asChild>
@@ -685,7 +683,7 @@ export default function HomePage() {
       {/* Secondary Bar（已删除拆句/整句切换，默认整句练习） */}
 
       {/* Main Content：独立滚动区（隐藏滚动条），滚动条不影响顶栏 */}
-      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-6 md:gap-8">
+      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-3 md:gap-4">
         {/* 单词区（音标/词性 + 单词展示）：暂停时整块遮挡，尺寸与内容一致避免页面跳动 */}
         <div ref={burstRef} className="relative w-full max-w-4xl flex flex-col items-center gap-3">
           {/* 单词信息：音标与词性 */}
@@ -794,6 +792,7 @@ export default function HomePage() {
           <span>速度: <strong className="text-foreground">{wpm}</strong> WPM</span>
           <span>准确率: <strong className="text-foreground">{accuracy}%</strong></span>
           <span>错误: <strong className="text-red-500">{errors}</strong></span>
+          <span>时间: <strong className="text-foreground">{formatTime(timer)}</strong></span>
         </div>
       </div>
 
