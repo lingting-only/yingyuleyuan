@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { memo, useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { fingerColors, type FingerType } from '@/lib/data';
 
@@ -128,18 +128,16 @@ function getActiveHand(key: string): 'left' | 'right' | 'both' {
 
 interface VirtualKeyboardProps {
   nextKey: string;
-  typedText: string;
-  targetText: string;
   onKeyPress: (key: string) => void;
   showFingerGuide?: boolean;
+  rippleKey?: number; // 连斩里程碑触发键盘波纹
 }
 
 export function VirtualKeyboard({
   nextKey,
-  typedText,
-  targetText,
   onKeyPress,
   showFingerGuide = true,
+  rippleKey,
 }: VirtualKeyboardProps) {
   const nextKeyLower = nextKey.toLowerCase();
   const isShift = nextKey !== nextKeyLower && /[A-Z!@#$%^&*()_+{}|:"<>?~]/.test(nextKey);
@@ -277,6 +275,18 @@ export function VirtualKeyboard({
             })}
           </div>
         ))}
+
+        {/* 连斩里程碑键盘波纹 */}
+        {rippleKey && rippleKey > 0 && (
+          <div
+            key={`ripple-${rippleKey}`}
+            className="pointer-events-none absolute left-1/2 top-1/2 z-40 w-40 h-40 rounded-full blur-md animate-keyboard-ripple"
+            style={{
+              background: 'radial-gradient(circle, rgba(14,165,233,0.5) 0%, rgba(14,165,233,0) 70%)',
+            }}
+            aria-hidden
+          />
+        )}
       </div>
 
       {/* Finger guide legend */}
@@ -306,3 +316,5 @@ export function VirtualKeyboard({
     </div>
   );
 }
+
+export default memo(VirtualKeyboard);

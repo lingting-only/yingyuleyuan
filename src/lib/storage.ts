@@ -292,3 +292,17 @@ export function formatWeekday(dateStr: string): string {
     return dateStr;
   }
 }
+
+// ===== 激励特效开关 =====
+const CELEBRATION_KEY = 'eng-celebration-enabled';
+
+// 读取激励特效开关；默认开启（无记录视为 true）
+export function getCelebrationEnabled(): boolean {
+  const raw = safeRead(CELEBRATION_KEY);
+  if (raw === null) return true;
+  return raw === '1';
+}
+
+export function setCelebrationEnabled(enabled: boolean): void {
+  safeWrite(CELEBRATION_KEY, enabled ? '1' : '0');
+}

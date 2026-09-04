@@ -16,9 +16,10 @@ import {
   Moon,
   Image as ImageIcon,
   ImageOff,
+  Sparkles,
 } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { type TypingSentence, fingerColors } from '@/lib/data';
+import { type TypingSentence } from '@/lib/data';
 import {
   wordBankIndex,
   bankToPracticeQueue,
@@ -37,9 +38,22 @@ import {
   recordSentenceCompletion,
   getBankProgress,
   setBankProgress,
+  getCelebrationEnabled,
+  setCelebrationEnabled,
 } from '@/lib/storage';
-import { VirtualKeyboard } from '@/components/typing/virtual-keyboard';
+import VirtualKeyboard from '@/components/typing/virtual-keyboard';
 import { ParticleBurst } from '@/components/typing/particle-burst';
+import SentenceDisplay from '@/components/typing/sentence-display';
+import {
+  ComboBanner,
+  ScreenFlash,
+  ConfettiBurst,
+  EmojiBurst,
+  ComboHud,
+  Mascot,
+  ErrorCrack,
+  getComboMilestone,
+} from '@/components/typing/combo-effects';
 import { TopBar } from '@/components/layout/header';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -64,7 +78,6 @@ export default function HomePage() {
   const [showImage, setShowImage] = useState(true);
   const [dictationMode, setDictationMode] = useState(false); // 默写模式：隐藏英文，打对一个词展示一个词
   const [showFingerGuide, setShowFingerGuide] = useState(true); // 空格键：切换手势图（默写模式下不隐藏）
-  const [hoveredWord, setHoveredWord] = useState<number | null>(null); // 鼠标悬停临时展示的单词的下标
   const [isPaused, setIsPaused] = useState(false);
   const [timer, setTimer] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -88,8 +101,22 @@ export default function HomePage() {
   const [burstKey, setBurstKey] = useState(0);
   const [burstCenter, setBurstCenter] = useState<{ x: number; y: number } | null>(null);
   const burstRef = useRef<HTMLDivElement>(null);
+  // 激励特效开关 + 连斩状态
+  const [celebrationEnabled, setCelebrationState] = useState(true);
+  const [combo, setCombo] = useState(0);
+  const [comboTriggerKey, setComboTriggerKey] = useState(0);
+  const [errorTriggerKey, setErrorTriggerKey] = useState(0);
+  const [rippleKey, setRippleKey] = useState(0);
+  const [shakeKey, setShakeKey] = useState(0);
+  const comboRef = useRef(0);
+  const celebrationRef = useRef(true);
   // 朗读并发控制：正在播放时忽略重复触发，播放完毕后才允许再次播放
   const speakingRef = useRef(false);
+  // 让 handleKeyPress 函数引用稳定（避免 keydown 监听器每次按键解绑重绑）
+  const typedTextRef = useRef('');
+  const completedRef = useRef(false);
+  const isPausedRef = useRef(false);
+  const sentenceRef = useRef<TypingSentence | undefined>(undefined);
 
   const sentence = practiceQueue[sentenceIndex];
   const totalSentences = practiceQueue.length;
@@ -126,13 +153,31 @@ export default function HomePage() {
     setWpm(0);
     setAccuracy(100);
     setSplitIndex(0);
+    setCombo(0);
   }, []);
 
   // 挂载时先加载词库内容（public/wordbanks/ 静态资源），再载入选课/错题模式
   useEffect(() => {
     initWordBanks().then(() => loadQueue());
+    setCelebrationState(getCelebrationEnabled());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // 同步 ref，避免 completed effect 因依赖变化重跑
+  useEffect(() => { comboRef.current = combo; }, [combo]);
+  useEffect(() => { celebrationRef.current = celebrationEnabled; }, [celebrationEnabled]);
+  // 让 handleKeyPress 函数引用稳定（避免 keydown 监听器每次按键解绑重绑）
+  useEffect(() => { typedTextRef.current = typedText; }, [typedText]);
+  useEffect(() => { completedRef.current = completed; }, [completed]);
+  useEffect(() => { isPausedRef.current = isPaused; }, [isPaused]);
+  useEffect(() => { sentenceRef.current = sentence; }, [sentence]);
+
+  // 屏幕震动：触发后 450ms 重置 key，保证下次连续错误也能重新播放动画
+  useEffect(() => {
+    if (shakeKey === 0) return;
+    const t = setTimeout(() => setShakeKey(0), 450);
+    return () => clearTimeout(t);
+  }, [shakeKey]);
 
   // Timer
   useEffect(() => {
@@ -172,6 +217,23 @@ export default function HomePage() {
   // 同时把本次练习的统计（用时/WPM/准确率/错误）持久化到 localStorage
   useEffect(() => {
     if (!completed || !sentence) return;
+
+    // 激励特效：combo 累积 + 里程碑触发
+    if (celebrationRef.current) {
+      if (errors === 0) {
+        const newCombo = comboRef.current + 1;
+        setCombo(newCombo);
+        const milestone = getComboMilestone(newCombo);
+        if (milestone) {
+          setComboTriggerKey((k) => k + 1);
+          if (newCombo >= 5) setRippleKey((k) => k + 1);
+        }
+      } else {
+        // 句子完成但有错误：combo 已在错误输入时归零
+        setCombo(0);
+      }
+    }
+
     if (errors > 0) {
       addError(sentence.id);
     } else {
@@ -209,6 +271,7 @@ export default function HomePage() {
       setTimer(0);
       setWpm(0);
       setAccuracy(100);
+      // 注意：不重置 combo，让连斩在句间保持；只有错误/手动操作才归零
     }, 500);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -244,12 +307,15 @@ export default function HomePage() {
   }, [sentence]);
 
   // Handle key press
+  // 用 ref 读取 typedText 等频繁变化的值，让函数引用保持稳定
+  // 避免 keydown 监听器每次按键都解绑重绑
   const handleKeyPress = useCallback(
     (key: string) => {
-      if (completed || isPaused) return;
-      if (!sentence) return;
+      if (completedRef.current || isPausedRef.current) return;
+      const sentenceNow = sentenceRef.current;
+      if (!sentenceNow) return;
 
-      const target = sentence.sentence;
+      const target = sentenceNow.sentence;
 
       if (key === 'Backspace') {
         setTypedText((prev) => prev.slice(0, -1));
@@ -268,7 +334,7 @@ export default function HomePage() {
 
       if (key.length === 1) {
         // 自动补全当前位置的空格与标点（如句尾的 . 无需手动输入）
-        let newTyped = typedText;
+        let newTyped = typedTextRef.current;
         while (isSkippable(target[newTyped.length])) {
           newTyped += target[newTyped.length];
         }
@@ -295,6 +361,12 @@ export default function HomePage() {
         } else {
           // 错误输入不写入进度：播放警告音并重新朗读单词，短暂显示错误字符后自动消失
           setErrors((prev) => prev + 1);
+          // 激励特效：错误 → combo 归零 + 震动 + 裂纹 + 吉祥物沮丧
+          if (celebrationRef.current) {
+            setCombo(0);
+            setErrorTriggerKey((k) => k + 1);
+            setShakeKey((k) => k + 1);
+          }
           playErrorBuzz();
           handleReadAloud();
           const id = Date.now();
@@ -305,7 +377,7 @@ export default function HomePage() {
         }
       }
     },
-    [completed, isPaused, sentence, typedText, handleReadAloud]
+    [handleReadAloud]
   );
 
   const handleNextSentence = useCallback(() => {
@@ -315,6 +387,7 @@ export default function HomePage() {
       setCompleted(false);
       setErrors(0);
       setSplitIndex(0);
+      setCombo(0);
     }
   }, [sentenceIndex, totalSentences]);
 
@@ -325,6 +398,7 @@ export default function HomePage() {
       setCompleted(false);
       setErrors(0);
       setSplitIndex(0);
+      setCombo(0);
     }
   }, [sentenceIndex]);
 
@@ -336,6 +410,7 @@ export default function HomePage() {
     setWpm(0);
     setAccuracy(100);
     setSplitIndex(0);
+    setCombo(0);
   }, []);
 
   const handleExitErrorMode = useCallback(() => {
@@ -353,10 +428,7 @@ export default function HomePage() {
     return () => clearTimeout(t);
   }, [sentence, sentenceIndex, handleReadAloud]);
 
-  // 切换句子时重置悬停展示
-  useEffect(() => {
-    setHoveredWord(null);
-  }, [sentenceIndex]);
+  // hoveredWord 已移入 SentenceDisplay 内部组件管理，避免悬停/点击触发整页重渲染
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -418,177 +490,7 @@ export default function HomePage() {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  // Render sentence with typing progress
-  const renderSentence = () => {
-    if (!sentence) return null;
-    const target = sentence.sentence;
-
-    // 默写模式：按空格拆词，每个已输入正确的字母逐个显示，未输入字母用等宽占位符隐藏；悬停临时展示整词
-    if (dictationMode) {
-      let cursor = 0;
-      const words = target.split(' ').map((text) => {
-        const wStart = cursor;
-        cursor += text.length;
-        const end = cursor;
-        cursor += 1; // 跳过空格
-        return { text, wStart, end };
-      });
-      return (
-        <div className="flex flex-wrap items-baseline justify-center gap-x-1 gap-y-3 leading-[1.4]">
-          {words.map((w, idx) => {
-            const isHover = hoveredWord === idx;
-            return (
-              <span
-                key={idx}
-                className="text-3xl md:text-5xl font-mono font-bold"
-                onMouseEnter={() => setHoveredWord(idx)}
-                onMouseLeave={() => setHoveredWord((cur) => (cur === idx ? null : cur))}
-                style={{ cursor: 'pointer' }}
-              >
-                {w.text.split('').map((ch, ci) => {
-                  const gi = w.wStart + ci; // 该字母在整句中的下标
-                  // 悬停展示整词
-                  if (isHover) {
-                    return (
-                      <span key={ci} className="text-foreground">
-                        {ch}
-                      </span>
-                    );
-                  }
-                  // 已输入：正确绿/错误红
-                  if (gi < typedText.length) {
-                    const correct = typedText[gi] === ch;
-                    return (
-                      <span key={ci} className={correct ? 'text-foreground' : 'text-red-500'}>
-                        {ch}
-                      </span>
-                    );
-                  }
-                  // 未输入：隐藏占位符
-                  return (
-                    <span key={ci} className="text-muted-foreground/60">
-                      {'\u2581'}
-                    </span>
-                  );
-                })}
-              </span>
-            );
-          })}
-        </div>
-      );
-    }
-
-    // 正常模式：逐字符展示输入进度
-    return (
-      <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1">
-        {target.split('').map((char, index) => {
-          const isSpace = char === ' ';
-          const isErrorFlash = index === typedText.length && !!errorFlash;
-          let charClass = 'text-muted-foreground/40';
-          if (index < typedText.length) {
-            charClass = typedText[index] === char ? 'text-foreground' : 'text-red-500';
-          } else if (index === typedText.length) {
-            charClass = errorFlash ? 'text-red-500' : 'text-foreground';
-          }
-          const displayChar = isErrorFlash
-            ? errorFlash.char
-            : isSpace
-              ? '\u00A0'
-              : char;
-
-          return (
-            <span
-              key={index}
-              className={cn(
-                'text-3xl md:text-5xl font-mono font-bold transition-colors duration-100 relative',
-                charClass
-              )}
-            >
-              {index === typedText.length && !completed && (
-                <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-sky-500 animate-pulse" />
-              )}
-              {displayChar}
-            </span>
-          );
-        })}
-      </div>
-    );
-  };
-
-  // Render split mode sentence
-  const renderSplitSentence = () => {
-    if (!sentence) return null;
-
-    // 按输入进度计算每个单词的起始下标（空格也计入 typedText）
-    let cursor = 0;
-    const tokenStarts = sentence.words.map((w) => {
-      const s = cursor;
-      cursor += w.text.length;
-      cursor += 1; // 跳过单词之间的空格
-      return s;
-    });
-    return (
-      <div className="flex flex-wrap items-baseline justify-center gap-x-3 gap-y-4 leading-[1.4]">
-        {sentence.words.map((word, index) => {
-          const wordText = word.text;
-          const isCurrentWord = index === splitIndex;
-          const color = fingerColors[word.finger];
-          const isHover = hoveredWord === index;
-          return (
-            <div key={index} className="flex flex-col items-center">
-              <span
-                className={cn(
-                  'text-2xl md:text-4xl font-mono font-bold transition-all duration-200',
-                  isCurrentWord && !dictationMode ? 'text-foreground scale-110' : 'text-muted-foreground/40'
-                )}
-                style={
-                  dictationMode
-                    ? { cursor: 'pointer' }
-                    : isCurrentWord
-                      ? { textShadow: `0 0 20px ${color}40` }
-                      : {}
-                }
-                onMouseEnter={() => setHoveredWord(index)}
-                onMouseLeave={() => setHoveredWord((cur) => (cur === index ? null : cur))}
-              >
-                {dictationMode
-                  ? wordText.split('').map((ch, ci) => {
-                      const gi = tokenStarts[index] + ci; // 该字母在整句中的下标
-                      // 悬停展示整词
-                      if (isHover) {
-                        return (
-                          <span key={ci} className="text-foreground">
-                            {ch}
-                          </span>
-                        );
-                      }
-                      // 已输入：正确/错误着色；未输入：隐藏占位符
-                      if (gi < typedText.length) {
-                        const correct = typedText[gi] === ch;
-                        return (
-                          <span key={ci} className={correct ? 'text-foreground' : 'text-red-500'}>
-                            {ch}
-                          </span>
-                        );
-                      }
-                      return (
-                        <span key={ci} className="text-muted-foreground/60">
-                          {'\u2581'}
-                        </span>
-                      );
-                    })
-                  : wordText}
-              </span>
-              <div
-                className="w-6 h-0.5 rounded-full mt-1"
-                style={{ backgroundColor: isCurrentWord && !dictationMode ? color : 'transparent' }}
-              />
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
+  // renderSentence / renderSplitSentence 已迁移到 SentenceDisplay 组件
 
   // 练习工具栏：课程信息 + 计时 + 图片/默写/重置 放在一块
   // 桌面端注入全局 TopBar 插槽；全屏与主题按钮由 TopBar 统一提供
@@ -646,6 +548,28 @@ export default function HomePage() {
         </TooltipTrigger>
         <TooltipContent side="bottom">重置进度</TooltipContent>
       </Tooltip>
+      {/* 激励特效开关 */}
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            className={cn(
+              celebrationEnabled && 'bg-amber-100 text-amber-600 hover:bg-amber-100 dark:bg-amber-950 dark:text-amber-400'
+            )}
+            onClick={() => {
+              const next = !celebrationEnabled;
+              setCelebrationState(next);
+              setCelebrationEnabled(next);
+              if (!next) setCombo(0);
+            }}
+          >
+            <Sparkles className="w-4 h-4" />
+            <span className="sr-only">激励特效</span>
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent side="bottom">{celebrationEnabled ? '关闭激励特效' : '开启激励特效'}</TooltipContent>
+      </Tooltip>
       {/* 移动端补充：全屏与主题切换（桌面端由 TopBar 固定提供） */}
       <Tooltip>
         <TooltipTrigger asChild>
@@ -683,7 +607,10 @@ export default function HomePage() {
       {/* Secondary Bar（已删除拆句/整句切换，默认整句练习） */}
 
       {/* Main Content：独立滚动区（隐藏滚动条），滚动条不影响顶栏 */}
-      <div className="flex-1 min-h-0 overflow-y-auto scrollbar-hidden flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-3 md:gap-4">
+      <div className={cn(
+        'flex-1 min-h-0 overflow-y-auto scrollbar-hidden flex flex-col items-center justify-center px-4 py-6 md:py-10 gap-3 md:gap-3',
+        celebrationEnabled && shakeKey > 0 && 'animate-shake-screen'
+      )}>
         {/* 单词区（音标/词性 + 单词展示）：暂停时整块遮挡，尺寸与内容一致避免页面跳动 */}
         <div ref={burstRef} className="relative w-full max-w-4xl flex flex-col items-center gap-3">
           {/* 单词信息：音标与词性 */}
@@ -703,7 +630,15 @@ export default function HomePage() {
 
           {/* Sentence Display */}
           <div className="text-center space-y-3 w-full">
-            {mode === 'whole' ? renderSentence() : renderSplitSentence()}
+            <SentenceDisplay
+              sentence={sentence}
+              typedText={typedText}
+              errorFlash={errorFlash}
+              splitIndex={splitIndex}
+              dictationMode={dictationMode}
+              mode={mode}
+              completed={completed}
+            />
 
             {/* Grammar annotation */}
             {sentence && (
@@ -726,14 +661,17 @@ export default function HomePage() {
         </div>
 
         {/* Virtual Keyboard */}
-        <div className="w-full max-w-3xl">
+        <div className="relative w-full max-w-3xl">
+          {celebrationEnabled && <ComboHud combo={combo} />}
           <VirtualKeyboard
             nextKey={keyHint}
-            typedText={typedText}
-            targetText={sentence?.sentence || ''}
             onKeyPress={handleKeyPress}
             showFingerGuide={showFingerGuide}
+            rippleKey={rippleKey}
           />
+          {celebrationEnabled && (
+            <Mascot combo={combo} triggerKey={comboTriggerKey} errorTriggerKey={errorTriggerKey} />
+          )}
         </div>
 
         {/* Progress Bar */}
@@ -793,11 +731,25 @@ export default function HomePage() {
           <span>准确率: <strong className="text-foreground">{accuracy}%</strong></span>
           <span>错误: <strong className="text-red-500">{errors}</strong></span>
           <span>时间: <strong className="text-foreground">{formatTime(timer)}</strong></span>
+          {celebrationEnabled && combo > 0 && (
+            <span>连斩: <strong className="text-amber-500">{combo}</strong></span>
+          )}
         </div>
       </div>
 
       {/* 单词完成后的粒子消散特效（覆盖全屏、不拦截交互） */}
       <ParticleBurst burstKey={burstKey} center={burstCenter} />
+
+      {/* 连斩激励特效：全屏覆盖层 */}
+      {celebrationEnabled && (
+        <>
+          <ComboBanner combo={combo} triggerKey={comboTriggerKey} />
+          <ScreenFlash triggerKey={comboTriggerKey} />
+          <ConfettiBurst combo={combo} triggerKey={comboTriggerKey} />
+          <EmojiBurst combo={combo} triggerKey={comboTriggerKey} center={burstCenter} />
+          <ErrorCrack triggerKey={errorTriggerKey} />
+        </>
+      )}
     </div>
   );
 }

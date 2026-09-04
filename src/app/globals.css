@@ -203,3 +203,94 @@ body {
 .animate-progress-fill {
   animation: progress-fill 1s ease-out forwards;
 }
+
+/* ===== 连斩激励特效动画 ===== */
+
+/* 连斩浮动文字：从中心缩放进入、停留、上浮淡出 */
+@keyframes combo-banner {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  20%  { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  70%  { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -65%) scale(1); }
+}
+
+/* 键盘波纹：从中心向外扩散光晕 */
+@keyframes keyboard-ripple {
+  0%   { opacity: 0.7; transform: translate(-50%, -50%) scale(0); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(2.6); }
+}
+
+/* 屏幕金光一闪 */
+@keyframes screen-flash {
+  0%, 100% { opacity: 0; }
+  10%      { opacity: 0.55; }
+  40%      { opacity: 0.2; }
+}
+
+/* emoji 庆祝飞溅：从起点抛物线飞出 */
+@keyframes emoji-fly {
+  0%   { opacity: 1; transform: translate(-50%, -50%) scale(0.6) rotate(0deg); }
+  25%  { opacity: 1; transform: translate(var(--tx), var(--ty)) scale(1.1) rotate(var(--rot)); }
+  100% { opacity: 0; transform: translate(var(--tx), calc(var(--ty) + 80px)) scale(0.9) rotate(var(--rot)); }
+}
+
+/* 屏幕震动（错误击碎反馈）：左右抖动 4 次 */
+@keyframes shake-screen {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(6px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
+}
+
+/* 红色裂纹闪现（错误击碎反馈） */
+@keyframes crack-flash {
+  0%, 100% { opacity: 0; }
+  15%, 60% { opacity: 0.7; }
+}
+
+/* combo HUD 火焰跳动（等级 ≥ 3） */
+@keyframes flame-flicker {
+  0%, 100% { transform: scaleY(1) translateY(0); filter: brightness(1); }
+  50%      { transform: scaleY(1.15) translateY(-2px); filter: brightness(1.2); }
+}
+
+/* combo HUD 数字弹跳放大（combo 增加瞬间） */
+@keyframes hud-pop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+/* 吉祥物弹跳（里程碑达成） */
+@keyframes mascot-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  30%      { transform: translateY(-8px) scale(1.08); }
+  60%      { transform: translateY(-4px) scale(1.04); }
+}
+
+/* 吉祥物沮丧（错误时） */
+@keyframes mascot-sad {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50%      { transform: translateY(2px) rotate(-3deg); }
+}
+
+/* 鼓励气泡淡入淡出 */
+@keyframes mascot-bubble {
+  0%   { opacity: 0; transform: translate(0, 10px) scale(0.8); }
+  15%  { opacity: 1; transform: translate(0, 0) scale(1); }
+  80%  { opacity: 1; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(0, -6px) scale(0.95); }
+}
+
+.animate-combo-banner    { animation: combo-banner 1.4s ease-out forwards; }
+.animate-keyboard-ripple { animation: keyboard-ripple 0.9s ease-out forwards; }
+.animate-screen-flash    { animation: screen-flash 0.7s ease-out forwards; }
+.animate-emoji-fly       { animation: emoji-fly 1.2s ease-out forwards; }
+.animate-shake-screen    { animation: shake-screen 0.4s ease-in-out; }
+.animate-crack-flash     { animation: crack-flash 0.35s ease-out forwards; }
+.animate-flame-flicker   { animation: flame-flicker 0.6s ease-in-out infinite; }
+.animate-hud-pop         { animation: hud-pop 0.35s ease-out; }
+.animate-mascot-bounce   { animation: mascot-bounce 0.6s ease-out; }
+.animate-mascot-sad      { animation: mascot-sad 0.4s ease-in-out; }
+.animate-mascot-bubble   { animation: mascot-bubble 1.6s ease-out forwards; }
