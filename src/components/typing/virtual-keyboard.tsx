@@ -1,6 +1,6 @@
 'use client';
 
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { fingerColors, type FingerType } from '@/lib/data';
 
@@ -148,6 +148,21 @@ export function VirtualKeyboard({
   const [leftOffsetY, setLeftOffsetY] = useState<number>(0);
   const [rightOffsetY, setRightOffsetY] = useState<number>(0);
 
+  // 预加载所有手部 SVG：挂载时一次性请求并缓存到浏览器，避免切换单词时重新加载导致闪烁
+  const preloadedRef = useRef(false);
+  useEffect(() => {
+    if (preloadedRef.current) return;
+    preloadedRef.current = true;
+    const preload = (src: string) => {
+      const img = new Image();
+      img.src = src;
+    };
+    Object.values(keyToHandSvg).forEach(({ left, right }) => {
+      preload(left);
+      preload(right);
+    });
+  }, []);
+
   // Update hand SVGs when next key changes
   useEffect(() => {
     if (nextKey && keyToHandSvg[nextKeyLower]) {
@@ -180,50 +195,45 @@ export function VirtualKeyboard({
     <div className="w-full max-w-3xl mx-auto">
       <div className="bg-gradient-to-b from-muted to-secondary rounded-2xl p-3 md:p-4 shadow-lg border border-border relative overflow-hidden">
         {/* Hand SVG Overlay - show both hands with fingertips at ASDF row */}
-        {showFingerGuide && (leftHandSvg || rightHandSvg) && (
+        {showFingerGuide && (
           <div
             className="absolute inset-0 pointer-events-none z-20"
-            style={{
-              opacity: 0.9,
-              padding: '0 20px',
-            }}
+            style={{ padding: '0 20px' }}
           >
             {/* 删除 max‑w‑[600px]，直接100%继承键盘父容器尺寸，和键盘共用坐标系 */}
             <div className="relative w-full h-[260px]">
-              {/* 左手 */}
-              {leftHandSvg && (
-                <div
-                  className="absolute left-0 w-1/2 h-full flex justify-center"
-                  style={{
-                    transform: `translateY(${BASE_Y + leftOffsetY}px)`,
-                    transition: 'transform 0.2s ease-out',
-                  }}
-                >
-                  <img
-                    src={leftHandSvg}
-                    alt="Left hand position"
-                    className="h-full max-w-full w-auto object-contain"
-                    style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
-                  />
-                </div>
-              )}
-              {/* 右手，保留 translateX向左偏移 */}
-              {rightHandSvg && (
-                <div
-                  className="absolute right-0 w-1/2 h-full flex justify-center"
-                  style={{
-                    transform: `translateY(${BASE_Y + rightOffsetY}px) translateX(-90px)`,
-                    transition: 'transform 0.2s ease-out',
-                  }}
-                >
-                  <img
-                    src={rightHandSvg}
-                    alt="Right hand position"
-                    className="h-full max-w-full w-auto object-contain"
-                    style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
-                  />
-                </div>
-              )}
+              {/* 左手：始终渲染，通过 opacity 淡入淡出，避免卸载导致的闪烁 */}
+              <div
+                className="absolute left-0 w-1/2 h-full flex justify-center"
+                style={{
+                  transform: `translateY(${BASE_Y + leftOffsetY}px)`,
+                  transition: 'transform 0.2s ease-out, opacity 0.15s ease-out',
+                  opacity: leftHandSvg ? 0.9 : 0,
+                }}
+              >
+                <img
+                  src={leftHandSvg ?? '/typing-hands/Left.svg'}
+                  alt="Left hand position"
+                  className="h-full max-w-full w-auto object-contain"
+                  style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
+                />
+              </div>
+              {/* 右手：保留 translateX向左偏移，同样始终渲染 */}
+              <div
+                className="absolute right-0 w-1/2 h-full flex justify-center"
+                style={{
+                  transform: `translateY(${BASE_Y + rightOffsetY}px) translateX(-90px)`,
+                  transition: 'transform 0.2s ease-out, opacity 0.15s ease-out',
+                  opacity: rightHandSvg ? 0.9 : 0,
+                }}
+              >
+                <img
+                  src={rightHandSvg ?? '/typing-hands/Right.svg'}
+                  alt="Right hand position"
+                  className="h-full max-w-full w-auto object-contain"
+                  style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))' }}
+                />
+              </div>
             </div>
           </div>
         )}

@@ -151,7 +151,6 @@ export default function HomePage() {
     setErrors(0);
     setTimer(0);
     setWpm(0);
-    setAccuracy(100);
     setSplitIndex(0);
     setCombo(0);
   }, []);
@@ -169,6 +168,15 @@ export default function HomePage() {
   // 让 handleKeyPress 函数引用稳定（避免 keydown 监听器每次按键解绑重绑）
   useEffect(() => { typedTextRef.current = typedText; }, [typedText]);
   useEffect(() => { completedRef.current = completed; }, [completed]);
+  // 实时计算准确率：正确输入 / (正确输入 + 错误输入)
+  useEffect(() => {
+    const total = typedText.length + errors;
+    if (total === 0) {
+      setAccuracy(100);
+    } else {
+      setAccuracy(Math.round((typedText.length / total) * 100));
+    }
+  }, [typedText, errors]);
   useEffect(() => { isPausedRef.current = isPaused; }, [isPaused]);
   useEffect(() => { sentenceRef.current = sentence; }, [sentence]);
 
@@ -270,7 +278,6 @@ export default function HomePage() {
       setSplitIndex(0);
       setTimer(0);
       setWpm(0);
-      setAccuracy(100);
       // 注意：不重置 combo，让连斩在句间保持；只有错误/手动操作才归零
     }, 500);
     return () => clearTimeout(t);
@@ -354,9 +361,6 @@ export default function HomePage() {
 
           if (newTyped === target) {
             setCompleted(true);
-            const totalChars = target.length;
-            const correctChars = newTyped.split('').filter((c, i) => c === target[i]).length;
-            setAccuracy(Math.round((correctChars / totalChars) * 100));
           }
         } else {
           // 错误输入不写入进度：播放警告音并重新朗读单词，短暂显示错误字符后自动消失
@@ -408,7 +412,6 @@ export default function HomePage() {
     setErrors(0);
     setTimer(0);
     setWpm(0);
-    setAccuracy(100);
     setSplitIndex(0);
     setCombo(0);
   }, []);
