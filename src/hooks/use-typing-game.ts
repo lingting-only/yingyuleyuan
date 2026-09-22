@@ -27,6 +27,8 @@ import { getComboMilestone } from '@/components/typing/combo-effects';
 export interface UseTypingGameOptions {
   // 正确按键：页面从对应键位向敌人发射子弹
   onFire?: (e: FireEvent) => void;
+  // 输错时：页面播放单词朗读
+  onWrong?: () => void;
 }
 
 export interface GameSnapshot {
@@ -59,6 +61,7 @@ interface EngineState {
   comboBannerKey: number;
   burstEnemy: { x: number; y: number } | null;
   onFire?: (e: FireEvent) => void;
+  onWrong?: () => void;
 }
 
 const freshEngine = (): EngineState => ({
@@ -82,7 +85,8 @@ export function useTypingGame(options: UseTypingGameOptions = {}) {
   const engRef = useRef<EngineState>(freshEngine());
   useEffect(() => {
     engRef.current.onFire = options.onFire;
-  }, [options.onFire]);
+    engRef.current.onWrong = options.onWrong;
+  }, [options.onFire, options.onWrong]);
 
   // 渲染快照：rAF 每帧同步（字母敌人 ≤ 12，开销可控）
   // 初始值用纯函数构造，避免在 render 期读取 ref（react-hooks/refs）
@@ -364,6 +368,8 @@ function registerWrong(eng: EngineState) {
   const target = eng.enemies.find((e) => e.index === eng.typed && !e.dying && !e.hit);
   if (target) target.shake += 1;
   playErrorBuzz();
+  // 输错后播放单词朗读
+  eng.onWrong?.();
 }
 
 function pushFloat(eng: EngineState, f: Omit<FloatingText, 'id'>) {

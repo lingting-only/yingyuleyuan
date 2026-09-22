@@ -88,7 +88,7 @@ export default function GamePage() {
   }, []);
 
   const { snapshot, start, pause, resume, handleKey, killEnemy, removeEnemy, removeFloat } =
-    useTypingGame({ onFire: handleFire });
+    useTypingGame({ onFire: handleFire, onWrong: () => word && speakWord(word.text) });
   const { phase, word, typed, enemies, floats, stats, shakeKey, flashKey, comboBannerKey, nextChar } =
     snapshot;
 
