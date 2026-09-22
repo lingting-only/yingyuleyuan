@@ -17,6 +17,7 @@ import {
   Image as ImageIcon,
   ImageOff,
   Sparkles,
+  Library
 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { type TypingSentence } from '@/lib/data';
@@ -30,6 +31,7 @@ import {
 import { playKeyClick, playErrorBuzz } from '@/lib/sounds';
 import {
   getSelectedLessonId,
+  setSelectedLessonId,
   getErrorPracticeIds,
   clearErrorPractice,
   getErrorBook,
@@ -63,6 +65,13 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from '@/components/ui/tooltip';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
 
 type PracticeMode = 'whole' | 'split';
@@ -108,6 +117,7 @@ export default function HomePage() {
   const [errorTriggerKey, setErrorTriggerKey] = useState(0);
   const [rippleKey, setRippleKey] = useState(0);
   const [shakeKey, setShakeKey] = useState(0);
+  const [showBankPicker, setShowBankPicker] = useState(false);
   const comboRef = useRef(0);
   const celebrationRef = useRef(true);
   // 朗读并发控制：正在播放时忽略重复触发，播放完毕后才允许再次播放
@@ -422,6 +432,12 @@ export default function HomePage() {
     loadQueue();
   }, [loadQueue]);
 
+  const handleSelectBank = useCallback((bankId: string) => {
+    setSelectedLessonId(bankId);
+    setShowBankPicker(false);
+    loadQueue();
+  }, [loadQueue]);
+
   // 单词/句子出现（刚切换/打开）时自动朗读
   useEffect(() => {
     if (!sentence) return;
@@ -501,10 +517,42 @@ export default function HomePage() {
   const practiceBar = (
     <>
       <div className="flex items-center gap-2 text-sm min-w-0">
-        <span className="font-medium text-foreground truncate">{queueLabel}</span>
-        <span className="text-muted-foreground shrink-0">
-          ({sentenceIndex + 1}/{totalSentences})
-        </span>
+        <Dialog open={showBankPicker} onOpenChange={setShowBankPicker}>
+          <DialogTrigger asChild>
+            <button className="flex items-center gap-2 hover:bg-muted/50 rounded-md px-1.5 py-1 transition-colors cursor-pointer">
+              <Library className="w-4 h-4 text-purple-400 shrink-0" />
+              <span className="font-medium text-foreground truncate">{queueLabel}</span>
+              <span className="text-muted-foreground shrink-0">
+                ({sentenceIndex + 1}/{totalSentences})
+              </span>
+            </button>
+          </DialogTrigger>
+          <DialogContent className="max-w-md max-h-[70vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle>选择词库</DialogTitle>
+            </DialogHeader>
+            <div className="grid gap-2 py-2">
+              {wordBankIndex.map((bank) => (
+                <button
+                  key={bank.id}
+                  onClick={() => handleSelectBank(bank.id)}
+                  className={cn(
+                    'flex flex-col items-start gap-1 p-3 rounded-lg border text-left transition-colors',
+                    getSelectedLessonId() === bank.id
+                      ? 'border-sky-500 bg-sky-50 dark:bg-sky-950'
+                      : 'border-border hover:bg-muted/50'
+                  )}
+                >
+                  <div className="flex items-center gap-2 w-full">
+                    <span className="font-medium text-foreground">{bank.titleCn}</span>
+                    <span className="text-xs text-muted-foreground ml-auto">{bank.count} {bank.type === 'word' ? '词' : '句'}</span>
+                  </div>
+                  <span className="text-xs text-muted-foreground">{bank.description || bank.preview}</span>
+                </button>
+              ))}
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
       {isErrorMode && (
         <Badge className="bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-400">错题练习</Badge>

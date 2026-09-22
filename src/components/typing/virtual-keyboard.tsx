@@ -130,15 +130,21 @@ interface VirtualKeyboardProps {
   nextKey: string;
   onKeyPress: (key: string) => void;
   showFingerGuide?: boolean;
+  showFingerBars?: boolean; // 是否显示按键底部的指法色条（独立于手势图/图例）
   rippleKey?: number; // 连斩里程碑触发键盘波纹
+  compact?: boolean; // 紧凑模式：整体缩小按键，用于游戏页等空间受限场景
 }
 
 export function VirtualKeyboard({
   nextKey,
   onKeyPress,
   showFingerGuide = true,
+  showFingerBars,
   rippleKey,
+  compact = false,
 }: VirtualKeyboardProps) {
+  // 色条默认跟随手势图开关，也可单独指定（如游戏页只显示色条不显示手势图）
+  const barsOn = showFingerBars ?? showFingerGuide;
   const nextKeyLower = nextKey.toLowerCase();
   const isShift = nextKey !== nextKeyLower && /[A-Z!@#$%^&*()_+{}|:"<>?~]/.test(nextKey);
   const [leftHandSvg, setLeftHandSvg] = useState<string | null>(null);
@@ -192,8 +198,11 @@ export function VirtualKeyboard({
   }, [nextKey, nextKeyLower]);
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
-      <div className="bg-gradient-to-b from-muted to-secondary rounded-2xl p-3 md:p-4 shadow-lg border border-border relative overflow-hidden">
+    <div className={cn('w-full mx-auto', compact ? 'max-w-xl' : 'max-w-3xl')}>
+      <div className={cn(
+        'bg-gradient-to-b from-muted to-secondary rounded-2xl shadow-lg border border-border relative overflow-hidden',
+        compact ? 'p-2 md:p-2.5' : 'p-3 md:p-4'
+      )}>
         {/* Hand SVG Overlay - show both hands with fingertips at ASDF row */}
         {showFingerGuide && (
           <div
@@ -239,7 +248,10 @@ export function VirtualKeyboard({
         )}
 
         {keyboardRows.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex gap-1 md:gap-1.5 mb-1 md:mb-1.5 justify-center relative z-10">
+          <div key={rowIndex} className={cn(
+            'flex justify-center relative z-10',
+            compact ? 'gap-0.5 md:gap-1 mb-0.5 md:mb-1' : 'gap-1 md:gap-1.5 mb-1 md:mb-1.5'
+          )}>
             {row.map((keyDef) => {
               const isActive =
                 keyDef.key.toLowerCase() === nextKeyLower ||
@@ -252,15 +264,18 @@ export function VirtualKeyboard({
                   key={keyDef.key}
                   onClick={() => onKeyPress(keyDef.key)}
                   className={cn(
-                    'relative flex items-center justify-center rounded-lg font-semibold text-xs md:text-sm transition-all duration-150 select-none',
-                    'h-9 md:h-11 border-b-2 active:border-b-0 active:translate-y-0.5',
+                    'relative flex items-center justify-center rounded-lg font-semibold transition-all duration-150 select-none',
+                    compact
+                      ? 'text-[10px] md:text-xs h-6 md:h-8'
+                      : 'text-xs md:text-sm h-9 md:h-11',
+                    'border-b-2 active:border-b-0 active:translate-y-0.5',
                     isActive
                       ? 'shadow-md scale-105 z-10'
                       : 'bg-card border-border text-foreground shadow-sm hover:bg-secondary'
                   )}
                   style={{
-                    width: `${width * 42}px`,
-                    minWidth: `${width * 36}px`,
+                    width: `${width * (compact ? 30 : 42)}px`,
+                    minWidth: `${width * (compact ? 24 : 36)}px`,
                     // 高亮键直接使用所属手指的提示色（浅色系配深色文字保证可读）
                     ...(isActive
                       ? { backgroundColor: color, borderColor: color, color: '#1e293b' }
@@ -268,13 +283,13 @@ export function VirtualKeyboard({
                   }}
                 >
                   {keyDef.label}
-                  {showFingerGuide && !isActive && (
+                  {barsOn && !isActive && (
                     <div
                       className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-3 h-0.5 rounded-full opacity-60"
                       style={{ backgroundColor: color }}
                     />
                   )}
-                  {isActive && showFingerGuide && (
+                  {isActive && barsOn && (
                     <div
                       className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-5 h-1 rounded-full"
                       style={{ backgroundColor: color }}
@@ -287,7 +302,7 @@ export function VirtualKeyboard({
         ))}
 
         {/* 连斩里程碑键盘波纹 */}
-        {rippleKey && rippleKey > 0 && (
+        {(rippleKey ?? 0) > 0 && (
           <div
             key={`ripple-${rippleKey}`}
             className="pointer-events-none absolute left-1/2 top-1/2 z-40 w-40 h-40 rounded-full blur-md animate-keyboard-ripple"

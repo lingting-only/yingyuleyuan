@@ -120,7 +120,9 @@ export function ParticleBurst({
     raf = requestAnimationFrame(tick);
 
     return () => cancelAnimationFrame(raf);
-  }, [burstKey, center]);
+    // 仅依赖坐标值：父组件重渲染时即使传入新的 center 对象引用，也不会重复触发粒子
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [burstKey, center?.x, center?.y]);
 
   // 覆盖全屏但不拦截任何交互
   // 注意：canvas 是替换元素，inset-0 不会拉伸它，必须显式指定 CSS 尺寸

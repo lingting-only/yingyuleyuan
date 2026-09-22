@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState, type ReactNode } from 'react';
-import { GraduationCap, BarChart3, Keyboard, Library, BookX, Sun, Moon, Maximize2, Minimize2 } from 'lucide-react';
+import { GraduationCap, BarChart3, Keyboard, Library, BookX, Swords, Sun, Moon, Maximize2, Minimize2 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -17,6 +17,7 @@ import {
 // 4 项导航：打字练习 / 词库 / 错题本 / 学习进度
 const navItems = [
   { href: '/', label: '打字练习', icon: Keyboard },
+  { href: '/game', label: '打字游戏', icon: Swords },
   { href: '/gallery', label: '词库', icon: Library },
   { href: '/error-book', label: '错题本', icon: BookX },
   { href: '/progress', label: '学习进度', icon: BarChart3 },

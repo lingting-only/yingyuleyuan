@@ -47,3 +47,25 @@ export function playKeyClick() {
 export function playErrorBuzz() {
   playTone({ freq: 220, endFreq: 150, duration: 0.2, type: 'sawtooth', volume: 0.1 });
 }
+
+// ===== 打字战斗游戏音效 =====
+
+// 击杀敌人：上扬琶音（快速三连音）
+export function playKill() {
+  playTone({ freq: 660, duration: 0.08, type: 'square', volume: 0.08 });
+  setTimeout(() => playTone({ freq: 880, duration: 0.08, type: 'square', volume: 0.08 }), 60);
+  setTimeout(() => playTone({ freq: 1320, endFreq: 1760, duration: 0.12, type: 'triangle', volume: 0.1 }), 120);
+}
+
+// 敌人越线受伤：低频轰击
+export function playHitDamage() {
+  playTone({ freq: 120, endFreq: 60, duration: 0.35, type: 'sawtooth', volume: 0.16 });
+  playTone({ freq: 55, endFreq: 40, duration: 0.4, type: 'sine', volume: 0.2 });
+}
+
+// 连击里程碑：明亮和弦
+export function playCombo() {
+  playTone({ freq: 523, duration: 0.1, type: 'triangle', volume: 0.1 });
+  setTimeout(() => playTone({ freq: 659, duration: 0.1, type: 'triangle', volume: 0.1 }), 70);
+  setTimeout(() => playTone({ freq: 784, duration: 0.16, type: 'triangle', volume: 0.12 }), 140);
+}

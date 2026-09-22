@@ -306,3 +306,33 @@ export function getCelebrationEnabled(): boolean {
 export function setCelebrationEnabled(enabled: boolean): void {
   safeWrite(CELEBRATION_KEY, enabled ? '1' : '0');
 }
+
+// ===== 打字游戏最高纪录 =====
+const GAME_BEST_KEY = 'eng-game-best';
+
+export interface GameBest {
+  score: number;
+  kills: number;
+  maxCombo: number;
+  survived: number; // 最长存活秒数
+}
+
+const emptyGameBest = (): GameBest => ({ score: 0, kills: 0, maxCombo: 0, survived: 0 });
+
+export function getGameBest(): GameBest {
+  const parsed = safeParse<Partial<GameBest>>(safeRead(GAME_BEST_KEY), {});
+  return { ...emptyGameBest(), ...parsed };
+}
+
+// 结算时调用：逐字段取最大值写回，返回最新纪录
+export function setGameBest(record: GameBest): GameBest {
+  const best = getGameBest();
+  const next: GameBest = {
+    score: Math.max(best.score, record.score),
+    kills: Math.max(best.kills, record.kills),
+    maxCombo: Math.max(best.maxCombo, record.maxCombo),
+    survived: Math.max(best.survived, record.survived),
+  };
+  safeWrite(GAME_BEST_KEY, JSON.stringify(next));
+  return next;
+}
