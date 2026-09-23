@@ -1,6 +1,19 @@
 // 基于 Web Audio API 合成的打字音效，无需音频资源文件
 let audioCtx: AudioContext | null = null;
 
+// 全局音频开关：默认开启（false 表示不静音）
+let muted = false;
+
+// 设置是否静音
+export function setSoundMuted(value: boolean) {
+  muted = value;
+}
+
+// 当前是否静音（供 speechSynthesis 朗读等场景复用同一开关）
+export function isSoundMuted(): boolean {
+  return muted;
+}
+
 function getAudioContext(): AudioContext | null {
   if (typeof window === 'undefined') return null;
   const AC =
@@ -21,6 +34,7 @@ function playTone(options: {
   type: OscillatorType;
   volume: number;
 }) {
+  if (muted) return; // 静音时不播放任何音效
   const ctx = getAudioContext();
   if (!ctx) return;
   const osc = ctx.createOscillator();
@@ -68,4 +82,22 @@ export function playCombo() {
   playTone({ freq: 523, duration: 0.1, type: 'triangle', volume: 0.1 });
   setTimeout(() => playTone({ freq: 659, duration: 0.1, type: 'triangle', volume: 0.1 }), 70);
   setTimeout(() => playTone({ freq: 784, duration: 0.16, type: 'triangle', volume: 0.12 }), 140);
+}
+
+// ===== 拼写模式专用音效 =====
+
+// 拼写正确（比字母模式更有成就感的击杀音）：上行琶音 + 和弦
+export function playSpellCorrect() {
+  playTone({ freq: 523, duration: 0.1, type: 'sine', volume: 0.12 });
+  setTimeout(() => playTone({ freq: 659, duration: 0.1, type: 'sine', volume: 0.12 }), 50);
+  setTimeout(() => playTone({ freq: 784, duration: 0.1, type: 'sine', volume: 0.12 }), 100);
+  setTimeout(() => playTone({ freq: 1047, duration: 0.18, type: 'triangle', volume: 0.15 }), 150);
+}
+
+// 拼写模式连击里程碑：更华丽的音效
+export function playSpellCombo() {
+  playTone({ freq: 587, duration: 0.08, type: 'sine', volume: 0.12 });
+  setTimeout(() => playTone({ freq: 740, duration: 0.08, type: 'sine', volume: 0.12 }), 60);
+  setTimeout(() => playTone({ freq: 880, duration: 0.08, type: 'sine', volume: 0.12 }), 120);
+  setTimeout(() => playTone({ freq: 1175, duration: 0.2, type: 'triangle', volume: 0.15 }), 180);
 }

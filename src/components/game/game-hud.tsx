@@ -3,12 +3,25 @@
 // 游戏顶部 HUD：血量、得分、击杀、连击、等级、能量条
 import { memo } from 'react';
 import { Heart, Zap, Swords, Flame, Gauge } from 'lucide-react';
-import type { GameStats } from '@/lib/game';
+import type { GameStats, SpellStats } from '@/lib/game';
 import { GAME_MAX_HP, GAME_MAX_ENERGY } from '@/lib/game';
 import { cn } from '@/lib/utils';
 
+// 共享的 HUD 属性
+interface HudShared {
+  score: number;
+  kills: number;
+  combo: number;
+  maxCombo: number;
+  hp: number;
+  energy: number;
+  level: number;
+}
+
+type HudStats = GameStats | (SpellStats & HudShared);
+
 interface GameHudProps {
-  stats: GameStats;
+  stats: HudStats;
   wpm: number;
 }
 

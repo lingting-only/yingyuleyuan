@@ -431,3 +431,98 @@ body {
 .meteor-fly { animation: meteor-fly 6s linear infinite backwards; }
 .animate-key-neon      { animation: key-neon 1s ease-in-out infinite; }
 .animate-score-pop     { animation: score-pop 0.5s ease-out both; }
+
+/* ===== 拼写模式动画 ===== */
+
+/* 单词敌人悬浮 */
+@keyframes word-float {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-8px); }
+}
+.animate-word-float { animation: word-float 3s ease-in-out infinite; }
+
+/* 单词敌人抖动 */
+@keyframes word-shake {
+  0%, 100% { transform: translate(-50%, -50%) translateX(0); }
+  20% { transform: translate(-50%, -50%) translateX(-6px); }
+  40% { transform: translate(-50%, -50%) translateX(6px); }
+  60% { transform: translate(-50%, -50%) translateX(-4px); }
+  80% { transform: translate(-50%, -50%) translateX(4px); }
+}
+.animate-word-shake { animation: word-shake 0.4s ease-in-out; }
+
+/* 输入框抖动 */
+@keyframes input-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+.animate-input-shake { animation: input-shake 0.4s ease-in-out; }
+
+/* 淡入脉冲效果 */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.animate-pulse-subtle { animation: pulse-subtle 2s ease-in-out infinite; }
+
+/* 击杀光环扩散 */
+@keyframes ring-expand {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* 切割刀光：斜向光刃快速划过 */
+@keyframes spell-slash-line {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(1.6);
+  }
+}
+
+/* 左上片：切水果效果 —— 快速分离、大幅翻转、受重力下落、快速消散 */
+@keyframes spell-slash-top {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(-55px, -45px) rotate(-55deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-160px, 100px) rotate(-170deg);
+    opacity: 0;
+  }
+}
+
+/* 右下片：切水果效果 —— 快速分离、大幅翻转、受重力下落、快速消散 */
+@keyframes spell-slash-bottom {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(55px, 45px) rotate(55deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(160px, 140px) rotate(170deg);
+    opacity: 0;
+  }
+}

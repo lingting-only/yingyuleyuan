@@ -307,6 +307,20 @@ export function setCelebrationEnabled(enabled: boolean): void {
   safeWrite(CELEBRATION_KEY, enabled ? '1' : '0');
 }
 
+// ===== 音频开关 =====
+const SOUND_KEY = 'eng-sound-enabled';
+
+// 读取音频开关；默认开启（无记录视为 true）
+export function getSoundEnabled(): boolean {
+  const raw = safeRead(SOUND_KEY);
+  if (raw === null) return true;
+  return raw === '1';
+}
+
+export function setSoundEnabled(enabled: boolean): void {
+  safeWrite(SOUND_KEY, enabled ? '1' : '0');
+}
+
 // ===== 打字游戏最高纪录 =====
 const GAME_BEST_KEY = 'eng-game-best';
 

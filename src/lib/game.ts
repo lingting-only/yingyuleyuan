@@ -57,6 +57,41 @@ export interface GameStats {
 }
 
 export type GamePhase = 'idle' | 'running' | 'paused' | 'over';
+export type GameMode = 'letter' | 'spell';
+
+// ========== 拼写模式类型 ==========
+
+// 单词敌人（整体作为一个敌人）
+export interface SpellEnemy {
+  id: number;
+  word: string; // 英文单词（小写）
+  meaning: string; // 中文意思
+  phonetic: string; // 音标
+  x: number; // 横向位置 0-100（百分比）
+  y: number; // 纵向位置 0-100（百分比）
+  speed: number; // 每秒下移百分比
+  hp: number; // 当前血量（初始 = 单词长度）
+  maxHp: number; // 最大血量
+  progress: number; // 已正确输入的字母数
+  dying: boolean; // 死亡动画中
+  shake: number; // 输错时自增，用于触发晃动动画
+  hitKey: number; // 每次正确击中时自增，用于触发击中特效
+}
+
+export interface SpellStats {
+  score: number;
+  kills: number; // 完成的单词数
+  combo: number;
+  maxCombo: number;
+  energy: number; // 0-100
+  hp: number;
+  level: number; // 难度等级
+  correctWords: number;
+  wrongWords: number;
+  elapsed: number; // 存活秒数
+}
+
+export type SpellPhase = 'idle' | 'running' | 'paused' | 'over';
 
 // ========== 游戏常量 ==========
 
@@ -87,6 +122,20 @@ export const ENERGY_PER_KILL = 12;
 // 输错一个字母扣减的能量（与正确输入 +6 对称）
 export const ENERGY_PER_MISS = 6;
 
+// ========== 拼写模式常量 ==========
+
+export const SPELL_SCORE_PER_CHAR = 8; // 拼写模式：每个正确字符的分数
+export const SPELL_SCORE_WORD_BONUS = 50; // 拼写模式：单词完成奖励
+export const SPELL_ENERGY_PER_WORD = 10; // 拼写模式：完成单词增加能量
+export const SPELL_ENERGY_PER_WRONG = 8; // 拼写模式：输入错误扣减能量
+export const SPELL_ENEMY_BASE_SPEED = 2.5; // 拼写模式：敌人基础下落速度（略慢于字母模式）
+export const SPELL_ENEMY_SPEED_PER_LEVEL = 0.5; // 拼写模式：每级速度增量
+export const SPELL_LEVEL_UP_TIME = 30; // 拼写模式：每 30 秒升一级
+export const SPELL_LEVEL_UP_KILLS = 5; // 拼写模式：每完成 5 个单词升一级
+export const SPELL_NEXT_WORD_DELAY = 700; // 拼写模式：完成单词后到下一词出现的间隔（ms），需 ≥ 死亡动画时长
+// 拼写模式敌人尺寸（横向占战场百分比）
+export const SPELL_ENEMY_WIDTH = 40;
+
 export function computeLevel(elapsed: number, kills: number): number {
   const byTime = Math.floor(elapsed / LEVEL_UP_TIME);
   const byKills = Math.floor(kills / LEVEL_UP_KILLS);
@@ -95,6 +144,18 @@ export function computeLevel(elapsed: number, kills: number): number {
 
 export function enemySpeed(level: number): number {
   return ENEMY_BASE_SPEED + (level - 1) * ENEMY_SPEED_PER_LEVEL;
+}
+
+// 拼写模式难度计算
+export function spellComputeLevel(elapsed: number, kills: number): number {
+  const byTime = Math.floor(elapsed / SPELL_LEVEL_UP_TIME);
+  const byKills = Math.floor(kills / SPELL_LEVEL_UP_KILLS);
+  return Math.min(1 + Math.max(byTime, byKills), MAX_LEVEL);
+}
+
+// 拼写模式敌人速度
+export function spellEnemySpeed(level: number): number {
+  return SPELL_ENEMY_BASE_SPEED + (level - 1) * SPELL_ENEMY_SPEED_PER_LEVEL;
 }
 
 export function initialStats(): GameStats {
@@ -108,6 +169,21 @@ export function initialStats(): GameStats {
     level: 1,
     correctChars: 0,
     wrongChars: 0,
+    elapsed: 0,
+  };
+}
+
+export function initialSpellStats(): SpellStats {
+  return {
+    score: 0,
+    kills: 0,
+    combo: 0,
+    maxCombo: 0,
+    energy: 0,
+    hp: GAME_MAX_HP,
+    level: 1,
+    correctWords: 0,
+    wrongWords: 0,
     elapsed: 0,
   };
 }
