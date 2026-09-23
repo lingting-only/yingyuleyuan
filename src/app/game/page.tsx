@@ -147,7 +147,9 @@ export default function GamePage() {
     },
   });
   const { snapshot: spellSnapshot, start: spellStart, pause: spellPause, resume: spellResume, removeEnemy: spellRemoveEnemy } = spellGame;
-  const { phase: spellPhase, enemy: spellEnemy, stats: spellStats, shakeKey: spellShakeKey, hitKey: spellHitKey, burstKey: spellBurstKey } = spellSnapshot;
+  const { phase: spellPhase, enemy: spellEnemy, stats: spellStats, shakeKey: spellShakeKey, burstKey: spellBurstKey } = spellSnapshot;
+  // 击中特效 key 位于敌人实体上
+  const spellHitKey = spellEnemy?.hitKey ?? 0;
 
   // 死亡动画结束：移除敌人实体（输入清空已由 onKill 延迟处理）
   const handleSpellDeathEnd = useCallback(() => {
